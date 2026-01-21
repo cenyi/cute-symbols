@@ -1,8 +1,9 @@
 import type { APIRoute } from 'astro';
-import fs from 'fs';
-import path from 'path';
 
 export const prerender = false;
+
+// 使用 import.meta.glob 预加载所有符号文件
+const symbolFiles = import.meta.glob('../../../data/symbols/*.json', { eager: true });
 
 export const GET: APIRoute = async ({ url }) => {
   try {
@@ -22,10 +23,8 @@ export const GET: APIRoute = async ({ url }) => {
       });
     }
 
-    // 读取索引文件
-    const indexPath = path.join(process.cwd(), 'src', 'data', 'symbols', 'index.json');
-    const indexContent = fs.readFileSync(indexPath, 'utf-8');
-    const indexData = JSON.parse(indexContent);
+    // 获取索引数据
+    const indexData = (symbolFiles['../../../data/symbols/index.json'] as any).default;
 
     let results: any[] = [];
 
@@ -36,12 +35,11 @@ export const GET: APIRoute = async ({ url }) => {
 
     // 遍历所有分类文件并搜索
     for (const cat of categoriesToSearch) {
-      const catPath = path.join(process.cwd(), 'src', 'data', 'symbols', cat.file);
+      const catFile = symbolFiles[`../../../data/symbols/${cat.file}`];
 
-      if (!fs.existsSync(catPath)) continue;
+      if (!catFile) continue;
 
-      const catContent = fs.readFileSync(catPath, 'utf-8');
-      const catData = JSON.parse(catContent);
+      const catData = (catFile as any).default;
 
       // 搜索符号
       const matchingSymbols = catData.symbols.filter((symbol: any) => {

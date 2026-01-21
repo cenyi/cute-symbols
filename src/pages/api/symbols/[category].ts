@@ -1,19 +1,24 @@
 import type { APIRoute } from 'astro';
-import { readFileSync } from 'fs';
-import { join } from 'path';
 
 export const prerender = false;
+
+// 使用 import.meta.glob 预加载所有符号文件
+const symbolFiles = import.meta.glob('../../../data/symbols/*.json', { eager: true });
 
 export const GET: APIRoute = async ({ params }) => {
   const { category } = params;
 
   try {
-    // 读取对应的JSON文件
-    const filePath = join(process.cwd(), 'src/data/symbols', `${category}.json`);
-    
-    // 读取文件内容
-    const fileContent = readFileSync(filePath, 'utf-8');
-    const data = JSON.parse(fileContent);
+    // 查找对应的分类文件
+    const categoryFilePath = `../../../data/symbols/${category}.json`;
+    const categoryFile = symbolFiles[categoryFilePath];
+
+    if (!categoryFile) {
+      throw new Error(`Category '${category}' not found`);
+    }
+
+    // 类型断言，确保 data 是预期的格式
+    const data = (categoryFile as any).default;
 
     // 返回分类数据
     return new Response(
