@@ -261,19 +261,22 @@ const content = geoContent[locale] || geoContent.en;
   }
 })}></script>
 
-<style>
+<style is:global>
   /* 隐藏的结构化内容，仅供AI读取 */
   .ai-content {
-    position: absolute;
-    left: -10000px;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+    position: absolute !important;
+    left: -10000px !important;
+    top: auto !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    white-space: nowrap !important;
   }
 </style>
 
 <!-- 隐藏的AI可读内容 -->
-<div class="ai-content">
+<div class="ai-content" aria-hidden="true">
   <h1>{content.howToUseTitle}</h1>
   <p>{content.howToUseDescription}</p>
   

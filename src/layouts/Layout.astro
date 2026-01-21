@@ -44,9 +44,6 @@ const currentPath = Astro.url.pathname;
       canonical={new URL(Astro.url.pathname, 'https://cute-symbols.uk').href}
     />
 
-    <!-- GEO (生成式搜索优化) 组件 -->
-    <GEOOptimization {locale} pageType="homepage" />
-
     <!-- 预连接字体资源 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,5 +197,8 @@ const currentPath = Astro.url.pathname;
         initAllEffects();
       }
     </script>
+
+    <!-- GEO (生成式搜索优化) 组件 - 移到body末尾，避免影响页面布局 -->
+    <GEOOptimization {locale} pageType="homepage" />
   </body>
 </html>
