@@ -1,9 +1,9 @@
 import type { APIRoute } from 'astro';
+import { searchSymbols2026 } from '../../../data/symbols-2026';
+import { CATEGORIES_2026 } from '../../../data/categories-2026';
+import { type Locale } from '../../../i18n/config';
 
 export const prerender = false;
-
-// 使用 import.meta.glob 预加载所有符号文件
-const symbolFiles = import.meta.glob('../../../data/symbols/*.json', { eager: true });
 
 export const GET: APIRoute = async ({ url }) => {
   try {
@@ -11,6 +11,12 @@ export const GET: APIRoute = async ({ url }) => {
     const searchParams = new URL(url).searchParams;
     const query = searchParams.get('q') || '';
     const category = searchParams.get('category') || 'all';
+    const langParam = searchParams.get('lang');
+    
+    // 定义支持的语言类型
+    const supportedLangs: Locale[] = ['en', 'fil', 'ms', 'bn', 'pl'];
+    // 验证语言参数，默认使用英语
+    const lang = supportedLangs.includes(langParam as Locale) ? langParam as Locale : 'en';
 
     if (!query) {
       return new Response(JSON.stringify({
@@ -23,44 +29,33 @@ export const GET: APIRoute = async ({ url }) => {
       });
     }
 
-    // 获取索引数据
-    const indexData = (symbolFiles['../../../data/symbols/index.json'] as any).default;
+    // 执行搜索
+    let searchResults = searchSymbols2026(query, lang);
 
-    let results: any[] = [];
-
-    // 如果指定了分类，只搜索该分类
-    const categoriesToSearch = category === 'all'
-      ? indexData.categories
-      : indexData.categories.filter((cat: any) => cat.id === category);
-
-    // 遍历所有分类文件并搜索
-    for (const cat of categoriesToSearch) {
-      const catFile = symbolFiles[`../../../data/symbols/${cat.file}`];
-
-      if (!catFile) continue;
-
-      const catData = (catFile as any).default;
-
-      // 搜索符号
-      const matchingSymbols = catData.symbols.filter((symbol: any) => {
-        const symbolChar = symbol.char.toLowerCase();
-        const tags = symbol.tags || [];
-        const searchLower = query.toLowerCase();
-
-        return symbolChar.includes(searchLower) ||
-               tags.some((tag: string) => tag.toLowerCase().includes(searchLower));
-      });
-
-      // 添加分类信息到结果
-      const enriched = matchingSymbols.map((symbol: any) => ({
-        ...symbol,
-        category: catData.category,
-        categoryIcon: catData.icon,
-        categoryColor: catData.color
-      }));
-
-      results = [...results, ...enriched];
+    // 如果指定了分类，过滤结果
+    if (category !== 'all') {
+      searchResults = searchResults.filter(symbol => symbol.category === category);
     }
+
+    // 获取分类信息映射
+    const categoryMap = new Map(
+      CATEGORIES_2026.map(cat => [cat.id, cat])
+    );
+
+    // 格式化搜索结果
+    const results = searchResults.map(symbol => {
+      const catInfo = categoryMap.get(symbol.category);
+      return {
+        id: symbol.id,
+        char: symbol.symbol,
+        tags: symbol.tags[lang] || symbol.tags.en || [],
+        unicode: symbol.unicode,
+        popular: symbol.tags.en?.includes('popular') || false,
+        category: symbol.category,
+        categoryIcon: catInfo?.icon || '✨',
+        categoryColor: catInfo?.color || '#ff6b9d'
+      };
+    });
 
     return new Response(JSON.stringify({
       success: true,
@@ -77,7 +72,9 @@ export const GET: APIRoute = async ({ url }) => {
     });
 
   } catch (error) {
+    console.error('Search API Error:', error);
     return new Response(JSON.stringify({
+      success: false,
       error: 'Internal server error',
       message: error instanceof Error ? error.message : 'Unknown error'
     }), {
