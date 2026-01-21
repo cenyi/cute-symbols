@@ -16,112 +16,26 @@ interface Props {
 const { locale = 'en', pageType = 'homepage', symbols = [] } = Astro.props;
 const { t } = getTranslations(locale);
 
-// 多语言GEO内容
 const geoContent = {
   en: {
     datasetName: "Cute Symbols Collection 2026",
     datasetDescription: "Comprehensive dataset of aesthetic Unicode symbols for social media decoration",
-    howToUseTitle: "Cute Symbols - Complete Guide",
-    howToUseDescription: "This website provides a comprehensive collection of aesthetic Unicode symbols perfect for social media decoration. Users can instantly copy and paste symbols for Instagram bios, TikTok profiles, Discord usernames, Roblox display names, and more.",
-    howToUseSteps: [
-      "Browse or search for symbols",
-      "Click any symbol to copy it", 
-      "Paste into your social media profile",
-      "Enjoy your enhanced aesthetic!"
-    ],
-    platformCompatibility: "All symbols work on: Instagram, TikTok, Discord, Roblox, Twitter, WhatsApp, Telegram, Facebook, Snapchat, and most other platforms that support Unicode text.",
-    categories: [
-      "Hearts and Love symbols",
-      "Stars and Sparkles", 
-      "Flowers and Nature",
-      "Kaomoji faces",
-      "Decorative borders",
-      "Aesthetic combinations"
-    ]
   },
   fil: {
     datasetName: "Cute Symbols Collection 2026",
     datasetDescription: "Komprehensibong dataset ng mga aesthetic Unicode symbols para sa social media decoration",
-    howToUseTitle: "Cute Symbols - Kumpletong Gabay",
-    howToUseDescription: "Ang website na ito ay nagbibigay ng komprehensibong koleksyon ng mga aesthetic Unicode symbols na perpekto para sa social media decoration. Maaaring agad na kopyahin at i-paste ng mga user ang mga symbols para sa Instagram bios, TikTok profiles, Discord usernames, Roblox display names, at marami pa.",
-    howToUseSteps: [
-      "Mag-browse o maghanap ng mga symbols",
-      "I-click ang kahit anong symbol para makopya",
-      "I-paste sa inyong social media profile", 
-      "Mag-enjoy sa inyong enhanced aesthetic!"
-    ],
-    platformCompatibility: "Lahat ng symbols ay gumagana sa: Instagram, TikTok, Discord, Roblox, Twitter, WhatsApp, Telegram, Facebook, Snapchat, at karamihan sa ibang platforms na sumusuporta sa Unicode text.",
-    categories: [
-      "Mga Hearts at Love symbols",
-      "Mga Stars at Sparkles",
-      "Mga Flowers at Nature", 
-      "Mga Kaomoji faces",
-      "Mga Decorative borders",
-      "Mga Aesthetic combinations"
-    ]
   },
   ms: {
     datasetName: "Cute Symbols Collection 2026", 
     datasetDescription: "Dataset komprehensif simbol Unicode estetik untuk hiasan media sosial",
-    howToUseTitle: "Cute Symbols - Panduan Lengkap",
-    howToUseDescription: "Laman web ini menyediakan koleksi komprehensif simbol Unicode estetik yang sempurna untuk hiasan media sosial. Pengguna boleh menyalin dan menampal simbol dengan serta-merta untuk bio Instagram, profil TikTok, nama pengguna Discord, nama paparan Roblox, dan banyak lagi.",
-    howToUseSteps: [
-      "Layari atau cari simbol",
-      "Klik mana-mana simbol untuk menyalinnya",
-      "Tampal ke dalam profil media sosial anda",
-      "Nikmati estetik yang dipertingkatkan!"
-    ],
-    platformCompatibility: "Semua simbol berfungsi di: Instagram, TikTok, Discord, Roblox, Twitter, WhatsApp, Telegram, Facebook, Snapchat, dan kebanyakan platform lain yang menyokong teks Unicode.",
-    categories: [
-      "Simbol Hearts dan Love",
-      "Stars dan Sparkles",
-      "Flowers dan Nature",
-      "Muka Kaomoji", 
-      "Sempadan Decorative",
-      "Kombinasi Aesthetic"
-    ]
   },
   bn: {
     datasetName: "Cute Symbols Collection 2026",
     datasetDescription: "সোশ্যাল মিডিয়া সাজসজ্জার জন্য নান্দনিক ইউনিকোড সিম্বলের বিস্তৃত ডেটাসেট",
-    howToUseTitle: "Cute Symbols - সম্পূর্ণ গাইড",
-    howToUseDescription: "এই ওয়েবসাইটটি সোশ্যাল মিডিয়া সাজসজ্জার জন্য নিখুঁত নান্দনিক ইউনিকোড সিম্বলের একটি বিস্তৃত সংগ্রহ প্রদান করে। ব্যবহারকারীরা Instagram bios, TikTok profiles, Discord usernames, Roblox display names এবং আরও অনেক কিছুর জন্য তাৎক্ষণিকভাবে সিম্বল কপি এবং পেস্ট করতে পারেন।",
-    howToUseSteps: [
-      "সিম্বল ব্রাউজ বা অনুসন্ধান করুন",
-      "কপি করতে যেকোনো সিম্বলে ক্লিক করুন",
-      "আপনার সোশ্যাল মিডিয়া প্রোফাইলে পেস্ট করুন",
-      "আপনার উন্নত নান্দনিকতা উপভোগ করুন!"
-    ],
-    platformCompatibility: "সব সিম্বল কাজ করে: Instagram, TikTok, Discord, Roblox, Twitter, WhatsApp, Telegram, Facebook, Snapchat, এবং ইউনিকোড টেক্সট সমর্থনকারী অন্যান্য প্ল্যাটফর্মে।",
-    categories: [
-      "হৃদয় এবং প্রেমের সিম্বল",
-      "তারা এবং ঝিকিমিকি",
-      "ফুল এবং প্রকৃতি",
-      "কাওমোজি মুখ",
-      "সাজসজ্জার সীমানা", 
-      "নান্দনিক সমন্বয়"
-    ]
   },
   pl: {
     datasetName: "Cute Symbols Collection 2026",
     datasetDescription: "Kompleksowy zbiór danych estetycznych symboli Unicode do dekoracji mediów społecznościowych",
-    howToUseTitle: "Cute Symbols - Kompletny Przewodnik", 
-    howToUseDescription: "Ta strona internetowa zapewnia kompleksową kolekcję estetycznych symboli Unicode idealnych do dekoracji mediów społecznościowych. Użytkownicy mogą natychmiast kopiować i wklejać symbole do bio na Instagramie, profili TikTok, nazw użytkowników Discord, nazw wyświetlanych Roblox i wielu innych.",
-    howToUseSteps: [
-      "Przeglądaj lub szukaj symboli",
-      "Kliknij dowolny symbol, aby go skopiować",
-      "Wklej do swojego profilu w mediach społecznościowych",
-      "Ciesz się ulepszoną estetyką!"
-    ],
-    platformCompatibility: "Wszystkie symbole działają na: Instagram, TikTok, Discord, Roblox, Twitter, WhatsApp, Telegram, Facebook, Snapchat i większości innych platform obsługujących tekst Unicode.",
-    categories: [
-      "Symbole serc i miłości",
-      "Gwiazdy i błyskotki",
-      "Kwiaty i natura",
-      "Twarze Kaomoji",
-      "Dekoracyjne obramowania",
-      "Kombinacje estetyczne"
-    ]
   }
 };
 
@@ -260,52 +174,3 @@ const content = geoContent[locale] || geoContent.en;
     "about": ["Social Media", "Text Decoration", "Unicode", "Aesthetics"]
   }
 })}></script>
-
-<style is:global>
-  /* 隐藏的结构化内容，仅供AI读取 */
-  .ai-content {
-    position: absolute !important;
-    left: -10000px !important;
-    top: auto !important;
-    width: 1px !important;
-    height: 1px !important;
-    overflow: hidden !important;
-    clip: rect(1px, 1px, 1px, 1px) !important;
-    white-space: nowrap !important;
-  }
-</style>
-
-<!-- 隐藏的AI可读内容 -->
-<div class="ai-content" aria-hidden="true">
-  <h1>{content.howToUseTitle}</h1>
-  <p>{content.howToUseDescription}</p>
-  
-  <h2>{locale === 'en' ? 'How to Use' : 
-        locale === 'fil' ? 'Paano Gamitin' :
-        locale === 'ms' ? 'Cara Menggunakan' :
-        locale === 'bn' ? 'কীভাবে ব্যবহার করবেন' :
-        locale === 'pl' ? 'Jak Używać' : 'How to Use'}</h2>
-  <ol>
-    {content.howToUseSteps.map(step => (
-      <li>{step}</li>
-    ))}
-  </ol>
-  
-  <h2>{locale === 'en' ? 'Platform Compatibility' :
-        locale === 'fil' ? 'Platform Compatibility' :
-        locale === 'ms' ? 'Keserasian Platform' :
-        locale === 'bn' ? 'প্ল্যাটফর্ম সামঞ্জস্য' :
-        locale === 'pl' ? 'Kompatybilność Platform' : 'Platform Compatibility'}</h2>
-  <p>{content.platformCompatibility}</p>
-  
-  <h2>{locale === 'en' ? 'Symbol Categories' :
-        locale === 'fil' ? 'Mga Kategorya ng Symbols' :
-        locale === 'ms' ? 'Kategori Simbol' :
-        locale === 'bn' ? 'সিম্বল বিভাগসমূহ' :
-        locale === 'pl' ? 'Kategorie Symboli' : 'Symbol Categories'}</h2>
-  <ul>
-    {content.categories.map(category => (
-      <li>{category}</li>
-    ))}
-  </ul>
-</div>
