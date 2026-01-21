@@ -33,13 +33,13 @@ export interface Symbol2026 {
 
 // 1. ♥ 爱心系列 (35个)
 export const heartsSymbols: Symbol2026[] = [
-  {
+  {    
     id: 'heart-1',
     symbol: '♡',
     category: 'hearts',
     unicode: 'U+2661',
     tags: {
-      en: ['heart', 'love', 'white heart', 'outline', 'cute', 'aesthetic'],
+      en: ['heart', 'love', 'white heart', 'outline', 'cute', 'aesthetic', 'cute heart symbols', 'cute symbols to copy', 'copy and paste cute symbols', 'cute symbols for instagram', 'cute bio symbols', 'cute name symbols', 'cute symbols for roblox', 'cute symbols aesthetic', 'cute symbols copy and paste'],
       fil: ['puso', 'pag-ibig', 'puting puso', 'guhit', 'cute', 'aesthetic'],
       ms: ['hati', 'cinta', 'hati putih', 'garisan', 'comel', 'aesthetic'],
       bn: ['হৃদয়', 'ভালোবাসা', 'সাদা হৃদয়', 'রূপরেখা', 'সুন্দর', 'aesthetic'],
