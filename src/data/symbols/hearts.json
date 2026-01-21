@@ -1,0 +1,1152 @@
+{
+  "category": "hearts",
+  "icon": "♥",
+  "color": "#ff6b9d",
+  "name": {
+    "en": "Heart Symbols",
+    "fil": "Mga Simbolo ng Puso",
+    "ms": "Simbol Jantung",
+    "bn": "হূম প্রতীক",
+    "pl": "Symbole Serca"
+  },
+  "description": {
+    "en": "Perfect for love, romance, and aesthetic bios",
+    "fil": "Perpekto para sa pag-ibig at romance",
+    "ms": "Sempurna untuk cinta dan romantis",
+    "bn": "ভালোবা এবং রোম্যান্সের জন্য উপযুক্ত",
+    "pl": "Idealne do miłości i romansu"
+  },
+  "symbols": [
+    {
+      "id": "hearts-1",
+      "char": "♡",
+      "unicode": "U+2661",
+      "tags": [
+        "white",
+        "outline",
+        "minimalist",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-2",
+      "char": "♥",
+      "unicode": "U+2665",
+      "tags": [
+        "black",
+        "solid",
+        "classic",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-3",
+      "char": "💖",
+      "unicode": "U+1F496",
+      "tags": [
+        "sparkling",
+        "pink",
+        "aesthetic",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-4",
+      "char": "💗",
+      "unicode": "U+1F497",
+      "tags": [
+        "growing",
+        "pink",
+        "love",
+        "trending"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-5",
+      "char": "💕",
+      "unicode": "U+1F495",
+      "tags": [
+        "two",
+        "pink",
+        "revolving",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-6",
+      "char": "💘",
+      "unicode": "U+1F498",
+      "tags": [
+        "cupid",
+        "arrow",
+        "love",
+        "romance"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-7",
+      "char": "💝",
+      "unicode": "U+1F49D",
+      "tags": [
+        "gift",
+        "ribbon",
+        "love",
+        "heart"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-8",
+      "char": "💓",
+      "unicode": "U+1F493",
+      "tags": [
+        "revolving",
+        "pink",
+        "cupid"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-9",
+      "char": "💞",
+      "unicode": "U+1F49E",
+      "tags": [
+        "exchanging",
+        "two",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-10",
+      "char": "💟",
+      "unicode": "U+1F49F",
+      "tags": [
+        "decoration",
+        "purple",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-11",
+      "char": "💔",
+      "unicode": "U+1F494",
+      "tags": [
+        "broken",
+        "black",
+        "sad"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-12",
+      "char": "🖤",
+      "unicode": "U+1F5A4",
+      "tags": [
+        "black",
+        "edgy",
+        "dark"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-13",
+      "char": "🤍",
+      "unicode": "U+1F90D",
+      "tags": [
+        "white",
+        "clean",
+        "pure"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-14",
+      "char": "🥰",
+      "unicode": "U+1F970",
+      "tags": [
+        "hearts",
+        "face",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-15",
+      "char": "❥",
+      "unicode": "U+2765",
+      "tags": [
+        "outlined",
+        "fancy",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-16",
+      "char": "❦",
+      "unicode": "U+2766",
+      "tags": [
+        "floral",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-17",
+      "char": "❣",
+      "unicode": "U+2763",
+      "tags": [
+        "heavy",
+        "filled",
+        "exclamation"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-18",
+      "char": "ღ",
+      "unicode": "U+10C6",
+      "tags": [
+        "georgian",
+        "unique",
+        "special"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-19",
+      "char": "🩷",
+      "unicode": "U+1FA75",
+      "tags": [
+        "pink",
+        "light",
+        "trending"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-20",
+      "char": "💖💗💕",
+      "unicode": "combo",
+      "tags": [
+        "triple",
+        "pink",
+        "combo",
+        "popular"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-21",
+      "char": "💗🖤♡",
+      "unicode": "combo",
+      "tags": [
+        "mixed",
+        "combo",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-22",
+      "char": "💕💗♡",
+      "unicode": "combo",
+      "tags": [
+        "three",
+        "combo",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-23",
+      "char": "💕🖤💗",
+      "unicode": "combo",
+      "tags": [
+        "mixed",
+        "combo",
+        "edgy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-24",
+      "char": "♡💕🖤",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "aesthetic",
+        "clean"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-25",
+      "char": "💗💕♡",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pink",
+        "romantic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-26",
+      "char": "🖤💗💕",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "dark",
+        "edgy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-27",
+      "char": "♡💕🖤",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "chic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-28",
+      "char": "💙",
+      "unicode": "U+1F499",
+      "tags": [
+        "blue",
+        "calm",
+        "trust"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-29",
+      "char": "💚",
+      "unicode": "U+1F49A",
+      "tags": [
+        "green",
+        "nature",
+        "growth"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-30",
+      "char": "💛",
+      "unicode": "U+1F49B",
+      "tags": [
+        "yellow",
+        "happy",
+        "sunshine"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-31",
+      "char": "💜",
+      "unicode": "U+1F49C",
+      "tags": [
+        "purple",
+        "magic",
+        "royal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-32",
+      "char": "🧡",
+      "unicode": "U+1F9E1",
+      "tags": [
+        "orange",
+        "warm",
+        "energy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-33",
+      "char": "🩵",
+      "unicode": "U+1FA75",
+      "tags": [
+        "light blue",
+        "soft",
+        "calm"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-34",
+      "char": "🩶",
+      "unicode": "U+1FA76",
+      "tags": [
+        "grey",
+        "neutral",
+        "modern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-35",
+      "char": "❤️‍🔥",
+      "unicode": "U+2764+FE0F+200D+1F525",
+      "tags": [
+        "fire",
+        "passion",
+        "intense"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-36",
+      "char": "❤️‍🩹",
+      "unicode": "U+2764+FE0F+200D+1FA79",
+      "tags": [
+        "healing",
+        "bandage",
+        "recovery"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-37",
+      "char": "❤️",
+      "unicode": "U+2764",
+      "tags": [
+        "red",
+        "classic",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-38",
+      "char": "♥️",
+      "unicode": "U+2665+FE0F",
+      "tags": [
+        "red",
+        "solid",
+        "classic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-39",
+      "char": "💙💚💛",
+      "unicode": "combo",
+      "tags": [
+        "rainbow",
+        "colorful",
+        "happy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-40",
+      "char": "💜🖤💙",
+      "unicode": "combo",
+      "tags": [
+        "dark",
+        "cool",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-41",
+      "char": "🧡💛💚",
+      "unicode": "combo",
+      "tags": [
+        "warm",
+        "nature",
+        "vibrant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-42",
+      "char": "🩷💗💕",
+      "unicode": "combo",
+      "tags": [
+        "pink gradient",
+        "soft",
+        "feminine"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-43",
+      "char": "❤️‍🔥💖✨",
+      "unicode": "combo",
+      "tags": [
+        "passionate",
+        "sparkle",
+        "intense"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-44",
+      "char": "♡ ♥ ♡",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "pattern",
+        "clean"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-45",
+      "char": "💗 ⊹ ♡",
+      "unicode": "combo",
+      "tags": [
+        "spaced",
+        "aesthetic",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-46",
+      "char": "♡ ˚ ༘ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "elegant",
+        "spaced"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-47",
+      "char": "💕💖💗💓",
+      "unicode": "combo",
+      "tags": [
+        "pink overload",
+        "cute",
+        "girly"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-48",
+      "char": "🖤🤍🖤",
+      "unicode": "combo",
+      "tags": [
+        "monochrome",
+        "minimal",
+        "modern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-49",
+      "char": "💝💖💘",
+      "unicode": "combo",
+      "tags": [
+        "gift",
+        "love",
+        "romantic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-50",
+      "char": "♡ ₊˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "aesthetic",
+        "clean"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-51",
+      "char": "💗💫💗",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "magic",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-52",
+      "char": "♥ ⋆ ♥",
+      "unicode": "combo",
+      "tags": [
+        "star",
+        "love",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-53",
+      "char": "💕 ✧ 💕",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "pink",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-54",
+      "char": "🩷🤍🩷",
+      "unicode": "combo",
+      "tags": [
+        "soft",
+        "pure",
+        "gentle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-55",
+      "char": "❥ ♡ ❥",
+      "unicode": "combo",
+      "tags": [
+        "fancy",
+        "elegant",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-56",
+      "char": "💖 ⊹ 💗 ⊹ 💕",
+      "unicode": "combo",
+      "tags": [
+        "spaced",
+        "pink",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-57",
+      "char": "♡ ˖ ࣪ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "minimal",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-58",
+      "char": "💗💕💖💗",
+      "unicode": "combo",
+      "tags": [
+        "pink wave",
+        "gradient",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-59",
+      "char": "🖤 ⋆ 🤍 ⋆ 🖤",
+      "unicode": "combo",
+      "tags": [
+        "monochrome",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-60",
+      "char": "♡ ༊*·˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "aesthetic",
+        "fancy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-61",
+      "char": "💕 ˚ ༘ ♡ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "aesthetic",
+        "decorative",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-62",
+      "char": "❤️💛💚💙💜",
+      "unicode": "combo",
+      "tags": [
+        "rainbow",
+        "pride",
+        "colorful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-63",
+      "char": "♡ ⊹ ♡ ⊹ ♡",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-64",
+      "char": "💗 ✧･ﾟ 💕",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "japanese",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-65",
+      "char": "🩷💖🩷",
+      "unicode": "combo",
+      "tags": [
+        "pink trio",
+        "soft",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-66",
+      "char": "♥ ˚₊· ♥",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "decorative",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-67",
+      "char": "💕💗💕💗",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "pink",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-68",
+      "char": "♡ ⋆｡˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "aesthetic",
+        "minimal",
+        "soft"
+      ],
+      "popular": true
+    },
+    {
+      "id": "hearts-69",
+      "char": "🖤💜🖤",
+      "unicode": "combo",
+      "tags": [
+        "dark",
+        "purple",
+        "edgy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-70",
+      "char": "💗 ໒꒱ 💕",
+      "unicode": "combo",
+      "tags": [
+        "bracket",
+        "cute",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-71",
+      "char": "♡ ✧ ♡ ✧ ♡",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-72",
+      "char": "💖💗💖",
+      "unicode": "combo",
+      "tags": [
+        "pink mirror",
+        "symmetry",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-73",
+      "char": "🤍💗🤍",
+      "unicode": "combo",
+      "tags": [
+        "soft",
+        "pure",
+        "gentle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-74",
+      "char": "♡ ⊹ ˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "aesthetic",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-75",
+      "char": "💕 ⋆ 💗 ⋆ 💕",
+      "unicode": "combo",
+      "tags": [
+        "star",
+        "pink",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-76",
+      "char": "❥ 💕 ❥",
+      "unicode": "combo",
+      "tags": [
+        "fancy",
+        "pink",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-77",
+      "char": "♡ ˖ ♡ ˖ ♡",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "minimal",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-78",
+      "char": "💗🩷💗",
+      "unicode": "combo",
+      "tags": [
+        "pink gradient",
+        "soft",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-79",
+      "char": "🖤 ✧ 🤍 ✧ 🖤",
+      "unicode": "combo",
+      "tags": [
+        "monochrome",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-80",
+      "char": "♡ ༘ ♡ ༘ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "pattern",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-81",
+      "char": "💕💖💕",
+      "unicode": "combo",
+      "tags": [
+        "pink trio",
+        "cute",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-82",
+      "char": "♥ ⊹ ♥ ⊹ ♥",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-83",
+      "char": "💗 ˚ ༘ 💕",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "pink",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-84",
+      "char": "🩷 ⋆ 🩷",
+      "unicode": "combo",
+      "tags": [
+        "light pink",
+        "star",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-85",
+      "char": "♡ ₊˚ ♡ ₊˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "aesthetic",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-86",
+      "char": "💖 ✧ 💗",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "pink",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-87",
+      "char": "🤍 ⊹ 🤍",
+      "unicode": "combo",
+      "tags": [
+        "white",
+        "pure",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-88",
+      "char": "♡ ˖ ࣪ ♡ ˖ ࣪ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "pattern",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-89",
+      "char": "💗💕💗💕",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "pink",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-90",
+      "char": "🖤 ⋆ 🖤",
+      "unicode": "combo",
+      "tags": [
+        "black",
+        "star",
+        "edgy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-91",
+      "char": "♡ ༊*·˚ ♡ ༊*·˚",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "aesthetic",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-92",
+      "char": "💕 ⋆｡˚ 💗",
+      "unicode": "combo",
+      "tags": [
+        "aesthetic",
+        "pink",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-93",
+      "char": "🩷💗🩷💗",
+      "unicode": "combo",
+      "tags": [
+        "pink wave",
+        "gradient",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-94",
+      "char": "♥ ˚₊· ♥ ˚₊·",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-95",
+      "char": "💖 ⊹ 💖",
+      "unicode": "combo",
+      "tags": [
+        "sparkle pink",
+        "star",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-96",
+      "char": "♡ ✧･ﾟ ♡",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-97",
+      "char": "🤍💕🤍",
+      "unicode": "combo",
+      "tags": [
+        "white pink",
+        "soft",
+        "gentle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-98",
+      "char": "♡ ⋆ ♡ ⋆ ♡ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "star pattern",
+        "aesthetic",
+        "long"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-99",
+      "char": "💗 ˖ 💕 ˖ 💗",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "pink",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-100",
+      "char": "🖤💗🖤",
+      "unicode": "combo",
+      "tags": [
+        "contrast",
+        "edgy",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-101",
+      "char": "♡ ༘ ⋆｡˚ ♡",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "aesthetic",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "hearts-102",
+      "char": "💕 ✧ 💕 ✧",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "pink",
+        "pattern"
+      ],
+      "popular": false
+    }
+  ]
+}

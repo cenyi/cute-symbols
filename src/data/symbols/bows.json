@@ -1,0 +1,1125 @@
+{
+  "category": "bows",
+  "icon": "🎀",
+  "color": "#FFB7C5",
+  "name": {
+    "en": "Bow & Ribbon Symbols",
+    "fil": "Mga Simbolo ng Sinta",
+    "ms": "Simbol Riben & Busur",
+    "bn": "ফুত ওয় ব্যান্ধ প্রতীক",
+    "pl": "Symbole Kokardki i Wstążki"
+  },
+  "description": {
+    "en": "Perfect for girly aesthetic, coquette style, and feminine vibes",
+    "fil": "Perpekto para sa girly aesthetic at coquette style",
+    "ms": "Sempurna untuk gaya feminin dan coquette",
+    "bn": "নারীদানী এবং কোকেট স্টাইলের জন্য উপযুক্ত",
+    "pl": "Idealne dla stylu girly i coquette"
+  },
+  "symbols": [
+    {
+      "id": "bows-1",
+      "char": "🎀",
+      "unicode": "U+1F380",
+      "tags": [
+        "ribbon",
+        "pink",
+        "cute",
+        "popular"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-2",
+      "char": "🪢",
+      "unicode": "U+1FAA2",
+      "tags": [
+        "knot",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-3",
+      "char": "💫",
+      "unicode": "U+1F4AB",
+      "tags": [
+        "dizzy",
+        "sparkle",
+        "magic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-4",
+      "char": "✧",
+      "unicode": "U+2727",
+      "tags": [
+        "sparkle",
+        "outlined",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-5",
+      "char": "୨୧",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "cute",
+        "framed"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-6",
+      "char": "ʚɞ",
+      "unicode": "special",
+      "tags": [
+        "wings",
+        "angel",
+        "decorative"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-7",
+      "char": "꒰",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "decorative",
+        "left"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-8",
+      "char": "꒱",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "decorative",
+        "right"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-9",
+      "char": "𖥦⁺",
+      "unicode": "special",
+      "tags": [
+        "decorative",
+        "aesthetic",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-10",
+      "char": "｡°ㅵ",
+      "unicode": "special",
+      "tags": [
+        "circle",
+        "decorative",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-11",
+      "char": "🎀💗",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pink",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-12",
+      "char": "🎀♡",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "white",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-13",
+      "char": "🎀🖤",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "black",
+        "edgy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-14",
+      "char": "🎀💕",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "love",
+        "romantic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-15",
+      "char": "୨୧🎀୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "framed",
+        "double"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-16",
+      "char": "ʚɞ🎀ɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-17",
+      "char": "꒰🎀꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "framed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-18",
+      "char": "🪭",
+      "unicode": "U+1FAAD",
+      "tags": [
+        "fan",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-19",
+      "char": "🎗️",
+      "unicode": "U+1F397",
+      "tags": [
+        "reminder",
+        "ribbon",
+        "awareness"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-20",
+      "char": "🏵️",
+      "unicode": "U+1F3F5",
+      "tags": [
+        "rosette",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-21",
+      "char": "🎖️",
+      "unicode": "U+1F396",
+      "tags": [
+        "medal",
+        "military",
+        "ribbon"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-22",
+      "char": "🏆",
+      "unicode": "U+1F3C6",
+      "tags": [
+        "trophy",
+        "award",
+        "winner"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-23",
+      "char": "🥇",
+      "unicode": "U+1F947",
+      "tags": [
+        "medal",
+        "gold",
+        "first"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-24",
+      "char": "🥈",
+      "unicode": "U+1F948",
+      "tags": [
+        "medal",
+        "silver",
+        "second"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-25",
+      "char": "🥉",
+      "unicode": "U+1F949",
+      "tags": [
+        "medal",
+        "bronze",
+        "third"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-26",
+      "char": "🎁",
+      "unicode": "U+1F381",
+      "tags": [
+        "gift",
+        "present",
+        "wrapped"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-27",
+      "char": "🎊",
+      "unicode": "U+1F38A",
+      "tags": [
+        "confetti",
+        "ball",
+        "celebration"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-28",
+      "char": "🎉",
+      "unicode": "U+1F389",
+      "tags": [
+        "party",
+        "popper",
+        "celebration"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-29",
+      "char": "🎈",
+      "unicode": "U+1F388",
+      "tags": [
+        "balloon",
+        "party",
+        "celebration"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-30",
+      "char": "🎆",
+      "unicode": "U+1F386",
+      "tags": [
+        "fireworks",
+        "celebration",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-31",
+      "char": "🎇",
+      "unicode": "U+1F387",
+      "tags": [
+        "sparkler",
+        "celebration",
+        "light"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-32",
+      "char": "✨",
+      "unicode": "U+2728",
+      "tags": [
+        "sparkles",
+        "magic",
+        "shine"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-33",
+      "char": "🌟",
+      "unicode": "U+1F31F",
+      "tags": [
+        "glowing",
+        "star",
+        "bright"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-34",
+      "char": "💝",
+      "unicode": "U+1F49D",
+      "tags": [
+        "gift",
+        "heart",
+        "ribbon"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-35",
+      "char": "🎀",
+      "unicode": "U+1F380",
+      "tags": [
+        "ribbon",
+        "pink",
+        "bow"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-36",
+      "char": "🧵",
+      "unicode": "U+1F9F5",
+      "tags": [
+        "thread",
+        "sewing",
+        "craft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-37",
+      "char": "🪡",
+      "unicode": "U+1FAA1",
+      "tags": [
+        "needle",
+        "sewing",
+        "craft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-38",
+      "char": "🎀✨🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sparkle",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-39",
+      "char": "୨୧ ♡ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "heart"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-40",
+      "char": "ʚɞ ♡ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "heart"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-41",
+      "char": "🎀 ⊹ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-42",
+      "char": "꒰ა ♡ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "heart"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-43",
+      "char": "🎀 ˚ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-44",
+      "char": "୨୧💗୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-45",
+      "char": "🎀 ⋆ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-46",
+      "char": "ʚɞ💕ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-47",
+      "char": "🎀 ✧ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-48",
+      "char": "꒰ა 🎀 ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "ribbon"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-49",
+      "char": "୨୧ ⊹ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-50",
+      "char": "🎀💖🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sparkle",
+        "pink"
+      ],
+      "popular": true
+    },
+    {
+      "id": "bows-51",
+      "char": "ʚɞ ⋆ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-52",
+      "char": "🎀 ༊*·˚ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-53",
+      "char": "୨୧ ✧ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-54",
+      "char": "🎀 ˚｡⋆ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-55",
+      "char": "ʚɞ ✧ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-56",
+      "char": "🎀 ⋆｡˚ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-57",
+      "char": "꒰ა ✧ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-58",
+      "char": "୨୧ ˚ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-59",
+      "char": "🎀💗💕🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pink",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-60",
+      "char": "ʚɞ ˚ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-61",
+      "char": "🎀 ₊˚ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-62",
+      "char": "꒰ა ⊹ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-63",
+      "char": "୨୧ ༊*·˚ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-64",
+      "char": "🎀 ˖ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-65",
+      "char": "ʚɞ ༊*·˚ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-66",
+      "char": "🎀 ⊹ ˚ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-67",
+      "char": "꒰ა ˚ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-68",
+      "char": "୨୧ ⋆｡˚ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-69",
+      "char": "🎀 ༘ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-70",
+      "char": "ʚɞ ⋆｡˚ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "decorative"
+      ],
+      "popular": false
+    }
+  ]
+}
+,
+    {
+      "id": "bows-71",
+      "char": "🎀 ✧･ﾟ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "japanese",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-72",
+      "char": "꒰ა ⋆ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-73",
+      "char": "୨୧ ˖ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-74",
+      "char": "🎀 ˚ ༘ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-75",
+      "char": "ʚɞ ˖ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-76",
+      "char": "🎀 ⊹ 🎀 ⊹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-77",
+      "char": "꒰ა ༘ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-78",
+      "char": "୨୧ ⊹ ୨୧ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-79",
+      "char": "🎀 ˖ ࣪ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-80",
+      "char": "ʚɞ ˚ ༘ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-81",
+      "char": "🎀 ⋆ 🎀 ⋆",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-82",
+      "char": "꒰ა ˖ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-83",
+      "char": "୨୧ ˚ ༘ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-84",
+      "char": "🎀 ₊˚ ⊹ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "aesthetic",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-85",
+      "char": "ʚɞ ₊˚ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-86",
+      "char": "🎀 ✧ 🎀 ✧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-87",
+      "char": "꒰ა ₊˚ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-88",
+      "char": "୨୧ ✧ ୨୧ ✧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-89",
+      "char": "🎀 ⋆｡˚ ⊹ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-90",
+      "char": "ʚɞ ⊹ ʚɞ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-91",
+      "char": "🎀 ˚ 🎀 ˚",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-92",
+      "char": "꒰ა ⊹ ໒꒱ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-93",
+      "char": "୨୧ ⋆ ୨୧ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-94",
+      "char": "🎀 ༊*·˚ ⊹ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-95",
+      "char": "ʚɞ ˚ ༘ ⊹ ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-96",
+      "char": "🎀 ˖ ࣪ ⊹ 🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-97",
+      "char": "꒰ა ˚ ༘ ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-98",
+      "char": "୨୧ ˖ ࣪ ୨୧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bracket",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-99",
+      "char": "🎀 ✧･ﾟ: *🎀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "japanese",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "bows-100",
+      "char": "ʚɞ♡ʚɞ",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "wings",
+        "love"
+      ],
+      "popular": true
+    }
+  ]
+}

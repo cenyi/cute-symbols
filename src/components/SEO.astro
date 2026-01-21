@@ -1,0 +1,348 @@
+---
+/**
+ * SEO 组件 - 2026年优化版
+ * 包含 Meta 标签、Open Graph、Twitter Card、JSON-LD 结构化数据
+ * AI 友好设计（ChatGPT、Claude）
+ */
+import { getTranslations } from '../i18n/utils';
+import { stats } from '../data';
+import { CATEGORIES_2026 } from '../data/categories-2026';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+  title?: string;
+  description?: string;
+  keywords?: string;
+  canonical?: string;
+  ogType?: 'website' | 'article';
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  locale = 'en',
+  title,
+  description,
+  keywords,
+  canonical,
+  ogType = 'website',
+  ogImage, // 移除默认值，使其可选
+  noindex = false
+} = Astro.props;
+
+const { t } = getTranslations(locale);
+const siteUrl = import.meta.env.PUBLIC_SITE_URL || 'https://cute-symbols.uk';
+const currentUrl = canonical || new URL(Astro.url.pathname, siteUrl).href;
+
+// 构建页面标题
+const pageTitle = title || t('site.title');
+const fullTitle = title === t('site.title')
+  ? pageTitle
+  : `${pageTitle} - ${t('site.title')}`;
+
+// 构建页面描述
+const pageDescription = description || t('site.description');
+
+// 构建关键词
+const pageKeywords = keywords || t('seo.keywords');
+
+// 获取分类信息用于结构化数据
+const structuredCategories = CATEGORIES_2026.map(cat => ({
+  '@type': 'Thing',
+  name: cat.names[locale] || cat.names.en,
+  description: cat.descriptions[locale] || cat.descriptions.en,
+  keywords: cat.seoKeywords.en.join(', ')
+}));
+
+// JSON-LD 结构化数据 - 增强版
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: fullTitle,
+  description: pageDescription,
+  url: currentUrl,
+  inLanguage: locale,
+  about: {
+    '@type': 'Thing',
+    name: 'Cute Symbols',
+    description: t('site.description'),
+    keywords: pageKeywords
+  },
+  audience: {
+    '@type': 'Audience',
+    audienceType: ['Social media users', 'Gamers', 'Content creators', 'Instagram users', 'Roblox players', 'TikTok users', 'Discord users']
+  },
+  keywords: pageKeywords,
+  speciality: [
+    t('seo.trending2026'),
+    'Aesthetic symbols',
+    'Kaomoji',
+    'Instagram Bio symbols',
+    t('common.oneClick'),
+    'Mobile optimized'
+  ],
+  provider: {
+    '@type': 'Organization',
+    name: 'Cute Symbols',
+    url: siteUrl,
+    ...(ogImage && {
+      logo: {
+        '@type': 'ImageObject',
+        url: `${siteUrl}${ogImage}`
+      }
+    })
+  },
+  dateModified: stats.lastUpdated,
+  datePublished: '2026-01-01',
+  // GEO优化：添加更多结构化信息
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'Cute Symbols Collection',
+    description: 'Comprehensive collection of aesthetic symbols for social media',
+    numberOfItems: stats.total || 1000,
+    itemListElement: structuredCategories.slice(0, 5).map((cat, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Thing',
+        name: cat.name,
+        description: cat.description
+      }
+    }))
+  },
+  // 添加FAQ结构化数据支持
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': currentUrl
+  },
+  // 添加搜索功能结构化数据
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${siteUrl}/api/symbols/search?q={search_term_string}`
+    },
+    'query-input': 'required name=search_term_string'
+  }
+};
+---
+
+<!-- Meta 标签 -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="canonical" href={currentUrl} />
+
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- PWA Manifest -->
+<link rel="manifest" href="/manifest.json" />
+
+<!-- SEO Meta 标签 -->
+<title>{fullTitle}</title>
+<meta name="description" content={pageDescription} />
+<meta name="keywords" content={pageKeywords} />
+<meta name="author" content="Cute Symbols" />
+<meta name="theme-color" content="#ff6b9d" />
+
+<!-- 增强SEO标签 -->
+<meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'} />
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="bingbot" content="index, follow" />
+
+<!-- 内容分类 -->
+<meta name="category" content="Entertainment, Social Media, Symbols, Unicode" />
+<meta name="subject" content="Cute Symbols for Social Media" />
+<meta name="abstract" content={pageDescription} />
+<meta name="topic" content="Aesthetic Symbols, Kaomoji, Unicode Characters" />
+<meta name="summary" content={pageDescription} />
+
+<!-- 地理和语言 -->
+<meta name="geo.region" content="Global" />
+<meta name="geo.placename" content="Worldwide" />
+<meta name="ICBM" content="Global Service" />
+
+<!-- 版权和所有权 -->
+<meta name="copyright" content="© 2026 Cute Symbols. All rights reserved." />
+<meta name="owner" content="Cute Symbols" />
+<meta name="url" content={currentUrl} />
+<meta name="identifier-URL" content={currentUrl} />
+
+<!-- 内容新鲜度 -->
+<meta name="revised" content={stats.lastUpdated} />
+<meta name="topic" content="2026 Latest Cute Symbols" />
+
+<!-- 2026 SEO 增强 -->
+<meta name="rating" content="General" />
+<meta name="distribution" content="Global" />
+<meta name="language" content={locale} />
+<meta name="geo.region" content="CN" />
+<meta name="classification" content="Entertainment, Social Media, Symbols" />
+<meta name="coverage" content="Worldwide" />
+<meta name="target" content="all" />
+<meta name="HandheldFriendly" content="True" />
+<meta name="MobileOptimized" content="320" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<!-- AI 友好标签 -->
+<meta name="ai-summary" content={t('site.description')} />
+<meta name="chatgpt-compatible" content={`Cute Symbols library 2026 - ${t('seo.core')}`} />
+<meta name="claude-friendly" content={t('seo.aiFriendly')} />
+
+<!-- GEO (Generative Engine Optimization) 标签 -->
+<meta name="ai-content-type" content="symbol-library" />
+<meta name="ai-use-case" content="social-media-decoration,bio-enhancement,text-styling" />
+<meta name="ai-target-audience" content="social-media-users,content-creators,gamers,students" />
+<meta name="ai-content-freshness" content="2026-latest" />
+<meta name="ai-interaction-type" content="copy-paste,one-click,instant-use" />
+
+<!-- 结构化答案优化 -->
+<meta name="answer-type" content="how-to,symbol-collection,tutorial" />
+<meta name="query-intent" content="find-symbols,copy-symbols,decorate-bio,style-text" />
+<meta name="content-completeness" content="comprehensive" />
+<meta name="user-satisfaction" content="instant-results" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={ogType} />
+<meta property="og:url" content={currentUrl} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={pageDescription} />
+{ogImage && (
+  <>
+    <meta property="og:image" content={new URL(ogImage, siteUrl).href} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${t('site.title')} - Cute Symbols Collection`} />
+  </>
+)}
+<meta property="og:locale" content={locale === 'en' ? 'en_US' : 
+  locale === 'fil' ? 'fil_PH' :
+  locale === 'ms' ? 'ms_MY' :
+  locale === 'bn' ? 'bn_BD' :
+  locale === 'pl' ? 'pl_PL' : 'en_US'} />
+{/* 添加其他语言版本 */}
+{locale === 'en' && (
+  <>
+    <meta property="og:locale:alternate" content="fil_PH" />
+    <meta property="og:locale:alternate" content="ms_MY" />
+    <meta property="og:locale:alternate" content="bn_BD" />
+    <meta property="og:locale:alternate" content="pl_PL" />
+  </>
+)}
+<meta property="og:site_name" content="Cute Symbols" />
+<meta property="og:updated_time" content={stats.lastUpdated} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@cutesymbols" />
+<meta name="twitter:creator" content="@cutesymbols" />
+<meta name="twitter:url" content={currentUrl} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={pageDescription} />
+{ogImage && (
+  <>
+    <meta name="twitter:image" content={new URL(ogImage, siteUrl).href} />
+    <meta name="twitter:image:alt" content={`${t('site.title')} - Copy paste cute symbols instantly`} />
+  </>
+)}
+
+<!-- 多语言 hreflang -->
+{(() => {
+  // 获取当前页面路径（去除语言前缀）
+  const currentPath = Astro.url.pathname;
+  let basePath = currentPath;
+  
+  // 如果是多语言页面，去除语言前缀
+  const langMatch = currentPath.match(/^\/(fil|ms|bn|pl)(\/.*)?$/);
+  if (langMatch) {
+    basePath = langMatch[2] || '/';
+  }
+  
+  // 确保basePath以/开头但不以/结尾（除非是根路径）
+  if (basePath !== '/' && basePath.endsWith('/')) {
+    basePath = basePath.slice(0, -1);
+  }
+  
+  return (
+    <>
+      <link rel="alternate" hreflang="en" href={`${siteUrl}${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="fil" href={`${siteUrl}/fil${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="ms" href={`${siteUrl}/ms${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="bn" href={`${siteUrl}/bn${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="pl" href={`${siteUrl}/pl${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="x-default" href={`${siteUrl}${basePath === '/' ? '' : basePath}`} />
+    </>
+  );
+})()}
+
+<!-- JSON-LD 结构化数据 -->
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)}></script>
+
+<!-- FAQ 结构化数据 (如果是首页) -->
+{Astro.url.pathname === '/' || Astro.url.pathname.match(/^\/(fil|ms|bn|pl)\/?$/) ? (
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are cute symbols and how do I use them?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cute symbols are special Unicode characters like hearts (💖), stars (⭐), and decorative text (✨) that you can copy and paste into your social media profiles, bios, usernames, and posts. Simply click any symbol on our site to copy it instantly!"
+        }
+      },
+      {
+        "@type": "Question", 
+        "name": "Which social media platforms support these symbols?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Almost all major platforms support Unicode symbols! This includes Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat, and many more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are all symbols free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer", 
+          "text": "Yes! All symbols on our website are completely free to use. They are Unicode characters that belong to the public domain. You can use them for personal or commercial purposes without any restrictions."
+        }
+      }
+    ]
+  })} />
+) : null}
+
+<!-- 额外的 WebSite Schema -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": t('site.title'),
+  "alternateName": ["Cute Symbols 2026", "Aesthetic Symbols Library", "Kaomoji Collection"],
+  "url": siteUrl,
+  "description": t('site.description'),
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${siteUrl}/categories?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  }
+})}></script>
+
+<!-- BreadcrumbList Schema -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": t('ui.home'),
+      "item": siteUrl
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": pageTitle,
+      "item": currentUrl
+    }
+  ]
+})}></script>

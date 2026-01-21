@@ -1,0 +1,72 @@
+{
+  "name": "Cute Symbols - 2500+ Aesthetic Symbols for Social Media",
+  "short_name": "Cute Symbols",
+  "description": "The most complete cute symbols library for Instagram, TikTok, Discord, Roblox and more. Copy & paste 2500+ aesthetic symbols instantly!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#ff6b9d",
+  "orientation": "portrait-primary",
+  "categories": ["utilities", "social", "lifestyle"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-mobile.jpg",
+      "sizes": "390x844",
+      "type": "image/jpeg",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/screenshot-desktop.jpg", 
+      "sizes": "1920x1080",
+      "type": "image/jpeg",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Hearts & Love",
+      "short_name": "Hearts",
+      "description": "Cute heart symbols for social media",
+      "url": "/?cat=hearts",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "Flowers & Nature",
+      "short_name": "Flowers",
+      "description": "Beautiful flower and nature symbols",
+      "url": "/?cat=flowers",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "Stars & Sparkles",
+      "short_name": "Stars",
+      "description": "Sparkling star symbols",
+      "url": "/?cat=stars",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "any"
+        }
+      ]
+    }
+  ]
+}

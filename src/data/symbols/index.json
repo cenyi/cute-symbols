@@ -1,0 +1,191 @@
+{
+  "categories": [
+    {
+      "id": "hearts",
+      "file": "hearts.json",
+      "icon": "♥",
+      "color": "#ff6b9d",
+      "count": 100
+    },
+    {
+      "id": "flowers",
+      "file": "flowers.json",
+      "icon": "🌸",
+      "color": "#FFB7C5",
+      "count": 100
+    },
+    {
+      "id": "stars",
+      "file": "stars.json",
+      "icon": "⭐",
+      "color": "#FFD700",
+      "count": 100
+    },
+    {
+      "id": "bows",
+      "file": "bows.json",
+      "icon": "🎀",
+      "color": "#FFB7C5",
+      "count": 100
+    },
+    {
+      "id": "kaomoji",
+      "file": "kaomoji.json",
+      "icon": "(*´•͈ ꪹ•͈`*)",
+      "color": "#FFD1DC",
+      "count": 100
+    },
+    {
+      "id": "dividers",
+      "file": "dividers.json",
+      "icon": "✂",
+      "color": "#A78BFA",
+      "count": 100
+    },
+    {
+      "id": "animals",
+      "file": "animals.json",
+      "icon": "🐾",
+      "color": "#FB923C",
+      "count": 100
+    },
+    {
+      "id": "doodle",
+      "file": "doodle.json",
+      "icon": "✏",
+      "color": "#FCD34D",
+      "count": 100
+    },
+    {
+      "id": "combos",
+      "file": "combos.json",
+      "icon": "✨",
+      "color": "#C084FC",
+      "count": 100
+    },
+    {
+      "id": "aesthetic",
+      "file": "aesthetic.json",
+      "icon": "✧",
+      "color": "#F472B6",
+      "count": 100
+    },
+    {
+      "id": "arrows",
+      "file": "arrows.json",
+      "icon": "➜",
+      "color": "#34D399",
+      "count": 57
+    },
+    {
+      "id": "borders",
+      "file": "borders.json",
+      "icon": "『』",
+      "color": "#EC4899",
+      "count": 100
+    },
+    {
+      "id": "text-decorations",
+      "file": "text-decorations.json",
+      "icon": "˚✧",
+      "color": "#F472B6",
+      "count": 90
+    },
+    {
+      "id": "emoji-faces",
+      "file": "emoji-faces.json",
+      "icon": "🥺",
+      "color": "#FCD34D",
+      "count": 90
+    },
+    {
+      "id": "seasonal",
+      "file": "seasonal.json",
+      "icon": "🎃🎄",
+      "color": "#F59E0B",
+      "count": 90
+    },
+    {
+      "id": "activities",
+      "file": "activities.json",
+      "icon": "🎮",
+      "color": "#8B5CF6",
+      "count": 90
+    },
+    {
+      "id": "nature",
+      "file": "nature.json",
+      "icon": "🌿",
+      "color": "#10B981",
+      "count": 90
+    },
+    {
+      "id": "music",
+      "file": "music.json",
+      "icon": "🎵",
+      "color": "#F472B6",
+      "count": 100
+    },
+    {
+      "id": "food",
+      "file": "food.json",
+      "icon": "🍰",
+      "color": "#F9A8D4",
+      "count": 100
+    },
+    {
+      "id": "weather",
+      "file": "weather.json",
+      "icon": "☀️",
+      "color": "#38BDF8",
+      "count": 100
+    },
+    {
+      "id": "decorative",
+      "file": "decorative.json",
+      "icon": "✨",
+      "color": "#A855F7",
+      "count": 100
+    },
+    {
+      "id": "gaming",
+      "file": "gaming.json",
+      "icon": "🎮",
+      "color": "#8B5CF6",
+      "count": 100
+    },
+    {
+      "id": "social",
+      "file": "social.json",
+      "icon": "💬",
+      "color": "#06B6D4",
+      "count": 100
+    },
+    {
+      "id": "study",
+      "file": "study.json",
+      "icon": "📚",
+      "color": "#059669",
+      "count": 100
+    },
+    {
+      "id": "kawaii",
+      "file": "kawaii.json",
+      "icon": "૮꒰ˊᗜˋ꒱ა",
+      "color": "#F472B6",
+      "count": 100
+    },
+    {
+      "id": "transport",
+      "file": "transport.json",
+      "icon": "✈️",
+      "color": "#0EA5E9",
+      "count": 100
+    }
+  ],
+  "stats": {
+    "totalSymbols": 1577,
+    "totalCategories": 26,
+    "lastUpdated": "2026-01-17"
+  }
+}

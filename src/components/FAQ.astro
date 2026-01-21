@@ -1,0 +1,316 @@
+---
+/**
+ * FAQ组件 - 常见问题解答
+ * 实用的FAQ内容，解答用户疑惑
+ * 支持多语言
+ */
+import { getTranslations } from '../i18n/utils';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// FAQ数据
+const faqs = [
+  {
+    id: 'what-are-cute-symbols',
+    question: {
+      en: 'What are cute symbols and how do I use them?',
+      fil: 'Ano ang mga cute symbols at paano ko sila gagamitin?',
+      ms: 'Apakah simbol comel dan bagaimana saya menggunakannya?',
+      bn: 'কিউট সিম্বল কী এবং আমি কীভাবে সেগুলি ব্যবহার করব?',
+      pl: 'Czym są słodkie symbole i jak ich używać?'
+    },
+    answer: {
+      en: 'Cute symbols are special Unicode characters like hearts (💖), stars (⭐), and decorative text (✨) that you can copy and paste into your social media profiles, bios, usernames, and posts. Simply click any symbol on our site to copy it instantly!',
+      fil: 'Ang mga cute symbols ay mga espesyal na Unicode characters tulad ng mga puso (💖), bituin (⭐), at decorative text (✨) na pwede mong i-copy at i-paste sa inyong social media profiles, bios, usernames, at posts. I-click lang ang kahit anong symbol sa aming site para ma-copy agad!',
+      ms: 'Simbol comel adalah aksara Unicode khas seperti hati (💖), bintang (⭐), dan teks hiasan (✨) yang boleh anda salin dan tampal ke dalam profil media sosial, bio, nama pengguna, dan siaran anda. Hanya klik mana-mana simbol di laman kami untuk menyalinnya dengan serta-merta!',
+      bn: 'কিউট সিম্বল হল বিশেষ ইউনিকোড অক্ষর যেমন হৃদয় (💖), তারা (⭐), এবং সাজানো টেক্সট (✨) যা আপনি আপনার সোশ্যাল মিডিয়া প্রোফাইল, বায়ো, ব্যবহারকারীর নাম এবং পোস্টে কপি এবং পেস্ট করতে পারেন। আমাদের সাইটে যেকোনো সিম্বলে ক্লিক করুন তাৎক্ষণিক কপি করতে!',
+      pl: 'Słodkie symbole to specjalne znaki Unicode, takie jak serca (💖), gwiazdy (⭐) i ozdobny tekst (✨), które możesz kopiować i wklejać do swoich profili w mediach społecznościowych, bio, nazw użytkowników i postów. Po prostu kliknij dowolny symbol na naszej stronie, aby go natychmiast skopiować!'
+    }
+  },
+  {
+    id: 'which-platforms-support',
+    question: {
+      en: 'Which social media platforms support these symbols?',
+      fil: 'Aling mga social media platforms ang sumusuporta sa mga symbols na ito?',
+      ms: 'Platform media sosial manakah yang menyokong simbol-simbol ini?',
+      bn: 'কোন সোশ্যাল মিডিয়া প্ল্যাটফর্ম এই সিম্বলগুলি সমর্থন করে?',
+      pl: 'Które platformy mediów społecznościowych obsługują te symbole?'
+    },
+    answer: {
+      en: 'Almost all major platforms support Unicode symbols! This includes Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat, and many more. Our symbols work everywhere that supports Unicode text.',
+      fil: 'Halos lahat ng major platforms ay sumusuporta sa Unicode symbols! Kasama dito ang Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat, at marami pang iba. Ang aming mga symbols ay gumagana sa lahat ng lugar na sumusuporta sa Unicode text.',
+      ms: 'Hampir semua platform utama menyokong simbol Unicode! Ini termasuk Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat, dan banyak lagi. Simbol kami berfungsi di mana-mana yang menyokong teks Unicode.',
+      bn: 'প্রায় সব প্রধান প্ল্যাটফর্ম ইউনিকোড সিম্বল সমর্থন করে! এর মধ্যে রয়েছে Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat এবং আরও অনেক। আমাদের সিম্বলগুলি সর্বত্র কাজ করে যেখানে ইউনিকোড টেক্সট সমর্থিত।',
+      pl: 'Prawie wszystkie główne platformy obsługują symbole Unicode! Obejmuje to Instagram, TikTok, Twitter/X, Discord, Roblox, Facebook, WhatsApp, Telegram, YouTube, Snapchat i wiele innych. Nasze symbole działają wszędzie tam, gdzie obsługiwany jest tekst Unicode.'
+    }
+  },
+  {
+    id: 'how-to-copy-paste',
+    question: {
+      en: 'How do I copy and paste symbols on mobile?',
+      fil: 'Paano ako mag-copy at mag-paste ng symbols sa mobile?',
+      ms: 'Bagaimana saya menyalin dan menampal simbol di telefon bimbit?',
+      bn: 'আমি কীভাবে মোবাইলে সিম্বল কপি এবং পেস্ট করব?',
+      pl: 'Jak kopiować i wklejać symbole na telefonie?'
+    },
+    answer: {
+      en: 'On mobile, simply tap any symbol to copy it automatically. Then go to your app (Instagram, TikTok, etc.), tap and hold in the text field, and select "Paste". On iPhone, you can also access recently copied symbols through the keyboard suggestions.',
+      fil: 'Sa mobile, i-tap lang ang kahit anong symbol para ma-copy ito automatically. Tapos pumunta sa inyong app (Instagram, TikTok, etc.), i-tap at i-hold sa text field, at piliin ang "Paste". Sa iPhone, pwede rin ninyong ma-access ang mga recently copied symbols sa keyboard suggestions.',
+      ms: 'Di telefon bimbit, hanya ketik mana-mana simbol untuk menyalinnya secara automatik. Kemudian pergi ke aplikasi anda (Instagram, TikTok, dll.), ketik dan tahan di medan teks, dan pilih "Tampal". Di iPhone, anda juga boleh mengakses simbol yang baru disalin melalui cadangan papan kekunci.',
+      bn: 'মোবাইলে, যেকোনো সিম্বলে ট্যাপ করুন স্বয়ংক্রিয়ভাবে কপি করতে। তারপর আপনার অ্যাপে যান (Instagram, TikTok, ইত্যাদি), টেক্সট ফিল্ডে ট্যাপ করে ধরে রাখুন এবং "Paste" নির্বাচন করুন। iPhone-এ, আপনি কীবোর্ড সাজেশনের মাধ্যমে সম্প্রতি কপি করা সিম্বলগুলিও অ্যাক্সেস করতে পারেন।',
+      pl: 'Na telefonie po prostu dotknij dowolny symbol, aby go automatycznie skopiować. Następnie przejdź do swojej aplikacji (Instagram, TikTok itp.), dotknij i przytrzymaj pole tekstowe, a następnie wybierz "Wklej". Na iPhone możesz również uzyskać dostęp do ostatnio skopiowanych symboli poprzez sugestie klawiatury.'
+    }
+  },
+  {
+    id: 'symbols-not-showing',
+    question: {
+      en: 'Why are some symbols not showing up correctly?',
+      fil: 'Bakit hindi lumalabas ng tama ang ibang symbols?',
+      ms: 'Mengapa sesetengah simbol tidak muncul dengan betul?',
+      bn: 'কেন কিছু সিম্বল সঠিকভাবে দেখাচ্ছে না?',
+      pl: 'Dlaczego niektóre symbole nie wyświetlają się poprawnie?'
+    },
+    answer: {
+      en: 'This usually happens on older devices or apps that don\'t support newer Unicode characters. Try using our "Popular" symbols which have better compatibility, or update your device/app to the latest version for full symbol support.',
+      fil: 'Ito ay nangyayari sa mga lumang devices o apps na hindi sumusuporta sa mga bagong Unicode characters. Subukan ninyong gamitin ang aming "Popular" symbols na may mas magandang compatibility, o i-update ang inyong device/app sa latest version para sa full symbol support.',
+      ms: 'Ini biasanya berlaku pada peranti atau aplikasi lama yang tidak menyokong aksara Unicode yang lebih baru. Cuba gunakan simbol "Popular" kami yang mempunyai keserasian yang lebih baik, atau kemas kini peranti/aplikasi anda ke versi terkini untuk sokongan simbol penuh.',
+      bn: 'এটি সাধারণত পুরানো ডিভাইস বা অ্যাপে ঘটে যা নতুন ইউনিকোড অক্ষর সমর্থন করে না। আমাদের "Popular" সিম্বলগুলি ব্যবহার করার চেষ্টা করুন যার ভাল সামঞ্জস্য রয়েছে, বা সম্পূর্ণ সিম্বল সমর্থনের জন্য আপনার ডিভাইস/অ্যাপ সর্বশেষ সংস্করণে আপডেট করুন।',
+      pl: 'Dzieje się tak zwykle na starszych urządzeniach lub aplikacjach, które nie obsługują nowszych znaków Unicode. Spróbuj użyć naszych symboli "Popular", które mają lepszą kompatybilność, lub zaktualizuj swoje urządzenie/aplikację do najnowszej wersji, aby uzyskać pełną obsługę symboli.'
+    }
+  },
+  {
+    id: 'best-symbols-for-bio',
+    question: {
+      en: 'What are the best symbols for Instagram bio?',
+      fil: 'Ano ang mga pinakamahusay na symbols para sa Instagram bio?',
+      ms: 'Apakah simbol terbaik untuk bio Instagram?',
+      bn: 'Instagram বায়োর জন্য সেরা সিম্বল কোনগুলি?',
+      pl: 'Jakie są najlepsze symbole do bio na Instagramie?'
+    },
+    answer: {
+      en: 'Popular choices include hearts (💖💕), stars (⭐✨), arrows (→←), dividers (· - ·), and kaomoji faces (◕‿◕). Mix different categories for a unique look! Check our Instagram guide for complete bio examples.',
+      fil: 'Ang mga popular na choices ay kasama ang mga puso (💖💕), bituin (⭐✨), arrows (→←), dividers (· - ·), at kaomoji faces (◕‿◕). I-mix ang iba\'t ibang categories para sa unique look! Tingnan ang aming Instagram guide para sa complete bio examples.',
+      ms: 'Pilihan popular termasuk hati (💖💕), bintang (⭐✨), anak panah (→←), pembahagi (· - ·), dan wajah kaomoji (◕‿◕). Campurkan kategori yang berbeza untuk penampilan yang unik! Semak panduan Instagram kami untuk contoh bio lengkap.',
+      bn: 'জনপ্রিয় পছন্দগুলির মধ্যে রয়েছে হৃদয় (💖💕), তারা (⭐✨), তীর (→←), বিভাজক (· - ·), এবং kaomoji মুখ (◕‿◕)। অনন্য চেহারার জন্য বিভিন্ন বিভাগ মিশ্রিত করুন! সম্পূর্ণ বায়ো উদাহরণের জন্য আমাদের Instagram গাইড দেখুন।',
+      pl: 'Popularne wybory to serca (💖💕), gwiazdy (⭐✨), strzałki (→←), separatory (· - ·) i twarze kaomoji (◕‿◕). Mieszaj różne kategorie dla unikalnego wyglądu! Sprawdź nasz przewodnik po Instagramie, aby zobaczyć kompletne przykłady bio.'
+    }
+  },
+  {
+    id: 'are-symbols-free',
+    question: {
+      en: 'Are all symbols free to use?',
+      fil: 'Libre ba gamitin ang lahat ng symbols?',
+      ms: 'Adakah semua simbol percuma untuk digunakan?',
+      bn: 'সব সিম্বল কি ব্যবহার করার জন্য বিনামূল্যে?',
+      pl: 'Czy wszystkie symbole są darmowe?'
+    },
+    answer: {
+      en: 'Yes! All symbols on our website are completely free to use. They are Unicode characters that belong to the public domain. You can use them for personal or commercial purposes without any restrictions.',
+      fil: 'Oo! Lahat ng symbols sa aming website ay completely free gamitin. Sila ay Unicode characters na belong sa public domain. Pwede ninyong gamitin para sa personal o commercial purposes nang walang restrictions.',
+      ms: 'Ya! Semua simbol di laman web kami adalah percuma sepenuhnya untuk digunakan. Ia adalah aksara Unicode yang tergolong dalam domain awam. Anda boleh menggunakannya untuk tujuan peribadi atau komersial tanpa sebarang sekatan.',
+      bn: 'হ্যাঁ! আমাদের ওয়েবসাইটের সব সিম্বল সম্পূর্ণ বিনামূল্যে ব্যবহারের জন্য। এগুলি ইউনিকোড অক্ষর যা পাবলিক ডোমেইনের অন্তর্গত। আপনি কোনো সীমাবদ্ধতা ছাড়াই ব্যক্তিগত বা বাণিজ্যিক উদ্দেশ্যে এগুলি ব্যবহার করতে পারেন।',
+      pl: 'Tak! Wszystkie symbole na naszej stronie internetowej są całkowicie darmowe. To znaki Unicode należące do domeny publicznej. Możesz ich używać do celów osobistych lub komercyjnych bez żadnych ograniczeń.'
+    }
+  }
+];
+---
+
+<section
+  class="faq-section"
+  style={{
+    margin: '4rem auto 2rem',
+    padding: '0 1rem'
+  }}
+>
+  <h2 style={{
+    fontSize: 'clamp(1.75rem, 4vw, 2.25rem)',
+    fontWeight: 700,
+    marginBottom: '0.75rem',
+    textAlign: 'center',
+    color: 'var(--text-primary)'
+  }}>
+    🤔 {t('ui.faqTitle')}
+  </h2>
+
+  <p style={{
+    textAlign: 'center',
+    color: 'var(--text-secondary)',
+    marginBottom: '2.5rem',
+    fontSize: '1rem',
+    maxWidth: '600px',
+    margin: '0 auto 2.5rem'
+  }}>
+    {t('ui.faqDescription')}
+  </p>
+
+  <div class="faq-container" style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(2, 1fr)',
+    gap: '1rem',
+    alignItems: 'start'
+  }}>
+    {faqs.map((faq, index) => (
+      <div
+        class="faq-item"
+        style={{
+          background: 'var(--card-bg)',
+          border: '1px solid var(--border-color)',
+          borderRadius: 'var(--radius-lg)',
+          overflow: 'hidden',
+          transition: 'all 0.3s ease',
+          animation: `fadeIn 0.6s ease-out ${index * 0.1}s both`,
+          opacity: 0
+        }}
+      >
+        <button
+          class="faq-question"
+          data-faq={faq.id}
+          style={{
+            width: '100%',
+            padding: '1.25rem 1.5rem',
+            background: 'transparent',
+            border: 'none',
+            textAlign: 'left',
+            cursor: 'pointer',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            fontSize: '1.0625rem',
+            fontWeight: 600,
+            color: 'var(--text-primary)',
+            transition: 'all 0.2s ease'
+          }}
+        >
+          <span style={{ flex: 1, paddingRight: '1rem' }}>
+            {faq.question[locale]}
+          </span>
+          <span class="faq-icon" style={{
+            fontSize: '1.25rem',
+            transition: 'transform 0.3s ease',
+            color: 'var(--accent-color)'
+          }}>
+            +
+          </span>
+        </button>
+
+        <div
+          class="faq-answer"
+          data-answer={faq.id}
+          style={{
+            maxHeight: '0',
+            overflow: 'hidden',
+            transition: 'max-height 0.3s ease, padding 0.3s ease',
+            background: 'var(--bg-color)'
+          }}
+        >
+          <div style={{
+            padding: '0 1.5rem 1.25rem',
+            fontSize: '0.9375rem',
+            lineHeight: 1.7,
+            color: 'var(--text-secondary)'
+          }}>
+            {faq.answer[locale]}
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .faq-item:hover {
+    border-color: var(--accent-color);
+    box-shadow: var(--shadow-md);
+  }
+
+  .faq-question:hover {
+    background: var(--bg-color);
+  }
+
+  .faq-item.active .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-item.active .faq-answer {
+    max-height: 200px;
+    padding-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .faq-section {
+      padding: 0 1rem;
+    }
+
+    .faq-container {
+      grid-template-columns: 1fr !important;
+    }
+
+    .faq-question {
+      padding: 1rem 1.25rem !important;
+      font-size: 1rem !important;
+    }
+
+    .faq-answer div {
+      padding: 0 1.25rem 1rem !important;
+      font-size: 0.875rem !important;
+    }
+  }
+</style>
+
+<script>
+  // FAQ 交互功能
+  document.addEventListener('DOMContentLoaded', () => {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.closest('.faq-item');
+        const faqId = question.getAttribute('data-faq');
+        const answer = document.querySelector(`[data-answer="${faqId}"]`) as HTMLElement;
+        const icon = question.querySelector('.faq-icon');
+
+        // 切换当前FAQ
+        const isActive = faqItem?.classList.contains('active');
+
+        // 关闭所有其他FAQ
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+            const otherAnswer = item.querySelector('.faq-answer') as HTMLElement;
+            const otherIcon = item.querySelector('.faq-icon');
+            if (otherAnswer) otherAnswer.style.maxHeight = '0';
+            if (otherIcon) otherIcon.textContent = '+';
+          }
+        });
+
+        // 切换当前FAQ状态
+        if (isActive) {
+          faqItem?.classList.remove('active');
+          if (answer) answer.style.maxHeight = '0';
+          if (icon) icon.textContent = '+';
+        } else {
+          faqItem?.classList.add('active');
+          if (answer) answer.style.maxHeight = answer.scrollHeight + 'px';
+          if (icon) icon.textContent = '−';
+        }
+      });
+    });
+  });
+</script>

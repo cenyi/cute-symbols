@@ -1,0 +1,360 @@
+---
+/**
+ * 联系我们页面（中文默认）
+ * 用户反馈和支持
+ */
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us" locale="en">
+  <div style={{
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '4rem 1.5rem 2rem',
+    minHeight: '60vh'
+  }}>
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: '700',
+      marginBottom: '2rem',
+      background: 'linear-gradient(90deg, #e91e63, #9c27b0)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text',
+      textAlign: 'center'
+    }}>
+      📧 联系我们
+    </h1>
+
+    <p style={{
+      textAlign: 'center',
+      fontSize: '1.125rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '3rem',
+      maxWidth: '600px',
+      margin: '0 auto 3rem'
+    }}>
+      💗 无论你有问题、建议还是想打个招呼，我们都很乐意听到你的声音！
+    </p>
+
+    <div style={{
+      display: 'grid',
+      gap: '2rem',
+      marginBottom: '3rem'
+    }}>
+      {/* 邮箱联系方式 */}
+      <section style={{
+        background: 'var(--card-bg)',
+        border: '1px solid var(--border-color)',
+        borderRadius: 'var(--radius-lg)',
+        padding: '2rem',
+        textAlign: 'center',
+        transition: 'all 0.3s'
+      }}>
+        <div style={{
+          fontSize: '3rem',
+          marginBottom: '1rem',
+          animation: 'bounce 2s ease-in-out infinite'
+        }}>
+          📧
+        </div>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '700',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          发送邮件
+        </h2>
+        <a
+          href="mailto:hi@cutesymbols.com"
+          style={{
+            fontSize: '1.125rem',
+            color: 'var(--accent-color)',
+            fontWeight: '600',
+            textDecoration: 'none',
+            wordBreak: 'break-all'
+          }}
+        >
+          hi@cutesymbols.com
+        </a>
+        <p style={{
+          marginTop: '1rem',
+          fontSize: '0.875rem',
+          color: 'var(--text-secondary)'
+        }}>
+          我们通常在24小时内回复
+        </p>
+      </section>
+
+      {/* 联系原因 */}
+      <section style={{
+        background: 'var(--card-bg)',
+        border: '1px solid var(--border-color)',
+        borderRadius: 'var(--radius-lg)',
+        padding: '2rem'
+      }}>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '700',
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          textAlign: 'center'
+        }}>
+          💡 你可能想联系我们...
+        </h2>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '1rem'
+        }}>
+          {[
+            {
+              icon: '💖',
+              title: '符号建议',
+              desc: '想添加新的符号或分类？'
+            },
+            {
+              icon: '🐛',
+              title: '报告问题',
+              desc: '发现网站或功能问题？'
+            },
+            {
+              icon: '💡',
+              title: '功能反馈',
+              desc: '有好主意想分享？'
+            },
+            {
+              icon: '🤝',
+              title: '合作咨询',
+              desc: '想和我们一起合作？'
+            },
+            {
+              icon: '📝',
+              title: '版权问题',
+              desc: '有内容需要移除？'
+            },
+            {
+              icon: '💬',
+              title: '其他问题',
+              desc: '只是想打个招呼？'
+            }
+          ].map((item) => (
+            <div
+              style={{
+                padding: '1rem',
+                background: 'var(--bg-color)',
+                borderRadius: 'var(--radius-md)',
+                textAlign: 'center',
+                transition: 'transform 0.2s, box-shadow 0.2s'
+              }}
+              class="contact-card"
+            >
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
+                {item.icon}
+              </div>
+              <div style={{
+                fontWeight: '600',
+                marginBottom: '0.5rem',
+                color: 'var(--text-primary)'
+              }}>
+                {item.title}
+              </div>
+              <div style={{
+                fontSize: '0.875rem',
+                color: 'var(--text-secondary)'
+              }}>
+                {item.desc}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+
+    {/* 快速回复承诺 */}
+    <section style={{
+      background: 'linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(156, 39, 176, 0.1))',
+      borderRadius: 'var(--radius-lg)',
+      padding: '2rem',
+      textAlign: 'center',
+      border: '2px solid rgba(255, 107, 157, 0.2)'
+    }}>
+      <h2 style={{
+        fontSize: '1.5rem',
+        fontWeight: '700',
+        marginBottom: '1rem',
+        color: 'var(--accent-color)'
+      }}>
+        ⚡ 快速回复承诺
+      </h2>
+      <p style={{ marginBottom: '1rem', color: 'var(--text-primary)' }}>
+        我们承诺在工作日24小时内回复所有邮件
+      </p>
+      <div style={{
+        display: 'flex',
+        gap: '2rem',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginTop: '1.5rem'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: '700',
+            color: 'var(--accent-color)'
+          }}>
+            24h
+          </div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+            平均回复时间
+          </div>
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: '700',
+            color: 'var(--accent-color)'
+          }}>
+            100%
+          </div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+            邮件回复率
+          </div>
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: '700',
+            color: 'var(--accent-color)'
+          }}>
+            💗
+          </div>
+          <div style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+            友好服务
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* 社交媒体 */}
+    <section style={{
+      marginTop: '3rem',
+      textAlign: 'center'
+    }}>
+      <h2 style={{
+        fontSize: '1.5rem',
+        fontWeight: '700',
+        marginBottom: '1.5rem',
+        color: 'var(--text-primary)'
+      }}>
+        🌐 关注我们
+      </h2>
+      <div style={{
+        display: 'flex',
+        gap: '1.5rem',
+        justifyContent: 'center',
+        flexWrap: 'wrap'
+      }}>
+        <a
+          href="https://instagram.com/cutesymbols"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '1rem 2rem',
+            background: 'var(--card-bg)',
+            border: '2px solid var(--border-color)',
+            borderRadius: 'var(--radius-md)',
+            textDecoration: 'none',
+            color: 'var(--text-primary)',
+            fontWeight: '600',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            transition: 'all 0.3s'
+          }}
+          class="social-link"
+        >
+          <span style={{ fontSize: '1.5rem' }}>♥</span>
+          <span>Instagram</span>
+        </a>
+        <a
+          href="https://tiktok.com/@cutesymbols"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '1rem 2rem',
+            background: 'var(--card-bg)',
+            border: '2px solid var(--border-color)',
+            borderRadius: 'var(--radius-md)',
+            textDecoration: 'none',
+            color: 'var(--text-primary)',
+            fontWeight: '600',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            transition: 'all 0.3s'
+          }}
+          class="social-link"
+        >
+          <span style={{ fontSize: '1.5rem' }}>🌸</span>
+          <span>TikTok</span>
+        </a>
+        <a
+          href="https://twitter.com/cutesymbols"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: '1rem 2rem',
+            background: 'var(--card-bg)',
+            border: '2px solid var(--border-color)',
+            borderRadius: 'var(--radius-md)',
+            textDecoration: 'none',
+            color: 'var(--text-primary)',
+            fontWeight: '600',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            transition: 'all 0.3s'
+          }}
+          class="social-link"
+        >
+          <span style={{ fontSize: '1.5rem' }}>⭐</span>
+          <span>Twitter</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+  }
+
+  .social-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  @media (max-width: 640px) {
+    .social-link {
+      padding: 0.75rem 1.5rem !important;
+      font-size: 0.875rem !important;
+    }
+  }
+</style>

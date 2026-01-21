@@ -1,0 +1,526 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getTranslations } from '../i18n/utils';
+import { allSymbols, categories, stats } from '../data';
+import { type Locale } from '../i18n/config';
+import SymbolCard from '../components/SymbolCard.astro';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// 随机选择符号
+const featuredSymbols = allSymbols.slice(0, 24);
+---
+
+<style is:global>
+  /* 参考 emojicombos.com 的简洁风格 + 现代化改进 */
+  :root {
+    --bg-color: #f5f5f7;
+    --card-bg: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666666;
+    --accent-color: #ff6b9d;
+    --accent-hover: #ff5a8d;
+    --border-color: #e1e4e8;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+    --radius-md: 8px;
+    --radius-lg: 12px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #0a0a0a;
+      --card-bg: #1f1f1f;
+      --text-primary: #e8e8e8;
+      --text-secondary: #a0a0a0;
+      --border-color: #2a2a2a;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+      --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  /* 动画 */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scaleIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* 改进的全局样式 */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--bg-color);
+    color: var(--text-primary);
+  }
+</style>
+
+<Layout title={t('site.title')} {locale}>
+  <div style={{
+    maxWidth: '1000px',
+    margin: '0 auto',
+    padding: '0 1rem'
+  }}>
+
+    <!-- Hero 区域 - 参考 emojicombos 的简洁风格 -->
+    <section style={{
+      textAlign: 'center',
+      padding: '4rem 1rem 3rem',
+      animation: 'fadeIn 0.6s ease-out'
+    }}>
+      <!-- 标题 -->
+      <h1 style={{
+        fontSize: 'clamp(2rem, 5vw, 3rem)',
+        fontWeight: 700,
+        marginBottom: '1rem',
+        color: 'var(--text-primary)',
+        letterSpacing: '-0.02em'
+      }}>
+        <span style={{
+          background: 'linear-gradient(135deg, var(--accent-color) 0%, #ffa07a 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>
+          {t('site.title')}
+        </span>
+      </h1>
+
+      <!-- 描述 -->
+      <p style={{
+        fontSize: '1.125rem',
+        color: 'var(--text-secondary)',
+        maxWidth: '600px',
+        margin: '0 auto 2rem',
+        lineHeight: 1.6
+      }}>
+        {t('site.description')}
+      </p>
+
+      <!-- 统计信息 - 简洁卡片风格 -->
+      <div style={{
+        display: 'flex',
+        gap: '1.5rem',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginBottom: '2rem'
+      }}>
+        <div style={{
+          background: 'var(--card-bg)',
+          padding: '1rem 2rem',
+          borderRadius: 'var(--radius-md)',
+          boxShadow: 'var(--shadow-sm)',
+          border: '1px solid var(--border-color)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          transition: 'all 0.2s ease'
+      }}>
+          <span style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: 'var(--accent-color)'
+          }}>
+            {stats.total}
+          </span>
+          <span style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem' }}>
+            {t('stats.symbols')}
+          </span>
+        </div>
+
+        <div style={{
+          background: 'var(--card-bg)',
+          padding: '1rem 2rem',
+          borderRadius: 'var(--radius-md)',
+          boxShadow: 'var(--shadow-sm)',
+          border: '1px solid var(--border-color)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.75rem',
+          transition: 'all 0.2s ease'
+        }}>
+          <span style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: 'var(--accent-color)'
+          }}>
+            {Object.keys(stats.byCategory).length}
+          </span>
+          <span style={{ color: 'var(--text-secondary)', fontSize: '0.9375rem' }}>
+            {t('stats.categories')}
+          </span>
+        </div>
+      </div>
+
+      <!-- 快速搜索框 - 参考 emojicombos 的大搜索框 -->
+      <div style={{
+        background: 'var(--card-bg)',
+        padding: '0.5rem',
+        borderRadius: 'var(--radius-lg)',
+        boxShadow: 'var(--shadow-md)',
+        border: '1px solid var(--border-color)',
+        maxWidth: '600px',
+        margin: '0 auto',
+        display: 'flex',
+        gap: '0.5rem'
+      }}>
+        <input
+          type="text"
+          placeholder={t('nav.search')}
+          style={{
+            flex: 1,
+            border: 'none',
+            outline: 'none',
+            fontSize: '1rem',
+            padding: '0.75rem 1rem',
+            background: 'transparent',
+            color: 'var(--text-primary)'
+          }}
+        />
+        <button
+          onclick={`window.location.href='/${locale !== 'en' ? locale + '/' : ''}categories'`}
+          style={{
+            padding: '0.75rem 1.5rem',
+            background: 'var(--accent-color)',
+            color: '#ffffff',
+            border: 'none',
+            borderRadius: 'var(--radius-md)',
+            fontSize: '1rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            transition: 'background 0.2s ease'
+          }}
+        >
+          🔍 {t('common.search')}
+        </button>
+      </div>
+    </section>
+
+    <!-- 分类标签云 - 参考 emojicombos 的相关主题列表 -->
+    <section style={{
+      marginBottom: '4rem',
+      animation: 'fadeIn 0.6s ease-out 0.2s both',
+      opacity: 0
+    }}>
+      <h2 style={{
+        fontSize: '1.75rem',
+        fontWeight: 600,
+        marginBottom: '1.5rem',
+        color: 'var(--text-primary)'
+      }}>
+        {t('nav.categories')}
+      </h2>
+
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '0.75rem'
+      }}>
+        {categories.map((cat, index) => (
+          <a
+            href={`/${locale !== 'en' ? locale + '/' : ''}${cat.id === 'all' ? '' : 'categories?cat=' + cat.id}`}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.625rem 1rem',
+              background: 'var(--card-bg)',
+              border: '1px solid var(--border-color)',
+              borderRadius: 'var(--radius-md)',
+              boxShadow: 'var(--shadow-sm)',
+              textDecoration: 'none',
+              color: 'var(--text-primary)',
+              fontSize: '0.9375rem',
+              fontWeight: 500,
+              transition: 'all 0.2s ease',
+              animation: 'scaleIn 0.4s ease-out both',
+              animationDelay: `${index * 0.05}s`,
+              opacity: 0
+            }}
+          >
+            <span style={{ fontSize: '1.25rem' }}>
+              {cat.id === 'all' ? '✨' :
+               cat.id === 'emoticons' ? '😊' :
+               cat.id === 'decorative' ? '✿' :
+               cat.id === 'animals' ? '🐱' :
+               cat.id === 'hearts' ? '❤️' :
+               cat.id === 'stars' ? '⭐' :
+               cat.id === 'arrows' ? '➡️' :
+               cat.id === 'math' ? '∞' : '☀️'}
+            </span>
+            {t(`categories.${cat.key}`)}
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <!-- 符号展示 - 卡片网格风格 -->
+    <section style={{
+      animation: 'fadeIn 0.6s ease-out 0.4s both',
+      opacity: 0
+    }}>
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: '1.5rem',
+        flexWrap: 'wrap',
+        gap: '1rem'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 600,
+          margin: 0,
+          color: 'var(--text-primary)'
+        }}>
+          {t('section.featured')}
+        </h2>
+        <a
+          href={`/${locale !== 'en' ? locale + '/' : ''}categories`}
+          style={{
+            padding: '0.5rem 1.25rem',
+            background: 'var(--card-bg)',
+            color: 'var(--accent-color)',
+            border: '1px solid var(--accent-color)',
+            borderRadius: 'var(--radius-md)',
+            textDecoration: 'none',
+            fontSize: '0.9375rem',
+            fontWeight: 600,
+            transition: 'all 0.2s ease',
+            boxShadow: 'var(--shadow-sm)'
+          }}
+        >
+          {t('common.viewMore')} →
+        </a>
+      </div>
+
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
+        gap: '1rem'
+      }}>
+        {featuredSymbols.map((symbol) => (
+          <div
+            class="symbol-card"
+            style={{
+              background: 'var(--card-bg)',
+              border: '1px solid var(--border-color)',
+              borderRadius: 'var(--radius-lg)',
+              padding: '1.5rem',
+              textAlign: 'center',
+              boxShadow: 'var(--shadow-sm)',
+              transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+              cursor: 'pointer',
+              animation: 'scaleIn 0.4s ease-out both'
+            }}
+          >
+            <!-- 符号显示 -->
+            <div style={{
+              fontSize: '3rem',
+              marginBottom: '0.75rem',
+              lineHeight: 1,
+              transition: 'transform 0.3s ease'
+            }}>
+              {symbol.symbol}
+            </div>
+
+            <!-- Unicode 信息 -->
+            <p style={{
+              fontSize: '0.6875rem',
+              color: 'var(--text-secondary)',
+              marginBottom: '0.5rem',
+              fontFamily: 'monospace',
+              wordBreak: 'break-all'
+            }}>
+              {symbol.unicode}
+            </p>
+
+            <!-- 标签 -->
+            <div style={{
+              display: 'flex',
+              gap: '0.25rem',
+              justifyContent: 'center',
+              flexWrap: 'wrap',
+              marginBottom: '1rem'
+            }}>
+              {symbol.tags.slice(0, 2).map(tag => (
+                <span style={{
+                  fontSize: '0.6875rem',
+                  padding: '0.125rem 0.5rem',
+                  background: 'var(--bg-color)',
+                  borderRadius: '4px',
+                  color: 'var(--text-secondary)'
+                }}>
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <!-- 复制按钮 -->
+            <button
+              class="copy-btn"
+              data-symbol={symbol.symbol}
+              aria-label={t('common.copy')}
+              style={{
+                width: '100%',
+                padding: '0.5rem',
+                fontSize: '0.875rem',
+                fontWeight: 600,
+                background: 'transparent',
+                color: 'var(--accent-color)',
+                border: '1px solid var(--accent-color)',
+                borderRadius: 'var(--radius-md)',
+                cursor: 'pointer',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              {t('common.copy')}
+            </button>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- 页脚链接 - 参考 emojicombos -->
+    <footer style={{
+      marginTop: '4rem',
+      paddingTop: '2rem',
+      borderTop: '1px solid var(--border-color)',
+      textAlign: 'center',
+      color: 'var(--text-secondary)',
+      fontSize: '0.875rem'
+    }}>
+      <p style={{ marginBottom: '0.5rem' }}>
+        发现问题或有建议？{' '}
+        <a
+          href="https://github.com"
+          style={{ color: 'var(--accent-color)', textDecoration: 'none' }}
+        >
+          提供反馈
+        </a>
+      </p>
+      <p style={{ opacity: 0.7 }}>
+        Built with ❤️ using Astro
+      </p>
+    </footer>
+  </div>
+
+  <style is:global>
+    /* 悬停效果 */
+    .symbol-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-color);
+    }
+
+    .symbol-card:hover .copy-btn {
+      background: 'var(--accent-color)';
+      color: '#ffffff';
+    }
+
+    /* 分类标签悬停 */
+    a:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--accent-color);
+    }
+
+    /* 搜索按钮悬停 */
+    button:hover {
+      background: 'var(--accent-hover)';
+    }
+
+    /* 响应式 */
+    @media (max-width: 768px) {
+      section {
+        padding: 2rem 1rem !important;
+      }
+
+      h1 {
+        font-size: 2rem !important;
+      }
+
+      .symbol-card {
+        padding: 1.25rem !important;
+      }
+    }
+  </style>
+
+  <script define:vars={{ t }}>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 复制功能
+      const copyButtons = document.querySelectorAll('.copy-btn');
+
+      copyButtons.forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const target = e.currentTarget;
+          const symbol = target.getAttribute('data-symbol');
+          if (!symbol) return;
+
+          if (!navigator.clipboard) {
+            const textArea = document.createElement('textarea');
+            textArea.value = symbol;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+              // @ts-ignore: document.execCommand('copy') is deprecated but used as fallback
+              document.execCommand('copy');
+              target.textContent = '✓ ' + t('common.copied');
+              target.style.background = 'var(--accent-color)';
+              target.style.color = '#ffffff';
+              setTimeout(() => {
+                target.textContent = t('common.copy');
+                target.style.background = '';
+                target.style.color = '';
+              }, 2000);
+            } catch (err) {
+              console.error('Failed to copy:', err);
+            } finally {
+              document.body.removeChild(textArea);
+            }
+            return;
+          }
+
+          try {
+            await navigator.clipboard.writeText(symbol);
+            target.textContent = '✓ ' + t('common.copied');
+            target.style.background = 'var(--accent-color)';
+            target.style.color = '#ffffff';
+            setTimeout(() => {
+              target.textContent = t('common.copy');
+              target.style.background = '';
+              target.style.color = '';
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+          }
+        });
+      });
+
+      // 搜索框功能
+      const searchInput = document.querySelector('input[type="text"]');
+      if (searchInput) {
+        searchInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' && searchInput.value.trim()) {
+            window.location.href = `/${locale !== 'en' ? locale + '/' : ''}categories?q=${encodeURIComponent(searchInput.value.trim())}`;
+          }
+        });
+      }
+    });
+  </script>
+</Layout>

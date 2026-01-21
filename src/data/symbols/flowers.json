@@ -1,0 +1,1123 @@
+{
+  "category": "flowers",
+  "icon": "🌸",
+  "color": "#FFB7C5",
+  "name": {
+    "en": "Flower & Nature Symbols",
+    "fil": "Mga Simbolo ng Bulaklak",
+    "ms": "Simbol Bunga & Alam",
+    "bn": "ফুল এবং প্রকৃতি প্রতীক",
+    "pl": "Symbole Kwiaty i Natury"
+  },
+  "description": {
+    "en": "Perfect for soft girl, coquette, and nature lovers",
+    "fil": "Perpekto para sa soft girl at nature lovers",
+    "ms": "Sempurna untuk soft girl dan pencinta alam",
+    "bn": "সফট গার্ল এবং প্রকৃতিপ্রেমীদের জন্য উপযুক্ত",
+    "pl": "Idealne dla soft girl i miłośników natury"
+  },
+  "symbols": [
+    {
+      "id": "flowers-1",
+      "char": "🌸",
+      "unicode": "U+1F338",
+      "tags": [
+        "cherry blossom",
+        "pink",
+        "spring",
+        "popular"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-2",
+      "char": "🌺",
+      "unicode": "U+1F33A",
+      "tags": [
+        "hibiscus",
+        "tropical",
+        "pink"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-3",
+      "char": "🌷",
+      "unicode": "U+1F337",
+      "tags": [
+        "tulip",
+        "spring",
+        "pink"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-4",
+      "char": "🌹",
+      "unicode": "U+1F339",
+      "tags": [
+        "rose",
+        "red",
+        "romantic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-5",
+      "char": "💐",
+      "unicode": "U+1F490",
+      "tags": [
+        "bouquet",
+        "mixed",
+        "gift"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-6",
+      "char": "🌻",
+      "unicode": "U+1F33B",
+      "tags": [
+        "sunflower",
+        "yellow",
+        "summer"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-7",
+      "char": "🪻",
+      "unicode": "U+1FABB",
+      "tags": [
+        "lavender",
+        "purple",
+        "trending"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-8",
+      "char": "✿",
+      "unicode": "U+273F",
+      "tags": [
+        "outlined",
+        "black",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-9",
+      "char": "❀",
+      "unicode": "U+2740",
+      "tags": [
+        "outlined",
+        "minimalist",
+        "elegant"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-10",
+      "char": "🫜",
+      "unicode": "U+1FADC",
+      "tags": [
+        "bean",
+        "green",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-11",
+      "char": "🫰",
+      "unicode": "U+1FAD0",
+      "tags": [
+        "root",
+        "vegetable",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-12",
+      "char": "🌸💗",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "popular",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-13",
+      "char": "🌺♡",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tropical",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-14",
+      "char": "🌷🖤",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "spring",
+        "edgy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-15",
+      "char": "💐💕",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "bouquet",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-16",
+      "char": "🌻❥",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sunflower",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-17",
+      "char": "🪻💖",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "lavender",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-18",
+      "char": "🌼",
+      "unicode": "U+1F33C",
+      "tags": [
+        "blossom",
+        "yellow",
+        "cheerful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-19",
+      "char": "🏵️",
+      "unicode": "U+1F3F5",
+      "tags": [
+        "rosette",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-20",
+      "char": "🥀",
+      "unicode": "U+1F940",
+      "tags": [
+        "wilted",
+        "sad",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-21",
+      "char": "🌾",
+      "unicode": "U+1F33E",
+      "tags": [
+        "rice",
+        "grain",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-22",
+      "char": "🪷",
+      "unicode": "U+1FAB7",
+      "tags": [
+        "lotus",
+        "zen",
+        "peaceful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-23",
+      "char": "❁",
+      "unicode": "U+2741",
+      "tags": [
+        "outlined",
+        "elegant",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-24",
+      "char": "✾",
+      "unicode": "U+273E",
+      "tags": [
+        "six-petalled",
+        "black",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-25",
+      "char": "❀",
+      "unicode": "U+2740",
+      "tags": [
+        "outlined",
+        "white",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-26",
+      "char": "✽",
+      "unicode": "U+273D",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "asterisk"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-27",
+      "char": "❃",
+      "unicode": "U+2743",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "florette"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-28",
+      "char": "✻",
+      "unicode": "U+273B",
+      "tags": [
+        "teardrop",
+        "pinwheel",
+        "asterisk"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-29",
+      "char": "✼",
+      "unicode": "U+273C",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "pinwheel"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-30",
+      "char": "❋",
+      "unicode": "U+274B",
+      "tags": [
+        "heavy",
+        "eight-teardrop",
+        "propeller"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-31",
+      "char": "✿",
+      "unicode": "U+273F",
+      "tags": [
+        "black",
+        "outlined",
+        "classic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-32",
+      "char": "❊",
+      "unicode": "U+274A",
+      "tags": [
+        "eight-teardrop",
+        "spoked",
+        "propeller"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-33",
+      "char": "❂",
+      "unicode": "U+2742",
+      "tags": [
+        "circled",
+        "open",
+        "florette"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-34",
+      "char": "✥",
+      "unicode": "U+2725",
+      "tags": [
+        "four-club",
+        "florette",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-35",
+      "char": "✤",
+      "unicode": "U+2724",
+      "tags": [
+        "three-club",
+        "florette",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-36",
+      "char": "🌱",
+      "unicode": "U+1F331",
+      "tags": [
+        "seedling",
+        "sprout",
+        "growth"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-37",
+      "char": "🌿",
+      "unicode": "U+1F33F",
+      "tags": [
+        "herb",
+        "leaf",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-38",
+      "char": "🍀",
+      "unicode": "U+1F340",
+      "tags": [
+        "clover",
+        "luck",
+        "green"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-39",
+      "char": "🍃",
+      "unicode": "U+1F343",
+      "tags": [
+        "leaves",
+        "wind",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-40",
+      "char": "🍂",
+      "unicode": "U+1F342",
+      "tags": [
+        "fallen",
+        "autumn",
+        "leaf"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-41",
+      "char": "🍁",
+      "unicode": "U+1F341",
+      "tags": [
+        "maple",
+        "autumn",
+        "red"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-42",
+      "char": "🌸✿🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "cherry",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-43",
+      "char": "✿ ❀ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "outlined",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-44",
+      "char": "🌺💕🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tropical",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-45",
+      "char": "🌷♡🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tulip",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-46",
+      "char": "🌹❤️🌹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "rose",
+        "romantic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-47",
+      "char": "✿ ⊹ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-48",
+      "char": "❀ ˚ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-49",
+      "char": "🌸💗🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pink",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-50",
+      "char": "🌻☀️🌻",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sunflower",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-51",
+      "char": "✿ ✧ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-52",
+      "char": "🪷💫🪷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "lotus",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-53",
+      "char": "❀ ⋆ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-54",
+      "char": "🌺🌸🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tropical",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-55",
+      "char": "✿ ˚ ༘ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-56",
+      "char": "🌷💖🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tulip",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-57",
+      "char": "❀ ₊˚ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-58",
+      "char": "🌸🌺🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "tropical"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-59",
+      "char": "✿ ⋆｡˚ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-60",
+      "char": "🌹💕🌹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "rose",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-61",
+      "char": "❀ ✧ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sparkle",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-62",
+      "char": "🌸♡🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "cherry",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "flowers-63",
+      "char": "✿ ༊*·˚ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-64",
+      "char": "🪻✨🪻",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "lavender",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-65",
+      "char": "❀ ⊹ ❀ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-66",
+      "char": "🌺♡🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "hibiscus",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-67",
+      "char": "✿ ˖ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-68",
+      "char": "🌷🌸🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "spring"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-69",
+      "char": "❀ ˚ ༘ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-70",
+      "char": "🌸💕🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "cherry",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-71",
+      "char": "✿ ⋆ ✿ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-72",
+      "char": "🌹🖤🌹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "rose",
+        "edgy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-73",
+      "char": "❀ ₊˚ ❀ ₊˚",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-74",
+      "char": "🌺💗🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "hibiscus",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-75",
+      "char": "✿ ˚｡⋆ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-76",
+      "char": "🌷💕🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tulip",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-77",
+      "char": "❀ ✧ ❀ ✧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-78",
+      "char": "🌸🌷🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "spring"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-79",
+      "char": "✿ ༘ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-80",
+      "char": "🌻💛🌻",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "sunflower",
+        "yellow"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-81",
+      "char": "❀ ⊹ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-82",
+      "char": "🌸✨🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "cherry",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-83",
+      "char": "✿ ˖ ࣪ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-84",
+      "char": "🌺🌷🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "colorful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-85",
+      "char": "❀ ˚ ❀ ˚",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-86",
+      "char": "🌸💖🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "cherry",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-87",
+      "char": "✿ ⋆｡˚ ✿ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-88",
+      "char": "🌹💗🌹",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "rose",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-89",
+      "char": "❀ ༊*·˚ ❀",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-90",
+      "char": "🌷🌺🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "tropical"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-91",
+      "char": "✿ ₊˚ ✿",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimal",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-92",
+      "char": "🌸🌻🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "cheerful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-93",
+      "char": "❀ ˖ ❀ ˖",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-94",
+      "char": "🌺💖🌺",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "hibiscus",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-95",
+      "char": "✿ ˚ ༘ ✿ ˚ ༘",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-96",
+      "char": "🌷♡🌷",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "tulip",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-97",
+      "char": "❀ ⋆ ❀ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-98",
+      "char": "🌸🪷🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-99",
+      "char": "✿ ༘ ✿ ༘",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "pattern",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "flowers-100",
+      "char": "🌸🌺🌷🌻🌸",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "mixed",
+        "colorful",
+        "garden"
+      ],
+      "popular": true
+    }
+  ]
+}

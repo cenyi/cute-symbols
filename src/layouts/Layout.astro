@@ -1,0 +1,204 @@
+---
+import { localeDirections, type Locale } from '../i18n/config';
+import { getTranslations } from '../i18n/utils';
+import FixedLogo from '../components/FixedLogo.astro';
+import FixedLangSwitcher from '../components/FixedLangSwitcher.astro';
+import BackToTop from '../components/BackToTop.astro';
+import SEO from '../components/SEO.astro';
+import GEOOptimization from '../components/GEOOptimization.astro';
+import GirlyFooter from '../components/GirlyFooter.astro';
+import Analytics from '../components/Analytics.astro';
+
+interface Props {
+  title?: string;
+  locale: Locale;  // 改为必需参数
+  description?: string;
+  keywords?: string;
+}
+
+const {
+  title = 'Cute Symbols',
+  locale,  // 移除默认值，因为现在是必需的
+  description,
+  keywords
+} = Astro.props;
+
+const { t } = getTranslations(locale);
+const direction = localeDirections[locale];
+const siteTitle = t('site.title');
+const fullTitle = title === siteTitle ? siteTitle : `${title} - ${siteTitle}`;
+
+// 获取当前路径用于语言切换器
+const currentPath = Astro.url.pathname;
+---
+
+<!doctype html>
+<html lang={locale} dir={direction}>
+  <head>
+    <!-- 2026 SEO优化组件 -->
+    <SEO
+      {locale}
+      title={title}
+      description={description}
+      keywords={keywords}
+      canonical={new URL(Astro.url.pathname, 'https://cute-symbols.uk').href}
+    />
+
+    <!-- GEO (生成式搜索优化) 组件 -->
+    <GEOOptimization {locale} pageType="homepage" />
+
+    <!-- 预连接字体资源 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- 全局样式 - 参考 emojicombos.com 风格 -->
+    <style is:global>
+      :root {
+        /* 字体 */
+        --font-sans: 'Noto Sans', 'Noto Sans SC', 'Noto Sans JP', 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+
+        /* 配色 - 浅色模式 */
+        --bg-color: #f5f5f7;
+        --card-bg: #ffffff;
+        --text-primary: #1a1a1a;
+        --text-secondary: #666666;
+        --accent-color: #ff6b9d;
+        --accent-hover: #ff5a8d;
+        --border-color: #e1e4e8;
+
+        /* 阴影系统 */
+        --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+        --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+
+        /* 圆角 */
+        --radius-sm: 4px;
+        --radius-md: 8px;
+        --radius-lg: 12px;
+
+        /* 过渡 */
+        --transition-fast: 0.2s ease;
+        --transition-normal: 0.3s ease;
+        --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* 深色模式 */
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color: #0a0a0a;
+          --card-bg: #1f1f1f;
+          --text-primary: #e8e8e8;
+          --text-secondary: #a0a0a0;
+          --border-color: #2a2a2a;
+
+          --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+          --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+          --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+          --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        font-family: var(--font-sans);
+        background-color: var(--bg-color);
+        color: var(--text-primary);
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: color var(--transition-fast);
+      }
+
+      a:hover {
+        color: var(--accent-hover);
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+
+      /* 动画 */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      /* RTL语言支持 */
+      [dir="rtl"] {
+        text-align: right;
+      }
+
+      [dir="rtl"] .flex-row {
+        flex-direction: row-reverse;
+      }
+    </style>
+
+    <!-- Analytics -->
+    <Analytics />
+  </head>
+  <body>
+    <!-- 固定左上角品牌Logo -->
+    <FixedLogo {locale} />
+
+    <!-- 固定顶部语言切换器（唯一导航元素） -->
+    <FixedLangSwitcher {locale} {currentPath} />
+
+    <!-- 主内容区域 -->
+    <main style={{ paddingTop: 0 }}>
+      <slot />
+    </main>
+
+    <!-- 极简少女风Footer -->
+    <GirlyFooter {locale} />
+
+    <!-- 回到顶部按钮 -->
+    <BackToTop />
+
+    <!-- Dribbble效果脚本 -->
+    <script>
+      import { initAllEffects } from '../scripts/effects';
+      // 页面加载完成后初始化所有效果
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initAllEffects);
+      } else {
+        initAllEffects();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+---
+/**
+ * 404 错误页面 - 友好且有创意
+ * 支持多语言，带有可爱的符号动画
+ */
+import Layout from '../layouts/Layout.astro';
+import { getTranslations } from '../i18n/utils';
+import { defaultLocale, type Locale } from '../i18n/config';
+
+// 从 URL 路径判断语言
+const path = Astro.url.pathname;
+const segments = path.split('/').filter(Boolean);
+const possibleLocale = segments[0];
+const locales = ['en', 'fil', 'ms', 'bn', 'pl'];
+const locale: Locale = (locales.includes(possibleLocale) ? possibleLocale : defaultLocale) as Locale;
+
+const { t } = getTranslations(locale);
+
+// 404页面的可爱符号
+const sadSymbols = ['(｡ - ́︿ - ̀｡)', '(╥﹏╥)', '(ಥ﹏ಥ)', '(｡ - ́ -  - ̀｡)', '(◞‸◟)', '(⌣̩̩́_⌣̩̩̀)'];
+const randomSadSymbol = sadSymbols[Math.floor(Math.random() * sadSymbols.length)];
+
+// 建议的链接
+const suggestions = [
+  { icon: '🏠', key: 'home', href: locale === 'en' ? '/' : `/${locale}/` },
+  { icon: '📂', key: 'categories', href: locale === 'en' ? '/categories' : `/${locale}/categories` },
+  { icon: '📧', key: 'contact', href: locale === 'en' ? '/contact' : `/${locale}/contact` },
+];
+---
+
+<Layout title={`404 - ${t('site.title')}`} {locale}>
+  <div style={{
+    minHeight: '80vh',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '2rem 1rem'
+  }}>
+    <div style={{
+      maxWidth: '600px',
+      textAlign: 'center',
+      animation: 'fadeIn 0.6s ease-out'
+    }}>
+      
+      <!-- 大号404 -->
+      <div class="error-code" style={{
+        fontSize: 'clamp(4rem, 15vw, 8rem)',
+        fontWeight: 900,
+        background: 'linear-gradient(135deg, var(--accent-color) 0%, #ffa07a 100%)',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+        backgroundClip: 'text',
+        marginBottom: '1rem',
+        letterSpacing: '-0.05em',
+        lineHeight: 1
+      }}>
+        404
+      </div>
+
+      <!-- 可爱的哭泣符号 -->
+      <div class="sad-symbol" style={{
+        fontSize: 'clamp(2rem, 8vw, 4rem)',
+        marginBottom: '1.5rem',
+        animation: 'bounce 2s ease-in-out infinite'
+      }}>
+        {randomSadSymbol}
+      </div>
+
+      <!-- 标题 -->
+      <h1 style={{
+        fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+        fontWeight: 700,
+        marginBottom: '1rem',
+        color: 'var(--text-primary)'
+      }}>
+        Oops! Page Not Found
+      </h1>
+
+      <!-- 描述 -->
+      <p style={{
+        fontSize: '1.125rem',
+        color: 'var(--text-secondary)',
+        marginBottom: '2.5rem',
+        lineHeight: 1.6
+      }}>
+        The page you're looking for might have been moved, deleted, or never existed. But don't worry, we have lots of cute symbols waiting for you!
+      </p>
+
+      <!-- 浮动的装饰符号 -->
+      <div class="floating-symbols" style={{
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '1rem',
+        marginBottom: '2.5rem',
+        fontSize: '2rem'
+      }}>
+        <span style={{ animation: 'float 3s ease-in-out infinite' }}>✨</span>
+        <span style={{ animation: 'float 3s ease-in-out infinite 0.5s' }}>💫</span>
+        <span style={{ animation: 'float 3s ease-in-out infinite 1s' }}>⭐</span>
+        <span style={{ animation: 'float 3s ease-in-out infinite 1.5s' }}>🌟</span>
+        <span style={{ animation: 'float 3s ease-in-out infinite 2s' }}>✨</span>
+      </div>
+
+      <!-- 建议链接 -->
+      <div style={{
+        display: 'flex',
+        gap: '1rem',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginBottom: '2rem'
+      }}>
+        {suggestions.map((item, index) => (
+          <a
+            href={item.href}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.5rem',
+              padding: '0.875rem 1.5rem',
+              background: 'var(--card-bg)',
+              border: '2px solid var(--accent-color)',
+              borderRadius: 'var(--radius-lg)',
+              color: 'var(--accent-color)',
+              textDecoration: 'none',
+              fontSize: '1rem',
+              fontWeight: 600,
+              transition: 'all 0.3s ease',
+              boxShadow: 'var(--shadow-sm)',
+              animation: `scaleIn 0.4s ease-out ${index * 0.1}s both`,
+              opacity: 0
+            }}
+          >
+            <span style={{ fontSize: '1.25rem' }}>{item.icon}</span>
+            {item.key === 'home' ? t('pages.notFound.goHome') :
+             item.key === 'categories' ? t('pages.notFound.browseCategories') : t('pages.notFound.contactUs')}
+          </a>
+        ))}
+      </div>
+
+      <!-- 搜索框 -->
+      <div style={{
+        background: 'var(--card-bg)',
+        padding: '0.5rem',
+        borderRadius: 'var(--radius-lg)',
+        boxShadow: 'var(--shadow-md)',
+        border: '1px solid var(--border-color)',
+        maxWidth: '400px',
+        margin: '0 auto',
+        display: 'flex',
+        gap: '0.5rem'
+      }}>
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search symbols..."
+          style={{
+            flex: 1,
+            border: 'none',
+            outline: 'none',
+            fontSize: '1rem',
+            padding: '0.75rem 1rem',
+            background: 'transparent',
+            color: 'var(--text-primary)'
+          }}
+        />
+        <button
+          id="search-btn"
+          style={{
+            padding: '0.75rem 1.25rem',
+            background: 'var(--accent-color)',
+            color: '#ffffff',
+            border: 'none',
+            borderRadius: 'var(--radius-md)',
+            fontSize: '1rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            transition: 'background 0.2s ease'
+          }}
+        >
+          🔍
+        </button>
+      </div>
+
+      <!-- 小提示 -->
+      <p style={{
+        marginTop: '2rem',
+        fontSize: '0.875rem',
+        color: 'var(--text-secondary)',
+        opacity: 0.8
+      }}>
+        💡 Tip: Try searching for "heart", "star", or "flower"
+      </p>
+    </div>
+  </div>
+
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(10deg);
+      }
+    }
+
+    /* 链接悬停效果 */
+    a:hover {
+      background: var(--accent-color) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg) !important;
+    }
+
+    /* 搜索按钮悬停 */
+    #search-btn:hover {
+      background: var(--accent-hover);
+      transform: scale(1.05);
+    }
+
+    /* 错误代码动画 */
+    .error-code {
+      animation: fadeIn 0.6s ease-out, pulse 3s ease-in-out infinite 1s;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.8;
+      }
+    }
+
+    /* 响应式 */
+    @media (max-width: 480px) {
+      a {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .floating-symbols {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    /* 触摸设备优化 */
+    @media (hover: none) and (pointer: coarse) {
+      a:active {
+        transform: scale(0.95);
+      }
+    }
+  </style>
+
+  <script define:vars={{ locale }}>
+    // 搜索功能
+    const searchInput = document.getElementById('search-input');
+    const searchBtn = document.getElementById('search-btn');
+
+    function performSearch() {
+      const query = searchInput.value.trim();
+      if (query) {
+        const basePath = locale === 'en' ? '' : `/${locale}`;
+        window.location.href = `${basePath}/categories?q=${encodeURIComponent(query)}`;
+      }
+    }
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        performSearch();
+      }
+    });
+
+    // 自动聚焦搜索框（桌面端）
+    if (window.innerWidth > 768) {
+      searchInput.focus();
+    }
+  </script>
+</Layout>

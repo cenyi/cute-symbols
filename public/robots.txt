@@ -1,0 +1,19 @@
+# robots.txt for cute-symbols website
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://cute-symbols.uk/sitemap.xml
+
+# Additional crawling instructions for better SEO
+Crawl-delay: 1
+
+# Allow all search engines to access important resources
+Allow: /api/symbols/
+Allow: /_astro/
+Allow: /assets/
+
+# Disallow admin or sensitive areas (if any exist in future)
+# Disallow: /admin/
+# Disallow: /private/

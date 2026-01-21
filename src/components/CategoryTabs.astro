@@ -1,0 +1,190 @@
+---
+/**
+ * 分类标签栏（横向滚动）
+ * 移动端优先设计
+ * 2026年最新UI
+ */
+import { getTranslations } from '../i18n/utils';
+import { CATEGORIES_2026 } from '../data/categories-2026';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+  activeCategory?: string;
+  baseUrl?: string;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+const { activeCategory = 'all', baseUrl = '' } = Astro.props;
+---
+
+<!-- 分类标签栏 -->
+<div
+  class="category-tabs"
+  style={{
+    position: 'sticky',
+    top: 0,
+    background: 'var(--card-bg)',
+    padding: '12px 16px',
+    overflowX: 'auto',
+    overflowY: 'hidden',
+    whiteSpace: 'nowrap',
+    WebkitOverflowScrolling: 'touch',
+    scrollbarWidth: 'none',
+    borderBottom: '1px solid var(--border-color)',
+    zIndex: 100,
+    display: 'flex',
+    gap: '8px'
+  }}
+>
+  <!-- 全部分类 -->
+  <button
+    class={`category-tab ${activeCategory === 'all' ? 'active' : ''}`}
+    data-category="all"
+    style={{
+      display: 'inline-flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '4px',
+      padding: '8px 16px',
+      borderRadius: '12px',
+      background: activeCategory === 'all' ? 'var(--accent-color)' : 'var(--bg-color)',
+      border: '1px solid var(--border-color)',
+      textDecoration: 'none',
+      color: activeCategory === 'all' ? '#ffffff' : 'var(--text-primary)',
+      transition: 'all 0.2s ease',
+      minWidth: '72px',
+      flexShrink: 0,
+      cursor: 'pointer'
+    }}
+  >
+    <span class="tab-icon" style={{ fontSize: '20px' }}>✨</span>
+    <span class="tab-name" style={{ fontSize: '11px', fontWeight: 600 }}>
+      {t('categories.all') || 'All'}
+    </span>
+  </button>
+
+  <!-- 各个分类 -->
+  {CATEGORIES_2026.map(cat => {
+    const isActive = activeCategory === cat.id;
+
+    return (
+      <button
+        class={`category-tab ${isActive ? 'active' : ''}`}
+        data-category={cat.id}
+        style={{
+          display: 'inline-flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          gap: '4px',
+          padding: '8px 16px',
+          borderRadius: '12px',
+          background: isActive ? 'var(--accent-color)' : 'var(--bg-color)',
+          border: '1px solid var(--border-color)',
+          textDecoration: 'none',
+          color: isActive ? '#ffffff' : 'var(--text-primary)',
+          transition: 'all 0.2s ease',
+          minWidth: '72px',
+          flexShrink: 0,
+          position: 'relative',
+          cursor: 'pointer'
+        }}
+      >
+        <span class="tab-icon" style={{ fontSize: '20px' }}>
+          {cat.icon}
+        </span>
+        <span class="tab-name" style={{ fontSize: '11px', fontWeight: 600 }}>
+          {t(`categories.${cat.id}`) || cat.names[locale] || cat.names.en}
+        </span>
+
+        {/* 2026 标签 */}
+        {cat.badges && cat.badges.en && cat.badges.en.length > 0 && (
+          <span style={{
+            position: 'absolute',
+            top: '-4px',
+            right: '-4px',
+            background: 'var(--accent-color)',
+            color: '#ffffff',
+            fontSize: '8px',
+            padding: '2px 4px',
+            borderRadius: '4px',
+            fontWeight: 700,
+            boxShadow: '0 2px 4px rgba(255, 107, 157, 0.3)'
+          }}>
+            {t('common.new')}
+          </span>
+        )}
+      </button>
+    );
+  })}
+</div>
+
+<style>
+  /* 隐藏滚动条但保留功能 */
+  .category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .category-tabs {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* 分类标签悬停效果 */
+  .category-tab:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .category-tab:active {
+    transform: scale(0.95);
+  }
+
+  /* 活跃状态 */
+  .category-tab.active {
+    box-shadow: var(--shadow-md);
+    animation: tabPop 0.3s ease;
+  }
+
+  @keyframes tabPop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+
+  /* 触摸滚动优化 */
+  .category-tabs {
+    scroll-snap-type: x mandatory;
+  }
+
+  .category-tab {
+    scroll-snap-align: start;
+  }
+
+  /* 桌面端隐藏，使用其他导航 */
+  @media (min-width: 1024px) {
+    .category-tabs {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+</style>
+
+<script>
+  // 横向滚动提示（可选）
+  const tabs = document.querySelector('.category-tabs');
+
+  if (tabs) {
+    // 监听滚动位置，显示/隐藏渐变遮罩
+    let scrollTimeout: number;
+
+    tabs.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      tabs.classList.add('is-scrolling');
+
+      scrollTimeout = window.setTimeout(() => {
+        tabs.classList.remove('is-scrolling');
+      }, 150);
+    });
+  }
+</script>

@@ -1,0 +1,721 @@
+{
+  "category": "combos",
+  "icon": "✨",
+  "color": "#C084FC",
+  "name": {
+    "en": "Symbol Combos & Mixes",
+    "fil": "Mga Kombasyon ng Simbolo",
+    "ms": "Kombinasi Simbol",
+    "bn": "প্রতীক সংমিশ্রণ",
+    "pl": "Kombinacje Symboli"
+  },
+  "description": {
+    "en": "Beautiful symbol combinations and mixed styles",
+    "fil": "Mga magagandang kombinasyon ng simbolo",
+    "ms": "Kombinasi simbol yang cantik",
+    "bn": "সুন্দর প্রতীক সংমিশ্রণ",
+    "pl": "Piękne kombinacje symboli"
+  },
+  "symbols": [
+    {
+      "id": "combo-1",
+      "char": "༊*·˚",
+      "unicode": "special",
+      "tags": ["tibetan", "star", "minimal"],
+      "popular": true
+    },
+    {
+      "id": "combo-2",
+      "char": "*ੈ✩‧₊˚",
+      "unicode": "special",
+      "tags": ["star", "sparkle", "fancy"],
+      "popular": true
+    },
+    {
+      "id": "combo-3",
+      "char": "✧･ﾟ: *✧･ﾟ:*",
+      "unicode": "special",
+      "tags": ["sparkle", "decorative", "elegant"],
+      "popular": true
+    },
+    {
+      "id": "combo-4",
+      "char": "⋆𐙚₊˚⊹♡",
+      "unicode": "special",
+      "tags": ["star", "flower", "heart"],
+      "popular": true
+    },
+    {
+      "id": "combo-5",
+      "char": "☁️⋅๋⋆﹒˚⟡˖",
+      "unicode": "special",
+      "tags": ["cloud", "dreamy", "soft"],
+      "popular": true
+    },
+    {
+      "id": "combo-6",
+      "char": "˚₊✩‧₊˚♡⊹",
+      "unicode": "special",
+      "tags": ["heart", "star", "combo"],
+      "popular": true
+    },
+    {
+      "id": "combo-7",
+      "char": "₊ ⊹𝜗𝜚 ⊹ ₊",
+      "unicode": "special",
+      "tags": ["minimal", "clean", "simple"],
+      "popular": true
+    },
+    {
+      "id": "combo-8",
+      "char": "°❀⋆.ೃ࿐*:･",
+      "unicode": "special",
+      "tags": ["flower", "elegant", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "combo-9",
+      "char": "⊹₊ ⋆ ☁️ ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": ["cloud", "framed", "dreamy"],
+      "popular": false
+    },
+    {
+      "id": "combo-10",
+      "char": "⋆.ೃ࿐༘𐙚",
+      "unicode": "special",
+      "tags": ["star", "flower", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "combo-11",
+      "char": "ʚɞ⋆⁺₊✩",
+      "unicode": "special",
+      "tags": ["wings", "star", "sparkle"],
+      "popular": true
+    },
+    {
+      "id": "combo-12",
+      "char": "୨୧⋆｡˚",
+      "unicode": "special",
+      "tags": ["bracket", "star", "cute"],
+      "popular": true
+    },
+    {
+      "id": "combo-13",
+      "char": "✧˖°。🎀°。˖✧",
+      "unicode": "special",
+      "tags": ["ribbon", "sparkle", "framed"],
+      "popular": false
+    },
+    {
+      "id": "combo-14",
+      "char": "⋆🎀˖°。",
+      "unicode": "special",
+      "tags": ["ribbon", "star", "simple"],
+      "popular": false
+    },
+    {
+      "id": "combo-15",
+      "char": "🪽⋆🕯️",
+      "unicode": "special",
+      "tags": ["wing", "candle", "warm"],
+      "popular": false
+    },
+    {
+      "id": "combo-16",
+      "char": "☾⋆｡˚✩",
+      "unicode": "special",
+      "tags": ["moon", "star", "night"],
+      "popular": true
+    },
+    {
+      "id": "combo-17",
+      "char": "⋆🪐✧˖°",
+      "unicode": "special",
+      "tags": ["planet", "space", "cosmic"],
+      "popular": false
+    },
+    {
+      "id": "combo-18",
+      "char": "🦋⋆☁️",
+      "unicode": "special",
+      "tags": ["butterfly", "cloud", "dreamy"],
+      "popular": false
+    },
+    {
+      "id": "combo-19",
+      "char": "✧.*⋆。🐰",
+      "unicode": "special",
+      "tags": ["rabbit", "sparkle", "cute"],
+      "popular": true
+    },
+    {
+      "id": "combo-20",
+      "char": "🌸⋆˚✿",
+      "unicode": "special",
+      "tags": ["flower", "sakura", "spring"],
+      "popular": true
+    },
+    {
+      "id": "combo-21",
+      "char": "☁️⋅๋⋆♡",
+      "unicode": "special",
+      "tags": ["cloud", "heart", "dreamy"],
+      "popular": true
+    },
+    {
+      "id": "combo-22",
+      "char": "⚝⋆｡˚🦢",
+      "unicode": "special",
+      "tags": ["swan", "star", "elegant"],
+      "popular": false
+    },
+    {
+      "id": "combo-23",
+      "char": "˗ˏˋ🎀ˎˊ˗",
+      "unicode": "special",
+      "tags": ["bracket", "ribbon", "framed"],
+      "popular": false
+    },
+    {
+      "id": "combo-24",
+      "char": "⋆₊⊹♡⊹₊⋆",
+      "unicode": "special",
+      "tags": ["heart", "framed", "symmetric"],
+      "popular": false
+    },
+    {
+      "id": "combo-25",
+      "char": "🪽⋆.ೃ࿐",
+      "unicode": "special",
+      "tags": ["wing", "star", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "combo-26",
+      "char": "✧˖°🌙✧˖°",
+      "unicode": "special",
+      "tags": ["moon", "sparkle", "night"],
+      "popular": false
+    },
+    {
+      "id": "combo-27",
+      "char": "⋆｡‧˚ʚ♡ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": ["heart", "wings", "aesthetic"],
+      "popular": true
+    },
+    {
+      "id": "combo-28",
+      "char": "🌸⋆｡°✩",
+      "unicode": "special",
+      "tags": ["flower", "star", "spring"],
+      "popular": false
+    },
+    {
+      "id": "combo-29",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🦋 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["butterfly", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-30",
+      "char": "⊹ ࣪ ˖ 💫 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["sparkle", "decorative", "magic"],
+      "popular": false
+    },
+    {
+      "id": "combo-31",
+      "char": "🌙⋆｡°✩",
+      "unicode": "special",
+      "tags": ["moon", "star", "night"],
+      "popular": false
+    },
+    {
+      "id": "combo-32",
+      "char": "✧˖°🎀✧˖°",
+      "unicode": "special",
+      "tags": ["ribbon", "sparkle", "cute"],
+      "popular": false
+    },
+    {
+      "id": "combo-33",
+      "char": "⋆ ˚｡⋆୨🌸୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["flower", "bracket", "spring"],
+      "popular": false
+    },
+    {
+      "id": "combo-34",
+      "char": "🦢⋆｡°✩",
+      "unicode": "special",
+      "tags": ["swan", "star", "elegant"],
+      "popular": false
+    },
+    {
+      "id": "combo-35",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌙 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["moon", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-36",
+      "char": "⊹ ࣪ ˖ 🌟 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["star", "decorative", "bright"],
+      "popular": false
+    },
+    {
+      "id": "combo-37",
+      "char": "🌺⋆｡°✩",
+      "unicode": "special",
+      "tags": ["flower", "star", "tropical"],
+      "popular": false
+    },
+    {
+      "id": "combo-38",
+      "char": "✧˖°🧸✧˖°",
+      "unicode": "special",
+      "tags": ["teddy", "sparkle", "cute"],
+      "popular": false
+    },
+    {
+      "id": "combo-39",
+      "char": "⋆ ˚｡⋆୨💕୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["heart", "bracket", "love"],
+      "popular": false
+    },
+    {
+      "id": "combo-40",
+      "char": "🍄⋆｡°✩",
+      "unicode": "special",
+      "tags": ["mushroom", "star", "cottagecore"],
+      "popular": false
+    },
+    {
+      "id": "combo-41",
+      "char": "✧･ﾟ: *✧･ﾟ:* ✨ *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["sparkle", "magic", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-42",
+      "char": "⊹ ࣪ ˖ 🔮 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["crystal", "decorative", "mystic"],
+      "popular": false
+    },
+    {
+      "id": "combo-43",
+      "char": "🌷⋆｡°✩",
+      "unicode": "special",
+      "tags": ["tulip", "star", "spring"],
+      "popular": false
+    },
+    {
+      "id": "combo-44",
+      "char": "✧˖°🦄✧˖°",
+      "unicode": "special",
+      "tags": ["unicorn", "sparkle", "magic"],
+      "popular": false
+    },
+    {
+      "id": "combo-45",
+      "char": "⋆ ˚｡⋆୨🦋୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["butterfly", "bracket", "nature"],
+      "popular": false
+    },
+    {
+      "id": "combo-46",
+      "char": "🌻⋆｡°✩",
+      "unicode": "special",
+      "tags": ["sunflower", "star", "bright"],
+      "popular": false
+    },
+    {
+      "id": "combo-47",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌸 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["cherry", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-48",
+      "char": "⊹ ࣪ ˖ 🧚‍♀️ ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["fairy", "decorative", "magic"],
+      "popular": false
+    },
+    {
+      "id": "combo-49",
+      "char": "🎀⋆｡°✩",
+      "unicode": "special",
+      "tags": ["ribbon", "star", "cute"],
+      "popular": false
+    },
+    {
+      "id": "combo-50",
+      "char": "✧˖°🌊✧˖°",
+      "unicode": "special",
+      "tags": ["wave", "sparkle", "ocean"],
+      "popular": false
+    },
+    {
+      "id": "combo-51",
+      "char": "⋆ ˚｡⋆୨🌙୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["moon", "bracket", "night"],
+      "popular": false
+    },
+    {
+      "id": "combo-52",
+      "char": "🌈⋆｡°✩",
+      "unicode": "special",
+      "tags": ["rainbow", "star", "colorful"],
+      "popular": false
+    },
+    {
+      "id": "combo-53",
+      "char": "✧･ﾟ: *✧･ﾟ:* 💫 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["sparkle", "magic", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-54",
+      "char": "⊹ ࣪ ˖ 🪄 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["wand", "decorative", "magic"],
+      "popular": false
+    },
+    {
+      "id": "combo-55",
+      "char": "🕯️⋆｡°✩",
+      "unicode": "special",
+      "tags": ["candle", "star", "cozy"],
+      "popular": false
+    },
+    {
+      "id": "combo-56",
+      "char": "✧˖°🍃✧˖°",
+      "unicode": "special",
+      "tags": ["leaf", "sparkle", "nature"],
+      "popular": false
+    },
+    {
+      "id": "combo-57",
+      "char": "⋆ ˚｡⋆୨💎୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["gem", "bracket", "luxury"],
+      "popular": false
+    },
+    {
+      "id": "combo-58",
+      "char": "🪐⋆｡°✩",
+      "unicode": "special",
+      "tags": ["planet", "star", "cosmic"],
+      "popular": false
+    },
+    {
+      "id": "combo-59",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌺 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["flower", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-60",
+      "char": "⊹ ࣪ ˖ 🎨 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["art", "decorative", "creative"],
+      "popular": false
+    },
+    {
+      "id": "combo-61",
+      "char": "🧸⋆｡°✩",
+      "unicode": "special",
+      "tags": ["teddy", "star", "cute"],
+      "popular": false
+    },
+    {
+      "id": "combo-62",
+      "char": "✧˖°🌙✧˖°",
+      "unicode": "special",
+      "tags": ["moon", "sparkle", "night"],
+      "popular": false
+    },
+    {
+      "id": "combo-63",
+      "char": "⋆ ˚｡⋆୨🍄୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["mushroom", "bracket", "cottagecore"],
+      "popular": false
+    },
+    {
+      "id": "combo-64",
+      "char": "🌿⋆｡°✩",
+      "unicode": "special",
+      "tags": ["herb", "star", "nature"],
+      "popular": false
+    },
+    {
+      "id": "combo-65",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌷 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["tulip", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-66",
+      "char": "⊹ ࣪ ˖ 🦢 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["swan", "decorative", "elegant"],
+      "popular": false
+    },
+    {
+      "id": "combo-67",
+      "char": "🍀⋆｡°✩",
+      "unicode": "special",
+      "tags": ["clover", "star", "luck"],
+      "popular": false
+    },
+    {
+      "id": "combo-68",
+      "char": "✧˖°🦋✧˖°",
+      "unicode": "special",
+      "tags": ["butterfly", "sparkle", "nature"],
+      "popular": false
+    },
+    {
+      "id": "combo-69",
+      "char": "⋆ ˚｡⋆୨🌻୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["sunflower", "bracket", "bright"],
+      "popular": false
+    },
+    {
+      "id": "combo-70",
+      "char": "🎭⋆｡°✩",
+      "unicode": "special",
+      "tags": ["mask", "star", "theater"],
+      "popular": false
+    },
+    {
+      "id": "combo-71",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🪷 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["lotus", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-72",
+      "char": "⊹ ࣪ ˖ 🌸 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["cherry", "decorative", "spring"],
+      "popular": false
+    },
+    {
+      "id": "combo-73",
+      "char": "🎪⋆｡°✩",
+      "unicode": "special",
+      "tags": ["circus", "star", "fun"],
+      "popular": false
+    },
+    {
+      "id": "combo-74",
+      "char": "✧˖°🎵✧˖°",
+      "unicode": "special",
+      "tags": ["music", "sparkle", "sound"],
+      "popular": false
+    },
+    {
+      "id": "combo-75",
+      "char": "⋆ ˚｡⋆୨🎀୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["ribbon", "bracket", "cute"],
+      "popular": false
+    },
+    {
+      "id": "combo-76",
+      "char": "🎯⋆｡°✩",
+      "unicode": "special",
+      "tags": ["target", "star", "goal"],
+      "popular": false
+    },
+    {
+      "id": "combo-77",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌈 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["rainbow", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-78",
+      "char": "⊹ ࣪ ˖ 🎭 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["mask", "decorative", "theater"],
+      "popular": false
+    },
+    {
+      "id": "combo-79",
+      "char": "🎨⋆｡°✩",
+      "unicode": "special",
+      "tags": ["art", "star", "creative"],
+      "popular": false
+    },
+    {
+      "id": "combo-80",
+      "char": "✧˖°🎪✧˖°",
+      "unicode": "special",
+      "tags": ["circus", "sparkle", "fun"],
+      "popular": false
+    },
+    {
+      "id": "combo-81",
+      "char": "⋆ ˚｡⋆୨🎵୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["music", "bracket", "sound"],
+      "popular": false
+    },
+    {
+      "id": "combo-82",
+      "char": "🎯⋆｡°✩",
+      "unicode": "special",
+      "tags": ["target", "star", "goal"],
+      "popular": false
+    },
+    {
+      "id": "combo-83",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🎨 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["art", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-84",
+      "char": "⊹ ࣪ ˖ 🎪 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["circus", "decorative", "fun"],
+      "popular": false
+    },
+    {
+      "id": "combo-85",
+      "char": "🎭⋆｡°✩",
+      "unicode": "special",
+      "tags": ["mask", "star", "theater"],
+      "popular": false
+    },
+    {
+      "id": "combo-86",
+      "char": "✧˖°🎯✧˖°",
+      "unicode": "special",
+      "tags": ["target", "sparkle", "goal"],
+      "popular": false
+    },
+    {
+      "id": "combo-87",
+      "char": "⋆ ˚｡⋆୨🎨୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["art", "bracket", "creative"],
+      "popular": false
+    },
+    {
+      "id": "combo-88",
+      "char": "🎵⋆｡°✩",
+      "unicode": "special",
+      "tags": ["music", "star", "sound"],
+      "popular": false
+    },
+    {
+      "id": "combo-89",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🎯 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["target", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-90",
+      "char": "⊹ ࣪ ˖ 🎵 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["music", "decorative", "sound"],
+      "popular": false
+    },
+    {
+      "id": "combo-91",
+      "char": "🎪⋆｡°✩",
+      "unicode": "special",
+      "tags": ["circus", "star", "fun"],
+      "popular": false
+    },
+    {
+      "id": "combo-92",
+      "char": "✧˖°🎭✧˖°",
+      "unicode": "special",
+      "tags": ["mask", "sparkle", "theater"],
+      "popular": false
+    },
+    {
+      "id": "combo-93",
+      "char": "⋆ ˚｡⋆୨🎪୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["circus", "bracket", "fun"],
+      "popular": false
+    },
+    {
+      "id": "combo-94",
+      "char": "🎨⋆｡°✩",
+      "unicode": "special",
+      "tags": ["art", "star", "creative"],
+      "popular": false
+    },
+    {
+      "id": "combo-95",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🎪 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": ["circus", "sparkle", "long"],
+      "popular": false
+    },
+    {
+      "id": "combo-96",
+      "char": "⊹ ࣪ ˖ 🎯 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": ["target", "decorative", "goal"],
+      "popular": false
+    },
+    {
+      "id": "combo-97",
+      "char": "🎵⋆｡°✩",
+      "unicode": "special",
+      "tags": ["music", "star", "sound"],
+      "popular": false
+    },
+    {
+      "id": "combo-98",
+      "char": "✧˖°🎨✧˖°",
+      "unicode": "special",
+      "tags": ["art", "sparkle", "creative"],
+      "popular": false
+    },
+    {
+      "id": "combo-99",
+      "char": "⋆ ˚｡⋆୨🎯୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": ["target", "bracket", "goal"],
+      "popular": false
+    },
+    {
+      "id": "combo-100",
+      "char": "🎭⋆｡°✩",
+      "unicode": "special",
+      "tags": ["mask", "star", "theater"],
+      "popular": false
+    }
+  ]
+}

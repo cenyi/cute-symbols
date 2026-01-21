@@ -1,0 +1,197 @@
+---
+/**
+ * 固定顶部语言切换器（唯一导航元素）
+ * 无需传统导航栏，语言切换器即导航
+ * 少女风设计 + 2026年最新
+ */
+import { localeNames, locales, type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+  currentPath?: string;
+}
+
+const { locale = 'en', currentPath = '/' } = Astro.props;
+
+// 获取当前路径（去除语言前缀）
+const getPathWithoutLocale = (fullPath: string) => {
+  const segments = fullPath.split('/').filter(Boolean);
+  if (segments.length > 0 && locales.includes(segments[0] as Locale)) {
+    const remainingPath = segments.slice(1).join('/');
+    return remainingPath ? '/' + remainingPath : '/';
+  }
+  return fullPath;
+};
+
+const basePath = getPathWithoutLocale(currentPath);
+---
+
+<div
+  class="fixed-lang-switcher"
+  style={{
+    position: 'fixed',
+    top: '1.5rem',
+    right: '1.5rem',
+    zIndex: '1000',
+    background: 'rgba(255, 255, 255, 0.95)',
+    backdropFilter: 'blur(20px)',
+    border: '1px solid rgba(255, 107, 157, 0.3)',
+    borderRadius: '1rem',
+    padding: '0.5rem 1rem',
+    boxShadow: '0 8px 32px rgba(255, 107, 157, 0.2)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    fontSize: '0.875rem',
+    fontWeight: '600'
+  }}
+>
+  <select
+    id="lang-selector"
+    data-current-locale={locale}
+    data-base-path={basePath}
+    style={{
+      background: 'transparent',
+      border: 'none',
+      outline: 'none',
+      cursor: 'pointer',
+      color: 'var(--accent-color, #e91e63)',
+      fontWeight: '700',
+      padding: '0.25rem 1.5rem 0.25rem 0.5rem',
+      appearance: 'none',
+      WebkitAppearance: 'none',
+      fontSize: 'inherit',
+      fontFamily: 'inherit'
+    }}
+  >
+    {locales.map((loc) => (
+      <option value={loc === 'en' ? '' : loc} selected={loc === locale}>
+        {localeNames[loc]}
+      </option>
+    ))}
+  </select>
+
+  <div
+    style={{
+      width: '1px',
+      height: '1.25rem',
+      background: 'rgba(255, 107, 157, 0.3)'
+    }}
+  ></div>
+
+  <span
+    style={{
+      fontSize: '0.75rem',
+      animation: 'pulse 2s ease-in-out infinite'
+    }}
+  >
+    ✨
+  </span>
+</div>
+
+<script>
+  // 语言选择器功能
+  function initLangSwitcher() {
+    const selector = document.getElementById('lang-selector') as HTMLSelectElement;
+    if (!selector) return;
+
+    const currentLocale = selector.getAttribute('data-current-locale') || 'en';
+    const basePath = selector.getAttribute('data-base-path') || '/';
+    
+    // 设置正确的选中值 - 修复value匹配问题
+    const correctValue = currentLocale === 'en' ? '' : currentLocale;
+    
+    // 强制更新选择器显示 - 确保正确匹配
+    Array.from(selector.options).forEach(option => {
+      option.selected = option.value === correctValue;
+    });
+    
+    // 添加change事件监听器
+    selector.addEventListener('change', function(e) {
+      const target = e.target as HTMLSelectElement;
+      const selectedValue = target.value;
+      let newUrl;
+      
+      if (selectedValue === '') {
+        // 切换到英文版本
+        newUrl = basePath === '/' ? '/' : basePath;
+      } else {
+        // 切换到其他语言版本
+        newUrl = `/${selectedValue}${basePath}`;
+      }
+      
+      // 确保URL格式正确
+      if (newUrl !== '/' && newUrl.endsWith('/')) {
+        newUrl = newUrl.slice(0, -1);
+      }
+      
+      window.location.href = newUrl;
+    });
+  }
+
+  // 确保DOM加载完成后执行
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLangSwitcher);
+  } else {
+    initLangSwitcher();
+  }
+
+  // 页面加载后再次检查（处理SPA导航）
+  window.addEventListener('load', initLangSwitcher);
+</script>
+
+<style>
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.1);
+    }
+  }
+
+  .fixed-lang-switcher select option:checked {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 243, 242, 1),
+      rgba(245, 243, 255, 1)
+    );
+    font-weight: 700;
+  }
+
+  .fixed-lang-switcher select:hover {
+    color: var(--accent-hover, #c2185b);
+  }
+
+  /* 移动端优化 */
+  @media (max-width: 768px) {
+    .fixed-lang-switcher {
+      top: 1rem !important;
+      right: 1rem !important;
+      padding: 0.375rem 0.75rem !important;
+      font-size: 0.8125rem !important;
+    }
+
+    .fixed-lang-switcher select {
+      padding: 0.125rem 1.25rem 0.125rem 0.25rem !important;
+    }
+  }
+
+  /* RTL语言支持 */
+  [dir='rtl'] .fixed-lang-switcher {
+    right: auto !important;
+    left: 1.5rem;
+  }
+
+  [dir='rtl'] .fixed-lang-switcher select {
+    padding: 0.25rem 0.5rem 0.25rem 1.5rem !important;
+  }
+
+  @media (max-width: 768px) {
+    [dir='rtl'] .fixed-lang-switcher {
+      left: 1rem !important;
+    }
+  }
+</style>

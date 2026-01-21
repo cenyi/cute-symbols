@@ -1,0 +1,721 @@
+{
+  "category": "animals",
+  "icon": "🐾",
+  "color": "#FB923C",
+  "name": {
+    "en": "Animal & Pet Symbols",
+    "fil": "Mga Simbolo ng Hayop",
+    "ms": "Simbol Haiwan",
+    "bn": "প্রাণী প্রতীক",
+    "pl": "Symbole Zwierząt"
+  },
+  "description": {
+    "en": "Cute animals, pets, and creature emojis",
+    "fil": "Mga cute na hayop at alaga",
+    "ms": "Haiwan comel dan peliharaan",
+    "bn": "সুপ্রাণী এবং পোষা প্রাণী",
+    "pl": "Słodkie zwierzęta i zwierzęta domowe"
+  },
+  "symbols": [
+    {
+      "id": "animal-1",
+      "char": "🐱",
+      "unicode": "U+1F431",
+      "tags": ["cat", "cute", "pet"],
+      "popular": true
+    },
+    {
+      "id": "animal-2",
+      "char": "🐻",
+      "unicode": "U+1F43B",
+      "tags": ["bear", "cute", "teddy"],
+      "popular": true
+    },
+    {
+      "id": "animal-3",
+      "char": "🧸",
+      "unicode": "U+1F9F8",
+      "tags": ["teddy", "bear", "toy"],
+      "popular": true
+    },
+    {
+      "id": "animal-4",
+      "char": "🐰",
+      "unicode": "U+1F430",
+      "tags": ["rabbit", "bunny", "cute"],
+      "popular": true
+    },
+    {
+      "id": "animal-5",
+      "char": "🦊",
+      "unicode": "U+1F98A",
+      "tags": ["fox", "clever", "orange"],
+      "popular": true
+    },
+    {
+      "id": "animal-6",
+      "char": "🐶",
+      "unicode": "U+1F436",
+      "tags": ["dog", "puppy", "pet"],
+      "popular": true
+    },
+    {
+      "id": "animal-7",
+      "char": "🐼",
+      "unicode": "U+1F43C",
+      "tags": ["panda", "bear", "bamboo"],
+      "popular": false
+    },
+    {
+      "id": "animal-8",
+      "char": "🐨",
+      "unicode": "U+1F428",
+      "tags": ["koala", "australia", "cute"],
+      "popular": false
+    },
+    {
+      "id": "animal-9",
+      "char": "🐯",
+      "unicode": "U+1F42F",
+      "tags": ["tiger", "striped", "wild"],
+      "popular": false
+    },
+    {
+      "id": "animal-10",
+      "char": "🦁",
+      "unicode": "U+1F381",
+      "tags": ["lion", "king", "wild"],
+      "popular": false
+    },
+    {
+      "id": "animal-11",
+      "char": "🐮",
+      "unicode": "U+1F42E",
+      "tags": ["cow", "farm", "milk"],
+      "popular": false
+    },
+    {
+      "id": "animal-12",
+      "char": "🐷",
+      "unicode": "U+1F437",
+      "tags": ["pig", "pink", "cute"],
+      "popular": false
+    },
+    {
+      "id": "animal-13",
+      "char": "🐸",
+      "unicode": "U+1F438",
+      "tags": ["frog", "green", "amphibian"],
+      "popular": false
+    },
+    {
+      "id": "animal-14",
+      "char": "🦋",
+      "unicode": "U+1F98B",
+      "tags": ["butterfly", "insect", "beautiful"],
+      "popular": true
+    },
+    {
+      "id": "animal-15",
+      "char": "🐙",
+      "unicode": "U+1F419",
+      "tags": ["octopus", "sea", "tentacles"],
+      "popular": false
+    },
+    {
+      "id": "animal-16",
+      "char": "🦄",
+      "unicode": "U+1F984",
+      "tags": ["unicorn", "magic", "fantasy"],
+      "popular": true
+    },
+    {
+      "id": "animal-17",
+      "char": "🐾",
+      "unicode": "U+1F43E",
+      "tags": ["paw", "print", "pet"],
+      "popular": true
+    },
+    {
+      "id": "animal-18",
+      "char": "𓃠",
+      "unicode": "special",
+      "tags": ["egyptian", "cat", "ancient"],
+      "popular": false
+    },
+    {
+      "id": "animal-19",
+      "char": "𐙚",
+      "unicode": "special",
+      "tags": ["special", "unique", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "animal-20",
+      "char": "🐹",
+      "unicode": "U+1F439",
+      "tags": ["hamster", "small", "cute"],
+      "popular": false
+    },
+    {
+      "id": "animal-21",
+      "char": "🦔",
+      "unicode": "U+1F994",
+      "tags": ["hedgehog", "spiky", "cute"],
+      "popular": false
+    },
+    {
+      "id": "animal-22",
+      "char": "🐣",
+      "unicode": "U+1F423",
+      "tags": ["chick", "baby", "hatching"],
+      "popular": false
+    },
+    {
+      "id": "animal-23",
+      "char": "🐥",
+      "unicode": "U+1F425",
+      "tags": ["chick", "baby", "yellow"],
+      "popular": false
+    },
+    {
+      "id": "animal-24",
+      "char": "🐤",
+      "unicode": "U+1F424",
+      "tags": ["chick", "baby", "bird"],
+      "popular": false
+    },
+    {
+      "id": "animal-25",
+      "char": "🦆",
+      "unicode": "U+1F986",
+      "tags": ["duck", "water", "bird"],
+      "popular": false
+    },
+    {
+      "id": "animal-26",
+      "char": "🦢",
+      "unicode": "U+1F9A2",
+      "tags": ["swan", "elegant", "white"],
+      "popular": false
+    },
+    {
+      "id": "animal-27",
+      "char": "🦉",
+      "unicode": "U+1F989",
+      "tags": ["owl", "wise", "night"],
+      "popular": false
+    },
+    {
+      "id": "animal-28",
+      "char": "🐧",
+      "unicode": "U+1F427",
+      "tags": ["penguin", "cold", "cute"],
+      "popular": true
+    },
+    {
+      "id": "animal-29",
+      "char": "🦅",
+      "unicode": "U+1F985",
+      "tags": ["eagle", "bird", "strong"],
+      "popular": false
+    },
+    {
+      "id": "animal-30",
+      "char": "🐦",
+      "unicode": "U+1F426",
+      "tags": ["bird", "small", "tweet"],
+      "popular": false
+    },
+    {
+      "id": "animal-31",
+      "char": "🐳",
+      "unicode": "U+1F433",
+      "tags": ["whale", "ocean", "big"],
+      "popular": false
+    },
+    {
+      "id": "animal-32",
+      "char": "🐋",
+      "unicode": "U+1F40B",
+      "tags": ["whale", "ocean", "mammal"],
+      "popular": false
+    },
+    {
+      "id": "animal-33",
+      "char": "🐬",
+      "unicode": "U+1F42C",
+      "tags": ["dolphin", "smart", "ocean"],
+      "popular": true
+    },
+    {
+      "id": "animal-34",
+      "char": "🦈",
+      "unicode": "U+1F988",
+      "tags": ["shark", "ocean", "predator"],
+      "popular": false
+    },
+    {
+      "id": "animal-35",
+      "char": "🐟",
+      "unicode": "U+1F41F",
+      "tags": ["fish", "ocean", "swim"],
+      "popular": false
+    },
+    {
+      "id": "animal-36",
+      "char": "🐠",
+      "unicode": "U+1F420",
+      "tags": ["fish", "tropical", "colorful"],
+      "popular": false
+    },
+    {
+      "id": "animal-37",
+      "char": "🐡",
+      "unicode": "U+1F421",
+      "tags": ["pufferfish", "spiky", "ocean"],
+      "popular": false
+    },
+    {
+      "id": "animal-38",
+      "char": "🦀",
+      "unicode": "U+1F980",
+      "tags": ["crab", "ocean", "claws"],
+      "popular": false
+    },
+    {
+      "id": "animal-39",
+      "char": "🦞",
+      "unicode": "U+1F99E",
+      "tags": ["lobster", "ocean", "red"],
+      "popular": false
+    },
+    {
+      "id": "animal-40",
+      "char": "🦐",
+      "unicode": "U+1F990",
+      "tags": ["shrimp", "ocean", "small"],
+      "popular": false
+    },
+    {
+      "id": "animal-41",
+      "char": "🐚",
+      "unicode": "U+1F41A",
+      "tags": ["shell", "ocean", "spiral"],
+      "popular": false
+    },
+    {
+      "id": "animal-42",
+      "char": "🦑",
+      "unicode": "U+1F991",
+      "tags": ["squid", "ocean", "tentacles"],
+      "popular": false
+    },
+    {
+      "id": "animal-43",
+      "char": "🐛",
+      "unicode": "U+1F41B",
+      "tags": ["bug", "insect", "caterpillar"],
+      "popular": false
+    },
+    {
+      "id": "animal-44",
+      "char": "🐝",
+      "unicode": "U+1F41D",
+      "tags": ["bee", "honey", "buzz"],
+      "popular": true
+    },
+    {
+      "id": "animal-45",
+      "char": "🐞",
+      "unicode": "U+1F41E",
+      "tags": ["ladybug", "red", "spots"],
+      "popular": true
+    },
+    {
+      "id": "animal-46",
+      "char": "🦗",
+      "unicode": "U+1F997",
+      "tags": ["cricket", "insect", "chirp"],
+      "popular": false
+    },
+    {
+      "id": "animal-47",
+      "char": "🕷️",
+      "unicode": "U+1F577",
+      "tags": ["spider", "web", "eight"],
+      "popular": false
+    },
+    {
+      "id": "animal-48",
+      "char": "🦂",
+      "unicode": "U+1F982",
+      "tags": ["scorpion", "desert", "sting"],
+      "popular": false
+    },
+    {
+      "id": "animal-49",
+      "char": "🐢",
+      "unicode": "U+1F422",
+      "tags": ["turtle", "slow", "shell"],
+      "popular": false
+    },
+    {
+      "id": "animal-50",
+      "char": "🐍",
+      "unicode": "U+1F40D",
+      "tags": ["snake", "slither", "reptile"],
+      "popular": false
+    },
+    {
+      "id": "animal-51",
+      "char": "🦎",
+      "unicode": "U+1F98E",
+      "tags": ["lizard", "reptile", "gecko"],
+      "popular": false
+    },
+    {
+      "id": "animal-52",
+      "char": "🐲",
+      "unicode": "U+1F432",
+      "tags": ["dragon", "fantasy", "mythical"],
+      "popular": true
+    },
+    {
+      "id": "animal-53",
+      "char": "🐉",
+      "unicode": "U+1F409",
+      "tags": ["dragon", "chinese", "mythical"],
+      "popular": false
+    },
+    {
+      "id": "animal-54",
+      "char": "🦕",
+      "unicode": "U+1F995",
+      "tags": ["dinosaur", "long", "neck"],
+      "popular": false
+    },
+    {
+      "id": "animal-55",
+      "char": "🦖",
+      "unicode": "U+1F996",
+      "tags": ["dinosaur", "trex", "extinct"],
+      "popular": false
+    },
+    {
+      "id": "animal-56",
+      "char": "🐴",
+      "unicode": "U+1F434",
+      "tags": ["horse", "gallop", "mane"],
+      "popular": false
+    },
+    {
+      "id": "animal-57",
+      "char": "🦓",
+      "unicode": "U+1F993",
+      "tags": ["zebra", "stripes", "africa"],
+      "popular": false
+    },
+    {
+      "id": "animal-58",
+      "char": "🦒",
+      "unicode": "U+1F992",
+      "tags": ["giraffe", "tall", "spots"],
+      "popular": false
+    },
+    {
+      "id": "animal-59",
+      "char": "🐘",
+      "unicode": "U+1F418",
+      "tags": ["elephant", "trunk", "big"],
+      "popular": false
+    },
+    {
+      "id": "animal-60",
+      "char": "🦏",
+      "unicode": "U+1F98F",
+      "tags": ["rhino", "horn", "strong"],
+      "popular": false
+    },
+    {
+      "id": "animal-61",
+      "char": "🦛",
+      "unicode": "U+1F99B",
+      "tags": ["hippo", "water", "big"],
+      "popular": false
+    },
+    {
+      "id": "animal-62",
+      "char": "🐪",
+      "unicode": "U+1F42A",
+      "tags": ["camel", "desert", "hump"],
+      "popular": false
+    },
+    {
+      "id": "animal-63",
+      "char": "🐫",
+      "unicode": "U+1F42B",
+      "tags": ["camel", "two", "humps"],
+      "popular": false
+    },
+    {
+      "id": "animal-64",
+      "char": "🦙",
+      "unicode": "U+1F999",
+      "tags": ["llama", "fluffy", "cute"],
+      "popular": true
+    },
+    {
+      "id": "animal-65",
+      "char": "🐐",
+      "unicode": "U+1F410",
+      "tags": ["goat", "horns", "farm"],
+      "popular": false
+    },
+    {
+      "id": "animal-66",
+      "char": "🐑",
+      "unicode": "U+1F411",
+      "tags": ["sheep", "wool", "fluffy"],
+      "popular": false
+    },
+    {
+      "id": "animal-67",
+      "char": "🐎",
+      "unicode": "U+1F40E",
+      "tags": ["horse", "racing", "fast"],
+      "popular": false
+    },
+    {
+      "id": "animal-68",
+      "char": "🐕",
+      "unicode": "U+1F415",
+      "tags": ["dog", "pet", "loyal"],
+      "popular": false
+    },
+    {
+      "id": "animal-69",
+      "char": "🦮",
+      "unicode": "U+1F9AE",
+      "tags": ["guide", "dog", "service"],
+      "popular": false
+    },
+    {
+      "id": "animal-70",
+      "char": "🐕‍🦺",
+      "unicode": "U+1F415-200D-1F9BA",
+      "tags": ["service", "dog", "vest"],
+      "popular": false
+    },
+    {
+      "id": "animal-71",
+      "char": "🐈",
+      "unicode": "U+1F408",
+      "tags": ["cat", "pet", "meow"],
+      "popular": false
+    },
+    {
+      "id": "animal-72",
+      "char": "🐈‍⬛",
+      "unicode": "U+1F408-200D-2B1B",
+      "tags": ["black", "cat", "mystery"],
+      "popular": false
+    },
+    {
+      "id": "animal-73",
+      "char": "🐅",
+      "unicode": "U+1F405",
+      "tags": ["tiger", "stripes", "wild"],
+      "popular": false
+    },
+    {
+      "id": "animal-74",
+      "char": "🐆",
+      "unicode": "U+1F406",
+      "tags": ["leopard", "spots", "wild"],
+      "popular": false
+    },
+    {
+      "id": "animal-75",
+      "char": "🦘",
+      "unicode": "U+1F998",
+      "tags": ["kangaroo", "hop", "australia"],
+      "popular": false
+    },
+    {
+      "id": "animal-76",
+      "char": "🦥",
+      "unicode": "U+1F9A5",
+      "tags": ["sloth", "slow", "lazy"],
+      "popular": true
+    },
+    {
+      "id": "animal-77",
+      "char": "🦦",
+      "unicode": "U+1F9A6",
+      "tags": ["otter", "water", "playful"],
+      "popular": true
+    },
+    {
+      "id": "animal-78",
+      "char": "🦨",
+      "unicode": "U+1F9A8",
+      "tags": ["skunk", "smell", "black"],
+      "popular": false
+    },
+    {
+      "id": "animal-79",
+      "char": "🦡",
+      "unicode": "U+1F9A1",
+      "tags": ["badger", "burrow", "stripe"],
+      "popular": false
+    },
+    {
+      "id": "animal-80",
+      "char": "🐿️",
+      "unicode": "U+1F43F",
+      "tags": ["squirrel", "nuts", "tree"],
+      "popular": false
+    },
+    {
+      "id": "animal-81",
+      "char": "🦫",
+      "unicode": "U+1F9AB",
+      "tags": ["beaver", "dam", "water"],
+      "popular": false
+    },
+    {
+      "id": "animal-82",
+      "char": "🐭",
+      "unicode": "U+1F42D",
+      "tags": ["mouse", "small", "cheese"],
+      "popular": false
+    },
+    {
+      "id": "animal-83",
+      "char": "🐁",
+      "unicode": "U+1F401",
+      "tags": ["mouse", "small", "rodent"],
+      "popular": false
+    },
+    {
+      "id": "animal-84",
+      "char": "🐀",
+      "unicode": "U+1F400",
+      "tags": ["rat", "rodent", "city"],
+      "popular": false
+    },
+    {
+      "id": "animal-85",
+      "char": "🐇",
+      "unicode": "U+1F407",
+      "tags": ["rabbit", "hop", "ears"],
+      "popular": false
+    },
+    {
+      "id": "animal-86",
+      "char": "🐿",
+      "unicode": "U+1F43F",
+      "tags": ["chipmunk", "small", "cute"],
+      "popular": false
+    },
+    {
+      "id": "animal-87",
+      "char": "🦇",
+      "unicode": "U+1F987",
+      "tags": ["bat", "night", "wings"],
+      "popular": false
+    },
+    {
+      "id": "animal-88",
+      "char": "🐺",
+      "unicode": "U+1F43A",
+      "tags": ["wolf", "howl", "pack"],
+      "popular": false
+    },
+    {
+      "id": "animal-89",
+      "char": "🐃",
+      "unicode": "U+1F403",
+      "tags": ["buffalo", "strong", "horns"],
+      "popular": false
+    },
+    {
+      "id": "animal-90",
+      "char": "🐂",
+      "unicode": "U+1F402",
+      "tags": ["ox", "strong", "farm"],
+      "popular": false
+    },
+    {
+      "id": "animal-91",
+      "char": "🐄",
+      "unicode": "U+1F404",
+      "tags": ["cow", "milk", "farm"],
+      "popular": false
+    },
+    {
+      "id": "animal-92",
+      "char": "🐖",
+      "unicode": "U+1F416",
+      "tags": ["pig", "farm", "oink"],
+      "popular": false
+    },
+    {
+      "id": "animal-93",
+      "char": "🐗",
+      "unicode": "U+1F417",
+      "tags": ["boar", "wild", "tusks"],
+      "popular": false
+    },
+    {
+      "id": "animal-94",
+      "char": "🐏",
+      "unicode": "U+1F40F",
+      "tags": ["ram", "horns", "wool"],
+      "popular": false
+    },
+    {
+      "id": "animal-95",
+      "char": "🐓",
+      "unicode": "U+1F413",
+      "tags": ["rooster", "crow", "farm"],
+      "popular": false
+    },
+    {
+      "id": "animal-96",
+      "char": "🐔",
+      "unicode": "U+1F414",
+      "tags": ["chicken", "farm", "eggs"],
+      "popular": false
+    },
+    {
+      "id": "animal-97",
+      "char": "🐦‍⬛",
+      "unicode": "U+1F426-200D-2B1B",
+      "tags": ["black", "bird", "crow"],
+      "popular": false
+    },
+    {
+      "id": "animal-98",
+      "char": "🦃",
+      "unicode": "U+1F983",
+      "tags": ["turkey", "thanksgiving", "bird"],
+      "popular": false
+    },
+    {
+      "id": "animal-99",
+      "char": "🕊️",
+      "unicode": "U+1F54A",
+      "tags": ["dove", "peace", "white"],
+      "popular": false
+    },
+    {
+      "id": "animal-100",
+      "char": "🦚",
+      "unicode": "U+1F99A",
+      "tags": ["peacock", "colorful", "feathers"],
+      "popular": false
+    }
+  ]
+}

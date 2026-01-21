@@ -1,0 +1,352 @@
+---
+/**
+ * 平台使用指南组件
+ * 展示如何在各大平台使用可爱符号
+ * 2026年最新平台支持
+ * 动态多语言生成
+ */
+import { getTranslations } from '../i18n/utils';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// 平台配置
+const platforms = [
+  {
+    id: 'instagram',
+    name: t('platforms.instagram'),
+    icon: '📸',
+    color: '#E1306C',
+    description: t('platformGuide.instagram.description'),
+    tips: t('platformGuide.instagram.tips'),
+    keywords: t('seo.platformSpecific.instagram')
+  },
+  {
+    id: 'tiktok',
+    name: t('platforms.tiktok'),
+    icon: '🎵',
+    color: '#000000',
+    description: t('platformGuide.tiktok.description'),
+    tips: t('platformGuide.tiktok.tips'),
+    keywords: t('seo.platformSpecific.tiktok')
+  },
+  {
+    id: 'discord',
+    name: t('platforms.discord'),
+    icon: '🎮',
+    color: '#5865F2',
+    description: t('platformGuide.discord.description'),
+    tips: t('platformGuide.discord.tips'),
+    keywords: t('seo.platformSpecific.discord')
+  },
+  {
+    id: 'roblox',
+    name: t('platforms.roblox'),
+    icon: '🎮',
+    color: '#E2231A',
+    description: t('platformGuide.roblox.description'),
+    tips: t('platformGuide.roblox.tips'),
+    keywords: t('seo.platformSpecific.roblox')
+  },
+  {
+    id: 'twitter',
+    name: t('platforms.twitter'),
+    icon: '🐦',
+    color: '#1DA1F2',
+    description: t('platformGuide.twitter.description'),
+    tips: t('platformGuide.twitter.tips'),
+    keywords: t('seo.platformSpecific.twitter')
+  },
+  {
+    id: 'wechat',
+    name: t('platforms.wechat'),
+    icon: '💬',
+    color: '#07C160',
+    description: t('platformGuide.wechat.description'),
+    tips: t('platformGuide.wechat.tips'),
+    keywords: t('seo.platformSpecific.wechat')
+  }
+];
+---
+
+<!-- 平台使用指南 -->
+<section
+  class="platforms-guide"
+  style={{
+    margin: '3rem auto',
+    padding: '0 1rem'
+  }}
+>
+  <h2 style={{
+    fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+    fontWeight: 700,
+    marginBottom: '0.5rem',
+    textAlign: 'center',
+    color: 'var(--text-primary)'
+  }}>
+    📱 {t('ui.platformGuide')}
+  </h2>
+
+  <p style={{
+    textAlign: 'center',
+    color: 'var(--text-secondary)',
+    marginBottom: '2rem',
+    fontSize: '1rem'
+  }}>
+    {t('ui.mostPopularUsage')}
+  </p>
+
+  <div style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+    gap: '1rem'
+  }}>
+    {platforms.map((platform, index) => (
+      <article
+        class="platform-card"
+        style={{
+          background: 'var(--card-bg)',
+          border: '1px solid var(--border-color)',
+          borderRadius: 'var(--radius-lg)',
+          padding: '1.5rem',
+          transition: 'all 0.3s ease',
+          animation: `fadeIn 0.6s ease-out ${index * 0.1}s both`,
+          opacity: 0
+        }}
+      >
+        {/* 平台头部 */}
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '1rem',
+          marginBottom: '1rem'
+        }}>
+          <span style={{
+            fontSize: '2.5rem',
+            display: 'inline-block'
+          }}>
+            {platform.icon}
+          </span>
+          <div style={{ flex: 1 }}>
+            <h3 style={{
+              fontSize: '1.125rem',
+              fontWeight: 700,
+              marginBottom: '0.25rem',
+              color: 'var(--text-primary)'
+            }}>
+              {platform.name}
+            </h3>
+            <div style={{
+              fontSize: '0.75rem',
+              color: 'var(--accent-color)',
+              fontWeight: 600
+            }}>
+              {t('ui.trendingLabel')}
+            </div>
+          </div>
+        </div>
+
+        {/* 描述 */}
+        <p style={{
+          fontSize: '0.9375rem',
+          color: 'var(--text-secondary)',
+          marginBottom: '0.75rem',
+          lineHeight: 1.5
+        }}>
+          {platform.description}
+        </p>
+
+        {/* 使用提示 */}
+        <div style={{
+          background: 'var(--bg-color)',
+          padding: '0.75rem',
+          borderRadius: 'var(--radius-md)',
+          marginBottom: '1rem'
+        }}>
+          <div style={{
+            fontSize: '0.8125rem',
+            fontWeight: 600,
+            color: 'var(--text-primary)',
+            marginBottom: '0.25rem'
+          }}>
+            💡 {t('ui.useCases')}
+          </div>
+          <div style={{
+            fontSize: '0.8125rem',
+            color: 'var(--text-secondary)'
+          }}>
+            {platform.tips}
+          </div>
+        </div>
+
+        {/* 关键词（SEO + AI友好） */}
+        <div style={{
+          fontSize: '0.6875rem',
+          color: 'var(--text-secondary)',
+          fontFamily: 'monospace',
+          wordBreak: 'break-all',
+          opacity: 0.7,
+          lineHeight: 1.4
+        }}>
+          {platform.keywords}
+        </div>
+
+        {/* 快速复制示例 */}
+        <div style={{
+          marginTop: '1rem',
+          paddingTop: '1rem',
+          borderTop: '1px solid var(--border-color)'
+        }}>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginBottom: '0.75rem'
+          }}>
+            <div style={{
+              fontSize: '0.8125rem',
+              fontWeight: 600,
+              color: 'var(--text-primary)'
+            }}>
+              ✨ {t('ui.popularSymbols')}
+            </div>
+            <a
+              href={`/blog/${platform.id === 'twitter' ? 'twitter-x-bio-symbols' : 
+                    platform.id === 'discord' ? 'discord-nickname-symbols' :
+                    platform.id === 'instagram' ? 'instagram-bio-symbols-2026-guide' :
+                    platform.id === 'tiktok' ? 'tiktok-bio-symbols-2026-guide' :
+                    platform.id === 'roblox' ? 'roblox-username-symbols-guide' :
+                    platform.id === 'wechat' ? 'wechat-symbols-guide' :
+                    'instagram-bio-symbols-2026-guide'}`}
+              style={{
+                fontSize: '0.75rem',
+                color: 'var(--accent-color)',
+                textDecoration: 'none',
+                fontWeight: 600,
+                padding: '0.25rem 0.5rem',
+                borderRadius: '4px',
+                border: '1px solid var(--accent-color)',
+                transition: 'all 0.2s ease'
+              }}
+              class="guide-link"
+            >
+              📖 {t('ui.fullGuide')}
+            </a>
+          </div>
+          <div style={{
+            display: 'flex',
+            gap: '0.5rem',
+            flexWrap: 'wrap'
+          }}>
+            <span class="symbol-example" style={{
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              transition: 'all 0.2s'
+            }}>💖</span>
+            <span class="symbol-example" style={{
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              transition: 'all 0.2s'
+            }}>⭐</span>
+            <span class="symbol-example" style={{
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              transition: 'all 0.2s'
+            }}>✨</span>
+            <span class="symbol-example" style={{
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              transition: 'all 0.2s'
+            }}>🌸</span>
+            <span class="symbol-example" style={{
+              fontSize: '1.25rem',
+              cursor: 'pointer',
+              padding: '0.25rem 0.5rem',
+              borderRadius: '4px',
+              transition: 'all 0.2s'
+            }}>(*´ - ͈ ꪹ - ͈`*)</span>
+          </div>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .platform-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+  }
+
+  .symbol-example:hover {
+    transform: scale(1.2);
+    background: var(--bg-color);
+  }
+
+  .guide-link:hover {
+    background: var(--accent-color);
+    color: #ffffff !important;
+    transform: translateY(-1px);
+  }
+
+  @media (max-width: 768px) {
+    .platforms-guide {
+      padding: 0 1rem;
+    }
+
+    .platform-card {
+      padding: 1.25rem !important;
+    }
+  }
+</style>
+
+<script>
+  // 符号点击复制
+  document.addEventListener('DOMContentLoaded', () => {
+    const examples = document.querySelectorAll('.symbol-example');
+
+    examples.forEach(example => {
+      example.addEventListener('click', async (e) => {
+        const symbol = (e.currentTarget as HTMLElement).textContent;
+
+        try {
+          await navigator.clipboard.writeText(symbol);
+          (e.currentTarget as HTMLElement).style.transform = 'scale(1.1)';
+          (e.currentTarget as HTMLElement).style.background = 'var(--accent-color)';
+
+          setTimeout(() => {
+            (e.currentTarget as HTMLElement).style.transform = '';
+            (e.currentTarget as HTMLElement).style.background = '';
+          }, 200);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+        }
+      });
+    });
+  });
+</script>

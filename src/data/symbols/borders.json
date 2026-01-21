@@ -1,0 +1,721 @@
+{
+  "category": "borders",
+  "icon": "『』",
+  "color": "#EC4899",
+  "name": {
+    "en": "Border & Bracket Symbols",
+    "fil": "Mga Simbolo ng Border at Bracket",
+    "ms": "Simbol Border dan Bracket",
+    "bn": "বর্ডার ও ব্র্যাকেট প্রতীক",
+    "pl": "Symbole Ramki i Nawiasów"
+  },
+  "description": {
+    "en": "Decorative brackets, borders, frames, and enclosure symbols",
+    "fil": "Mga decorative na bracket, border, at frame",
+    "ms": "Bracket decorative, border, dan frame",
+    "bn": "সুসজ্জিত ব্র্যাকেট, বর্ডার এবং এনক্লোজার প্রতীক",
+    "pl": "Ozdobne nawiasy, ramki i symbole ramienia"
+  },
+  "symbols": [
+    {
+      "id": "border-1",
+      "char": "『』",
+      "unicode": "U+300D U+300E",
+      "tags": ["bracket", "japanese", "double", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-2",
+      "char": "「」",
+      "unicode": "U+300C U+300D",
+      "tags": ["bracket", "japanese", "single", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-3",
+      "char": "《》",
+      "unicode": "U+300A U+300B",
+      "tags": ["bracket", "chinese", "double", "angle"],
+      "popular": true
+    },
+    {
+      "id": "border-4",
+      "char": "〈〉",
+      "unicode": "U+3008 U+3009",
+      "tags": ["bracket", "chinese", "single", "angle"],
+      "popular": true
+    },
+    {
+      "id": "border-5",
+      "char": "（）",
+      "unicode": "U+FF08 U+FF09",
+      "tags": ["bracket", "parentheses", "fullwidth", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-6",
+      "char": "｛｝",
+      "unicode": "U+FF3B U+FF3D",
+      "tags": ["bracket", "curly", "fullwidth", "fancy"],
+      "popular": true
+    },
+    {
+      "id": "border-7",
+      "char": "［］",
+      "unicode": "U+FF3B U+FF3D",
+      "tags": ["bracket", "square", "fullwidth", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-8",
+      "char": "〔〕",
+      "unicode": "U+3014 U+3015",
+      "tags": ["bracket", "tortoise", "frame", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-9",
+      "char": "【】",
+      "unicode": "U+3010 U+3011",
+      "tags": ["bracket", "black", "frame", "popular"],
+      "popular": true
+    },
+    {
+      "id": "border-10",
+      "char": "〖〗",
+      "unicode": "U+3016 U+3017",
+      "tags": ["bracket", "white", "frame", "cute"],
+      "popular": true
+    },
+    {
+      "id": "border-11",
+      "char": "〘〙",
+      "unicode": "U+3018 U+3019",
+      "tags": ["bracket", "angle", "frame", "decorative"],
+      "popular": true
+    },
+    {
+      "id": "border-12",
+      "char": "〚〛",
+      "unicode": "U+301A U+301B",
+      "tags": ["bracket", "double", "frame", "decorative"],
+      "popular": true
+    },
+    {
+      "id": "border-13",
+      "char": "（）",
+      "unicode": "U+0028 U+0029",
+      "tags": ["bracket", "parentheses", "basic", "simple"],
+      "popular": true
+    },
+    {
+      "id": "border-14",
+      "char": "[]",
+      "unicode": "U+005B U+005D",
+      "tags": ["bracket", "square", "basic", "simple"],
+      "popular": true
+    },
+    {
+      "id": "border-15",
+      "char": "{}",
+      "unicode": "U+007B U+007D",
+      "tags": ["bracket", "curly", "basic", "simple"],
+      "popular": true
+    },
+    {
+      "id": "border-16",
+      "char": "⟨⟩",
+      "unicode": "U+27E8 U+27E9",
+      "tags": ["bracket", "angle", "math", "unicode"],
+      "popular": false
+    },
+    {
+      "id": "border-17",
+      "char": "⦅⦆",
+      "unicode": "U+2985 U+2986",
+      "tags": ["bracket", "double", "angle", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-18",
+      "char": "⦚",
+      "unicode": "U+299A",
+      "tags": ["bracket", "vertical", "bar", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-19",
+      "char": "╭╮",
+      "unicode": "U+256D U+256E",
+      "tags": ["bracket", "corner", "frame", "box"],
+      "popular": false
+    },
+    {
+      "id": "border-20",
+      "char": "╰╯",
+      "unicode": "U+2570 U+2571",
+      "tags": ["bracket", "corner", "frame", "box"],
+      "popular": false
+    },
+    {
+      "id": "border-21",
+      "char": "╔╗",
+      "unicode": "U+2554 U+2557",
+      "tags": ["bracket", "double", "corner", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-22",
+      "char": "╚╝",
+      "unicode": "U+255A U+255D",
+      "tags": ["bracket", "double", "corner", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-23",
+      "char": "┌┐",
+      "unicode": "U+250C U+2510",
+      "tags": ["bracket", "single", "corner", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-24",
+      "char": "└┘",
+      "unicode": "U+2514 U+2518",
+      "tags": ["bracket", "single", "corner", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-25",
+      "char": "┬┴",
+      "unicode": "U+2534 U+2534",
+      "tags": ["bracket", "t", "cross", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-26",
+      "char": "├┤",
+      "unicode": "U+251C U+2524",
+      "tags": ["bracket", "t", "cross", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-27",
+      "char": "─",
+      "unicode": "U+2500",
+      "tags": ["bracket", "horizontal", "line", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-28",
+      "char": "━",
+      "unicode": "U+2501",
+      "tags": ["bracket", "horizontal", "thick", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-29",
+      "char": "│",
+      "unicode": "U+2502",
+      "tags": ["bracket", "vertical", "line", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-30",
+      "char": "┃",
+      "unicode": "U+2503",
+      "tags": ["bracket", "vertical", "thick", "frame"],
+      "popular": false
+    },
+    {
+      "id": "border-31",
+      "char": "◀▶",
+      "unicode": "U+25C0 U+25B6",
+      "tags": ["bracket", "arrow", "triangle", "direction"],
+      "popular": false
+    },
+    {
+      "id": "border-32",
+      "char": "△▲",
+      "unicode": "U+25B2 U+25B2",
+      "tags": ["bracket", "triangle", "up", "down"],
+      "popular": false
+    },
+    {
+      "id": "border-33",
+      "char": "▽▼",
+      "unicode": "U+25BC U+25BC",
+      "tags": ["bracket", "triangle", "down", "inverted"],
+      "popular": false
+    },
+    {
+      "id": "border-34",
+      "char": "◇◆",
+      "unicode": "U+25C6 U+25C6",
+      "tags": ["bracket", "diamond", "outline", "solid"],
+      "popular": false
+    },
+    {
+      "id": "border-35",
+      "char": "★☆",
+      "unicode": "U+2605 U+2606",
+      "tags": ["bracket", "star", "solid", "outline"],
+      "popular": false
+    },
+    {
+      "id": "border-36",
+      "char": "■□",
+      "unicode": "U+25A0 U+25A1",
+      "tags": ["bracket", "square", "solid", "outline"],
+      "popular": false
+    },
+    {
+      "id": "border-37",
+      "char": "▢▣",
+      "unicode": "U+25A2 U+25A3",
+      "tags": ["bracket", "square", "outlined", "dotted"],
+      "popular": false
+    },
+    {
+      "id": "border-38",
+      "char": "▤▥",
+      "unicode": "U+25A4 U+25A5",
+      "tags": ["bracket", "square", "shaded", "pattern"],
+      "popular": false
+    },
+    {
+      "id": "border-39",
+      "char": "▦▧",
+      "unicode": "U+25A6 U+25A7",
+      "tags": ["bracket", "square", "small", "dots"],
+      "popular": false
+    },
+    {
+      "id": "border-40",
+      "char": "▨▩",
+      "unicode": "U+25A8 U+25A9",
+      "tags": ["bracket", "square", "cross", "hatched"],
+      "popular": false
+    },
+    {
+      "id": "border-41",
+      "char": "▪▫",
+      "unicode": "U+25AA U+25AB",
+      "tags": ["bracket", "square", "tiny", "small"],
+      "popular": false
+    },
+    {
+      "id": "border-42",
+      "char": "▬",
+      "unicode": "U+25AC",
+      "tags": ["bracket", "rectangle", "horizontal", "bar"],
+      "popular": false
+    },
+    {
+      "id": "border-43",
+      "char": "▭",
+      "unicode": "U+25AD",
+      "tags": ["bracket", "rectangle", "horizontal", "line"],
+      "popular": false
+    },
+    {
+      "id": "border-44",
+      "char": "◄►",
+      "unicode": "U+25C4 U+25BA",
+      "tags": ["bracket", "arrow", "left", "right"],
+      "popular": false
+    },
+    {
+      "id": "border-45",
+      "char": "⟨⟩",
+      "unicode": "U+2329 U+232A",
+      "tags": ["bracket", "angle", "unicode", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-46",
+      "char": "〈〉",
+      "unicode": "U+2329 U+232A",
+      "tags": ["bracket", "angle", "unicode", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-47",
+      "char": "«»",
+      "unicode": "U+00AB U+00BB",
+      "tags": ["bracket", "quote", "french", "double"],
+      "popular": false
+    },
+    {
+      "id": "border-48",
+      "char": "‹›",
+      "unicode": "U+2039 U+203A",
+      "tags": ["bracket", "quote", "french", "single"],
+      "popular": false
+    },
+    {
+      "id": "border-49",
+      "char": "❝❞",
+      "unicode": "U+275D U+275E",
+      "tags": ["bracket", "quote", "curly", "double"],
+      "popular": false
+    },
+    {
+      "id": "border-50",
+      "char": "❛❜",
+      "unicode": "U+275B U+275C",
+      "tags": ["bracket", "quote", "curly", "single"],
+      "popular": false
+    },
+    {
+      "id": "border-51",
+      "char": "‵‶",
+      "unicode": "U+2035 U+2036",
+      "tags": ["bracket", "quote", "prime", "accent"],
+      "popular": false
+    },
+    {
+      "id": "border-52",
+      "char": "‷",
+      "unicode": "U+2037",
+      "tags": ["bracket", "quote", "prime", "triple"],
+      "popular": false
+    },
+    {
+      "id": "border-53",
+      "char": "☀",
+      "unicode": "U+2600",
+      "tags": ["bracket", "sun", "weather", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-54",
+      "char": "☁",
+      "unicode": "U+2601",
+      "tags": ["bracket", "cloud", "weather", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-55",
+      "char": "☂",
+      "unicode": "U+2602",
+      "tags": ["bracket", "rain", "weather", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-56",
+      "char": "☃",
+      "unicode": "U+2603",
+      "tags": ["bracket", "snow", "weather", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-57",
+      "char": "☼",
+      "unicode": "U+263C",
+      "tags": ["bracket", "sun", "white", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-58",
+      "char": "☽",
+      "unicode": "U+263D",
+      "tags": ["bracket", "moon", "crescent", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-59",
+      "char": "☾",
+      "unicode": "U+263E",
+      "tags": ["bracket", "moon", "full", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-60",
+      "char": "☿",
+      "unicode": "U+263F",
+      "tags": ["bracket", "mercury", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-61",
+      "char": "♀",
+      "unicode": "U+2640",
+      "tags": ["bracket", "venus", "female", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-62",
+      "char": "♁",
+      "unicode": "U+2641",
+      "tags": ["bracket", "earth", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-63",
+      "char": "♂",
+      "unicode": "U+2642",
+      "tags": ["bracket", "mars", "male", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-64",
+      "char": "♃",
+      "unicode": "U+2643",
+      "tags": ["bracket", "jupiter", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-65",
+      "char": "♄",
+      "unicode": "U+2644",
+      "tags": ["bracket", "saturn", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-66",
+      "char": "♅",
+      "unicode": "U+2645",
+      "tags": ["bracket", "uranus", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-67",
+      "char": "♆",
+      "unicode": "U+2646",
+      "tags": ["bracket", "neptune", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-68",
+      "char": "♇",
+      "unicode": "U+2647",
+      "tags": ["bracket", "pluto", "planet", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-69",
+      "char": "♈",
+      "unicode": "U+2648",
+      "tags": ["bracket", "aries", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-70",
+      "char": "♉",
+      "unicode": "U+2649",
+      "tags": ["bracket", "taurus", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-71",
+      "char": "♊",
+      "unicode": "U+264A",
+      "tags": ["bracket", "gemini", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-72",
+      "char": "♋",
+      "unicode": "U+264B",
+      "tags": ["bracket", "cancer", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-73",
+      "char": "♌",
+      "unicode": "U+264C",
+      "tags": ["bracket", "leo", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-74",
+      "char": "♍",
+      "unicode": "U+264D",
+      "tags": ["bracket", "virgo", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-75",
+      "char": "♎",
+      "unicode": "U+264E",
+      "tags": ["bracket", "libra", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-76",
+      "char": "♏",
+      "unicode": "U+264F",
+      "tags": ["bracket", "scorpio", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-77",
+      "char": "♐",
+      "unicode": "U+2650",
+      "tags": ["bracket", "sagittarius", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-78",
+      "char": "♑",
+      "unicode": "U+2651",
+      "tags": ["bracket", "capricorn", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-79",
+      "char": "♒",
+      "unicode": "U+2652",
+      "tags": ["bracket", "aquarius", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-80",
+      "char": "♓",
+      "unicode": "U+2653",
+      "tags": ["bracket", "pisces", "zodiac", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "border-81",
+      "char": "☚",
+      "unicode": "U+261A",
+      "tags": ["bracket", "arrow", "left", "finger"],
+      "popular": false
+    },
+    {
+      "id": "border-82",
+      "char": "☛",
+      "unicode": "U+261B",
+      "tags": ["bracket", "arrow", "right", "finger"],
+      "popular": false
+    },
+    {
+      "id": "border-83",
+      "char": "☜",
+      "unicode": "U+261C",
+      "tags": ["bracket", "arrow", "left", "white"],
+      "popular": false
+    },
+    {
+      "id": "border-84",
+      "char": "☞",
+      "unicode": "U+261E",
+      "tags": ["bracket", "arrow", "right", "white"],
+      "popular": false
+    },
+    {
+      "id": "border-85",
+      "char": "⌜",
+      "unicode": "U+231C",
+      "tags": ["bracket", "corner", "top", "left"],
+      "popular": false
+    },
+    {
+      "id": "border-86",
+      "char": "⌝",
+      "unicode": "U+231D",
+      "tags": ["bracket", "corner", "top", "right"],
+      "popular": false
+    },
+    {
+      "id": "border-87",
+      "char": "⌞",
+      "unicode": "U+231E",
+      "tags": ["bracket", "corner", "bottom", "left"],
+      "popular": false
+    },
+    {
+      "id": "border-88",
+      "char": "⌟",
+      "unicode": "U+231F",
+      "tags": ["bracket", "corner", "bottom", "right"],
+      "popular": false
+    },
+    {
+      "id": "border-89",
+      "char": "⌈",
+      "unicode": "U+2312",
+      "tags": ["bracket", "floor", "left", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-90",
+      "char": "⌉",
+      "unicode": "U+2313",
+      "tags": ["bracket", "ceiling", "right", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-91",
+      "char": "⌊",
+      "unicode": "U+230A",
+      "tags": ["bracket", "floor", "left", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-92",
+      "char": "⌋",
+      "unicode": "U+230B",
+      "tags": ["bracket", "floor", "right", "math"],
+      "popular": false
+    },
+    {
+      "id": "border-93",
+      "char": "꒰",
+      "unicode": "U+4508",
+      "tags": ["bracket", "decorative", "fancy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "border-94",
+      "char": "꒱",
+      "unicode": "U+45F1",
+      "tags": ["bracket", "decorative", "fancy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "border-95",
+      "char": "୨",
+      "unicode": "U+B6E8",
+      "tags": ["bracket", "decorative", "fancy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "border-96",
+      "char": "୧",
+      "unicode": "U+B6E9",
+      "tags": ["bracket", "decorative", "fancy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "border-97",
+      "char": "꧁",
+      "unicode": "U+A47F",
+      "tags": ["bracket", "decorative", "fancy", "border"],
+      "popular": false
+    },
+    {
+      "id": "border-98",
+      "char": "꧂",
+      "unicode": "U+A480",
+      "tags": ["bracket", "decorative", "fancy", "border"],
+      "popular": false
+    },
+    {
+      "id": "border-99",
+      "char": "📦",
+      "unicode": "U+1F4E6",
+      "tags": ["bracket", "box", "package", "emoji"],
+      "popular": false
+    },
+    {
+      "id": "border-100",
+      "char": "⬜",
+      "unicode": "U+2B1C",
+      "tags": ["bracket", "square", "large", "white"],
+      "popular": false
+    }
+  ]
+}

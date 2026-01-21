@@ -1,0 +1,192 @@
+---
+import { getTranslations } from '../i18n/utils';
+import type { Symbol } from '../data';
+
+interface Props {
+  symbol: Symbol;
+  locale?: string;
+  showDetails?: boolean;
+}
+
+const {
+  symbol,
+  locale = 'en',
+  showDetails = true
+} = Astro.props;
+
+const { t } = getTranslations(locale as any);
+
+// 传递到客户端的文本
+const copyText = t('common.copy');
+const copiedText = t('common.copied');
+---
+
+<div
+  class="symbol-card"
+  style={{
+    background: 'var(--card-bg, #ffffff)',
+    border: '1px solid var(--border-color, #e1e4e8)',
+    borderRadius: 'var(--radius-lg, 12px)',
+    padding: '1.5rem',
+    textAlign: 'center',
+    boxShadow: 'var(--shadow-sm, 0 1px 3px rgba(0, 0, 0, 0.08))',
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    cursor: 'pointer',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
+  <!-- 符号显示区域 -->
+  <div
+    class="symbol-display"
+    style={{
+      fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+      marginBottom: '0.75rem',
+      lineHeight: 1,
+      transition: 'transform 0.3s ease',
+      display: 'inline-block'
+    }}
+  >
+    {symbol.symbol}
+  </div>
+
+  {showDetails && (
+    <>
+      <!-- Unicode 信息 -->
+      <p style={{
+        fontSize: '0.6875rem',
+        color: 'var(--text-secondary, #666666)',
+        marginBottom: '0.5rem',
+        fontFamily: 'monospace',
+        wordBreak: 'break-all',
+        opacity: 0.8
+      }}>
+        {symbol.unicode}
+      </p>
+
+      <!-- 标签 -->
+      <div style={{
+        display: 'flex',
+        gap: '0.25rem',
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginBottom: '1rem'
+      }}>
+        {symbol.tags.slice(0, 2).map(tag => (
+          <span style={{
+            fontSize: '0.6875rem',
+            padding: '0.125rem 0.5rem',
+            background: 'var(--bg-color, #f5f5f7)',
+            borderRadius: '4px',
+            color: 'var(--text-secondary, #666666)',
+            fontWeight: 500
+          }}>
+            {tag}
+          </span>
+        ))}
+      </div>
+    </>
+  )}
+
+  <!-- 复制按钮 -->
+  <button
+    class="copy-btn"
+    data-symbol={symbol.symbol}
+    aria-label={t('common.copy')}
+    style={{
+      width: '100%',
+      padding: '0.625rem 1rem',
+      fontSize: '0.875rem',
+      fontWeight: 600,
+      background: 'transparent',
+      color: 'var(--accent-color, #ff6b9d)',
+      border: '1px solid var(--accent-color, #ff6b9d)',
+      borderRadius: 'var(--radius-md, 8px)',
+      cursor: 'pointer',
+      transition: 'all 0.2s ease',
+      fontFamily: 'inherit'
+    }}
+  >
+    {t('common.copy')}
+  </button>
+</div>
+
+<style>
+  /* 悬停效果 */
+  .symbol-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg, 0 12px 24px rgba(0, 0, 0, 0.12));
+    border-color: var(--accent-color, #ff6b9d);
+  }
+
+  .symbol-card:hover .symbol-display {
+    transform: scale(1.1) rotate(5deg);
+  }
+
+  .symbol-card:hover .copy-btn {
+    background: var(--accent-color, #ff6b9d);
+    color: #ffffff;
+  }
+
+  /* 复制成功状态 */
+  .copy-btn.copied {
+    background: var(--accent-color, #ff6b9d) !important;
+    color: #ffffff !important;
+  }
+</style>
+
+<script define:vars={{ copyText, copiedText }}>
+  document.addEventListener('DOMContentLoaded', () => {
+    const copyButtons = document.querySelectorAll('.copy-btn');
+
+    copyButtons.forEach(btn => {
+      btn.addEventListener('click', async (e) => {
+        const target = e.currentTarget;
+        const symbol = target.getAttribute('data-symbol');
+        if (!symbol) return;
+
+        // 检查 clipboard API 可用性
+        if (!navigator.clipboard) {
+          // 降级方案
+          const textArea = document.createElement('textarea');
+          textArea.value = symbol;
+          textArea.style.position = 'fixed';
+          textArea.style.opacity = '0';
+          document.body.appendChild(textArea);
+          textArea.select();
+
+          try {
+            // @ts-ignore: document.execCommand('copy') is deprecated but used as fallback
+            document.execCommand('copy');
+            target.textContent = '✓ ' + copiedText;
+            target.classList.add('copied');
+
+            setTimeout(() => {
+              target.textContent = copyText;
+              target.classList.remove('copied');
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+          } finally {
+            document.body.removeChild(textArea);
+          }
+          return;
+        }
+
+        // 现代 clipboard API
+        try {
+          await navigator.clipboard.writeText(symbol);
+          target.textContent = '✓ ' + copiedText;
+          target.classList.add('copied');
+
+          setTimeout(() => {
+            target.textContent = copyText;
+            target.classList.remove('copied');
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+        }
+      });
+    });
+  });
+</script>

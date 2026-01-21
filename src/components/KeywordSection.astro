@@ -1,0 +1,219 @@
+---
+/**
+ * 关键词展示区域
+ * 将SEO关键词以用户友好的方式展示
+ * 提供快速搜索标签功能
+ */
+import { getTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// 热门搜索标签（对应长尾关键词）
+const popularTags: Record<Locale, Array<{text: string, query: string}>> = {
+  en: [
+    { text: 'Copy & Paste', query: 'copy paste' },
+    { text: 'Aesthetic', query: 'aesthetic' },
+    { text: 'Faces', query: 'faces' },
+    { text: 'Instagram Bio', query: 'instagram' },
+    { text: 'Heart Symbols', query: 'heart' },
+    { text: 'Name Decoration', query: 'name' },
+    { text: 'Keyboard Symbols', query: 'keyboard' },
+    { text: 'Japanese Style', query: 'japanese' },
+    { text: 'Emoji', query: 'emoji' },
+    { text: 'Bow Symbols', query: 'bow' },
+    { text: 'Font Symbols', query: 'font' },
+    { text: 'Emoticons', query: 'emoticon' }
+  ],
+  fil: [
+    { text: 'Kopyahin at Idikit', query: 'copy paste' },
+    { text: 'Aesthetic', query: 'aesthetic' },
+    { text: 'Mukha', query: 'faces' },
+    { text: 'Instagram Bio', query: 'instagram' },
+    { text: 'Puso', query: 'heart' },
+    { text: 'Pangalan', query: 'name' },
+    { text: 'Keyboard', query: 'keyboard' },
+    { text: 'Hapon Style', query: 'japanese' },
+    { text: 'Emoji', query: 'emoji' },
+    { text: 'Bow', query: 'bow' },
+    { text: 'Font', query: 'font' },
+    { text: 'Emoticons', query: 'emoticon' }
+  ],
+  ms: [
+    { text: 'Salin & Tampal', query: 'copy paste' },
+    { text: 'Aesthetic', query: 'aesthetic' },
+    { text: 'Muka', query: 'faces' },
+    { text: 'Instagram Bio', query: 'instagram' },
+    { text: 'Hati', query: 'heart' },
+    { text: 'Nama', query: 'name' },
+    { text: 'Papan Kekunci', query: 'keyboard' },
+    { text: 'Gaya Jepun', query: 'japanese' },
+    { text: 'Emoji', query: 'emoji' },
+    { text: 'Bow', query: 'bow' },
+    { text: 'Fon', query: 'font' },
+    { text: 'Emotikon', query: 'emoticon' }
+  ],
+  bn: [
+    { text: 'কপি এবং পেস্ট', query: 'copy paste' },
+    { text: 'Aesthetic', query: 'aesthetic' },
+    { text: 'মুখ', query: 'faces' },
+    { text: 'Instagram Bio', query: 'instagram' },
+    { text: 'হৃদয়', query: 'heart' },
+    { text: 'নাম', query: 'name' },
+    { text: 'কীবোর্ড', query: 'keyboard' },
+    { text: 'জাপানি স্টাইল', query: 'japanese' },
+    { text: 'Emoji', query: 'emoji' },
+    { text: 'Bow', query: 'bow' },
+    { text: 'ফন্ট', query: 'font' },
+    { text: 'ইমোটিকন', query: 'emoticon' }
+  ],
+  pl: [
+    { text: 'Kopiuj i Wklej', query: 'copy paste' },
+    { text: 'Aesthetic', query: 'aesthetic' },
+    { text: 'Twarze', query: 'faces' },
+    { text: 'Instagram Bio', query: 'instagram' },
+    { text: 'Serce', query: 'heart' },
+    { text: 'Nazwa', query: 'name' },
+    { text: 'Klawiatura', query: 'keyboard' },
+    { text: 'Styl Japoński', query: 'japanese' },
+    { text: 'Emoji', query: 'emoji' },
+    { text: 'Bow', query: 'bow' },
+    { text: 'Czcionka', query: 'font' },
+    { text: 'Emotikony', query: 'emoticon' }
+  ]
+};
+
+const tags = popularTags[locale] || popularTags.en;
+const baseUrl = locale === 'en' ? '' : `/${locale}`;
+
+// 标题文本
+const sectionTitles: Record<Locale, string> = {
+  en: '🔥 Popular Searches',
+  fil: '🔥 Mga Tanyang Sikat',
+  ms: '🔥 Carian Popular',
+  bn: '🔥 জনপ্রিয় অনুসন্ধান',
+  pl: '🔥 Popularne Wyszukiwania'
+};
+
+const sectionTitle = t('ui.popularSearches');
+---
+
+<section class="keyword-section" style={{
+  padding: '3rem 0',
+  animation: 'fadeIn 0.6s ease-out 0.6s both',
+  opacity: 0
+}}>
+  <div style={{
+    maxWidth: '1000px',
+    margin: '0 auto',
+    padding: '0 1rem'
+  }}>
+    <!-- 标题 -->
+    <h2 style={{
+      fontSize: 'clamp(1.5rem, 4vw, 1.75rem)',
+      fontWeight: 600,
+      marginBottom: '1.5rem',
+      textAlign: 'center',
+      color: 'var(--text-primary)'
+    }}>
+      {sectionTitle}
+    </h2>
+
+    <!-- 标签云 -->
+    <div class="tag-cloud" style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '0.75rem',
+      justifyContent: 'center'
+    }}>
+      {tags.map((tag, index) => (
+        <a
+          href={`${baseUrl}/categories?q=${encodeURIComponent(tag.query)}`}
+          class="tag-item"
+          style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            padding: '0.625rem 1.25rem',
+            background: 'var(--card-bg)',
+            border: '1px solid var(--border-color)',
+            borderRadius: 'var(--radius-lg)',
+            color: 'var(--text-primary)',
+            textDecoration: 'none',
+            fontSize: '0.9375rem',
+            fontWeight: 500,
+            transition: 'all 0.3s ease',
+            boxShadow: 'var(--shadow-sm)',
+            animation: `scaleIn 0.4s ease-out ${index * 0.05}s both`,
+            opacity: 0
+          }}
+        >
+          {tag.text}
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .tag-item:hover {
+    background: var(--accent-color) !important;
+    color: #ffffff !important;
+    border-color: var(--accent-color) !important;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md) !important;
+  }
+
+  .tag-item:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* 响应式 */
+  @media (max-width: 768px) {
+    .keyword-section {
+      padding: 2rem 0 !important;
+    }
+
+    .tag-cloud {
+      gap: 0.5rem !important;
+    }
+
+    .tag-item {
+      padding: 0.5rem 1rem !important;
+      font-size: 0.875rem !important;
+    }
+  }
+
+  /* 触摸设备优化 */
+  @media (hover: none) and (pointer: coarse) {
+    .tag-item:active {
+      transform: scale(0.95);
+    }
+  }
+</style>

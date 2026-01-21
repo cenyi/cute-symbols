@@ -1,0 +1,826 @@
+---
+/**
+ * 首页 - 极简Hero + 符号墙设计
+ * Hero占40vh，符号墙立即显示
+ */
+import Layout from '../layouts/Layout.astro';
+import { getTranslations } from '../i18n/utils';
+import { type Locale } from '../i18n/config';
+import PlatformGuide from '../components/PlatformGuide.astro';
+import SymbolGridApi from '../components/SymbolGridApi.astro';
+import CategoryTabs from '../components/CategoryTabs.astro';
+import FAQ from '../components/FAQ.astro';
+import CatBackToTop from '../components/CatBackToTop.astro';
+import indexData from '../data/symbols/index.json';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+const stats = {
+  total: indexData.stats.totalSymbols,
+  totalCategories: indexData.stats.totalCategories
+};
+---
+
+<Layout title={t('site.title')} locale={locale}>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content={t('site.description')} />
+  <meta name="keywords" content={t('seo.keywords')} />
+  <link rel="canonical" href="https://cute-symbols.uk/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={t('site.title')} />
+  <meta property="og:description" content={t('site.description')} />
+  <meta property="og:type" content="website" />
+
+  <!-- JSON-LD 结构化数据 -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": t('site.title'),
+    "description": t('site.description'),
+    "url": "https://cute-symbols.uk/",
+    "numberOfItems": stats.total
+  })} />
+
+  <div style={{
+    maxWidth: '1600px',
+    margin: '0 auto',
+    padding: '0.5rem 1rem 2rem'
+  }}>
+
+    <!-- 极简Hero区域 (40vh) -->
+    <div style={{
+      textAlign: 'center',
+      padding: '1.5rem 0 1rem',
+      borderBottom: '1px solid var(--border-color)',
+      marginBottom: '1rem'
+    }}>
+      <!-- 一行标题 -->
+      <h1 style={{
+        fontSize: 'clamp(1.5rem, 4vw, 2rem)',
+        fontWeight: 700,
+        margin: '0 0 0.5rem 0',
+        color: 'var(--text-primary)',
+        letterSpacing: '-0.02em',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '0.5rem',
+        flexWrap: 'wrap'
+      }}>
+        <span style={{
+          background: 'linear-gradient(135deg, var(--accent-color) 0%, #ffa07a 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text'
+        }}>
+          {t('site.title')}
+        </span>
+      </h1>
+
+      <!-- 一句话描述 -->
+      <p style={{
+        fontSize: '0.9375rem',
+        color: 'var(--text-secondary)',
+        margin: '0 0 1rem 0',
+        fontWeight: 500
+      }}>
+        <span>{t('common.copyPaste')}</span>
+        <span style={{ color: 'var(--accent-color)', fontWeight: 700 }}>{stats.total}+</span>
+        <span>{t('stats.symbols')}</span>
+        <span style={{ color: 'var(--accent-color)', fontWeight: 700 }}>{t('common.oneClick')}</span>
+      </p>
+
+      <!-- 紧凑搜索框 -->
+      <div style={{
+        maxWidth: '400px',
+        margin: '0 auto 1rem',
+        display: 'flex',
+        gap: '0.5rem'
+      }}>
+        <input
+          type="text"
+          id="search-input"
+          placeholder={t('nav.search')}
+          style={{
+            flex: 1,
+            padding: '0.5rem 0.75rem',
+            border: '1px solid var(--border-color)',
+            borderRadius: 'var(--radius-md)',
+            fontSize: '0.875rem',
+            background: 'var(--card-bg)',
+            color: 'var(--text-primary)'
+          }}
+        />
+        <button
+          id="clear-btn"
+          type="button"
+          style={{
+            padding: '0.5rem 1rem',
+            background: 'var(--card-bg)',
+            color: 'var(--text-secondary)',
+            border: '1px solid var(--border-color)',
+            borderRadius: 'var(--radius-md)',
+            fontSize: '0.875rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            transition: 'all 0.2s ease',
+            display: 'none'
+          }}
+        >
+          ✕
+        </button>
+        <button
+          id="search-btn"
+          type="button"
+          style={{
+            padding: '0.5rem 1rem',
+            background: 'var(--accent-color)',
+            color: '#ffffff',
+            border: 'none',
+            borderRadius: 'var(--radius-md)',
+            fontSize: '0.875rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            transition: 'background 0.2s ease'
+          }}
+        >
+          🔍
+        </button>
+      </div>
+
+      <!-- 搜索结果容器 -->
+      <div id="search-results" style={{
+        maxWidth: '1200px',
+        margin: '0 auto 1rem',
+        display: 'none'
+      }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '1rem',
+          padding: '0 1rem'
+        }}>
+          <h2 id="search-results-title" style={{
+            fontSize: '1.25rem',
+            fontWeight: 600,
+            margin: 0,
+            color: 'var(--text-primary)'
+          }}>
+            🔍 {t('common.searchResults')}
+          </h2>
+          <span id="search-results-count" style={{
+            fontSize: '0.875rem',
+            color: 'var(--text-secondary)'
+          }}></span>
+        </div>
+        <div id="search-results-grid" style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: '0.5rem',
+          minHeight: '100px',
+          padding: '1rem',
+          background: 'var(--card-bg)',
+          border: '1px solid var(--border-color)',
+          borderRadius: 'var(--radius-lg)'
+        }}></div>
+      </div>
+    </div>
+
+    <!-- 紧凑分类标签 -->
+    <CategoryTabs
+      {locale}
+      activeCategory="all"
+      baseUrl={locale === 'en' ? '' : `/${locale}`}
+    />
+
+    <!-- 符号墙 (80vh) - 立即显示！ -->
+    <div style={{ marginTop: '1rem' }}>
+      <!-- 动态符号网格容器 -->
+      <div id="dynamic-symbol-grid" style={{
+        minHeight: '400px'
+      }}>
+        <!-- 默认显示热门分类网格 -->
+        <SymbolGridApi category="hearts" limit={32} title="💖 Hearts" locale={locale} />
+        <SymbolGridApi category="stars" limit={32} title="⭐ Stars" style={{ marginTop: '2rem' }} locale={locale} />
+        <SymbolGridApi category="flowers" limit={32} title="🌸 Flowers" style={{ marginTop: '2rem' }} locale={locale} />
+        <SymbolGridApi category="kaomoji" limit={32} title="(◕‿◕) Kaomoji" style={{ marginTop: '2rem' }} locale={locale} />
+      </div>
+    </div>
+
+    <!-- SEO 内容区域 (在底部，不占用首屏) -->
+    <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border-color)' }}>
+      <!-- 平台指南 -->
+      <PlatformGuide {locale} />
+      
+      <!-- FAQ 部分 -->
+      <FAQ {locale} />
+    </div>
+  </div>
+
+  <!-- CAT 回到顶部按钮 -->
+  <CatBackToTop />
+
+  <style is:global>
+    /* 全局样式 */
+    :root {
+      --bg-color: #f5f5f7;
+      --card-bg: #ffffff;
+      --text-primary: #1a1a1a;
+      --text-secondary: #666666;
+      --accent-color: #ff6b9d;
+      --accent-hover: #ff5a8d;
+      --border-color: #e1e4e8;
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --radius-md: 8px;
+      --radius-lg: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #0a0a0a;
+        --card-bg: #1f1f1f;
+        --text-primary: #e8e8e8;
+        --text-secondary: #a0a0a0;
+        --border-color: #2a2a2a;
+        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+        --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-primary);
+    }
+
+    button:hover {
+      background: var(--accent-hover) !important;
+    }
+  </style>
+
+  <style>
+    input:focus {
+      outline: none;
+      border-color: var(--accent-color) !important;
+    }
+
+    /* 清除按钮悬停效果 */
+    #clear-btn:hover {
+      background: var(--bg-color) !important;
+      border-color: var(--accent-color) !important;
+      color: var(--accent-color) !important;
+    }
+
+    /* 响应式优化 */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.25rem !important;
+      }
+
+      form {
+        max-width: 100% !important;
+      }
+    }
+  </style>
+
+  <script define:vars={{ t }}>
+    // 标签翻译映射
+    const tagTranslations = {
+      en: {
+        'white': 'white', 'black': 'black', 'red': 'red', 'pink': 'pink',
+        'blue': 'blue', 'purple': 'purple', 'yellow': 'yellow', 'gold': 'gold',
+        'outline': 'outline', 'solid': 'solid', 'minimalist': 'minimalist',
+        'cute': 'cute', 'elegant': 'elegant', 'fancy': 'fancy', 'classic': 'classic',
+        'sparkling': 'sparkling', 'heart': 'heart', 'star': 'star', 'flower': 'flower'
+      }
+    };
+
+    const tagTranslation = tagTranslations.en;
+
+    // 翻译标签函数
+    function translateTag(tag) {
+      return tagTranslation[tag] || tag;
+    }
+
+    // ==================== 实时搜索功能 ====================
+    const searchInput = document.getElementById('search-input');
+    const clearBtn = document.getElementById('clear-btn');
+    const searchBtn = document.getElementById('search-btn');
+    const searchResults = document.getElementById('search-results');
+    const searchResultsGrid = document.getElementById('search-results-grid');
+    const searchResultsTitle = document.getElementById('search-results-title');
+    const searchResultsCount = document.getElementById('search-results-count');
+
+    let searchTimeout = null;
+
+    // 搜索输入监听（实时搜索，防抖）
+    searchInput?.addEventListener('input', (e) => {
+      const query = e.target.value.trim();
+
+      // 显示/隐藏清除按钮
+      if (query) {
+        clearBtn.style.display = 'block';
+      } else {
+        clearBtn.style.display = 'none';
+        hideSearchResults();
+        return;
+      }
+
+      // 防抖处理
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        performSearch(query);
+      }, 300);
+    });
+
+    // 清除按钮点击
+    clearBtn?.addEventListener('click', () => {
+      searchInput.value = '';
+      clearBtn.style.display = 'none';
+      hideSearchResults();
+      searchInput.focus();
+    });
+
+    // 搜索按钮点击
+    searchBtn?.addEventListener('click', () => {
+      const query = searchInput.value.trim();
+      if (query) {
+        performSearch(query);
+      }
+    });
+
+    // 回车键搜索
+    searchInput?.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        const query = searchInput.value.trim();
+        if (query) {
+          performSearch(query);
+        }
+      }
+    });
+
+    // 执行搜索
+    async function performSearch(query) {
+      if (!query) return;
+
+      // 显示搜索结果容器
+      searchResults.style.display = 'block';
+      searchResultsGrid.innerHTML = `
+        <div style="text-align: center; padding: 2rem; width: 100%;">
+          <div style="font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+          <p style="color: var(--text-secondary);">${t('common.searchingFor')} "${query}"...</p>
+        </div>
+      `;
+
+      try {
+        const response = await fetch(`/api/symbols/search?q=${encodeURIComponent(query)}`);
+        const result = await response.json();
+
+        if (result.success && result.results) {
+          displaySearchResults(result.results, query);
+        } else {
+          searchResultsGrid.innerHTML = `
+            <div style="text-align: center; padding: 2rem; width: 100%;">
+              <p style="color: var(--text-secondary);">${t('common.noSymbolsFound')} "${query}"</p>
+            </div>
+          `;
+          searchResultsCount.textContent = '';
+        }
+      } catch (error) {
+        console.error('Search error:', error);
+        searchResultsGrid.innerHTML = `
+          <div style="text-align: center; padding: 2rem; width: 100%;">
+            <p style="color: var(--text-secondary);">${t('common.searchFailed')}</p>
+          </div>
+        `;
+        searchResultsCount.textContent = '';
+      }
+    }
+
+    // 显示搜索结果
+    function displaySearchResults(symbols, query) {
+      searchResultsCount.textContent = `${symbols.length} ${t('common.symbolsFound')}`;
+
+      if (symbols.length === 0) {
+        searchResultsGrid.innerHTML = `
+          <div style="text-align: center; padding: 2rem; width: 100%;">
+            <p style="color: var(--text-secondary);">${t('common.noSymbolsFound')} "${query}"</p>
+            <p style="color: var(--text-secondary); font-size: 0.875rem; margin-top: 0.5rem;">${t('common.tryDifferentKeywords')}</p>
+          </div>
+        `;
+        return;
+      }
+
+      searchResultsGrid.innerHTML = '';
+
+      symbols.forEach((symbol) => {
+        const card = createSearchResultCard(symbol);
+        searchResultsGrid.appendChild(card);
+      });
+
+      // 绑定复制事件
+      bindCopyEvents(searchResultsGrid);
+    }
+
+    // 创建搜索结果卡片
+    function createSearchResultCard(symbol) {
+      const card = document.createElement('div');
+      card.className = 'symbol-card-wrapper';
+      card.innerHTML = `
+        <div class="symbol-display" style="
+          font-size: 2rem;
+          margin-bottom: 0.75rem;
+          text-align: center;
+          color: ${symbol.color || 'var(--accent-color)'};
+          word-break: keep-all;
+          white-space: nowrap;
+        ">${symbol.char}</div>
+        <div class="symbol-tags" style="
+          display: flex;
+          gap: 0.35rem;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-bottom: 0.75rem;
+          min-height: 20px;
+        ">
+          ${symbol.tags.slice(0, 3).map((tag) => `
+            <span style="
+              font-size: 0.6875rem;
+              padding: 0.2rem 0.5rem;
+              background: var(--bg-color);
+              border-radius: 8px;
+              color: var(--text-secondary);
+              white-space: nowrap;
+            ">${translateTag(tag)}</span>
+          `).join('')}
+        </div>
+        <button
+          class="copy-btn"
+          data-symbol="${symbol.char}"
+          style="
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            background: transparent;
+            color: ${symbol.color || 'var(--accent-color)'};
+            border: 1.5px solid ${symbol.color || 'var(--accent-color)'};
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+          "
+        >
+          ${t('common.copy')}
+        </button>
+      `;
+
+      card.style.cssText = `
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 0.4rem 0.6rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        min-width: 60px;
+        box-sizing: border-box;
+      `;
+
+      // 添加悬停效果
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-4px)';
+        card.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)';
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '';
+      });
+
+      return card;
+    }
+
+    // 隐藏搜索结果
+    function hideSearchResults() {
+      searchResults.style.display = 'none';
+      searchResultsGrid.innerHTML = '';
+    }
+
+    // ==================== 分类点击过滤逻辑 ====================
+    const API_BASE = '/api/symbols';
+
+    // 获取翻译后的分类名称
+    function getCategoryName(category) {
+      return t(`categories.${category}`) || category;
+    }
+
+    // 当前选中的分类
+    let currentCategory = 'all';
+
+    // 监听分类标签点击
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      const button = target.closest('.category-tab');
+
+      if (button && button.hasAttribute('data-category')) {
+        e.preventDefault();
+
+        const category = button.getAttribute('data-category');
+
+        // 更新按钮状态
+        document.querySelectorAll('.category-tab').forEach(btn => {
+          btn.classList.remove('active');
+          btn.style.background = 'var(--bg-color)';
+          btn.style.color = 'var(--text-primary)';
+        });
+
+        button.classList.add('active');
+        button.style.background = 'var(--accent-color)';
+        button.style.color = '#ffffff';
+
+        // 加载对应分类的符号
+        loadCategorySymbols(category);
+      }
+    });
+
+    // 加载分类符号
+    async function loadCategorySymbols(category) {
+      const container = document.getElementById('dynamic-symbol-grid');
+      if (!container) return;
+
+      currentCategory = category;
+
+      // 显示加载状态
+      container.innerHTML = `
+        <div style="text-align: center; padding: 4rem 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">⏳</div>
+          <p style="color: var(--text-secondary);">${t('common.loadingCategory')} ${getCategoryName(category)}...</p>
+        </div>
+      `;
+
+      try {
+        if (category === 'all') {
+          // 加载所有热门分类
+          container.innerHTML = '';
+          const categories = ['hearts', 'stars', 'flowers', 'kaomoji'];
+
+          for (const cat of categories) {
+            const section = createSymbolGridSection(cat);
+            container.appendChild(section);
+            await loadSymbolsForGrid(cat, section);
+          }
+        } else {
+          // 加载单个分类
+          const section = createSymbolGridSection(category);
+          container.innerHTML = '';
+          container.appendChild(section);
+          await loadSymbolsForGrid(category, section);
+        }
+      } catch (error) {
+        console.error('Failed to load symbols:', error);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 4rem 2rem;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">⚠️</div>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">${t('common.failedToLoadSymbols')}</p>
+            <button onclick="location.reload()" style="
+              padding: 0.75rem 1.5rem;
+              background: var(--accent-color);
+              color: white;
+              border: none;
+              border-radius: 8px;
+              cursor: pointer;
+              font-weight: 600;
+            ">${t('common.retry')}</button>
+          </div>
+        `;
+      }
+    }
+
+    // 创建符号网格section
+    function createSymbolGridSection(category) {
+      const section = document.createElement('section');
+      section.className = 'symbols-section';
+      section.style.cssText = 'margin: 3rem 0;';
+
+      const title = getCategoryName(category);
+      section.innerHTML = `
+        <h2 style="
+          font-size: 1.75rem;
+          font-weight: 600;
+          margin-bottom: 2rem;
+          color: var(--text-primary);
+        ">${title}</h2>
+        <div id="symbols-${category}" class="symbols-grid" style="
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          align-content: flex-start;
+          opacity: 0;
+          animation: fadeIn 0.6s ease-out forwards;
+        ">
+          <div class="loading-state" style="
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-secondary);
+          ">
+            <div style="font-size: 2rem; margin-bottom: 1rem;">⏳</div>
+            <p>${t('common.loadingSymbols')}</p>
+          </div>
+        </div>
+      `;
+
+      return section;
+    }
+
+    // 为网格加载符号
+    async function loadSymbolsForGrid(category, section) {
+      try {
+        const response = await fetch(`${API_BASE}/${category}`);
+        const result = await response.json();
+
+        if (result.success && result.data) {
+          const container = section.querySelector(`#symbols-${category}`);
+          const symbols = result.data.symbols;
+
+          // 清空加载状态
+          container.innerHTML = '';
+
+          // 渲染符号卡片
+          symbols.forEach((symbol) => {
+            const card = createSymbolCard(symbol, result.data.color);
+            container.appendChild(card);
+          });
+
+          // 绑定复制事件
+          bindCopyEvents(container);
+        }
+      } catch (error) {
+        console.error(`Failed to load ${category}:`, error);
+        const container = section.querySelector(`#symbols-${category}`);
+        container.innerHTML = `
+          <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+            <p style="font-size: 1.5rem; margin-bottom: 1rem;">⚠️</p>
+            <p>${t('common.failedToLoadSymbols')}</p>
+          </div>
+        `;
+      }
+    }
+
+    // 创建符号卡片
+    function createSymbolCard(symbol, color) {
+      const card = document.createElement('div');
+      card.className = 'symbol-card-wrapper';
+      card.innerHTML = `
+        <div class="symbol-display" style="
+          font-size: 2rem;
+          margin-bottom: 0.75rem;
+          text-align: center;
+          color: ${color};
+          word-break: keep-all;
+          white-space: nowrap;
+        ">${symbol.char}</div>
+        <div class="symbol-tags" style="
+          display: flex;
+          gap: 0.35rem;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-bottom: 0.75rem;
+          min-height: 20px;
+        ">
+          ${symbol.tags.slice(0, 3).map((tag) => `
+            <span style="
+              font-size: 0.6875rem;
+              padding: 0.2rem 0.5rem;
+              background: var(--bg-color);
+              border-radius: 8px;
+              color: var(--text-secondary);
+              white-space: nowrap;
+            ">${translateTag(tag)}</span>
+          `).join('')}
+        </div>
+        <button
+          class="copy-btn"
+          data-symbol="${symbol.char}"
+          style="
+            width: 100%;
+            padding: 0.5rem 0.75rem;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            background: transparent;
+            color: ${color};
+            border: 1.5px solid ${color};
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+          "
+        >
+          ${symbol.popular ? '⭐ ' : ''}${t('common.copy')}
+        </button>
+      `;
+
+      card.style.cssText = `
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 0.4rem 0.6rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        min-width: 60px;
+        box-sizing: border-box;
+      `;
+
+      // 添加悬停效果
+      card.addEventListener('mouseenter', () => {
+        card.style.transform = 'translateY(-4px)';
+        card.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)';
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+        card.style.boxShadow = '';
+      });
+
+      return card;
+    }
+
+    // 绑定复制事件
+    function bindCopyEvents(container) {
+      const buttons = container.querySelectorAll('.copy-btn');
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', async (e) => {
+          const target = e.currentTarget;
+          const symbolChar = target.getAttribute('data-symbol');
+          if (!symbolChar) return;
+
+          try {
+            await navigator.clipboard.writeText(symbolChar);
+            target.textContent = '✓ ' + t('common.copied');
+            target.style.background = 'var(--accent-color)';
+            target.style.color = '#ffffff';
+
+            setTimeout(() => {
+              target.textContent = target.dataset.originalText || t('common.copy');
+              target.style.background = '';
+              target.style.color = '';
+            }, 2000);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+            target.textContent = '✗ ' + t('common.copyFailed');
+            setTimeout(() => {
+              target.textContent = t('common.copy');
+            }, 2000);
+          }
+        });
+
+        btn.dataset.originalText = btn.textContent;
+      });
+    }
+
+    // 添加动画样式
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .symbol-card-wrapper:hover .copy-btn:hover {
+        transform: scale(1.02);
+        background: var(--accent-color) !important;
+        color: #ffffff !important;
+      }
+
+      @media (max-width: 768px) {
+        .symbols-grid {
+          gap: 0.4rem !important;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+</Layout>

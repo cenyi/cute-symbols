@@ -1,0 +1,471 @@
+---
+import SymbolCardApi from './SymbolCardApi.astro';
+import { getTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  category?: string;
+  limit?: number;
+  title?: string;
+  style?: Record<string, string>;
+  locale?: Locale;
+}
+
+const { category = 'hearts', limit = 12, title, style, locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// API基础URL
+const API_BASE = '/api/symbols';
+---
+
+<section class="symbols-section" style={{
+  margin: '3rem 0',
+  ...style
+  }}>
+  <!-- 标题 -->
+  {title && (
+    <h2 style={{
+      fontSize: '1.75rem',
+      fontWeight: 600,
+      margin: '0 0 2rem 0',
+      color: 'var(--text-primary)'
+    }}>
+      {title}
+    </h2>
+  )}
+
+  <!-- 符号网格 - 自适应卡片布局 -->
+  <div id={`symbols-${category}`} class="symbols-grid" style={{
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.5rem',
+    alignContent: 'flex-start',
+    opacity: 0,
+    animation: 'fadeIn 0.6s ease-out forwards'
+  }}>
+    <!-- 加载中状态 -->
+    <div class="loading-state" style={{
+      gridColumn: '1 / -1',
+      textAlign: 'center',
+      padding: '3rem',
+      color: 'var(--text-secondary)'
+    }}>
+      <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⏳</div>
+      <p>{t('common.loadingSymbols')}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .symbols-grid {
+    min-height: 400px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .symbols-grid {
+      gap: 0.4rem;
+    }
+  }
+</style>
+
+<script define:vars={{ category, limit, API_BASE, locale }}>
+  // 翻译文本
+  const translations = {
+    en: {
+      copy: 'Copy',
+      copied: '✓ Copied!',
+      failed: '✗ Failed',
+      failedToLoad: 'Failed to load symbols',
+      retry: 'Retry'
+    },
+    fil: {
+      copy: 'Kopyahin',
+      copied: '✓ Nakopya na!',
+      failed: '✗ Nabigo',
+      failedToLoad: 'Nabigong mag-load ng symbols',
+      retry: 'Subukan Ulit'
+    },
+    ms: {
+      copy: 'Salin',
+      copied: '✓ Disalin!',
+      failed: '✗ Gagal',
+      failedToLoad: 'Gagal memuatkan simbol',
+      retry: 'Cuba Lagi'
+    },
+    bn: {
+      copy: 'কপি',
+      copied: '✓ কপি হয়েছে!',
+      failed: '✗ ব্যর্থ',
+      failedToLoad: 'সিম্বল লোড করতে ব্যর্থ',
+      retry: 'আবার চেষ্টা করুন'
+    },
+    pl: {
+      copy: 'Kopiuj',
+      copied: '✓ Skopiowano!',
+      failed: '✗ Błąd',
+      failedToLoad: 'Nie udało się załadować symboli',
+      retry: 'Spróbuj ponownie'
+    }
+  };
+
+  // 标签翻译映射
+  const tagTranslations = {
+    en: {
+      // 颜色
+      'white': 'white', 'black': 'black', 'red': 'red', 'pink': 'pink',
+      'blue': 'blue', 'purple': 'purple', 'yellow': 'yellow', 'gold': 'gold',
+      'orange': 'orange', 'green': 'green', 'brown': 'brown',
+      // 风格
+      'outline': 'outline', 'solid': 'solid', 'minimalist': 'minimalist',
+      'cute': 'cute', 'elegant': 'elegant', 'fancy': 'fancy', 'classic': 'classic',
+      'modern': 'modern', 'simple': 'simple', 'decorative': 'decorative',
+      // 类型
+      'love': 'love', 'heart': 'heart', 'sparkling': 'sparkling',
+      'arrow': 'arrow', 'star': 'star', 'flower': 'flower', 'bow': 'bow',
+      'ribbon': 'ribbon', 'kaomoji': 'kaomoji', 'emoji': 'emoji',
+      'aesthetic': 'aesthetic', 'kawaii': 'kawaii', 'pop': 'pop',
+      // 其他
+      'popular': 'popular', 'new': 'new', 'trending': 'trending'
+    },
+    fil: {
+      // 颜色
+      'white': 'puti', 'black': 'itim', 'red': 'pula', 'pink': 'rosas',
+      'blue': 'asul', 'purple': 'lila', 'yellow': 'dilaw', 'gold': 'ginto',
+      'orange': 'kahel', 'green': 'berde', 'brown': 'kayumanggi', 'grey': 'abuhin',
+      // 风格
+      'outline': 'outline', 'solid': 'solid', 'outlined': 'outlined',
+      'minimalist': 'minimalista', 'minimal': 'minimal',
+      'cute': 'cute', 'elegant': 'elegante', 'fancy': 'punky', 'classic': 'klasiko',
+      'modern': 'modern', 'simple': 'simple', 'decorative': 'decoratibo',
+      'clean': 'malinis', 'colorful': 'makulay',
+      // 类型
+      'love': 'pag-ibig', 'heart': 'puso', 'sparkling': 'kumikislap',
+      'sparkle': 'kiskisan', 'arrow': 'panahon', 'star': 'bituin',
+      'flower': 'bulaklak', 'flowers': 'mga bulaklak', 'bow': 'pala', 'ribbon': 'lazo',
+      'kaomoji': 'kaomoji', 'emoji': 'emoji', 'japanese': 'hapon',
+      'aesthetic': 'aesthetic', 'kawaii': 'kawaii', 'pop': 'pop',
+      // 其他
+      'popular': 'sikat', 'new': 'bago', 'trending': 'trending',
+      // 更多常用标签
+      'cool': 'astig', 'dark': 'madilim', 'light': 'maliwan',
+      'small': 'maliit', 'large': 'malaki', 'medium': 'katamtaman',
+      'thin': 'manipis', 'thick': 'makapal', 'bold': 'matibay',
+      'delicate': 'delikado', 'strong': 'malakas', 'soft': 'mahin',
+      'feminine': 'pambabae', 'masculine': 'lalaki',
+      'warm': 'mainit', 'vibrant': 'buhay', 'georgian': 'georgian',
+      'royal': 'royal', 'romantic': 'romantiko', 'passionate': 'masigla',
+      'happy': 'masaya', 'healing': 'paggagaling', 'special': 'espesyal',
+      'magic': 'mahika', 'unique': 'kakaiba', 'triple': 'tatlo',
+      'double': 'dobl', 'growing': 'lumalaki', 'gradient': 'gradient',
+      'pattern': 'patttern'
+    },
+    ms: {
+      // 颜色
+      'white': 'putih', 'black': 'hitam', 'red': 'merah', 'pink': 'merah jambu',
+      'blue': 'biru', 'purple': 'ungu', 'yellow': 'kuning', 'gold': 'emas',
+      'orange': 'jingga', 'green': 'hijau', 'brown': 'perang', 'grey': 'kelabu',
+      // 风格
+      'outline': 'garis luar', 'solid': 'pejal', 'outlined': 'bergaris luar',
+      'minimalist': 'minimum', 'minimal': 'minimal',
+      'cute': 'comel', 'elegant': 'elegan', 'fancy': 'fancy', 'classic': 'klasik',
+      'modern': 'moden', 'simple': 'ringkas', 'decorative': 'hiasan',
+      'clean': 'bersih', 'colorful': 'berwarna-warni',
+      // 类型
+      'love': 'cinta', 'heart': 'jantung', 'sparkling': 'berkilau',
+      'sparkle': 'kilau', 'arrow': 'anak panah', 'star': 'bintang',
+      'flower': 'bunga', 'flowers': 'bunga-bunga', 'bow': 'rebung', 'ribbon': 'reben',
+      'kaomoji': 'kaomoji', 'emoji': 'emoji', 'japanese': 'jepun',
+      'aesthetic': 'estetik', 'kawaii': 'kawaii', 'pop': 'pop',
+      // 其他
+      'popular': 'popular', 'new': 'baru', 'trending': 'trending',
+      // 更多常用标签
+      'cool': 'sejuk', 'dark': 'gelap', 'light': 'cerah',
+      'small': 'kecil', 'large': 'besar', 'medium': 'sederhana',
+      'thin': 'nipis', 'thick': 'tebal', 'bold': 'tebal',
+      'delicate': 'halus', 'strong': 'kuat', 'soft': 'lembut',
+      'feminine': 'kewanitaan', 'masculine': 'kemaskulinan',
+      'warm': 'hangat', 'vibrant': 'bersemangat', 'georgian': 'georgian',
+      'royal': 'diraja', 'romantic': 'romantik', 'passionate': 'bersemangat',
+      'happy': 'gembira', 'healing': 'penyembuhan', 'special': 'istimewa',
+      'magic': 'magik', 'unique': 'unik', 'triple': 'tiga kali ganda',
+      'double': 'ganda dua', 'growing': 'berkembang', 'gradient': 'kecerunan',
+      'pattern': 'corak'
+    },
+    bn: {
+      // 颜色
+      'white': 'সাদা', 'black': 'কালো', 'red': 'লাল', 'pink': 'গোলাপি',
+      'blue': 'নীল', 'purple': 'বেগুনি', 'yellow': 'হলুদ', 'gold': 'সোনালী',
+      'orange': 'কমলা', 'green': 'সবুজ', 'brown': 'বাদামী', 'grey': 'ধূসর',
+      // 风格
+      'outline': 'আউটলাইন', 'solid': 'সলিড', 'outlined': 'আউটলাইনড',
+      'minimalist': 'মিনিমালিস্ট', 'minimal': 'মিনিমাল',
+      'cute': 'কিউট', 'elegant': 'এলিগ্যান্ট', 'fancy': 'ফ্যান্সি',
+      'classic': 'ক্লাসিক', 'modern': 'আধুনিক', 'simple': 'সাধারণ',
+      'decorative': 'আলংকারিক', 'clean': 'পরিষ্ক', 'colorful': 'রঙিন',
+      // 类型
+      'love': 'ভালোবাসা', 'heart': 'হার্ট', 'sparkling': 'ঝকমকে',
+      'sparkle': 'ঝকমকে', 'arrow': 'তীর', 'star': 'তারা',
+      'flower': 'ফুল', 'flowers': 'ফুল', 'bow': 'ধনুক', 'ribbon': 'রিবন',
+      'kaomoji': 'কাওমোজি', 'emoji': 'ইমোজি', 'japanese': 'জাপানি',
+      'aesthetic': 'নান্দনিক', 'kawaii': 'কাওয়াই', 'pop': 'পপ',
+      // 其他
+      'popular': 'জনপ্রিয়', 'new': 'নতুন', 'trending': 'ট্রেন্ডিং',
+      'cool': 'কুল', 'dark': 'ডার্ক', 'light': 'হালকা',
+      'small': 'ছোট', 'large': 'বড়', 'medium': 'মাঝারি',
+      'thin': 'পাতলা', 'thick': 'মোটা', 'bold': 'স্পষ্ট',
+      'delicate': 'কোমল', 'strong': 'শক্ত', 'soft': 'নরম',
+      'feminine': 'নারীসুলভ', 'masculine': 'পুরুষসুলভ',
+      'warm': 'উষ্ণ', 'vibrant': 'জীবল', 'georgian': 'জর্জিয়ান',
+      'royal': 'রাজকীয়', 'romantic': 'রোম্যান্টিক', 'passionate': 'আবেগ',
+      'happy': 'সুখী', 'healing': 'নিরাময', 'special': 'বিশেষ',
+      'magic': 'ম্যাজিক', 'unique': 'ইউনিক', 'triple': 'তিনগুণ',
+      'double': 'ডাবল', 'triple': 'তিন', 'growing': 'বর্ধনমান',
+      'gradient': 'গ্রেডিয়ন্ট', 'pattern': 'প্যাটার্ন'
+    },
+    pl: {
+      // 颜色
+      'white': 'biały', 'black': 'czarny', 'red': 'czerwony', 'pink': 'różowy',
+      'blue': 'niebieski', 'purple': 'fioletowy', 'yellow': 'żółty', 'gold': 'złoty',
+      'orange': 'pomarańczowy', 'green': 'zielony', 'brown': 'brązowy', 'grey': 'szary',
+      // 风格
+      'outline': 'kontur', 'solid': 'solidny', 'outlined': 'z obrysem',
+      'minimalist': 'minimalistyczny', 'minimal': 'minimalny',
+      'cute': 'słodki', 'elegant': 'elegancki', 'fancy': 'fancy', 'classic': 'klasyczny',
+      'modern': 'nowoczesny', 'simple': 'prosty', 'decorative': 'dekoracyjny',
+      'clean': 'czysty', 'colorful': 'kolorowy',
+      // 类型
+      'love': 'miłość', 'heart': 'serce', 'sparkling': 'błyszczący',
+      'sparkle': 'iskra', 'arrow': 'strzałka', 'star': 'gwiazda',
+      'flower': 'kwiat', 'flowers': 'kwiaty', 'bow': 'kokarda', 'ribbon': 'wstążka',
+      'kaomoji': 'kaomoji', 'emoji': 'emoji', 'japanese': 'japoński',
+      'aesthetic': 'estetyczny', 'kawaii': 'kawaii', 'pop': 'pop',
+      // 其他
+      'popular': 'popularny', 'new': 'nowy', 'trending': 'trending',
+      // 更多常用标签
+      'cool': 'fajny', 'dark': 'ciemny', 'light': 'jasny',
+      'small': 'mały', 'large': 'duży', 'medium': 'średni',
+      'thin': 'cienki', 'thick': 'gruby', 'bold': 'gruby',
+      'delicate': 'delikatny', 'strong': 'mocny', 'soft': 'miękki',
+      'feminine': 'kobiece', 'masculine': 'męskie',
+      'warm': 'ciepły', 'vibrant': 'żywy', 'georgian': 'gruziński',
+      'royal': 'królewski', 'romantic': 'romantyczny', 'passionate': 'namiętny',
+      'happy': 'szczęśliwy', 'healing': 'leczenie', 'special': 'specjalny',
+      'magic': 'magia', 'unique': 'unikalny', 'triple': 'potrójny',
+      'double': 'podwójny', 'growing': 'rosnący', 'gradient': 'gradient',
+      'pattern': 'wzór'
+    }
+  };
+
+  const t = translations[locale] || translations.en;
+  const tagTranslation = tagTranslations[locale] || tagTranslations.en;
+
+  // 翻译标签函数
+  function translateTag(tag) {
+    return tagTranslation[tag] || tag;
+  }
+  // 从API获取符号数据
+  async function loadSymbols() {
+    try {
+      const response = await fetch(`${API_BASE}/${category}`);
+      const result = await response.json();
+
+      if (result.success && result.data) {
+        const container = document.getElementById(`symbols-${category}`);
+        const symbols = result.data.symbols.slice(0, limit);
+
+        // 清空加载状态
+        container.innerHTML = '';
+
+        // 渲染符号卡片
+        let delay = 0;
+        symbols.forEach((symbol, index) => {
+          setTimeout(() => {
+            const card = document.createElement('div');
+            card.className = 'symbol-card-wrapper';
+            card.innerHTML = `
+              <div class="symbol-display" style="
+                font-size: 2rem;
+                margin-bottom: 0.75rem;
+                text-align: center;
+                color: ${result.data.color};
+                word-break: keep-all;
+                white-space: nowrap;
+              ">${symbol.char}</div>
+              <div class="symbol-tags" style="
+                display: flex;
+                gap: 0.35rem;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-bottom: 0.75rem;
+                min-height: 20px;
+              ">
+                ${symbol.tags.slice(0, 3).map(tag => `
+                  <span style="
+                    font-size: 0.6875rem;
+                    padding: 0.2rem 0.5rem;
+                    background: var(--bg-color);
+                    border-radius: 8px;
+                    color: var(--text-secondary);
+                    white-space: nowrap;
+                  ">${translateTag(tag)}</span>
+                `).join('')}
+              </div>
+              <button
+                class="copy-btn"
+                data-symbol="${symbol.char}"
+                style="
+                  width: 100%;
+                  padding: 0.5rem 0.75rem;
+                  font-size: 0.8125rem;
+                  font-weight: 600;
+                  background: transparent;
+                  color: ${result.data.color};
+                  border: 1.5px solid ${result.data.color};
+                  border-radius: 6px;
+                  cursor: pointer;
+                  transition: all 0.2s ease;
+                "
+              >
+                ${symbol.popular ? '⭐ ' : ''}${t.copy}
+              </button>
+            `;
+
+            // 添加样式 - 卡片完全自适应内容
+            card.style.cssText = `
+              background: var(--card-bg);
+              border: 1px solid var(--border-color);
+              border-radius: 8px;
+              padding: 0.4rem 0.6rem;
+              box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+              animation: scaleIn 0.4s ease-out forwards;
+              opacity: 0;
+              display: inline-flex;
+              flex-direction: column;
+              align-items: center;
+              width: fit-content;
+              min-width: 60px;
+              box-sizing: border-box;
+            `;
+
+            container.appendChild(card);
+          }, delay);
+          delay += 50;
+        });
+
+        // 绑定复制事件
+        bindCopyEvents(container);
+      }
+    } catch (error) {
+      console.error('Failed to load symbols:', error);
+      const container = document.getElementById(`symbols-${category}`);
+      container.innerHTML = `
+        <div style="text-align: center; padding: 3rem; color: var(--text-secondary);">
+          <p style="font-size: 1.5rem; margin-bottom: 1rem;">⚠️</p>
+          <p>${t.failedToLoad}</p>
+          <button onclick="location.reload()" style="
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+          ">${t.retry}</button>
+        </div>
+      `;
+    }
+  }
+
+  function bindCopyEvents(container) {
+    const buttons = container.querySelectorAll('.copy-btn');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const symbolChar = btn.getAttribute('data-symbol');
+        if (!symbolChar) return;
+
+        try {
+          await navigator.clipboard.writeText(symbolChar);
+          btn.textContent = t.copied;
+          btn.style.background = 'var(--accent-color)';
+          btn.style.color = '#ffffff';
+
+          setTimeout(() => {
+            btn.textContent = btn.dataset.originalText || t.copy;
+            btn.style.background = '';
+            btn.style.color = '';
+          }, 2000);
+        } catch (err) {
+          console.error('Failed to copy:', err);
+          btn.textContent = t.failed;
+          setTimeout(() => {
+            btn.textContent = t.copy;
+          }, 2000);
+        }
+      });
+
+      // 保存原始文字
+      btn.dataset.originalText = btn.textContent;
+    });
+  }
+
+  // 页面加载时获取符号
+  loadSymbols();
+
+  // 卡片悬停效果
+  document.addEventListener('DOMContentLoaded', () => {
+    const observer = new MutationObserver(() => {
+      const cards = document.querySelectorAll(`#symbols-${category} .symbol-card-wrapper`);
+
+      cards.forEach(card => {
+        card.addEventListener('mouseenter', () => {
+          card.style.transform = 'translateY(-4px)';
+          card.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.12)';
+        });
+
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+          card.style.boxShadow = '';
+        });
+      });
+    });
+
+    observer.observe(document.getElementById(`symbols-${category}`), {
+      childList: true
+    });
+  });
+
+  // 添加动画样式
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.95);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .symbol-card-wrapper:hover .copy-btn:hover {
+      transform: scale(1.02);
+      background: var(--accent-color) !important;
+      color: #ffffff !important;
+    }
+  `;
+  document.head.appendChild(style);
+</script>

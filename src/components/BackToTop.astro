@@ -1,0 +1,105 @@
+---
+/**
+ * 回到顶部按钮
+ * 滚动时显示，点击平滑滚动到顶部
+ */
+---
+
+<button
+  id="back-to-top"
+  aria-label="Back to top"
+  style={{
+    position: 'fixed',
+    bottom: '2rem',
+    right: '2rem',
+    zIndex: 999,
+    width: '3rem',
+    height: '3rem',
+    borderRadius: '50%',
+    background: 'var(--accent-color)',
+    color: '#ffffff',
+    border: 'none',
+    boxShadow: '0 8px 24px rgba(255, 107, 157, 0.3)',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '1.5rem',
+    transition: 'all 0.3s ease',
+    opacity: 0,
+    visibility: 'hidden',
+    transform: 'translateY(20px)'
+  }}
+  data-astro-cid-backtotop
+>
+  ↑
+</button>
+
+<style>
+  #back-to-top[data-astro-cid-backtotop].visible {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+  }
+
+  #back-to-top[data-astro-cid-backtotop]:hover {
+    background: var(--accent-hover) !important;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 12px 32px rgba(255, 107, 157, 0.4) !important;
+  }
+
+  #back-to-top[data-astro-cid-backtotop]:active {
+    transform: translateY(-2px) scale(0.95) !important;
+  }
+
+  /* 移动端优化 */
+  @media (max-width: 768px) {
+    #back-to-top[data-astro-cid-backtotop] {
+      bottom: 1.5rem !important;
+      right: 1.5rem !important;
+      width: 2.5rem !important;
+      height: 2.5rem !important;
+      font-size: 1.25rem !important;
+    }
+  }
+
+  /* RTL语言支持 */
+  [dir='rtl'] #back-to-top[data-astro-cid-backtotop] {
+    right: auto !important;
+    left: 2rem !important;
+  }
+
+  @media (max-width: 768px) {
+    [dir='rtl'] #back-to-top[data-astro-cid-backtotop] {
+      left: 1.5rem !important;
+    }
+  }
+</style>
+
+<script>
+  // 回到顶部功能
+  const backToTopBtn = document.getElementById('back-to-top');
+  
+  if (backToTopBtn) {
+    // 监听滚动事件
+    let scrollTimeout: number;
+    window.addEventListener('scroll', () => {
+      clearTimeout(scrollTimeout);
+      scrollTimeout = window.setTimeout(() => {
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      }, 100);
+    });
+
+    // 点击回到顶部
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+</script>

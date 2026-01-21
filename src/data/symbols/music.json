@@ -1,0 +1,724 @@
+{
+  "category": "music",
+  "icon": "🎵",
+  "color": "#9333EA",
+  "name": {
+    "en": "Music & Sound Symbols",
+    "fil": "Mga Simbolo ng Musika",
+    "ms": "Simbol Muzik & Bunyi",
+    "bn": "সঙ্গীত এবং শব্দ প্রতীক",
+    "pl": "Symbole Muzyki i Dźwięku"
+  },
+  "description": {
+    "en": "Perfect for music lovers, playlists, and audio vibes",
+    "fil": "Perpekto para sa music lovers at playlists",
+    "ms": "Sempurna untuk pencinta muzik dan senarai main",
+    "bn": "সঙ্গীত প্রেমী এবং প্লেলিস্টের জন্য উপযুক্ত",
+    "pl": "Idealne dla miłośników muzyki i playlist"
+  },
+  "symbols": [
+    {
+      "id": "music-1",
+      "char": "🎵",
+      "unicode": "U+1F3B5",
+      "tags": ["note", "music", "melody"],
+      "popular": true
+    },
+    {
+      "id": "music-2",
+      "char": "🎶",
+      "unicode": "U+1F3B6",
+      "tags": ["notes", "music", "song"],
+      "popular": true
+    },
+    {
+      "id": "music-3",
+      "char": "🎧",
+      "unicode": "U+1F3A7",
+      "tags": ["headphones", "audio", "listen"],
+      "popular": true
+    },
+    {
+      "id": "music-4",
+      "char": "🎤",
+      "unicode": "U+1F3A4",
+      "tags": ["microphone", "sing", "karaoke"],
+      "popular": true
+    },
+    {
+      "id": "music-5",
+      "char": "🎸",
+      "unicode": "U+1F3B8",
+      "tags": ["guitar", "rock", "instrument"],
+      "popular": true
+    },
+    {
+      "id": "music-6",
+      "char": "🎹",
+      "unicode": "U+1F3B9",
+      "tags": ["piano", "keyboard", "classical"],
+      "popular": false
+    },
+    {
+      "id": "music-7",
+      "char": "🎺",
+      "unicode": "U+1F3BA",
+      "tags": ["trumpet", "brass", "jazz"],
+      "popular": false
+    },
+    {
+      "id": "music-8",
+      "char": "🎻",
+      "unicode": "U+1F3BB",
+      "tags": ["violin", "classical", "strings"],
+      "popular": false
+    },
+    {
+      "id": "music-9",
+      "char": "🥁",
+      "unicode": "U+1F941",
+      "tags": ["drum", "percussion", "beat"],
+      "popular": false
+    },
+    {
+      "id": "music-10",
+      "char": "🪕",
+      "unicode": "U+1FA95",
+      "tags": ["banjo", "folk", "country"],
+      "popular": false
+    },
+    {
+      "id": "music-11",
+      "char": "🪘",
+      "unicode": "U+1FA98",
+      "tags": ["drum", "long", "percussion"],
+      "popular": false
+    },
+    {
+      "id": "music-12",
+      "char": "🪗",
+      "unicode": "U+1FA97",
+      "tags": ["accordion", "folk", "squeeze"],
+      "popular": false
+    },
+    {
+      "id": "music-13",
+      "char": "🎼",
+      "unicode": "U+1F3BC",
+      "tags": ["score", "sheet", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-14",
+      "char": "♪",
+      "unicode": "U+266A",
+      "tags": ["note", "eighth", "simple"],
+      "popular": true
+    },
+    {
+      "id": "music-15",
+      "char": "♫",
+      "unicode": "U+266B",
+      "tags": ["notes", "beamed", "double"],
+      "popular": true
+    },
+    {
+      "id": "music-16",
+      "char": "♬",
+      "unicode": "U+266C",
+      "tags": ["notes", "beamed", "sixteenth"],
+      "popular": false
+    },
+    {
+      "id": "music-17",
+      "char": "♭",
+      "unicode": "U+266D",
+      "tags": ["flat", "musical", "notation"],
+      "popular": false
+    },
+    {
+      "id": "music-18",
+      "char": "♮",
+      "unicode": "U+266E",
+      "tags": ["natural", "musical", "notation"],
+      "popular": false
+    },
+    {
+      "id": "music-19",
+      "char": "♯",
+      "unicode": "U+266F",
+      "tags": ["sharp", "musical", "notation"],
+      "popular": false
+    },
+    {
+      "id": "music-20",
+      "char": "𝄞",
+      "unicode": "U+1D11E",
+      "tags": ["treble", "clef", "g-clef"],
+      "popular": false
+    }
+  ]
+}
+,
+    {
+      "id": "music-21",
+      "char": "🎵♪",
+      "unicode": "combo",
+      "tags": ["combo", "notes", "music"],
+      "popular": true
+    },
+    {
+      "id": "music-22",
+      "char": "♪ ♫ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "notes"],
+      "popular": true
+    },
+    {
+      "id": "music-23",
+      "char": "🎶✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "music"],
+      "popular": true
+    },
+    {
+      "id": "music-24",
+      "char": "🎧💕",
+      "unicode": "combo",
+      "tags": ["combo", "love", "music"],
+      "popular": true
+    },
+    {
+      "id": "music-25",
+      "char": "🎤⭐",
+      "unicode": "combo",
+      "tags": ["combo", "star", "sing"],
+      "popular": false
+    },
+    {
+      "id": "music-26",
+      "char": "🎸🔥",
+      "unicode": "combo",
+      "tags": ["combo", "rock", "fire"],
+      "popular": false
+    },
+    {
+      "id": "music-27",
+      "char": "♪ ⋆ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "star", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-28",
+      "char": "🎵 ˚ ༘ 🎶",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-29",
+      "char": "♫ ✧ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-30",
+      "char": "🎧 ⊹ 🎧",
+      "unicode": "combo",
+      "tags": ["combo", "headphones", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-31",
+      "char": "♪ ₊˚ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-32",
+      "char": "🎵🎶🎵",
+      "unicode": "combo",
+      "tags": ["combo", "notes", "pattern"],
+      "popular": true
+    },
+    {
+      "id": "music-33",
+      "char": "♫ ⊹ ♫ ⊹",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-34",
+      "char": "🎤💖",
+      "unicode": "combo",
+      "tags": ["combo", "love", "sing"],
+      "popular": false
+    },
+    {
+      "id": "music-35",
+      "char": "🎸✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "guitar"],
+      "popular": false
+    },
+    {
+      "id": "music-36",
+      "char": "♪ ˚｡⋆ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-37",
+      "char": "🎧🎵🎧",
+      "unicode": "combo",
+      "tags": ["combo", "headphones", "music"],
+      "popular": true
+    },
+    {
+      "id": "music-38",
+      "char": "♫ ˖ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "music-39",
+      "char": "🎶💫",
+      "unicode": "combo",
+      "tags": ["combo", "dizzy", "music"],
+      "popular": false
+    },
+    {
+      "id": "music-40",
+      "char": "🎵♡🎵",
+      "unicode": "combo",
+      "tags": ["combo", "love", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-41",
+      "char": "♪ ✧･ﾟ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "japanese", "sparkle"],
+      "popular": false
+    },
+    {
+      "id": "music-42",
+      "char": "🎤🌟",
+      "unicode": "combo",
+      "tags": ["combo", "glowing", "star"],
+      "popular": false
+    },
+    {
+      "id": "music-43",
+      "char": "🎸⚡",
+      "unicode": "combo",
+      "tags": ["combo", "electric", "rock"],
+      "popular": false
+    },
+    {
+      "id": "music-44",
+      "char": "♫ ⋆｡˚ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "soft"],
+      "popular": false
+    },
+    {
+      "id": "music-45",
+      "char": "🎧💗🎧",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "love"],
+      "popular": false
+    },
+    {
+      "id": "music-46",
+      "char": "♪ ༊*·˚ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "music-47",
+      "char": "🎵✨🎶",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "mixed"],
+      "popular": false
+    },
+    {
+      "id": "music-48",
+      "char": "♫ ₊˚ ♫ ₊˚",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "music-49",
+      "char": "🎤💕",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "hearts"],
+      "popular": false
+    },
+    {
+      "id": "music-50",
+      "char": "🎸🎵",
+      "unicode": "combo",
+      "tags": ["combo", "guitar", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-51",
+      "char": "♪ ⊹ ♪ ⊹ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "long", "pattern"],
+      "popular": false
+    },
+    {
+      "id": "music-52",
+      "char": "🎧🎶",
+      "unicode": "combo",
+      "tags": ["combo", "listen", "music"],
+      "popular": true
+    },
+    {
+      "id": "music-53",
+      "char": "♫ ˚ ༘ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "elegant"],
+      "popular": false
+    },
+    {
+      "id": "music-54",
+      "char": "🎵💖🎵",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "love"],
+      "popular": false
+    },
+    {
+      "id": "music-55",
+      "char": "♪ ✦ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "star", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "music-56",
+      "char": "🎤✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "mic"],
+      "popular": false
+    },
+    {
+      "id": "music-57",
+      "char": "🎸💫",
+      "unicode": "combo",
+      "tags": ["combo", "dizzy", "guitar"],
+      "popular": false
+    },
+    {
+      "id": "music-58",
+      "char": "♫ ˖ ࣪ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "music-59",
+      "char": "🎧♡",
+      "unicode": "combo",
+      "tags": ["combo", "love", "simple"],
+      "popular": true
+    },
+    {
+      "id": "music-60",
+      "char": "♪ ⋆ ♪ ⋆",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "star"],
+      "popular": false
+    },
+    {
+      "id": "music-61",
+      "char": "🎵🎧🎵",
+      "unicode": "combo",
+      "tags": ["combo", "headphones", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-62",
+      "char": "♫ ༘ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "music-63",
+      "char": "🎶⭐🎶",
+      "unicode": "combo",
+      "tags": ["combo", "star", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-64",
+      "char": "♪ ˚｡⋆ ♪ ˚｡⋆",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-65",
+      "char": "🎤🎵",
+      "unicode": "combo",
+      "tags": ["combo", "mic", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-66",
+      "char": "🎸♪",
+      "unicode": "combo",
+      "tags": ["combo", "guitar", "note"],
+      "popular": false
+    },
+    {
+      "id": "music-67",
+      "char": "♫ ✧ ♫ ✧",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "sparkle"],
+      "popular": false
+    },
+    {
+      "id": "music-68",
+      "char": "🎧💫",
+      "unicode": "combo",
+      "tags": ["combo", "dizzy", "headphones"],
+      "popular": false
+    },
+    {
+      "id": "music-69",
+      "char": "♪ ₊˚ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "mixed", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "music-70",
+      "char": "🎵🌟",
+      "unicode": "combo",
+      "tags": ["combo", "glowing", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-71",
+      "char": "♫ ⊹ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "mixed", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-72",
+      "char": "🎤💗",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "mic"],
+      "popular": false
+    },
+    {
+      "id": "music-73",
+      "char": "🎸🎶",
+      "unicode": "combo",
+      "tags": ["combo", "guitar", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-74",
+      "char": "♪ ˚ ༘ ♪ ˚ ༘",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "elegant"],
+      "popular": false
+    },
+    {
+      "id": "music-75",
+      "char": "🎧✨🎧",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "headphones"],
+      "popular": false
+    },
+    {
+      "id": "music-76",
+      "char": "♫ ˖ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "mixed", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "music-77",
+      "char": "🎵💕🎵",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "hearts"],
+      "popular": false
+    },
+    {
+      "id": "music-78",
+      "char": "♪ ⋆｡˚ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "mixed", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-79",
+      "char": "🎤🎶",
+      "unicode": "combo",
+      "tags": ["combo", "mic", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-80",
+      "char": "🎸✨🎸",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "guitar"],
+      "popular": false
+    },
+    {
+      "id": "music-81",
+      "char": "♫ ༊*·˚ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "music-82",
+      "char": "🎧🎵💕",
+      "unicode": "combo",
+      "tags": ["combo", "love", "music"],
+      "popular": false
+    },
+    {
+      "id": "music-83",
+      "char": "♪ ✧ ♪ ✧ ♪",
+      "unicode": "combo",
+      "tags": ["combo", "long", "sparkle"],
+      "popular": false
+    },
+    {
+      "id": "music-84",
+      "char": "🎵⭐",
+      "unicode": "combo",
+      "tags": ["combo", "star", "simple"],
+      "popular": false
+    },
+    {
+      "id": "music-85",
+      "char": "♫ ₊˚ ♪ ₊˚",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "mixed"],
+      "popular": false
+    },
+    {
+      "id": "music-86",
+      "char": "🎤♡",
+      "unicode": "combo",
+      "tags": ["combo", "love", "simple"],
+      "popular": false
+    },
+    {
+      "id": "music-87",
+      "char": "🎸💖",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "love"],
+      "popular": false
+    },
+    {
+      "id": "music-88",
+      "char": "♪ ˚ ♫ ˚",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "clean"],
+      "popular": false
+    },
+    {
+      "id": "music-89",
+      "char": "🎧🎶✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "music"],
+      "popular": false
+    },
+    {
+      "id": "music-90",
+      "char": "♫ ⋆ ♫ ⋆ ♫",
+      "unicode": "combo",
+      "tags": ["combo", "long", "star"],
+      "popular": false
+    },
+    {
+      "id": "music-91",
+      "char": "🎵💗",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "simple"],
+      "popular": false
+    },
+    {
+      "id": "music-92",
+      "char": "♪ ༘ ♪ ༘",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "music-93",
+      "char": "🎤✨🎤",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "mic"],
+      "popular": false
+    },
+    {
+      "id": "music-94",
+      "char": "🎸🎵🎸",
+      "unicode": "combo",
+      "tags": ["combo", "guitar", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-95",
+      "char": "♫ ˖ ࣪ ♫ ˖ ࣪",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "music-96",
+      "char": "🎧♪",
+      "unicode": "combo",
+      "tags": ["combo", "headphones", "note"],
+      "popular": true
+    },
+    {
+      "id": "music-97",
+      "char": "♪ ⊹ ♫ ⊹",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "mixed"],
+      "popular": false
+    },
+    {
+      "id": "music-98",
+      "char": "🎵🎶💕",
+      "unicode": "combo",
+      "tags": ["combo", "love", "notes"],
+      "popular": false
+    },
+    {
+      "id": "music-99",
+      "char": "♫ ˚｡⋆ ♪ ˚｡⋆",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "music-100",
+      "char": "🎤🎵🎤",
+      "unicode": "combo",
+      "tags": ["combo", "mic", "notes"],
+      "popular": false
+    }
+  ]
+}

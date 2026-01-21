@@ -1,0 +1,401 @@
+---
+/**
+ * About页面 - 关于CuteSymbols
+ * 介绍网站的使命、功能和团队
+ */
+import Layout from '../layouts/Layout.astro';
+import { getTranslations } from '../i18n/utils';
+import GirlyFooter from '../components/GirlyFooter.astro';
+
+const { t } = getTranslations('en');
+---
+
+<Layout title="About - Cute Symbols" locale="en">
+  <div style={{
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '3rem 1rem'
+  }}>
+    <!-- 页面标题 -->
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: 700,
+      marginBottom: '1rem',
+      textAlign: 'center',
+      background: 'linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}>
+      About CuteSymbols 💖
+    </h1>
+
+    <p style={{
+      textAlign: 'center',
+      fontSize: '1.125rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '3rem',
+      maxWidth: '600px',
+      margin: '0 auto 3rem'
+    }}>
+      Your go-to destination for the cutest symbols on the internet
+    </p>
+
+    <!-- 主要内容 -->
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '3rem'
+    }}>
+      <!-- 我们的使命 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          🎯 Our Mission
+        </h2>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)',
+          marginBottom: '1rem'
+        }}>
+          We believe that self-expression should be fun, creative, and accessible to everyone. CuteSymbols was created to help people add personality to their digital presence with beautiful Unicode symbols that work everywhere.
+        </p>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)'
+        }}>
+          Whether you're decorating your Instagram bio, creating a unique Discord username, or adding flair to your TikTok profile, we've got the perfect symbols for you.
+        </p>
+      </section>
+
+      <!-- 我们提供什么 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          ✨ What We Offer
+        </h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '1.5rem'
+        }}>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              💖 1000+ Symbols
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              Hearts, stars, flowers, kaomoji, and more - all carefully curated and organized by category.
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              📱 One-Click Copy
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              Simply click any symbol to copy it instantly. Works on all devices and platforms.
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              🌍 Multi-Language
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              Available in English, Filipino, Malay, Bengali, and Polish with more languages coming soon.
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              📚 Platform Guides
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              Detailed tutorials for Instagram, TikTok, Discord, Roblox, and other popular platforms.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 为什么选择我们 -->
+      <section style={{
+        background: 'linear-gradient(135deg, #ff6b9d15 0%, #c06c8415 100%)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '2px solid var(--accent-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          🏆 Why Choose CuteSymbols?
+        </h2>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>🚀</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                Always Up-to-Date
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                We regularly add new symbols and update our platform guides to reflect the latest trends and platform changes.
+              </p>
+            </div>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>🔒</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                Privacy-First
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                We don't track your usage or store personal data. Your privacy is our priority.
+              </p>
+            </div>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>💯</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                100% Free
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                All symbols and features are completely free. No subscriptions, no hidden fees, no ads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系我们 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)',
+        textAlign: 'center'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1rem',
+          color: 'var(--text-primary)'
+        }}>
+          💌 Get in Touch
+        </h2>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)',
+          marginBottom: '1.5rem'
+        }}>
+          Have suggestions for new symbols? Found a bug? Want to collaborate? We'd love to hear from you!
+        </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '1rem',
+          flexWrap: 'wrap'
+        }}>
+          <a
+            href="/contact"
+            style={{
+              display: 'inline-block',
+              padding: '0.875rem 2rem',
+              background: 'var(--accent-color)',
+              color: '#ffffff',
+              borderRadius: 'var(--radius-md)',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '1rem',
+              transition: 'all 0.3s ease'
+            }}
+            class="cta-button"
+          >
+            Contact Us
+          </a>
+          <a
+            href="mailto:hi@cutesymbols.com"
+            style={{
+              display: 'inline-block',
+              padding: '0.875rem 2rem',
+              background: 'transparent',
+              color: 'var(--accent-color)',
+              border: '2px solid var(--accent-color)',
+              borderRadius: 'var(--radius-md)',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '1rem',
+              transition: 'all 0.3s ease'
+            }}
+            class="cta-button-outline"
+          >
+            Email Us
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <GirlyFooter locale="en" />
+
+  <style>
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-button-outline:hover {
+      background: var(--accent-color);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+
+      div[style*="flex-direction: column"] {
+        gap: 2rem !important;
+      }
+    }
+  </style>
+</Layout>

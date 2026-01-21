@@ -1,0 +1,19 @@
+{
+  "name": "cute-symbols",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@astrojs/cloudflare": "^12.6.12",
+    "@types/node": "^25.0.9",
+    "astro": "^5.16.9",
+    "typescript": "^5.3.3"
+  }
+}

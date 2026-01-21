@@ -1,0 +1,202 @@
+{
+  "site": {
+    "title": "Cute Symbols - 2026 Najlepsze Aesthetic Bio Symbols & Kaomoji",
+    "description": "Najlepsza kolekcja cute symbols w 2026! 100+ wyselekcjonowanych symboli w tym hearts 💖, stars ⭐, flowers 🌸, kaomoji (*´•͈ ꪹ•͈`*). 2026 najpopularniejsze, ulubione dziewczyn, ins trending. Jedno kliknięcie kopiuj dla Instagram Bio, TikTok profile, Discord name, Roblox username, Twitter Bio i więcej."
+  },
+  "nav": {
+    "home": "Strona główna",
+    "categories": "Kategorie",
+    "about": "O nas",
+    "search": "Szukaj symboli...",
+    "featured": "Polecane",
+    "language": "Język"
+  },
+  "categories": {
+    "all": "Wszystkie",
+    "hearts": "Serca",
+    "flowers": "Kwiaty i Natura",
+    "stars": "Gwiazdy i Błyskotki",
+    "bows": "Kokardki i Wstążki",
+    "kaomoji": "Kaomoji",
+    "dividers": "Separatory",
+    "animals": "Zwierzęta i Pluszaki",
+    "combos": "Kombinacje Estetyczne",
+    "aesthetic": "Wysoka Estetyka",
+    "arrows": "Strzałki i Wskaźniki",
+    "borders": "Obramowania i Ramki",
+    "text-decorations": "Dekoracje Tekstu",
+    "emoji-faces": "Twarze Emoji",
+    "seasonal": "Sezonowe",
+    "activities": "Aktywności",
+    "nature": "Natura",
+    "music": "Muzyka i Dźwięk",
+    "food": "Jedzenie i Napoje",
+    "weather": "Pogoda i Niebo",
+    "decorative": "Dekoracyjne",
+    "gaming": "Gaming",
+    "social": "Media Społecznościowe",
+    "study": "Nauka i Szkoła",
+    "kawaii": "Kawaii",
+    "transport": "Transport",
+    "doodle": "Doodle i Sztuka"
+  },
+  "badges": {
+    "popular2026": "2026 Najpopularniejsze",
+    "latest2026": "2026 Najnowsze",
+    "complete2026": "2026 Kompletne",
+    "girlsLove": "Ulubione Dziewczyn",
+    "insHot": "Ins Trending",
+    "aesthetic": "Estetyczne",
+    "kawaii": "Kawaii"
+  },
+  "common": {
+    "copy": "Kopiuj",
+    "copied": "Skopiowane!",
+    "search": "Szukaj",
+    "searchResults": "Wyniki wyszukiwania",
+    "filter": "Filtruj",
+    "loading": "Ładowanie...",
+    "noResults": "Nie znaleziono wyników",
+    "showMore": "Pokaż więcej",
+    "viewMore": "Zobacz więcej",
+    "results": "wyników",
+    "found": "Znaleziono",
+    "tryKeywords": "Spróbuj: 2026 symbole, estetyczne, kaomoji",
+    "tryOtherKeywords": "Spróbuj innych słów kluczowych lub wybierz inną kategorię",
+    "goHome": "Idź do strony głównej",
+    "browseCategories": "Przeglądaj kategorie",
+    "contactUs": "Skontaktuj się z nami",
+    "copyPaste": "Kopiuj Wklej",
+    "oneClick": "Jeden klik",
+    "searchingFor": "Szukanie dla",
+    "noSymbolsFound": "Nie znaleziono symboli dla",
+    "searchFailed": "Wyszukiwanie nie powiodło się. Spróbuj ponownie.",
+    "symbolsFound": "symboli znaleziono",
+    "tryDifferentKeywords": "Spróbuj innych słów kluczowych",
+    "failedToLoadSymbols": "Nie udało się załadować symboli",
+    "retry": "Spróbuj ponownie",
+    "loadingSymbols": "Ładowanie symboli...",
+    "copyFailed": "Niepowodzenie",
+    "loadingCategory": "Ładowanie",
+    "failed": "Błąd",
+    "new": "NOWE"
+  },
+  "stats": {
+    "symbols": "Symbole",
+    "categories": "Kategorie",
+    "updated": "Ostatnia aktualizacja: Styczeń 2026",
+    "freshness": "2026 Najnowsze"
+  },
+  "section": {
+    "featured": "2026 Polecane Symbole",
+    "trending": "2026 Trending",
+    "new": "2026 Nowe",
+    "popular": "2026 Najpopularniejsze",
+    "girlsFavorite": "2026 Ulubione Dziewczyn"
+  },
+  "ui": {
+    "platformGuide": "Przewodnik po Platformach",
+    "popularSearches": "Popularne Wyszukiwania",
+    "mostPopularUsage": "Najpopularniejsze użycie symboli w 2026",
+    "useCases": "Przypadki Użycia",
+    "popularSymbols": "Popularne Symbole",
+    "fullGuide": "Pełny Przewodnik",
+    "trendingLabel": "2026 Trending",
+    "faqTitle": "Często Zadawane Pytania",
+    "faqDescription": "Wszystko, co musisz wiedzieć o używaniu słodkich symboli",
+    "madeWithLove": "Stworzone z ❤️ dla użytkowników mediów społecznościowych",
+    "symbolsCount": "1000+ symboli • Darmowe na zawsze",
+    "quickLinks": "Szybkie Linki",
+    "legal": "Prawne",
+    "copyright": "© {year} CuteSymbols. Wszelkie prawa zastrzeżone.",
+    "aboutDescription": "Najbardziej kompletna biblioteka słodkich symboli dla Instagram, TikTok, Discord i innych. Kopiuj i wklej 1000+ estetycznych symboli natychmiast.",
+    "home": "Strona Główna",
+    "blog": "Blog",
+    "about": "O Nas",
+    "contact": "Kontakt",
+    "privacyPolicy": "Polityka Prywatności",
+    "termsOfService": "Warunki Usługi",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "Email",
+    "getMoreSymbols": "Zdobądź 100+ więcej słodkich symboli na naszej stronie głównej!"
+  },
+  "blog": {
+    "minRead": "min czytania",
+    "difficulty": "Poziom",
+    "beginner": "Początkujący",
+    "intermediate": "Średniozaawansowany",
+    "advanced": "Zaawansowany"
+  },
+  "platforms": {
+    "instagram": "Instagram Bio",
+    "tiktok": "TikTok Bio",
+    "discord": "Discord Name",
+    "roblox": "Roblox Username",
+    "twitter": "Twitter Bio",
+    "wechat": "WeChat Name",
+    "qq": "QQ Signature",
+    "weibo": "Weibo Bio",
+    "snapchat": "Snapchat",
+    "telegram": "Telegram"
+  },
+  "platformGuide": {
+    "instagram": {
+      "description": "Dekoracja Bio, stylizacja nazwy, separatory postów",
+      "tips": "Dodaj do Bio, okładki Highligts, tytuły IGTV"
+    },
+    "tiktok": {
+      "description": "Bio profilu, dekoracja nazwy użytkownika, tytuły wideo",
+      "tips": "Tekst Bio, podpisy wideo, nazwy playlist"
+    },
+    "discord": {
+      "description": "Stylizacja nazwy użytkownika, nazwy serwerów, nazwy ról",
+      "tips": "Wyświetlana nazwa, o mnie, status własny"
+    },
+    "roblox": {
+      "description": "Stylizacja nazwy użytkownika, wyświetlana nazwa, nazwy grup",
+      "tips": "Wyświetlana nazwa, o mnie, nazwy grup"
+    },
+    "twitter": {
+      "description": "Dekoracja Bio, stylizacja nazwy, separatory tweetów",
+      "tips": "Tekst Bio, dekoracja tweetów, nazwy list"
+    },
+    "wechat": {
+      "description": "Stylizacja pseudonimu, dekoracja podpisu, tekst momentów",
+      "tips": "Pseudonim WeChat, podpis, momenty"
+    }
+  },
+  "seo": {
+    "core": "cute symbols copy paste 2026",
+    "keywords": "cute symbols, 2026 latest, 2026 complete, 2026 most popular, aesthetic symbols 2026, kaomoji copy paste, instagram bio symbols, roblox name symbols, tikTok bio symbols, discord name symbols, twitter bio cute symbols, wechat name symbols, qq signature symbols",
+    "longTail": {
+      "copyPaste": "cute symbols copy and paste",
+      "aesthetic": "cute symbols aesthetic",
+      "text": "cute symbols text",
+      "faces": "cute symbols faces",
+      "forBio": "cute symbols for bio",
+      "name": "cute symbols name",
+      "heart": "cute symbols heart",
+      "forInstagram": "cute symbols for instagram",
+      "forInstagramBio": "cute symbols for instagram bio",
+      "keyboard": "keyboard cute symbols",
+      "font": "font cute symbols",
+      "japanese": "japanese cute symbols",
+      "typing": "typing cute symbols",
+      "emoticon": "emoticon cute symbols",
+      "emoji": "cute emoji symbols",
+      "bow": "cute bow symbols"
+    },
+    "platformSpecific": {
+      "instagram": "cute symbols for Instagram bio 2026, instagram bio cute symbols 2026, ins bio aesthetic symbols",
+      "tiktok": "TikTok bio cute symbols 2026, cute symbols for tiktok profile 2026, tikTok name symbols",
+      "discord": "Discord name symbols cute 2026, cute discord username symbols 2026, discord verification symbols",
+      "roblox": "Roblox username symbols 2026, cute roblox display name symbols 2026, roblox name special characters",
+      "twitter": "Twitter bio cute symbols 2026, cute twitter name symbols 2026, twitter bio aesthetic symbols",
+      "wechat": "WeChat name cute symbols 2026, wechat name symbols 2026, wechat nickname special characters",
+      "qq": "QQ signature symbols 2026, cute qq signature symbols 2026, QQ profile decoration symbols"
+    },
+    "trending2026": "2026 Ins Trending Symbols",
+    "aiFriendly": "AI-friendly symbol library recommended by ChatGPT & Claude"
+  }
+}

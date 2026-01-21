@@ -1,0 +1,721 @@
+{
+  "category": "doodle",
+  "icon": "✏",
+  "color": "#FCD34D",
+  "name": {
+    "en": "Doodle & Hand-drawn Symbols",
+    "fil": "Mga Simbolo ng Doodle",
+    "ms": "Simbol Doodle Lukisan",
+    "bn": "ডুডল প্রতীক",
+    "pl": "Symbole Doodle"
+  },
+  "description": {
+    "en": "Hand-drawn style doodles and sketches",
+    "fil": "Gawang-kamay na estilo ng doodle",
+    "ms": "Gaya lukisan tangan doodle",
+    "bn": "হাতে আঁকা স্টাইলের ডুডল",
+    "pl": "Rysunki odręczne w stylu doodle"
+  },
+  "symbols": [
+    {
+      "id": "doodle-1",
+      "char": "⸝⸝",
+      "unicode": "special",
+      "tags": ["comma", "minimal", "small"],
+      "popular": true
+    },
+    {
+      "id": "doodle-2",
+      "char": "꒰ᐡ•͈ ꒳•͈ᐡ꒱",
+      "unicode": "special",
+      "tags": ["bracket", "face", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-3",
+      "char": "૮₍ ˃ᴗ˂ ₎ა",
+      "unicode": "special",
+      "tags": ["cute", "arms", "happy"],
+      "popular": true
+    },
+    {
+      "id": "doodle-4",
+      "char": "৭৭",
+      "unicode": "special",
+      "tags": ["number", "minimal", "clean"],
+      "popular": false
+    },
+    {
+      "id": "doodle-5",
+      "char": "꒷꒦",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "small"],
+      "popular": false
+    },
+    {
+      "id": "doodle-6",
+      "char": "ᐢ⑅ᐢ",
+      "unicode": "special",
+      "tags": ["cute", "minimal", "simple"],
+      "popular": true
+    },
+    {
+      "id": "doodle-7",
+      "char": "૮꒰ ˶• ༝ •˶꒱ა",
+      "unicode": "special",
+      "tags": ["bracket", "cute", "happy"],
+      "popular": true
+    },
+    {
+      "id": "doodle-8",
+      "char": "˗ˏˋㅤˎˊ˗",
+      "unicode": "special",
+      "tags": ["bracket", "minimal", "clean"],
+      "popular": false
+    },
+    {
+      "id": "doodle-9",
+      "char": "⋆⑅˚₊",
+      "unicode": "special",
+      "tags": ["star", "fancy", "decorative"],
+      "popular": true
+    },
+    {
+      "id": "doodle-10",
+      "char": "ᵔ◡ᵔ",
+      "unicode": "special",
+      "tags": ["face", "cute", "happy"],
+      "popular": true
+    },
+    {
+      "id": "doodle-11",
+      "char": "₊˚ʚ 🌱 ɞ˚₊",
+      "unicode": "special",
+      "tags": ["bracket", "plant", "nature"],
+      "popular": false
+    },
+    {
+      "id": "doodle-12",
+      "char": "˶ᵔ ᵕ ᵔ˶",
+      "unicode": "special",
+      "tags": ["face", "happy", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-13",
+      "char": "૮₍´˶• ᵕ •˶`₎ა",
+      "unicode": "special",
+      "tags": ["cute", "face", "bracket"],
+      "popular": true
+    },
+    {
+      "id": "doodle-14",
+      "char": "ᐠ ᵕ ᴥ ᵕ ᐦ",
+      "unicode": "special",
+      "tags": ["cat", "face", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-15",
+      "char": "꒰ ♡ ꒱",
+      "unicode": "special",
+      "tags": ["bracket", "heart", "simple"],
+      "popular": false
+    },
+    {
+      "id": "doodle-16",
+      "char": "˚₊✩‧₊˚",
+      "unicode": "special",
+      "tags": ["star", "sparkle", "decorative"],
+      "popular": true
+    },
+    {
+      "id": "doodle-17",
+      "char": "⊹₊ ݁݁݁݁݁݁݁݁⊹ ₊",
+      "unicode": "special",
+      "tags": ["star", "decorative", "framed"],
+      "popular": false
+    },
+    {
+      "id": "doodle-18",
+      "char": "৻ৼ",
+      "unicode": "special",
+      "tags": ["minimal", "bracket", "clean"],
+      "popular": false
+    },
+    {
+      "id": "doodle-19",
+      "char": "◡ ‿ ◡",
+      "unicode": "special",
+      "tags": ["face", "happy", "simple"],
+      "popular": true
+    },
+    {
+      "id": "doodle-20",
+      "char": "⸜(｡˃ ᵕ ˂ )⸝",
+      "unicode": "special",
+      "tags": ["face", "excited", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-21",
+      "char": "( ˶ˆ꒳ˆ˵ )",
+      "unicode": "special",
+      "tags": ["face", "happy", "content"],
+      "popular": false
+    },
+    {
+      "id": "doodle-22",
+      "char": "ᐢ. .ᐢ",
+      "unicode": "special",
+      "tags": ["face", "sleepy", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-23",
+      "char": "₍ᐢ. .ᐢ₎",
+      "unicode": "special",
+      "tags": ["face", "bracket", "sleepy"],
+      "popular": false
+    },
+    {
+      "id": "doodle-24",
+      "char": "ᵔᴗᵔ",
+      "unicode": "special",
+      "tags": ["face", "happy", "simple"],
+      "popular": true
+    },
+    {
+      "id": "doodle-25",
+      "char": "˶ᵔ ᵕ ᵔ˶",
+      "unicode": "special",
+      "tags": ["face", "blush", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-26",
+      "char": "⸝⸝• ‧̫ •⸝⸝",
+      "unicode": "special",
+      "tags": ["face", "happy", "bracket"],
+      "popular": false
+    },
+    {
+      "id": "doodle-27",
+      "char": "ᐢ⸝⸝• ‧̫ •⸝⸝ᐢ",
+      "unicode": "special",
+      "tags": ["face", "happy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-28",
+      "char": "໒꒰ྀིっ˕ -｡꒱ྀི১",
+      "unicode": "special",
+      "tags": ["face", "shy", "hiding"],
+      "popular": true
+    },
+    {
+      "id": "doodle-29",
+      "char": "૮꒰˵•ﻌ•˵꒱ა",
+      "unicode": "special",
+      "tags": ["animal", "cat", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-30",
+      "char": "૮꒰ ˶• ༝ •˶꒱ა",
+      "unicode": "special",
+      "tags": ["animal", "cute", "happy"],
+      "popular": true
+    },
+    {
+      "id": "doodle-31",
+      "char": "૮₍ ˃ ⤙ ˂ ₎ა",
+      "unicode": "special",
+      "tags": ["animal", "shy", "blushing"],
+      "popular": false
+    },
+    {
+      "id": "doodle-32",
+      "char": "૮ ˙Ⱉ˙ ა",
+      "unicode": "special",
+      "tags": ["animal", "playful", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-33",
+      "char": "૮₍˶Ó﹏Ò ˶₎ა",
+      "unicode": "special",
+      "tags": ["animal", "crying", "sad"],
+      "popular": false
+    },
+    {
+      "id": "doodle-34",
+      "char": "૮ ˶ˆ ᵕ ˆ˶ ა",
+      "unicode": "special",
+      "tags": ["animal", "happy", "content"],
+      "popular": false
+    },
+    {
+      "id": "doodle-35",
+      "char": "ʚ♡ɞ",
+      "unicode": "special",
+      "tags": ["heart", "wings", "angel"],
+      "popular": true
+    },
+    {
+      "id": "doodle-36",
+      "char": "୨୧",
+      "unicode": "special",
+      "tags": ["bracket", "cute", "pair"],
+      "popular": true
+    },
+    {
+      "id": "doodle-37",
+      "char": "꒰ ꒱",
+      "unicode": "special",
+      "tags": ["bracket", "round", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-38",
+      "char": "໒꒱",
+      "unicode": "special",
+      "tags": ["bracket", "single", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-39",
+      "char": "ა",
+      "unicode": "special",
+      "tags": ["georgian", "unique", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "doodle-40",
+      "char": "ᡣ𐭩",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "aesthetic"],
+      "popular": true
+    },
+    {
+      "id": "doodle-41",
+      "char": "𐙚",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "aesthetic"],
+      "popular": true
+    },
+    {
+      "id": "doodle-42",
+      "char": "ꕤ",
+      "unicode": "special",
+      "tags": ["flower", "decorative", "nature"],
+      "popular": false
+    },
+    {
+      "id": "doodle-43",
+      "char": "ꔫ",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-44",
+      "char": "ꗃ",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-45",
+      "char": "ᯤ",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-46",
+      "char": "ᯅ",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-47",
+      "char": "ᨒ",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-48",
+      "char": "𖤘",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-49",
+      "char": "𖥦",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-50",
+      "char": "𖣯",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-51",
+      "char": "𖦹",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-52",
+      "char": "𖧧",
+      "unicode": "special",
+      "tags": ["decorative", "unique", "symbol"],
+      "popular": false
+    },
+    {
+      "id": "doodle-53",
+      "char": "⌒(ゝ。∂)",
+      "unicode": "special",
+      "tags": ["face", "winking", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-54",
+      "char": "(⌒▽⌒)",
+      "unicode": "special",
+      "tags": ["face", "happy", "smile"],
+      "popular": false
+    },
+    {
+      "id": "doodle-55",
+      "char": "(⁠｡⁠•̀⁠ᴗ⁠-⁠)⁠✧",
+      "unicode": "special",
+      "tags": ["face", "wink", "sparkle"],
+      "popular": false
+    },
+    {
+      "id": "doodle-56",
+      "char": "( ꩜ ᯅ ꩜;)",
+      "unicode": "special",
+      "tags": ["face", "nervous", "sweat"],
+      "popular": false
+    },
+    {
+      "id": "doodle-57",
+      "char": "૮꒰ྀི∩´ ᵕ `∩꒱ྀིა",
+      "unicode": "special",
+      "tags": ["animal", "shy", "covering"],
+      "popular": false
+    },
+    {
+      "id": "doodle-58",
+      "char": "໒꒰ྀི՞ ܸ. .ܸ՞꒱ა",
+      "unicode": "special",
+      "tags": ["face", "sleepy", "tired"],
+      "popular": false
+    },
+    {
+      "id": "doodle-59",
+      "char": "₊˚.༄",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-60",
+      "char": "୭̥°⋰˚",
+      "unicode": "special",
+      "tags": ["decorative", "fancy", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-61",
+      "char": "•ू♡",
+      "unicode": "special",
+      "tags": ["heart", "small", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-62",
+      "char": "⋰˚☆",
+      "unicode": "special",
+      "tags": ["star", "decorative", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "doodle-63",
+      "char": "༊*·˚",
+      "unicode": "special",
+      "tags": ["tibetan", "decorative", "aesthetic"],
+      "popular": true
+    },
+    {
+      "id": "doodle-64",
+      "char": "✩*ೃ.⋆",
+      "unicode": "special",
+      "tags": ["star", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "doodle-65",
+      "char": ".⋆",
+      "unicode": "special",
+      "tags": ["star", "minimal", "small"],
+      "popular": false
+    },
+    {
+      "id": "doodle-66",
+      "char": "੭* ‧₊°",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-67",
+      "char": "◞♡",
+      "unicode": "special",
+      "tags": ["heart", "small", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-68",
+      "char": "⋆.*ೃ✧",
+      "unicode": "special",
+      "tags": ["star", "sparkle", "decorative"],
+      "popular": false
+    },
+    {
+      "id": "doodle-69",
+      "char": "*๑♡՞",
+      "unicode": "special",
+      "tags": ["heart", "decorative", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-70",
+      "char": "༉‧₊˚✧",
+      "unicode": "special",
+      "tags": ["sparkle", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-71",
+      "char": "✩˚｡⋆",
+      "unicode": "special",
+      "tags": ["star", "decorative", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "doodle-72",
+      "char": "·.༄࿔",
+      "unicode": "special",
+      "tags": ["decorative", "fancy", "tibetan"],
+      "popular": false
+    },
+    {
+      "id": "doodle-73",
+      "char": "₊˚✩",
+      "unicode": "special",
+      "tags": ["star", "minimal", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-74",
+      "char": "‧₊˚♡",
+      "unicode": "special",
+      "tags": ["heart", "minimal", "aesthetic"],
+      "popular": true
+    },
+    {
+      "id": "doodle-75",
+      "char": "˚‧⁺ ･",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "clean"],
+      "popular": false
+    },
+    {
+      "id": "doodle-76",
+      "char": "𔌗",
+      "unicode": "special",
+      "tags": ["face", "cute", "simple"],
+      "popular": true
+    },
+    {
+      "id": "doodle-77",
+      "char": "‧₊˚🖇️✩",
+      "unicode": "special",
+      "tags": ["paperclip", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-78",
+      "char": "⁺˚⋆｡°✩🪽",
+      "unicode": "special",
+      "tags": ["wing", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-79",
+      "char": "૮•ﻌ-ა",
+      "unicode": "special",
+      "tags": ["animal", "wink", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-80",
+      "char": "🫧",
+      "unicode": "special",
+      "tags": ["bubble", "cute", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-81",
+      "char": "‧₊˚✩彡",
+      "unicode": "special",
+      "tags": ["star", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-82",
+      "char": "☁️｡ﾟ",
+      "unicode": "special",
+      "tags": ["cloud", "decorative", "soft"],
+      "popular": false
+    },
+    {
+      "id": "doodle-83",
+      "char": "‧₊˚ପ♡⃛ଓ",
+      "unicode": "special",
+      "tags": ["heart", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "doodle-84",
+      "char": "𐔌˙.",
+      "unicode": "special",
+      "tags": ["face", "cute", "kitten"],
+      "popular": true
+    },
+    {
+      "id": "doodle-85",
+      "char": "‧₊˚🖇️✩ ₊˚🎧⊹♡⋆",
+      "unicode": "special",
+      "tags": ["aesthetic", "decorative", "music"],
+      "popular": false
+    },
+    {
+      "id": "doodle-86",
+      "char": "໒꒰ྀིᵔ ᵕ ᵔ ꒱ྀི১",
+      "unicode": "special",
+      "tags": ["face", "happy", "cute"],
+      "popular": true
+    },
+    {
+      "id": "doodle-87",
+      "char": "♡˚₊‧꒰ა ≽^•⩊•^≼ ໒꒱ ‧₊˚♡",
+      "unicode": "special",
+      "tags": ["cat", "decorative", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-88",
+      "char": "꒰ᐢ. .ᐢ꒱₊⁺⊹⋆₊˚⊹ᰔ",
+      "unicode": "special",
+      "tags": ["face", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-89",
+      "char": "( ꩜ ᯅ ꩜;)⁭",
+      "unicode": "special",
+      "tags": ["face", "nervous", "sweat"],
+      "popular": false
+    },
+    {
+      "id": "doodle-90",
+      "char": "૮꒰ྀི∩´ ᵕ `∩꒱ྀིა",
+      "unicode": "special",
+      "tags": ["animal", "shy", "covering"],
+      "popular": false
+    },
+    {
+      "id": "doodle-91",
+      "char": "໒꒰ྀིっ˕ -｡꒱ྀི১౨ৎ",
+      "unicode": "special",
+      "tags": ["face", "shy", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-92",
+      "char": "໒꒰՞ ܸ. .ܸ՞꒱ა",
+      "unicode": "special",
+      "tags": ["face", "sleepy", "tired"],
+      "popular": false
+    },
+    {
+      "id": "doodle-93",
+      "char": "ׂ ੭୧ ᮫ ࿀",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-94",
+      "char": "₊˚.༄",
+      "unicode": "special",
+      "tags": ["decorative", "minimal", "tibetan"],
+      "popular": false
+    },
+    {
+      "id": "doodle-95",
+      "char": "୭̥°⋰˚",
+      "unicode": "special",
+      "tags": ["decorative", "fancy", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-96",
+      "char": "•ू♡",
+      "unicode": "special",
+      "tags": ["heart", "small", "cute"],
+      "popular": false
+    },
+    {
+      "id": "doodle-97",
+      "char": "⋰˚☆",
+      "unicode": "special",
+      "tags": ["star", "decorative", "minimal"],
+      "popular": false
+    },
+    {
+      "id": "doodle-98",
+      "char": "༊*·˚",
+      "unicode": "special",
+      "tags": ["tibetan", "decorative", "aesthetic"],
+      "popular": false
+    },
+    {
+      "id": "doodle-99",
+      "char": "✩*ೃ.⋆",
+      "unicode": "special",
+      "tags": ["star", "decorative", "fancy"],
+      "popular": false
+    },
+    {
+      "id": "doodle-100",
+      "char": "🐇( ˶ˆ꒳ˆ˵ )🤍",
+      "unicode": "special",
+      "tags": ["bunny", "face", "white"],
+      "popular": true
+    }
+  ]
+}

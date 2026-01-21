@@ -1,0 +1,315 @@
+---
+/**
+ * 专业简洁的Footer
+ * 符合常规网站布局标准
+ */
+import { getTranslations } from '../i18n/utils';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+const currentYear = new Date().getFullYear();
+---
+
+<footer
+  style={{
+    borderTop: '1px solid var(--border-color)',
+    marginTop: '4rem',
+    padding: '2rem 1rem 1.5rem',
+    background: 'var(--bg-color)'
+  }}
+  data-astro-cid-pa37osm7
+>
+  <div
+    style={{
+      maxWidth: '1600px',
+      margin: '0 auto'
+    }}
+  >
+    {/* 主要内容区 - 四列布局 */}
+    <div
+      class="footer-grid"
+      style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+        gap: '2rem',
+        marginBottom: '2rem'
+      }}
+    >
+      {/* 第一列：品牌信息 */}
+      <div>
+        <h2
+          style={{
+            fontSize: '1.5rem',
+            fontWeight: '700',
+            marginBottom: '0.5rem',
+            background: 'linear-gradient(135deg, var(--accent-color) 0%, #ffa07a 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            letterSpacing: '-0.02em'
+          }}
+        >
+          CuteSymbols
+        </h2>
+        <p
+          style={{
+            fontSize: '0.8125rem',
+            color: 'var(--text-secondary)',
+            lineHeight: '1.6',
+            marginBottom: '0.5rem'
+          }}
+        >
+          {t('ui.madeWithLove')}
+        </p>
+        <p
+          style={{
+            fontSize: '0.8125rem',
+            color: 'var(--text-secondary)',
+            opacity: 0.7
+          }}
+        >
+          {t('ui.symbolsCount')}
+        </p>
+      </div>
+
+      {/* 第二列：关于 */}
+      <div>
+        <h3
+          style={{
+            fontSize: '0.875rem',
+            fontWeight: '600',
+            color: 'var(--text-primary)',
+            marginBottom: '0.75rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}
+        >
+          {t('ui.about')}
+        </h3>
+        <p
+          style={{
+            fontSize: '0.875rem',
+            color: 'var(--text-secondary)',
+            lineHeight: '1.6',
+            marginBottom: '0.5rem'
+          }}
+        >
+          {t('ui.aboutDescription')}
+        </p>
+      </div>
+
+      {/* 第二列：快速链接 */}
+      <div>
+        <h3
+          style={{
+            fontSize: '0.875rem',
+            fontWeight: '600',
+            color: 'var(--text-primary)',
+            marginBottom: '0.75rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}
+        >
+          {t('ui.quickLinks')}
+        </h3>
+        <nav
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.5rem'
+          }}
+        >
+          <a
+            href={locale === 'en' ? '/' : `/${locale}/`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.home')}
+          </a>
+          <a
+            href={locale === 'en' ? '/blog' : `/${locale}/blog`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.blog')}
+          </a>
+          <a
+            href={locale === 'en' ? '/about' : `/${locale}/about`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.about')}
+          </a>
+          <a
+            href={locale === 'en' ? '/contact' : `/${locale}/contact`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.contact')}
+          </a>
+        </nav>
+      </div>
+
+      {/* 第三列：法律 */}
+      <div>
+        <h3
+          style={{
+            fontSize: '0.875rem',
+            fontWeight: '600',
+            color: 'var(--text-primary)',
+            marginBottom: '0.75rem',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em'
+          }}
+        >
+          {t('ui.legal')}
+        </h3>
+        <nav
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '0.5rem'
+          }}
+        >
+          <a
+            href={locale === 'en' ? '/privacy' : `/${locale}/privacy`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.privacyPolicy')}
+          </a>
+          <a
+            href={locale === 'en' ? '/terms' : `/${locale}/terms`}
+            style={{
+              fontSize: '0.875rem',
+              color: 'var(--text-secondary)',
+              textDecoration: 'none',
+              transition: 'color 0.2s'
+            }}
+          >
+            {t('ui.termsOfService')}
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    {/* 分隔线 */}
+    <div
+      style={{
+        borderTop: '1px solid var(--border-color)',
+        paddingTop: '1.5rem',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: '0.75rem'
+      }}
+    >
+      {/* 版权信息 */}
+      <p
+        style={{
+          fontSize: '0.8125rem',
+          color: 'var(--text-secondary)',
+          textAlign: 'center'
+        }}
+      >
+        {t('ui.copyright').replace('{year}', currentYear.toString())}
+      </p>
+
+      {/* 社交链接（可选） */}
+      <div
+        style={{
+          display: 'flex',
+          gap: '1rem',
+          fontSize: '0.8125rem'
+        }}
+      >
+        <a
+          href="https://github.com"
+          style={{
+            color: 'var(--text-secondary)',
+            textDecoration: 'none',
+            transition: 'color 0.2s'
+          }}
+          aria-label="GitHub"
+        >
+          {t('ui.github')}
+        </a>
+        <span style={{ color: 'var(--border-color)' }}> - </span>
+        <a
+          href="https://twitter.com"
+          style={{
+            color: 'var(--text-secondary)',
+            textDecoration: 'none',
+            transition: 'color 0.2s'
+          }}
+          aria-label="Twitter"
+        >
+          {t('ui.twitter')}
+        </a>
+        <span style={{ color: 'var(--border-color)' }}> - </span>
+        <a
+          href="mailto:hi@cutesymbols.com"
+          style={{
+            color: 'var(--text-secondary)',
+            textDecoration: 'none',
+            transition: 'color 0.2s'
+          }}
+          aria-label="Email"
+        >
+          {t('ui.email')}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* 链接悬停效果 */
+  footer a:hover {
+    color: var(--accent-color) !important;
+  }
+
+  /* 移动端优化 */
+  @media (max-width: 640px) {
+    footer {
+      padding-top: 2rem !important;
+      padding-bottom: 1.5rem !important;
+      margin-top: 3rem !important;
+    }
+
+    .footer-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1.5rem !important;
+    }
+  }
+
+  /* RTL语言支持 */
+  [dir='rtl'] footer nav {
+    flex-direction: row-reverse;
+  }
+</style>

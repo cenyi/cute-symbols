@@ -1,0 +1,249 @@
+---
+/**
+ * Terms of Service Page (Multi-language)
+ * Legal Protection + Liability Limitation
+ */
+import { locales, type Locale } from '../../i18n/config';
+import Layout from '../../layouts/Layout.astro';
+
+export function getStaticPaths() {
+  return locales.map((locale) => ({
+    params: { lang: locale },
+    props: { locale }
+  }));
+}
+
+interface Props {
+  locale?: Locale;
+}
+
+// Get locale from route parameters (dev mode) or props (build mode)
+const locale = (Astro.props.locale || Astro.params.lang) as Locale;
+const currentYear = new Date().getFullYear();
+---
+
+<Layout title={`Terms of Service - ${locale.toUpperCase()}`} {locale}>
+  <div style={{
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '4rem 1.5rem 2rem',
+    minHeight: '60vh'
+  }}>
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: '700',
+      marginBottom: '2rem',
+      background: 'linear-gradient(90deg, #e91e63, #9c27b0)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}>
+      📜 Terms of Service
+    </h1>
+
+    <p style={{
+      fontSize: '0.875rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '2rem',
+      fontStyle: 'italic'
+    }}>
+      Last updated: January 14, {currentYear}
+    </p>
+
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '2rem',
+      lineHeight: '1.8',
+      color: 'var(--text-primary)'
+    }}>
+      <section style={{
+        padding: '1.5rem',
+        background: 'var(--bg-color)',
+        borderRadius: 'var(--radius-lg)',
+        borderLeft: '4px solid var(--accent-color)'
+      }}>
+        <p style={{ fontWeight: '600', color: 'var(--accent-color)' }}>
+          💗 Thank you for using CuteSymbols! By using our service, you agree to the following terms.
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          1. Service Description
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          CuteSymbols provides free symbol copying services, including but not limited to:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>Cute symbols and emoticons</li>
+          <li>Kaomoji</li>
+          <li>Decorative symbols and special characters</li>
+          <li>Platform usage guides and tips</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          2. User Responsibilities
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          By using this service, you agree to:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>Use symbols only for lawful purposes</li>
+          <li>Not use symbols for harassment, bullying, or illegal activities</li>
+          <li>Respect third-party platform community guidelines</li>
+          <li>Not attempt to hack or abuse website features</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          3. Intellectual Property
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          Regarding intellectual property:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>Website content and design are copyrighted</li>
+          <li>Symbols themselves are in the public domain or Unicode standard</li>
+          <li>You are free to copy and use symbols</li>
+          <li>Website content or design may not be copied without permission</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          4. Disclaimer
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          This service is provided "as is" without any express or implied warranties, including but not limited to:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>Accuracy, reliability, or availability of the service</li>
+          <li>Symbol compatibility on third-party platforms</li>
+          <li>Website being free of viruses or errors</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          5. Limitation of Liability
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          To the maximum extent permitted by law, CuteSymbols is not liable for:
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>Any direct, indirect, incidental, or punitive damages from using or inability to use the service</li>
+          <li>Any issues from using symbols on third-party platforms</li>
+          <li>Website interruptions or errors</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          6. Third-Party Links and Ads
+        </h2>
+        <p>
+          Our website may contain third-party links and Google AdSense ads. We are not responsible for the content or privacy practices of third parties.
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          7. Service Changes
+        </h2>
+        <p>
+          We reserve the right to modify or discontinue the service at any time without notice. We are not liable for any interruption or modification of the service content.
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          8. Terms Modifications
+        </h2>
+        <p>
+          We reserve the right to modify these terms at any time. We will notify you of any changes by posting the new terms on this website. Continued use of the service constitutes acceptance of the modified terms.
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          9. Governing Law
+        </h2>
+        <p>
+          These terms are governed by and construed in accordance with local laws. Any legal actions shall be brought in the courts of the jurisdiction where the website operates.
+        </p>
+      </section>
+
+      <section style={{
+        marginTop: '2rem',
+        padding: '1.5rem',
+        background: 'var(--bg-color)',
+        borderRadius: 'var(--radius-lg)',
+        borderLeft: '4px solid var(--accent-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.25rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          📧 Contact Us
+        </h2>
+        <p style={{ marginBottom: '0.5rem' }}>
+          For any questions, please contact:
+        </p>
+        <p style={{ fontWeight: '600', color: 'var(--accent-color)' }}>
+          hi@cutesymbols.com
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,208 @@
+---
+/**
+ * CAT主题的回到顶部按钮
+ * 可爱的猫咪设计，平滑滚动到顶部
+ */
+---
+
+<button
+  id="cat-back-to-top"
+  class="cat-back-to-top"
+  style={{
+    position: 'fixed',
+    bottom: '2rem',
+    right: '2rem',
+    width: '60px',
+    height: '60px',
+    background: 'linear-gradient(135deg, var(--accent-color) 0%, #ff8fab 100%)',
+    border: 'none',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontSize: '1.75rem',
+    color: '#ffffff',
+    boxShadow: '0 4px 20px rgba(255, 107, 157, 0.3)',
+    transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+    zIndex: 1000,
+    opacity: 0,
+    visibility: 'hidden',
+    transform: 'translateY(20px) scale(0.8)'
+  }}
+  aria-label="Back to top"
+  title="Back to top"
+>
+  <span class="cat-emoji" style={{
+    display: 'inline-block',
+    transition: 'transform 0.3s ease',
+    filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2))'
+  }}>
+    🐱
+  </span>
+</button>
+
+<style>
+  .cat-back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+  }
+
+  .cat-back-to-top:hover {
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 30px rgba(255, 107, 157, 0.4);
+    background: linear-gradient(135deg, #ff5a8d 0%, #ff7aa3 100%);
+  }
+
+  .cat-back-to-top:hover .cat-emoji {
+    transform: scale(1.2) rotate(-10deg);
+    animation: catBounce 0.6s ease-in-out;
+  }
+
+  .cat-back-to-top:active {
+    transform: translateY(-2px) scale(1.05);
+  }
+
+  @keyframes catBounce {
+    0%, 100% { transform: scale(1.2) rotate(-10deg); }
+    50% { transform: scale(1.3) rotate(10deg); }
+  }
+
+  /* 移动端优化 */
+  @media (max-width: 768px) {
+    .cat-back-to-top {
+      width: 50px !important;
+      height: 50px !important;
+      bottom: 1.5rem !important;
+      right: 1.5rem !important;
+      font-size: 1.5rem !important;
+    }
+  }
+
+  /* 减少动画对于偏好减少动画的用户 */
+  @media (prefers-reduced-motion: reduce) {
+    .cat-back-to-top,
+    .cat-emoji {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  /* 高对比度模式支持 */
+  @media (prefers-contrast: high) {
+    .cat-back-to-top {
+      border: 2px solid #000000;
+      background: #ff6b9d !important;
+    }
+  }
+</style>
+
+<script>
+  // 回到顶部功能
+  document.addEventListener('DOMContentLoaded', () => {
+    const backToTopBtn = document.getElementById('cat-back-to-top');
+    if (!backToTopBtn) return;
+
+    // 显示/隐藏按钮的阈值
+    const showThreshold = 300;
+
+    // 滚动监听
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > showThreshold) {
+        backToTopBtn.classList.add('visible');
+      } else {
+        backToTopBtn.classList.remove('visible');
+      }
+    };
+
+    // 平滑滚动到顶部
+    const scrollToTop = () => {
+      // 使用现代的 scrollTo API
+      if ('scrollBehavior' in document.documentElement.style) {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      } else {
+        // 降级处理：手动实现平滑滚动
+        const scrollStep = -window.scrollY / (500 / 15);
+        const scrollInterval = setInterval(() => {
+          if (window.scrollY !== 0) {
+            window.scrollBy(0, scrollStep);
+          } else {
+            clearInterval(scrollInterval);
+          }
+        }, 15);
+      }
+
+      // 添加点击反馈
+      backToTopBtn.style.transform = 'translateY(-2px) scale(1.05)';
+      setTimeout(() => {
+        backToTopBtn.style.transform = '';
+      }, 150);
+    };
+
+    // 事件监听
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    backToTopBtn.addEventListener('click', scrollToTop);
+
+    // 键盘支持
+    backToTopBtn.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        scrollToTop();
+      }
+    });
+
+    // 初始检查
+    handleScroll();
+
+    // 页面可见性变化时重新检查
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) {
+        handleScroll();
+      }
+    });
+  });
+
+  // 添加一些有趣的交互效果
+  document.addEventListener('DOMContentLoaded', () => {
+    const backToTopBtn = document.getElementById('cat-back-to-top');
+    if (!backToTopBtn) return;
+
+    // 随机猫咪表情
+    const catEmojis = ['🐱', '😸', '😺', '😻', '🙀', '😿', '😾'];
+    let currentEmojiIndex = 0;
+
+    // 每次点击切换猫咪表情
+    backToTopBtn.addEventListener('click', () => {
+      const catEmoji = backToTopBtn.querySelector('.cat-emoji');
+      if (catEmoji) {
+        currentEmojiIndex = (currentEmojiIndex + 1) % catEmojis.length;
+        catEmoji.textContent = catEmojis[currentEmojiIndex];
+      }
+    });
+
+    // 长时间悬停时的特殊效果
+    let hoverTimeout: ReturnType<typeof setTimeout>;
+    backToTopBtn.addEventListener('mouseenter', () => {
+      hoverTimeout = setTimeout(() => {
+        const catEmoji = backToTopBtn.querySelector('.cat-emoji');
+        if (catEmoji) {
+          catEmoji.textContent = '😸'; // 开心的猫咪
+        }
+      }, 1000);
+    });
+
+    backToTopBtn.addEventListener('mouseleave', () => {
+      clearTimeout(hoverTimeout);
+      const catEmoji = backToTopBtn.querySelector('.cat-emoji');
+      if (catEmoji) {
+        catEmoji.textContent = '🐱'; // 恢复默认
+      }
+    });
+  });
+</script>

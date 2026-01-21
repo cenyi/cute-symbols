@@ -1,0 +1,233 @@
+---
+/**
+ * 服务条款页面（中文默认）
+ * 法律保护 + 责任限制
+ */
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Terms of Service" locale="en">
+  <div style={{
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '4rem 1.5rem 2rem',
+    minHeight: '60vh'
+  }}>
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: '700',
+      marginBottom: '2rem',
+      background: 'linear-gradient(90deg, #e91e63, #9c27b0)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}>
+      📜 服务条款
+    </h1>
+
+    <p style={{
+      fontSize: '0.875rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '2rem',
+      fontStyle: 'italic'
+    }}>
+      最后更新：2026年1月14日
+    </p>
+
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '2rem',
+      lineHeight: '1.8',
+      color: 'var(--text-primary)'
+    }}>
+      <section style={{
+        padding: '1.5rem',
+        background: 'var(--bg-color)',
+        borderRadius: 'var(--radius-lg)',
+        borderLeft: '4px solid var(--accent-color)'
+      }}>
+        <p style={{ fontWeight: '600', color: 'var(--accent-color)' }}>
+          💗 感谢使用 CuteSymbols！使用我们的服务即表示您同意遵守以下条款。
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          1. 服务描述
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          CuteSymbols 提供免费的符号复制服务，包括但不限于：
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>可爱符号和表情符号</li>
+          <li>颜文字（Kaomoji）</li>
+          <li>装饰符号和特殊字符</li>
+          <li>平台使用指南和建议</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          2. 用户责任
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          使用本服务时，您同意：
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>仅将符号用于合法目的</li>
+          <li>不使用符号进行骚扰、欺凌或违法行为</li>
+          <li>尊重第三方平台的社区准则</li>
+          <li>不尝试破解或滥用网站功能</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          3. 知识产权
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          关于知识产权：
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>网站内容和设计受版权保护</li>
+          <li>符号本身属于公共领域或Unicode标准</li>
+          <li>您可以自由复制和使用符号</li>
+          <li>未经许可不得复制网站内容或设计</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          4. 免责声明
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          本服务按"现状"提供，不提供任何明示或暗示的保证，包括但不限于：
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>服务的准确性、可靠性或可用性</li>
+          <li>符号在第三方平台的兼容性</li>
+          <li>网站无病毒或错误</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          5. 责任限制
+        </h2>
+        <p style={{ marginBottom: '1rem' }}>
+          在法律允许的最大范围内，CuteSymbols 不对以下情况承担责任：
+        </p>
+        <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+          <li>因使用或无法使用服务而导致的任何直接、间接、附带或惩罚性损害</li>
+          <li>符号在第三方平台使用导致的任何问题</li>
+          <li>网站中断或错误</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          6. 第三方链接和广告
+        </h2>
+        <p>
+          我们的网站可能包含第三方链接和 Google AdSense 广告。我们不对第三方的内容或隐私实践负责。
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          7. 服务变更
+        </h2>
+        <p>
+          我们保留随时修改或中断服务的权利，恕不另行通知。我们不对服务内容的中断或修改承担责任。
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          8. 条款修改
+        </h2>
+        <p>
+          我们保留随时修改这些条款的权利。重大变更时，我们会通过网站通知您。继续使用服务即表示您接受修改后的条款。
+        </p>
+      </section>
+
+      <section>
+        <h2 style={{
+          fontSize: '1.5rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          9. 适用法律
+        </h2>
+        <p>
+          这些条款受当地法律管辖并依其解释。任何法律诉讼应在网站运营所在地的法院提起。
+        </p>
+      </section>
+
+      <section style={{
+        marginTop: '2rem',
+        padding: '1.5rem',
+        background: 'var(--bg-color)',
+        borderRadius: 'var(--radius-lg)',
+        borderLeft: '4px solid var(--accent-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.25rem',
+          fontWeight: '600',
+          marginBottom: '1rem',
+          color: 'var(--accent-color)'
+        }}>
+          📧 联系我们
+        </h2>
+        <p style={{ marginBottom: '0.5rem' }}>
+          如有任何问题，请联系：
+        </p>
+        <p style={{ fontWeight: '600', color: 'var(--accent-color)' }}>
+          hi@cutesymbols.com
+        </p>
+      </section>
+    </div>
+  </div>
+</Layout>

@@ -1,0 +1,1121 @@
+{
+  "category": "arrows",
+  "icon": "➜",
+  "color": "#34D399",
+  "name": {
+    "en": "Arrow & Direction Symbols",
+    "fil": "Mga Simbolo ng Panuto",
+    "ms": "Simbol Panah Arah",
+    "bn": "তীর প্রতীক",
+    "pl": "Symbole Strzałek"
+  },
+  "description": {
+    "en": "Arrow symbols for direction and navigation",
+    "fil": "Mga simbolo ng panuto para sa direksyon",
+    "ms": "Simbol panah untuk arah dan navigasi",
+    "bn": "দিক নির্দেশের জন্য তীর প্রতীক",
+    "pl": "Symbole strzałek do kierunku i nawigacji"
+  },
+  "symbols": [
+    {
+      "id": "arrows-1",
+      "char": "➜",
+      "unicode": "U+279C",
+      "tags": [
+        "right",
+        "bold",
+        "common"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-2",
+      "char": "➤",
+      "unicode": "U+27A4",
+      "tags": [
+        "right",
+        "filled",
+        "bold"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-3",
+      "char": "➵",
+      "unicode": "U+27B5",
+      "tags": [
+        "right",
+        "outlined",
+        "feather"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-4",
+      "char": "➶",
+      "unicode": "U+27B6",
+      "tags": [
+        "right",
+        "outlined",
+        "light"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-5",
+      "char": "➷",
+      "unicode": "U+27B7",
+      "tags": [
+        "right",
+        "outlined",
+        "heavy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-6",
+      "char": "→",
+      "unicode": "U+2192",
+      "tags": [
+        "right",
+        "simple",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-7",
+      "char": "⟶",
+      "unicode": "U+27F6",
+      "tags": [
+        "right",
+        "long",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-8",
+      "char": "⇢",
+      "unicode": "U+21E2",
+      "tags": [
+        "right",
+        "dashed",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-9",
+      "char": "⏩",
+      "unicode": "U+23E9",
+      "tags": [
+        "right",
+        "fast",
+        "double"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-10",
+      "char": "♢",
+      "unicode": "U+2662",
+      "tags": [
+        "diamond",
+        "outlined",
+        "direction"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-11",
+      "char": "⩤",
+      "unicode": "U+2A64",
+      "tags": [
+        "right",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-12",
+      "char": "⇝",
+      "unicode": "U+21DD",
+      "tags": [
+        "right",
+        "wavy",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-13",
+      "char": "⤜",
+      "unicode": "U+291C",
+      "tags": [
+        "left",
+        "curved",
+        "loop"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-14",
+      "char": "⤏",
+      "unicode": "U+290F",
+      "tags": [
+        "right",
+        "curved",
+        "loop"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-15",
+      "char": "◄",
+      "unicode": "U+25C4",
+      "tags": [
+        "left",
+        "bold",
+        "triangle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-16",
+      "char": "►",
+      "unicode": "U+25BA",
+      "tags": [
+        "right",
+        "bold",
+        "triangle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-17",
+      "char": "◅",
+      "unicode": "U+25C5",
+      "tags": [
+        "left",
+        "outlined",
+        "triangle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-18",
+      "char": "▻",
+      "unicode": "U+25BB",
+      "tags": [
+        "right",
+        "outlined",
+        "triangle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-19",
+      "char": "←",
+      "unicode": "U+2190",
+      "tags": [
+        "left",
+        "simple",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-20",
+      "char": "⟵",
+      "unicode": "U+27F5",
+      "tags": [
+        "left",
+        "long",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-21",
+      "char": "⇠",
+      "unicode": "U+21E0",
+      "tags": [
+        "left",
+        "dashed",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-22",
+      "char": "⏪",
+      "unicode": "U+23EA",
+      "tags": [
+        "left",
+        "fast",
+        "double"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-23",
+      "char": "↑",
+      "unicode": "U+2191",
+      "tags": [
+        "up",
+        "simple",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-24",
+      "char": "⟰",
+      "unicode": "U+27F0",
+      "tags": [
+        "up",
+        "long",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-25",
+      "char": "⇧",
+      "unicode": "U+21E7",
+      "tags": [
+        "up",
+        "bold",
+        "shift"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-26",
+      "char": "⏫",
+      "unicode": "U+23EB",
+      "tags": [
+        "up",
+        "fast",
+        "double"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-27",
+      "char": "↓",
+      "unicode": "U+2193",
+      "tags": [
+        "down",
+        "simple",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-28",
+      "char": "⟱",
+      "unicode": "U+27F1",
+      "tags": [
+        "down",
+        "long",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-29",
+      "char": "⇩",
+      "unicode": "U+21E9",
+      "tags": [
+        "down",
+        "bold",
+        "shift"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-30",
+      "char": "⏬",
+      "unicode": "U+23EC",
+      "tags": [
+        "down",
+        "fast",
+        "double"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-31",
+      "char": "↝",
+      "unicode": "U+219D",
+      "tags": [
+        "right",
+        "wavy",
+        "light"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-32",
+      "char": "↞",
+      "unicode": "U+219E",
+      "tags": [
+        "left",
+        "wavy",
+        "two-headed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-33",
+      "char": "↟",
+      "unicode": "U+219F",
+      "tags": [
+        "up",
+        "wavy",
+        "two-headed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-34",
+      "char": "↠",
+      "unicode": "U+21A0",
+      "tags": [
+        "right",
+        "wavy",
+        "two-headed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-35",
+      "char": "↡",
+      "unicode": "U+21A1",
+      "tags": [
+        "down",
+        "wavy",
+        "two-headed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-36",
+      "char": "↢",
+      "unicode": "U+21A2",
+      "tags": [
+        "left",
+        "curved",
+        "tail"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-37",
+      "char": "↣",
+      "unicode": "U+21A3",
+      "tags": [
+        "right",
+        "curved",
+        "tail"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-38",
+      "char": "↤",
+      "unicode": "U+21A4",
+      "tags": [
+        "left",
+        "bar",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-39",
+      "char": "↥",
+      "unicode": "U+21A5",
+      "tags": [
+        "up",
+        "bar",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-40",
+      "char": "↦",
+      "unicode": "U+21A6",
+      "tags": [
+        "right",
+        "bar",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-41",
+      "char": "↧",
+      "unicode": "U+21A7",
+      "tags": [
+        "down",
+        "bar",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-42",
+      "char": "↩",
+      "unicode": "U+21A9",
+      "tags": [
+        "left",
+        "curved",
+        "return"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-43",
+      "char": "↪",
+      "unicode": "U+21AA",
+      "tags": [
+        "right",
+        "curved",
+        "return"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-44",
+      "char": "↫",
+      "unicode": "U+21AB",
+      "tags": [
+        "left",
+        "loop",
+        "curved"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-45",
+      "char": "↬",
+      "unicode": "U+21AC",
+      "tags": [
+        "right",
+        "loop",
+        "curved"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-46",
+      "char": "↭",
+      "unicode": "U+21AD",
+      "tags": [
+        "horizontal",
+        "wave",
+        "both"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-47",
+      "char": "↮",
+      "unicode": "U+21AE",
+      "tags": [
+        "horizontal",
+        "slash",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-48",
+      "char": "↯",
+      "unicode": "U+21AF",
+      "tags": [
+        "down",
+        "zigzag",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-49",
+      "char": "⇆",
+      "unicode": "U+21C6",
+      "tags": [
+        "horizontal",
+        "both",
+        "swap"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-50",
+      "char": "⇇",
+      "unicode": "U+21C7",
+      "tags": [
+        "left",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-51",
+      "char": "⇈",
+      "unicode": "U+21C8",
+      "tags": [
+        "up",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-52",
+      "char": "⇉",
+      "unicode": "U+21C9",
+      "tags": [
+        "right",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-53",
+      "char": "⇊",
+      "unicode": "U+21CA",
+      "tags": [
+        "down",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-54",
+      "char": "⇋",
+      "unicode": "U+21CB",
+      "tags": [
+        "horizontal",
+        "both",
+        "curved"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-55",
+      "char": "⇌",
+      "unicode": "U+21CC",
+      "tags": [
+        "horizontal",
+        "equilibrium",
+        "both"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-56",
+      "char": "⇐",
+      "unicode": "U+21D0",
+      "tags": [
+        "left",
+        "bold",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-57",
+      "char": "⇒",
+      "unicode": "U+21D2",
+      "tags": [
+        "right",
+        "bold",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-58",
+      "char": "⇑",
+      "unicode": "U+21D1",
+      "tags": [
+        "up",
+        "bold",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-59",
+      "char": "⇓",
+      "unicode": "U+21D3",
+      "tags": [
+        "down",
+        "bold",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-60",
+      "char": "⇔",
+      "unicode": "U+21D4",
+      "tags": [
+        "horizontal",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-61",
+      "char": "⇕",
+      "unicode": "U+21D5",
+      "tags": [
+        "vertical",
+        "both",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-62",
+      "char": "⇖",
+      "unicode": "U+21D6",
+      "tags": [
+        "diagonal",
+        "up-left",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-63",
+      "char": "⇗",
+      "unicode": "U+21D7",
+      "tags": [
+        "diagonal",
+        "up-right",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-64",
+      "char": "⇘",
+      "unicode": "U+21D8",
+      "tags": [
+        "diagonal",
+        "down-right",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-65",
+      "char": "⇙",
+      "unicode": "U+21D9",
+      "tags": [
+        "diagonal",
+        "down-left",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-66",
+      "char": "↔",
+      "unicode": "U+2194",
+      "tags": [
+        "horizontal",
+        "both",
+        "simple"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-67",
+      "char": "↕",
+      "unicode": "U+2195",
+      "tags": [
+        "vertical",
+        "both",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-68",
+      "char": "↖",
+      "unicode": "U+2196",
+      "tags": [
+        "diagonal",
+        "up-left",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-69",
+      "char": "↗",
+      "unicode": "U+2197",
+      "tags": [
+        "diagonal",
+        "up-right",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-70",
+      "char": "↘",
+      "unicode": "U+2198",
+      "tags": [
+        "diagonal",
+        "down-right",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-71",
+      "char": "↙",
+      "unicode": "U+2199",
+      "tags": [
+        "diagonal",
+        "down-left",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-72",
+      "char": "↚",
+      "unicode": "U+219A",
+      "tags": [
+        "left",
+        "slash",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-73",
+      "char": "↛",
+      "unicode": "U+219B",
+      "tags": [
+        "right",
+        "slash",
+        "blocked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-74",
+      "char": "↜",
+      "unicode": "U+219C",
+      "tags": [
+        "left",
+        "wavy",
+        "light"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-75",
+      "char": "⟸",
+      "unicode": "U+27F8",
+      "tags": [
+        "left",
+        "long",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-76",
+      "char": "⟹",
+      "unicode": "U+27F9",
+      "tags": [
+        "right",
+        "long",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-77",
+      "char": "⟺",
+      "unicode": "U+27FA",
+      "tags": [
+        "horizontal",
+        "long",
+        "double"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-78",
+      "char": "⤴",
+      "unicode": "U+2934",
+      "tags": [
+        "up",
+        "curved",
+        "right"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-79",
+      "char": "⤵",
+      "unicode": "U+2935",
+      "tags": [
+        "down",
+        "curved",
+        "right"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-80",
+      "char": "🔙",
+      "unicode": "U+1F519",
+      "tags": [
+        "back",
+        "emoji",
+        "button"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-81",
+      "char": "🔚",
+      "unicode": "U+1F51A",
+      "tags": [
+        "end",
+        "emoji",
+        "button"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-82",
+      "char": "🔛",
+      "unicode": "U+1F51B",
+      "tags": [
+        "on",
+        "emoji",
+        "button"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-83",
+      "char": "🔜",
+      "unicode": "U+1F51C",
+      "tags": [
+        "soon",
+        "emoji",
+        "button"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-84",
+      "char": "🔝",
+      "unicode": "U+1F51D",
+      "tags": [
+        "top",
+        "emoji",
+        "button"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-85",
+      "char": "→ ⋆ →",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-86",
+      "char": "← ♡ →",
+      "unicode": "combo",
+      "tags": [
+        "both",
+        "heart",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-87",
+      "char": "➜ ✧ ➜",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-88",
+      "char": "↑ ⊹ ↑",
+      "unicode": "combo",
+      "tags": [
+        "up",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-89",
+      "char": "→ ˚ →",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-90",
+      "char": "⇢ ⋆ ⇢",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "dashed",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-91",
+      "char": "← ✧ →",
+      "unicode": "combo",
+      "tags": [
+        "both",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-92",
+      "char": "➤ ⊹ ➤",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "filled",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-93",
+      "char": "↓ ˚ ↓",
+      "unicode": "combo",
+      "tags": [
+        "down",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-94",
+      "char": "→ ༊*·˚ →",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-95",
+      "char": "⤜ ♡ ⤏",
+      "unicode": "combo",
+      "tags": [
+        "curved",
+        "heart",
+        "love"
+      ],
+      "popular": true
+    },
+    {
+      "id": "arrows-96",
+      "char": "← ⋆｡˚ →",
+      "unicode": "combo",
+      "tags": [
+        "both",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-97",
+      "char": "➜ ˚ ➜",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "minimal",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-98",
+      "char": "↑ ✧ ↑",
+      "unicode": "combo",
+      "tags": [
+        "up",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-99",
+      "char": "→ ⊹ ←",
+      "unicode": "combo",
+      "tags": [
+        "both",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "arrows-100",
+      "char": "⇝ ⋆ ⇝",
+      "unicode": "combo",
+      "tags": [
+        "right",
+        "wavy",
+        "aesthetic"
+      ],
+      "popular": false
+    }
+  ]
+}

@@ -1,0 +1,1221 @@
+{
+  "category": "emoji-faces",
+  "icon": "🥺",
+  "color": "#FCD34D",
+  "name": {
+    "en": "Cute Emoji Faces",
+    "fil": "Mga Cute na Emoji Faces",
+    "ms": "Muka Emoji Comel",
+    "bn": "সুপ্রাণী ইমোজি মুখ",
+    "pl": "Słodkie Twarze Emoji"
+  },
+  "description": {
+    "en": "Adorable and expressive face emojis",
+    "fil": "Mga cute at expressive na face emojis",
+    "ms": "Muka emoji comel dan ekspresif",
+    "bn": "সুপ্রাণী এবং এক্সপ্রেসিভ ফেস ইমোজি",
+    "pl": "Słodkie i wyraziste twarze emoji"
+  },
+  "symbols": [
+    {
+      "id": "smile-1",
+      "char": "😊",
+      "unicode": "U+1F60A",
+      "name": {
+        "en": "Smiling Face",
+        "fil": "Mukha na Ngumiti",
+        "ms": "Wajah Senyum",
+        "bn": "হাসতে থাকা মুখ",
+        "pl": "Uśmiechnięta Twarz"
+      },
+      "tags": ["smile", "happy", "cute", "joy"],
+      "popular": true
+    },
+    {
+      "id": "grin-2",
+      "char": "😄",
+      "unicode": "U+1F604",
+      "name": {
+        "en": "Grinning Face",
+        "fil": "Mukha na Ngising",
+        "ms": "Wajah Bergigi",
+        "bn": "দাঁত দেখানো মুখ",
+        "pl": "Uśmiechnięta z Zębami Twarz"
+      },
+      "tags": ["grin", "happy", "teeth", "joy"],
+      "popular": true
+    },
+    {
+      "id": "beaming-3",
+      "char": "😁",
+      "unicode": "U+1F601",
+      "name": {
+        "en": "Beaming Face",
+        "fil": "Mukha na Masayahin",
+        "ms": "Wajah Ceria",
+        "bn": "উজ্জ্বল হাসি",
+        "pl": "Promienna Twarz"
+      },
+      "tags": ["beam", "happy", "bright", "joy"],
+      "popular": true
+    },
+    {
+      "id": "grin-with-tears-4",
+      "char": "😆",
+      "unicode": "U+1F606",
+      "name": {
+        "en": "Grinning with Tears",
+        "fil": "Mukha na Ngising may Luha",
+        "ms": "Wajah Menangis Tapi Senyum",
+        "bn": "চোখে জল ধরা হাসি",
+        "pl": "Uśmiechnięta z Łzami Twarz"
+      },
+      "tags": ["laugh", "tears", "joy", "funny"],
+      "popular": true
+    },
+    {
+      "id": "holding-back-tears-5",
+      "char": "🥹",
+      "unicode": "U+1F979",
+      "name": {
+        "en": "Face Holding Back Tears",
+        "fil": "Mukha na Nagbabalak",
+        "ms": "Wajah Menahan Tangis",
+        "bn": "অশ্রু ধরে রাখা মুখ",
+        "pl": "Twarz Trzymająca Łzy"
+      },
+      "tags": ["emotional", "tears", "touched", "moved"],
+      "popular": true
+    },
+    {
+      "id": "grinning-eyes-6",
+      "char": "😃",
+      "unicode": "U+1F603",
+      "name": {
+        "en": "Grinning Face with Eyes",
+        "fil": "Mukha na Ngising ng Mata",
+        "ms": "Wajah Bergigi dengan Mata",
+        "bn": "চোখ দিয়ে হাসি",
+        "pl": "Uśmiechnięta z Oczami Twarz"
+      },
+      "tags": ["grin", "eyes", "happy", "smile"],
+      "popular": true
+    },
+    {
+      "id": "slightly-smiling-7",
+      "char": "🙂",
+      "unicode": "U+1F642",
+      "name": {
+        "en": "Slightly Smiling",
+        "fil": "Mukha ng Kaunting Ngumiti",
+        "ms": "Wajah Sedikit Senyum",
+        "bn": "সামান্য হাসি",
+        "pl": "Delikatnie Uśmiechnięta Twarz"
+      },
+      "tags": ["slight", "smile", "gentle", "soft"],
+      "popular": true
+    },
+    {
+      "id": "upside-down-8",
+      "char": "🙃",
+      "unicode": "U+1F643",
+      "name": {
+        "en": "Upside-Down Face",
+        "fil": "Mukha na Baliktad",
+        "ms": "Wajah Terbalik",
+        "bn": "উল্টো দিকের মুখ",
+        "pl": "Twarz do Góry Nogami"
+      },
+      "tags": ["upside", "down", "silly", "playful"],
+      "popular": true
+    },
+    {
+      "id": "winking-9",
+      "char": "😉",
+      "unicode": "U+1F609",
+      "name": {
+        "en": "Winking Face",
+        "fil": "Mukha na Nangiting Mata",
+        "ms": "Wajah Menyipir",
+        "bn": "চোখ বন্ধ করে হাসি",
+        "pl": "Mrugnięta Twarz"
+      },
+      "tags": ["wink", "flirt", "playful", "cute"],
+      "popular": true
+    },
+    {
+      "id": "relieved-10",
+      "char": "😌",
+      "unicode": "U+1F60C",
+      "name": {
+        "en": "Relieved Face",
+        "fil": "Mukha na Maayos",
+        "ms": "Wajah Lega",
+        "bn": "স্বস্তি পেয়ে মুখ",
+        "pl": "Twarz Ulżyta"
+      },
+      "tags": ["relief", "calm", "peaceful", "content"],
+      "popular": true
+    },
+    {
+      "id": "heart-eyes-11",
+      "char": "😍",
+      "unicode": "U+1F60D",
+      "name": {
+        "en": "Heart Eyes",
+        "fil": "Mata na Puso",
+        "ms": "Mata Berbentuk Hati",
+        "bn": "হৃদয় চোখ",
+        "pl": "Twarz z Sercowymi Oczami"
+      },
+      "tags": ["love", "heart", "adore", "crush"],
+      "popular": true
+    },
+    {
+      "id": "smiling-heart-12",
+      "char": "🥰",
+      "unicode": "U+1F970",
+      "name": {
+        "en": "Smiling Heart",
+        "fil": "Puso na Ngumiti",
+        "ms": "Hati Menyeringai",
+        "bn": "হাসতে থাকা হৃদয়",
+        "pl": "Uśmiechnięte Serce"
+      },
+      "tags": ["love", "hearts", "adore", "cute"],
+      "popular": true
+    },
+    {
+      "id": "face-blowing-kiss-13",
+      "char": "😘",
+      "unicode": "U+1F618",
+      "name": {
+        "en": "Blowing Kiss",
+        "fil": "Humaling ng Ngiti",
+        "ms": "Meniup Ciuman",
+        "bn": "চুমু দিচ্ছি",
+        "pl": "Ciągnięca Pocałunek"
+      },
+      "tags": ["kiss", "blow", "love", "romance"],
+      "popular": true
+    },
+    {
+      "id": "kissing-14",
+      "char": "😗",
+      "unicode": "U+1F617",
+      "name": {
+        "en": "Kissing Face",
+        "fil": "Mukha na Ngiting Ciuman",
+        "ms": "Wajah Meniup Ciuman",
+        "bn": "চুমু দেয়া মুখ",
+        "pl": "Ciągająca Twarz"
+      },
+      "tags": ["kiss", "lips", "love", "romance"],
+      "popular": true
+    },
+    {
+      "id": "kissing-heart-15",
+      "char": "😙",
+      "unicode": "U+1F619",
+      "name": {
+        "en": "Kissing Heart",
+        "fil": "Mukha na Ngiti na Puso",
+        "ms": "Wajah Meniup Ciuman dengan Hati",
+        "bn": "হৃদয় চুমু",
+        "pl": "Ciągająca z Sercem Twarz"
+      },
+      "tags": ["kiss", "heart", "love", "romance"],
+      "popular": true
+    },
+    {
+      "id": "kissing-face-with-smiling-eyes-16",
+      "char": "😚",
+      "unicode": "U+1F61A",
+      "name": {
+        "en": "Kissing with Eyes",
+        "fil": "Mukha na Ngiti na Mata",
+        "ms": "Wajah Meniup Ciuman dengan Mata",
+        "bn": "চোখ দিয়ে চুমু",
+        "pl": "Ciągająca z Uśmiechniętymi Oczami Twarz"
+      },
+      "tags": ["kiss", "eyes", "smile", "love"],
+      "popular": true
+    },
+    {
+      "id": "face-savoring-food-17",
+      "char": "😋",
+      "unicode": "U+1F60B",
+      "name": {
+        "en": "Savoring Food",
+        "fil": "Mukha na Nagluluto",
+        "ms": "Wajah Menikmati Makanan",
+        "bn": "খাবার উপভোগ করা",
+        "pl": "Twarz Smakująca Jedzenie"
+      },
+      "tags": ["food", "yummy", "delicious", "taste"],
+      "popular": true
+    },
+    {
+      "id": "face-with-tongue-18",
+      "char": "😛",
+      "unicode": "U+1F61B",
+      "name": {
+        "en": "Face with Tongue",
+        "fil": "Mukha na Dila",
+        "ms": "Wajah dengan Lidah",
+        "bn": "জিভ বের করা মুখ",
+        "pl": "Twarz z Językiem"
+      },
+      "tags": ["tongue", "playful", "silly", "tease"],
+      "popular": true
+    },
+    {
+      "id": "squinting-face-19",
+      "char": "😝",
+      "unicode": "U+1F61D",
+      "name": {
+        "en": "Squinting Face",
+        "fil": "Mukha na Masilip",
+        "ms": "Wajah Menyeringai",
+        "bn": "চোখ কমিয়ে হাসি",
+        "pl": "Twarz Zamyślona"
+      },
+      "tags": ["squint", "tongue", "silly", "playful"],
+      "popular": true
+    },
+    {
+      "id": "winking-face-with-tongue-20",
+      "char": "😜",
+      "unicode": "U+1F61C",
+      "name": {
+        "en": "Winking with Tongue",
+        "fil": "Mukha na Nangiting Dila",
+        "ms": "Wajah Menyipir dengan Lidah",
+        "bn": "চোখ বন্ধ করে জিভ বের",
+        "pl": "Mrugnięta z Językiem Twarz"
+      },
+      "tags": ["wink", "tongue", "playful", "tease"],
+      "popular": true
+    },
+    {
+      "id": "pleading-face-21",
+      "char": "🥺",
+      "unicode": "U+1F97A",
+      "name": {
+        "en": "Pleading Face",
+        "fil": "Mukha na Manghihingi",
+        "ms": "Wajah Menjerit",
+        "bn": "অনুরোধ করা মুখ",
+        "pl": "Twarz Błagalna"
+      },
+      "tags": ["plead", "puppy", "eyes", "cute"],
+      "popular": true
+    },
+    {
+      "id": "face-covering-mouth-22",
+      "char": "🤭",
+      "unicode": "U+1F92D",
+      "name": {
+        "en": "Face Covering Mouth",
+        "fil": "Mukha na Itinatakip",
+        "ms": "Wajah Menutup Mulut",
+        "bn": "মুখ ঢাকা মুখ",
+        "pl": "Twarz Zakrywająca Usta"
+      },
+      "tags": ["cover", "mouth", "giggle", "secret"],
+      "popular": true
+    },
+    {
+      "id": "flushed-23",
+      "char": "😳",
+      "unicode": "U+1F633",
+      "name": {
+        "en": "Flushed Face",
+        "fil": "Mukha na Pulang",
+        "ms": "Wajah Merah",
+        "bn": "লাল মুখ",
+        "pl": "Czerwona Twarz"
+      },
+      "tags": ["blush", "embarrassed", "shy", "red"],
+      "popular": true
+    },
+    {
+      "id": "hugging-24",
+      "char": "🤗",
+      "unicode": "U+1F917",
+      "name": {
+        "en": "Hugging Face",
+        "fil": "Mukha na Nagmamahal",
+        "ms": "Wajah Berpelukan",
+        "bn": "আলিঙ্গন করা মুখ",
+        "pl": "Twarz Objęcia"
+      },
+      "tags": ["hug", "embrace", "love", "care"],
+      "popular": true
+    },
+    {
+      "id": "thinking-face-25",
+      "char": "🤔",
+      "unicode": "U+1F914",
+      "name": {
+        "en": "Thinking Face",
+        "fil": "Mukha sa Isip",
+        "ms": "Wajah Berfikir",
+        "bn": "চিন্তা করা মুখ",
+        "pl": "Twarz Myśląca"
+      },
+      "tags": ["think", "ponder", "consider", "hmm"],
+      "popular": true
+    },
+    {
+      "id": "face-with-raised-eyebrow-26",
+      "char": "🤨",
+      "unicode": "U+1F928",
+      "name": {
+        "en": "Raised Eyebrow",
+        "fil": "Mata na Mataas",
+        "ms": "Kening Terangkat",
+        "bn": "উঁচু ভ্রু",
+        "pl": "Twarz z Uniesionymi Brwiami"
+      },
+      "tags": ["eyebrow", "suspicious", "doubt", "question"],
+      "popular": true
+    },
+    {
+      "id": "neutral-27",
+      "char": "😐",
+      "unicode": "U+1F610",
+      "name": {
+        "en": "Neutral Face",
+        "fil": "Mukha na Neutral",
+        "ms": "Wajah Neutral",
+        "bn": "নিরপেক্ষ মুখ",
+        "pl": "Neutralna Twarz"
+      },
+      "tags": ["neutral", "blank", "meh", "indifferent"],
+      "popular": true
+    },
+    {
+      "id": "expressionless-28",
+      "char": "😑",
+      "unicode": "U+1F611",
+      "name": {
+        "en": "Expressionless",
+        "fil": "Walang Ekspresyon",
+        "ms": "Tanpa Ekspresi",
+        "bn": "অভিব্যক্তিহীন",
+        "pl": "Bez Ekspresji Twarz"
+      },
+      "tags": ["blank", "expressionless", "deadpan", "flat"],
+      "popular": true
+    },
+    {
+      "id": "no-mouth-29",
+      "char": "😶",
+      "unicode": "U+1F636",
+      "name": {
+        "en": "No Mouth",
+        "fil": "Walang Bibig",
+        "ms": "Tanpa Mulut",
+        "bn": "মুখ নেই",
+        "pl": "Bez Ust"
+      },
+      "tags": ["silent", "quiet", "speechless", "mute"],
+      "popular": true
+    },
+    {
+      "id": "smirking-30",
+      "char": "😏",
+      "unicode": "U+1F60F",
+      "name": {
+        "en": "Smirking Face",
+        "fil": "Mukha ng Ngiti",
+        "ms": "Wajah Bergigi",
+        "bn": "অহংকারী হাসি",
+        "pl": "Podśmiechująca Twarz"
+      },
+      "tags": ["smirk", "sly", "mischief", "confident"],
+      "popular": true
+    },
+    {
+      "id": "unamused-31",
+      "char": "😒",
+      "unicode": "U+1F612",
+      "name": {
+        "en": "Unamused Face",
+        "fil": "Mukha na Hindi Natutuwa",
+        "ms": "Wajah Tidak Terhibur",
+        "bn": "বিরক্ত মুখ",
+        "pl": "Niezadowolona Twarz"
+      },
+      "tags": ["unamused", "bored", "unimpressed", "meh"]
+    },
+    {
+      "id": "face-with-rolling-eyes-32",
+      "char": "🙄",
+      "unicode": "U+1F644",
+      "name": {
+        "en": "Face with Rolling Eyes",
+        "fil": "Mukha na Umiikot ang Mata",
+        "ms": "Wajah dengan Mata Berputar",
+        "bn": "চোখ ঘোরানো মুখ",
+        "pl": "Twarz z Przewracającymi Oczami"
+      },
+      "tags": ["roll", "eyes", "annoyed", "whatever"]
+    },
+    {
+      "id": "grimacing-33",
+      "char": "😬",
+      "unicode": "U+1F62C",
+      "name": {
+        "en": "Grimacing Face",
+        "fil": "Mukha na Nakangiwi",
+        "ms": "Wajah Meringis",
+        "bn": "কুঁচকানো মুখ",
+        "pl": "Skrzywiająca Twarz"
+      },
+      "tags": ["grimace", "awkward", "uncomfortable", "cringe"]
+    },
+    {
+      "id": "lying-face-34",
+      "char": "🤥",
+      "unicode": "U+1F925",
+      "name": {
+        "en": "Lying Face",
+        "fil": "Mukha na Nagsisinungaling",
+        "ms": "Wajah Berbohong",
+        "bn": "মিথ্যা বলা মুখ",
+        "pl": "Kłamiąca Twarz"
+      },
+      "tags": ["lie", "pinocchio", "dishonest", "fib"]
+    },
+    {
+      "id": "relieved-35",
+      "char": "😌",
+      "unicode": "U+1F60C",
+      "name": {
+        "en": "Relieved Face",
+        "fil": "Mukha na Ginhawa",
+        "ms": "Wajah Lega",
+        "bn": "স্বস্তি পেয়ে মুখ",
+        "pl": "Ulżona Twarz"
+      },
+      "tags": ["relief", "calm", "peaceful", "content"]
+    },
+    {
+      "id": "pensive-36",
+      "char": "😔",
+      "unicode": "U+1F614",
+      "name": {
+        "en": "Pensive Face",
+        "fil": "Mukha na Nag-iisip",
+        "ms": "Wajah Merenung",
+        "bn": "চিন্তিত মুখ",
+        "pl": "Zamyślona Twarz"
+      },
+      "tags": ["pensive", "thoughtful", "sad", "contemplative"]
+    },
+    {
+      "id": "sleepy-37",
+      "char": "😪",
+      "unicode": "U+1F62A",
+      "name": {
+        "en": "Sleepy Face",
+        "fil": "Mukha na Inaantok",
+        "ms": "Wajah Mengantuk",
+        "bn": "ঘুমন্ত মুখ",
+        "pl": "Śpiąca Twarz"
+      },
+      "tags": ["sleepy", "tired", "drowsy", "yawn"]
+    },
+    {
+      "id": "drooling-38",
+      "char": "🤤",
+      "unicode": "U+1F924",
+      "name": {
+        "en": "Drooling Face",
+        "fil": "Mukha na Naglalaway",
+        "ms": "Wajah Meneteskan Air Liur",
+        "bn": "লালা পড়া মুখ",
+        "pl": "Ślinięca Twarz"
+      },
+      "tags": ["drool", "hungry", "desire", "want"]
+    },
+    {
+      "id": "sleeping-39",
+      "char": "😴",
+      "unicode": "U+1F634",
+      "name": {
+        "en": "Sleeping Face",
+        "fil": "Mukha na Natutulog",
+        "ms": "Wajah Tidur",
+        "bn": "ঘুমিয়ে থাকা মুখ",
+        "pl": "Śpiąca Twarz"
+      },
+      "tags": ["sleep", "zzz", "tired", "rest"]
+    },
+    {
+      "id": "mask-40",
+      "char": "😷",
+      "unicode": "U+1F637",
+      "name": {
+        "en": "Face with Mask",
+        "fil": "Mukha na May Maskara",
+        "ms": "Wajah dengan Topeng",
+        "bn": "মাস্ক পরা মুখ",
+        "pl": "Twarz z Maską"
+      },
+      "tags": ["mask", "sick", "health", "protection"]
+    },
+    {
+      "id": "face-with-thermometer-41",
+      "char": "🤒",
+      "unicode": "U+1F912",
+      "name": {
+        "en": "Face with Thermometer",
+        "fil": "Mukha na May Thermometer",
+        "ms": "Wajah dengan Termometer",
+        "bn": "থার্মোমিটার সহ মুখ",
+        "pl": "Twarz z Termometrem"
+      },
+      "tags": ["sick", "fever", "ill", "thermometer"]
+    },
+    {
+      "id": "face-with-head-bandage-42",
+      "char": "🤕",
+      "unicode": "U+1F915",
+      "name": {
+        "en": "Face with Head Bandage",
+        "fil": "Mukha na May Benda sa Ulo",
+        "ms": "Wajah dengan Perban Kepala",
+        "bn": "মাথায় ব্যান্ডেজ সহ মুখ",
+        "pl": "Twarz z Bandażem na Głowie"
+      },
+      "tags": ["injured", "hurt", "bandage", "pain"]
+    },
+    {
+      "id": "nauseated-43",
+      "char": "🤢",
+      "unicode": "U+1F922",
+      "name": {
+        "en": "Nauseated Face",
+        "fil": "Mukha na Naduduwal",
+        "ms": "Wajah Mual",
+        "bn": "বমি বমি ভাব মুখ",
+        "pl": "Mdląca Twarz"
+      },
+      "tags": ["nausea", "sick", "green", "ill"]
+    },
+    {
+      "id": "vomiting-44",
+      "char": "🤮",
+      "unicode": "U+1F92E",
+      "name": {
+        "en": "Vomiting Face",
+        "fil": "Mukha na Nagsusuka",
+        "ms": "Wajah Muntah",
+        "bn": "বমি করা মুখ",
+        "pl": "Wymiotująca Twarz"
+      },
+      "tags": ["vomit", "sick", "puke", "ill"]
+    },
+    {
+      "id": "sneezing-45",
+      "char": "🤧",
+      "unicode": "U+1F927",
+      "name": {
+        "en": "Sneezing Face",
+        "fil": "Mukha na Bumabahing",
+        "ms": "Wajah Bersin",
+        "bn": "হাঁচি দেয়া মুখ",
+        "pl": "Kichająca Twarz"
+      },
+      "tags": ["sneeze", "tissue", "cold", "allergies"]
+    },
+    {
+      "id": "hot-46",
+      "char": "🥵",
+      "unicode": "U+1F975",
+      "name": {
+        "en": "Hot Face",
+        "fil": "Mukha na Mainit",
+        "ms": "Wajah Panas",
+        "bn": "গরম মুখ",
+        "pl": "Gorąca Twarz"
+      },
+      "tags": ["hot", "sweat", "heat", "warm"]
+    },
+    {
+      "id": "cold-47",
+      "char": "🥶",
+      "unicode": "U+1F976",
+      "name": {
+        "en": "Cold Face",
+        "fil": "Mukha na Malamig",
+        "ms": "Wajah Sejuk",
+        "bn": "ঠাণ্ডা মুখ",
+        "pl": "Zimna Twarz"
+      },
+      "tags": ["cold", "freeze", "blue", "shiver"]
+    },
+    {
+      "id": "woozy-48",
+      "char": "🥴",
+      "unicode": "U+1F974",
+      "name": {
+        "en": "Woozy Face",
+        "fil": "Mukha na Nahihilo",
+        "ms": "Wajah Pening",
+        "bn": "মাথা ঘোরা মুখ",
+        "pl": "Oszołomiona Twarz"
+      },
+      "tags": ["dizzy", "drunk", "woozy", "confused"]
+    },
+    {
+      "id": "dizzy-49",
+      "char": "😵",
+      "unicode": "U+1F635",
+      "name": {
+        "en": "Dizzy Face",
+        "fil": "Mukha na Nahihilo",
+        "ms": "Wajah Pusing",
+        "bn": "মাথা ঘোরা মুখ",
+        "pl": "Zawrotna Twarz"
+      },
+      "tags": ["dizzy", "knocked", "out", "stars"]
+    },
+    {
+      "id": "exploding-head-50",
+      "char": "🤯",
+      "unicode": "U+1F92F",
+      "name": {
+        "en": "Exploding Head",
+        "fil": "Ulo na Sumasabog",
+        "ms": "Kepala Meledak",
+        "bn": "বিস্ফোরিত মাথা",
+        "pl": "Wybuchająca Głowa"
+      },
+      "tags": ["mind", "blown", "explode", "shock"]
+    },
+    {
+      "id": "cowboy-51",
+      "char": "🤠",
+      "unicode": "U+1F920",
+      "name": {
+        "en": "Cowboy Hat Face",
+        "fil": "Mukha na May Sombrero",
+        "ms": "Wajah Topi Koboi",
+        "bn": "কাউবয় টুপি মুখ",
+        "pl": "Twarz w Kapeluszu Kowbojskim"
+      },
+      "tags": ["cowboy", "hat", "western", "yeehaw"]
+    },
+    {
+      "id": "partying-52",
+      "char": "🥳",
+      "unicode": "U+1F973",
+      "name": {
+        "en": "Partying Face",
+        "fil": "Mukha na Nagse-celebrate",
+        "ms": "Wajah Berpesta",
+        "bn": "পার্টি করা মুখ",
+        "pl": "Bawiąca Się Twarz"
+      },
+      "tags": ["party", "celebrate", "birthday", "fun"]
+    },
+    {
+      "id": "disguised-53",
+      "char": "🥸",
+      "unicode": "U+1F978",
+      "name": {
+        "en": "Disguised Face",
+        "fil": "Mukha na Nagtago",
+        "ms": "Wajah Menyamar",
+        "bn": "ছদ্মবেশী মুখ",
+        "pl": "Zamaskowana Twarz"
+      },
+      "tags": ["disguise", "glasses", "mustache", "incognito"]
+    },
+    {
+      "id": "sunglasses-54",
+      "char": "😎",
+      "unicode": "U+1F60E",
+      "name": {
+        "en": "Smiling Face with Sunglasses",
+        "fil": "Mukha na Nakangiti na May Salamin",
+        "ms": "Wajah Tersenyum dengan Kacamata Hitam",
+        "bn": "সানগ্লাস সহ হাসি মুখ",
+        "pl": "Uśmiechnięta Twarz w Okularach"
+      },
+      "tags": ["cool", "sunglasses", "awesome", "confident"]
+    },
+    {
+      "id": "nerd-55",
+      "char": "🤓",
+      "unicode": "U+1F913",
+      "name": {
+        "en": "Nerd Face",
+        "fil": "Mukha na Nerd",
+        "ms": "Wajah Kutu Buku",
+        "bn": "নার্ড মুখ",
+        "pl": "Twarz Kujonka"
+      },
+      "tags": ["nerd", "geek", "glasses", "smart"]
+    },
+    {
+      "id": "monocle-56",
+      "char": "🧐",
+      "unicode": "U+1F9D0",
+      "name": {
+        "en": "Face with Monocle",
+        "fil": "Mukha na May Monocle",
+        "ms": "Wajah dengan Monokl",
+        "bn": "মনোকল সহ মুখ",
+        "pl": "Twarz z Monoklem"
+      },
+      "tags": ["monocle", "fancy", "posh", "examine"]
+    },
+    {
+      "id": "confused-57",
+      "char": "😕",
+      "unicode": "U+1F615",
+      "name": {
+        "en": "Confused Face",
+        "fil": "Mukha na Nalilito",
+        "ms": "Wajah Bingung",
+        "bn": "বিভ্রান্ত মুখ",
+        "pl": "Zdezorientowana Twarz"
+      },
+      "tags": ["confused", "puzzled", "unsure", "lost"]
+    },
+    {
+      "id": "worried-58",
+      "char": "😟",
+      "unicode": "U+1F61F",
+      "name": {
+        "en": "Worried Face",
+        "fil": "Mukha na Nag-aalala",
+        "ms": "Wajah Cemas",
+        "bn": "চিন্তিত মুখ",
+        "pl": "Zmartwiona Twarz"
+      },
+      "tags": ["worried", "anxious", "concerned", "trouble"]
+    },
+    {
+      "id": "slightly-frowning-59",
+      "char": "🙁",
+      "unicode": "U+1F641",
+      "name": {
+        "en": "Slightly Frowning Face",
+        "fil": "Mukha na Medyo Nakasimangot",
+        "ms": "Wajah Sedikit Cemberut",
+        "bn": "সামান্য ভ্রুকুটি মুখ",
+        "pl": "Lekko Zmarszczona Twarz"
+      },
+      "tags": ["frown", "sad", "disappointed", "upset"]
+    },
+    {
+      "id": "frowning-60",
+      "char": "☹️",
+      "unicode": "U+2639",
+      "name": {
+        "en": "Frowning Face",
+        "fil": "Mukha na Nakasimangot",
+        "ms": "Wajah Cemberut",
+        "bn": "ভ্রুকুটি মুখ",
+        "pl": "Zmarszczona Twarz"
+      },
+      "tags": ["frown", "sad", "unhappy", "down"]
+    },
+    {
+      "id": "open-mouth-61",
+      "char": "😮",
+      "unicode": "U+1F62E",
+      "name": {
+        "en": "Face with Open Mouth",
+        "fil": "Mukha na Nakabukas ang Bibig",
+        "ms": "Wajah dengan Mulut Terbuka",
+        "bn": "খোলা মুখ সহ মুখ",
+        "pl": "Twarz z Otwartymi Ustami"
+      },
+      "tags": ["surprise", "shock", "wow", "amazed"]
+    },
+    {
+      "id": "hushed-62",
+      "char": "😯",
+      "unicode": "U+1F62F",
+      "name": {
+        "en": "Hushed Face",
+        "fil": "Mukha na Tahimik",
+        "ms": "Wajah Terdiam",
+        "bn": "নিস্তব্ধ মুখ",
+        "pl": "Wyciszona Twarz"
+      },
+      "tags": ["hushed", "quiet", "whisper", "shh"]
+    },
+    {
+      "id": "astonished-63",
+      "char": "😲",
+      "unicode": "U+1F632",
+      "name": {
+        "en": "Astonished Face",
+        "fil": "Mukha na Nagulat",
+        "ms": "Wajah Terkejut",
+        "bn": "অবাক মুখ",
+        "pl": "Zdziwiona Twarz"
+      },
+      "tags": ["astonished", "shocked", "surprised", "wow"]
+    },
+    {
+      "id": "flushed-64",
+      "char": "😳",
+      "unicode": "U+1F633",
+      "name": {
+        "en": "Flushed Face",
+        "fil": "Mukha na Namumula",
+        "ms": "Wajah Memerah",
+        "bn": "লজ্জিত মুখ",
+        "pl": "Zaczerwieniona Twarz"
+      },
+      "tags": ["blush", "embarrassed", "shy", "awkward"]
+    },
+    {
+      "id": "pleading-65",
+      "char": "🥺",
+      "unicode": "U+1F97A",
+      "name": {
+        "en": "Pleading Face",
+        "fil": "Mukha na Nakikiusap",
+        "ms": "Wajah Memohon",
+        "bn": "অনুরোধকারী মুখ",
+        "pl": "Błagalna Twarz"
+      },
+      "tags": ["plead", "beg", "puppy", "eyes"]
+    },
+    {
+      "id": "face-holding-back-tears-66",
+      "char": "🥹",
+      "unicode": "U+1F979",
+      "name": {
+        "en": "Face Holding Back Tears",
+        "fil": "Mukha na Pinipigilan ang Luha",
+        "ms": "Wajah Menahan Air Mata",
+        "bn": "অশ্রু ধরে রাখা মুখ",
+        "pl": "Twarz Powstrzymująca Łzy"
+      },
+      "tags": ["emotional", "touched", "moved", "tears"]
+    },
+    {
+      "id": "face-with-open-eyes-67",
+      "char": "🫨",
+      "unicode": "U+1FAE8",
+      "name": {
+        "en": "Face with Open Eyes and Hand Over Mouth",
+        "fil": "Mukha na Nakabukas ang Mata at May Kamay sa Bibig",
+        "ms": "Wajah dengan Mata Terbuka dan Tangan di Mulut",
+        "bn": "খোলা চোখ এবং মুখে হাত সহ মুখ",
+        "pl": "Twarz z Otwartymi Oczami i Ręką na Ustach"
+      },
+      "tags": ["shock", "gasp", "surprise", "omg"]
+    },
+    {
+      "id": "face-with-peeking-eye-68",
+      "char": "🫣",
+      "unicode": "U+1FAE3",
+      "name": {
+        "en": "Face with Peeking Eye",
+        "fil": "Mukha na May Sumisilip na Mata",
+        "ms": "Wajah dengan Mata Mengintip",
+        "bn": "উঁকি দেয়া চোখ সহ মুখ",
+        "pl": "Twarz z Podglądającym Okiem"
+      },
+      "tags": ["peek", "shy", "hiding", "curious"]
+    },
+    {
+      "id": "saluting-69",
+      "char": "🫡",
+      "unicode": "U+1FAE1",
+      "name": {
+        "en": "Saluting Face",
+        "fil": "Mukha na Gumagalang",
+        "ms": "Wajah Memberi Hormat",
+        "bn": "স্যালুট করা মুখ",
+        "pl": "Salutująca Twarz"
+      },
+      "tags": ["salute", "respect", "military", "honor"]
+    },
+    {
+      "id": "shushing-70",
+      "char": "🤫",
+      "unicode": "U+1F92B",
+      "name": {
+        "en": "Shushing Face",
+        "fil": "Mukha na Nagsasabi ng Tahimik",
+        "ms": "Wajah Menyuruh Diam",
+        "bn": "চুপ করতে বলা মুখ",
+        "pl": "Uciszająca Twarz"
+      },
+      "tags": ["shush", "quiet", "secret", "silence"]
+    },
+    {
+      "id": "face-with-symbols-71",
+      "char": "🤬",
+      "unicode": "U+1F92C",
+      "name": {
+        "en": "Face with Symbols on Mouth",
+        "fil": "Mukha na May mga Simbolo sa Bibig",
+        "ms": "Wajah dengan Simbol di Mulut",
+        "bn": "মুখে প্রতীক সহ মুখ",
+        "pl": "Twarz z Symbolami na Ustach"
+      },
+      "tags": ["swearing", "cursing", "angry", "mad"]
+    },
+    {
+      "id": "face-with-hand-over-mouth-72",
+      "char": "🤭",
+      "unicode": "U+1F92D",
+      "name": {
+        "en": "Face with Hand Over Mouth",
+        "fil": "Mukha na May Kamay sa Bibig",
+        "ms": "Wajah dengan Tangan di Mulut",
+        "bn": "মুখে হাত সহ মুখ",
+        "pl": "Twarz z Ręką na Ustach"
+      },
+      "tags": ["giggle", "oops", "secret", "whisper"]
+    },
+    {
+      "id": "yawning-73",
+      "char": "🥱",
+      "unicode": "U+1F971",
+      "name": {
+        "en": "Yawning Face",
+        "fil": "Mukha na Humihikab",
+        "ms": "Wajah Menguap",
+        "bn": "হাই তোলা মুখ",
+        "pl": "Ziewająca Twarz"
+      },
+      "tags": ["yawn", "tired", "sleepy", "bored"]
+    },
+    {
+      "id": "face-with-bags-under-eyes-74",
+      "char": "🫩",
+      "unicode": "U+1FAE9",
+      "name": {
+        "en": "Face with Bags Under Eyes",
+        "fil": "Mukha na May Eyebags",
+        "ms": "Wajah dengan Kantung Mata",
+        "bn": "চোখের নিচে ব্যাগ সহ মুখ",
+        "pl": "Twarz z Workami Pod Oczami"
+      },
+      "tags": ["tired", "exhausted", "sleepy", "bags"]
+    },
+    {
+      "id": "melting-75",
+      "char": "🫠",
+      "unicode": "U+1FAE0",
+      "name": {
+        "en": "Melting Face",
+        "fil": "Mukha na Natutunaw",
+        "ms": "Wajah Mencair",
+        "bn": "গলে যাওয়া মুখ",
+        "pl": "Topiąca Się Twarz"
+      },
+      "tags": ["melt", "hot", "overwhelmed", "dissolve"]
+    },
+    {
+      "id": "face-in-clouds-76",
+      "char": "😶‍🌫️",
+      "unicode": "U+1F636 U+200D U+1F32B",
+      "name": {
+        "en": "Face in Clouds",
+        "fil": "Mukha sa mga Ulap",
+        "ms": "Wajah di Awan",
+        "bn": "মেঘে মুখ",
+        "pl": "Twarz w Chmurach"
+      },
+      "tags": ["clouds", "foggy", "unclear", "confused"]
+    },
+    {
+      "id": "face-with-spiral-eyes-77",
+      "char": "😵‍💫",
+      "unicode": "U+1F635 U+200D U+1F4AB",
+      "name": {
+        "en": "Face with Spiral Eyes",
+        "fil": "Mukha na May Spiral na Mata",
+        "ms": "Wajah dengan Mata Spiral",
+        "bn": "সর্পিল চোখ সহ মুখ",
+        "pl": "Twarz ze Spiralnymi Oczami"
+      },
+      "tags": ["dizzy", "hypnotized", "spiral", "confused"]
+    },
+    {
+      "id": "face-on-fire-78",
+      "char": "🔥",
+      "unicode": "U+1F525",
+      "name": {
+        "en": "Fire",
+        "fil": "Apoy",
+        "ms": "Api",
+        "bn": "আগুন",
+        "pl": "Ogień"
+      },
+      "tags": ["fire", "hot", "lit", "flame"]
+    },
+    {
+      "id": "face-with-hearts-79",
+      "char": "🥰",
+      "unicode": "U+1F970",
+      "name": {
+        "en": "Smiling Face with Hearts",
+        "fil": "Mukha na Nakangiti na May mga Puso",
+        "ms": "Wajah Tersenyum dengan Hati",
+        "bn": "হৃদয় সহ হাসি মুখ",
+        "pl": "Uśmiechnięta Twarz z Sercami"
+      },
+      "tags": ["love", "hearts", "adore", "affection"]
+    },
+    {
+      "id": "star-struck-80",
+      "char": "🤩",
+      "unicode": "U+1F929",
+      "name": {
+        "en": "Star-Struck",
+        "fil": "Nabighani sa mga Bituin",
+        "ms": "Terpesona Bintang",
+        "bn": "তারকা মুগ্ধ",
+        "pl": "Oczarowana Gwiazdami"
+      },
+      "tags": ["star", "struck", "amazed", "celebrity"]
+    },
+    {
+      "id": "money-mouth-81",
+      "char": "🤑",
+      "unicode": "U+1F911",
+      "name": {
+        "en": "Money-Mouth Face",
+        "fil": "Mukha na May Perang Bibig",
+        "ms": "Wajah Mulut Uang",
+        "bn": "টাকার মুখ সহ মুখ",
+        "pl": "Twarz z Pieniędzmi w Ustach"
+      },
+      "tags": ["money", "rich", "dollar", "greedy"]
+    },
+    {
+      "id": "zipper-mouth-82",
+      "char": "🤐",
+      "unicode": "U+1F910",
+      "name": {
+        "en": "Zipper-Mouth Face",
+        "fil": "Mukha na May Zipper sa Bibig",
+        "ms": "Wajah Mulut Zip",
+        "bn": "জিপার মুখ সহ মুখ",
+        "pl": "Twarz z Zamkiem w Ustach"
+      },
+      "tags": ["zipper", "quiet", "sealed", "secret"]
+    },
+    {
+      "id": "face-with-raised-eyebrow-83",
+      "char": "🤨",
+      "unicode": "U+1F928",
+      "name": {
+        "en": "Face with Raised Eyebrow",
+        "fil": "Mukha na May Nakataas na Kilay",
+        "ms": "Wajah dengan Alis Terangkat",
+        "bn": "উঁচু ভ্রু সহ মুখ",
+        "pl": "Twarz z Uniesioną Brwią"
+      },
+      "tags": ["eyebrow", "suspicious", "doubt", "skeptical"]
+    },
+    {
+      "id": "neutral-face-84",
+      "char": "😐",
+      "unicode": "U+1F610",
+      "name": {
+        "en": "Neutral Face",
+        "fil": "Mukha na Walang Reaksyon",
+        "ms": "Wajah Neutral",
+        "bn": "নিরপেক্ষ মুখ",
+        "pl": "Neutralna Twarz"
+      },
+      "tags": ["neutral", "blank", "indifferent", "meh"]
+    },
+    {
+      "id": "expressionless-face-85",
+      "char": "😑",
+      "unicode": "U+1F611",
+      "name": {
+        "en": "Expressionless Face",
+        "fil": "Mukha na Walang Ekspresyon",
+        "ms": "Wajah Tanpa Ekspresi",
+        "bn": "অভিব্যক্তিহীন মুখ",
+        "pl": "Twarz Bez Wyrazu"
+      },
+      "tags": ["blank", "deadpan", "flat", "emotionless"]
+    },
+    {
+      "id": "face-without-mouth-86",
+      "char": "😶",
+      "unicode": "U+1F636",
+      "name": {
+        "en": "Face Without Mouth",
+        "fil": "Mukha na Walang Bibig",
+        "ms": "Wajah Tanpa Mulut",
+        "bn": "মুখ ছাড়া মুখ",
+        "pl": "Twarz Bez Ust"
+      },
+      "tags": ["silent", "speechless", "quiet", "mute"]
+    },
+    {
+      "id": "dotted-line-face-87",
+      "char": "🫥",
+      "unicode": "U+1FAE5",
+      "name": {
+        "en": "Dotted Line Face",
+        "fil": "Mukha na May Tuldok na Linya",
+        "ms": "Wajah Garis Putus-putus",
+        "bn": "ডটেড লাইন মুখ",
+        "pl": "Twarz z Przerywaną Linią"
+      },
+      "tags": ["invisible", "fade", "disappear", "dotted"]
+    },
+    {
+      "id": "face-with-diagonal-mouth-88",
+      "char": "🫤",
+      "unicode": "U+1FAE4",
+      "name": {
+        "en": "Face with Diagonal Mouth",
+        "fil": "Mukha na May Diagonal na Bibig",
+        "ms": "Wajah dengan Mulut Diagonal",
+        "bn": "তির্যক মুখ সহ মুখ",
+        "pl": "Twarz z Ukośnymi Ustami"
+      },
+      "tags": ["unsure", "meh", "diagonal", "uncertain"]
+    },
+    {
+      "id": "smiling-face-with-tear-89",
+      "char": "🥲",
+      "unicode": "U+1F972",
+      "name": {
+        "en": "Smiling Face with Tear",
+        "fil": "Mukha na Nakangiti na May Luha",
+        "ms": "Wajah Tersenyum dengan Air Mata",
+        "bn": "অশ্রু সহ হাসি মুখ",
+        "pl": "Uśmiechnięta Twarz z Łzą"
+      },
+      "tags": ["bittersweet", "happy", "sad", "tear"]
+    },
+    {
+      "id": "slightly-smiling-face-90",
+      "char": "🙂",
+      "unicode": "U+1F642",
+      "name": {
+        "en": "Slightly Smiling Face",
+        "fil": "Mukha na Medyo Nakangiti",
+        "ms": "Wajah Sedikit Tersenyum",
+        "bn": "সামান্য হাসি মুখ",
+        "pl": "Lekko Uśmiechnięta Twarz"
+      },
+      "tags": ["slight", "smile", "gentle", "mild"]
+    }
+  ]
+}

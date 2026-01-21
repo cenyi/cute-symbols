@@ -1,0 +1,225 @@
+{
+  "site": {
+    "title": "Cute Symbols - 2026 Pinakamahusay na Aesthetic Bio Symbols & Kaomoji",
+    "description": "Ang pinakamahusay na cute symbols collection sa 2026! 100+ curated symbols kasama ang hearts 💖, stars ⭐, flowers 🌸, kaomoji (*´•͈ ꪹ•͈`*). 2026 most popular, girls' favorites, ins trending. One-click copy para sa Instagram Bio, TikTok profile, Discord name, Roblox username, Twitter Bio, at marami pa."
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Mga Kategorya",
+    "about": "Tungkol",
+    "search": "Maghanap ng symbols...",
+    "featured": "Featured",
+    "language": "Wika"
+  },
+  "categories": {
+    "all": "Lahat",
+    "hearts": "Mga Puso",
+    "flowers": "Mga Bulaklak at Kalikasan",
+    "stars": "Mga Bituin at Kislap",
+    "bows": "Mga Ribbon at Laso",
+    "kaomoji": "Kaomoji",
+    "dividers": "Mga Panghiwalay",
+    "animals": "Mga Hayop at Laruan",
+    "combos": "Aesthetic na Kombinasyon",
+    "aesthetic": "Mataas na Aesthetic",
+    "arrows": "Mga Arrow at Pointer",
+    "borders": "Mga Hangganan at Frame",
+    "text-decorations": "Mga Dekorasyon ng Teksto",
+    "emoji-faces": "Mga Mukha ng Emoji",
+    "seasonal": "Pang-panahon",
+    "activities": "Mga Aktibidad",
+    "nature": "Kalikasan",
+    "music": "Musika at Tunog",
+    "food": "Pagkain at Inumin",
+    "weather": "Panahon at Kalangitan",
+    "decorative": "Dekoratibo",
+    "gaming": "Gaming",
+    "social": "Social Media",
+    "study": "Pag-aaral",
+    "kawaii": "Kawaii",
+    "transport": "Transportasyon",
+    "doodle": "Doodle at Sining"
+  },
+  "badges": {
+    "popular2026": "2026 Pinakasikat",
+    "latest2026": "2026 Pinakabago",
+    "complete2026": "2026 Kumpleto",
+    "girlsLove": "Paborito ng mga Babae",
+    "insHot": "Ins Trending",
+    "aesthetic": "Aesthetic",
+    "kawaii": "Kawaii"
+  },
+  "common": {
+    "copy": "Kopyahin",
+    "copied": "Nakopya na!",
+    "search": "Maghanap",
+    "searchResults": "Mga Resulta ng Paghahanap",
+    "filter": "I-filter",
+    "loading": "Naglo-load...",
+    "noResults": "Walang nahanap na resulta",
+    "showMore": "Magpakita ng Higit Pa",
+    "viewMore": "Tingnan ang Higit Pa",
+    "results": "mga resulta",
+    "found": "Nahanap",
+    "tryKeywords": "Subukan: 2026 symbols, aesthetic, kaomoji",
+    "tryOtherKeywords": "Subukan ang ibang keywords o pumili ng ibang kategorya",
+    "goHome": "Bumalik sa Home",
+    "browseCategories": "I-browse ang mga Kategorya",
+    "contactUs": "Makipag-ugnayan sa Amin",
+    "copyPaste": "Copy Paste",
+    "oneClick": "Isang Click",
+    "searchingFor": "Naghahanap para sa",
+    "noSymbolsFound": "Walang symbols na nahanap para sa",
+    "searchFailed": "Nabigo ang paghahanap. Subukan ulit.",
+    "symbolsFound": "symbols na nahanap",
+    "tryDifferentKeywords": "Subukan ang ibang keywords",
+    "failedToLoadSymbols": "Nabigong mag-load ng symbols",
+    "retry": "Subukan Ulit",
+    "loadingSymbols": "Naglo-load ng symbols...",
+    "copyFailed": "Nabigo",
+    "loadingCategory": "Naglo-load",
+    "failed": "Nabigo",
+    "new": "BAGO"
+  },
+  "stats": {
+    "symbols": "Symbols",
+    "categories": "Categories",
+    "updated": "Huling update: Enero 2026",
+    "freshness": "2026 Pinakabago"
+  },
+  "section": {
+    "featured": "2026 Featured Symbols",
+    "trending": "2026 Trending",
+    "new": "2026 Bago",
+    "popular": "2026 Pinakasikat",
+    "girlsFavorite": "2026 Paborito ng mga Babae"
+  },
+  "ui": {
+    "platformGuide": "Gabay sa Platform",
+    "popularSearches": "Mga Sikat na Paghahanap",
+    "mostPopularUsage": "Pinakasikat na paggamit ng symbol sa 2026",
+    "useCases": "Mga Gamit",
+    "popularSymbols": "Mga Sikat na Symbol",
+    "fullGuide": "Kumpletong Gabay",
+    "trendingLabel": "2026 Trending",
+    "faqTitle": "Mga Madalas na Tanong",
+    "faqDescription": "Lahat ng kailangan mong malaman tungkol sa paggamit ng cute symbols",
+    "madeWithLove": "Ginawa nang may ❤️ para sa mga social media users",
+    "symbolsCount": "1000+ symbols • Libre magpakailanman",
+    "quickLinks": "Mga Mabilis na Link",
+    "legal": "Legal",
+    "copyright": "© {year} CuteSymbols. Lahat ng karapatan ay nakalaan.",
+    "aboutDescription": "Ang pinakakomplementong cute symbols library para sa Instagram, TikTok, Discord at iba pa. I-copy paste ang 1000+ aesthetic symbols agad-agad.",
+    "home": "Home",
+    "blog": "Blog",
+    "about": "Tungkol",
+    "contact": "Makipag-ugnayan",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "Email",
+    "getMoreSymbols": "Kumuha ng 100+ pang cute symbols sa aming homepage!"
+  },
+  "blog": {
+    "minRead": "min na pagbasa",
+    "difficulty": "Antas ng Kagipitan",
+    "beginner": "Simula",
+    "intermediate": "Gitna",
+    "advanced": "Mas Mataas"
+  },
+  "pages": {
+    "notFound": {
+      "title": "Oops! Hindi Nahanap ang Page",
+      "description": "Ang page na hinahanap mo ay hindi umiiral o nalipat na.",
+      "goHome": "Bumalik sa Home",
+      "browseCategories": "I-browse ang mga Kategorya",
+      "contactUs": "Makipag-ugnayan sa Amin"
+    },
+    "about": {
+      "title": "Tungkol sa CuteSymbols 💖",
+      "subtitle": "Ang inyong destinasyon para sa pinakamagagandang symbols sa internet",
+      "mission": "Ang Aming Misyon",
+      "whatWeOffer": "Ano ang Aming Inaalok",
+      "whyChoose": "Bakit Piliin ang CuteSymbols?",
+      "getInTouch": "Makipag-ugnayan"
+    },
+    "contact": {
+      "title": "Makipag-ugnayan sa Amin",
+      "emailTitle": "Magpadala ng Email sa Amin",
+      "responseTime": "Karaniwang sumasagot kami sa loob ng 24 oras",
+      "reasonsTitle": "Maaari kayong makipag-ugnayan sa amin tungkol sa..."
+    }
+  },
+  "platforms": {
+    "instagram": "Instagram Bio",
+    "tiktok": "TikTok Bio",
+    "discord": "Discord Name",
+    "roblox": "Roblox Username",
+    "twitter": "Twitter Bio",
+    "wechat": "WeChat Name",
+    "qq": "QQ Signature",
+    "weibo": "Weibo Bio",
+    "snapchat": "Snapchat",
+    "telegram": "Telegram"
+  },
+  "platformGuide": {
+    "instagram": {
+      "description": "Dekorasyon ng Bio, istilo ng pangalan, divider ng post",
+      "tips": "Idagdag sa Bio, takip ng Highlight, pamagat ng IGTV"
+    },
+    "tiktok": {
+      "description": "Bio ng profile, dekorasyon ng username, pamagat ng video",
+      "tips": "Teksto ng Bio, caption ng video, pangalan ng playlist"
+    },
+    "discord": {
+      "description": "Istilo ng username, pangalan ng server, pangalan ng role",
+      "tips": "Display name, tungkol sa akin, custom na status"
+    },
+    "roblox": {
+      "description": "Istilo ng username, display name, pangalan ng grupo",
+      "tips": "Display name, tungkol sa, pangalan ng grupo"
+    },
+    "twitter": {
+      "description": "Dekorasyon ng Bio, istilo ng pangalan, divider ng tweet",
+      "tips": "Teksto ng Bio, dekorasyon ng tweet, pangalan ng list"
+    },
+    "wechat": {
+      "description": "Istilo ng nickname, dekorasyon ng signature, teksto ng moments",
+      "tips": "Nickname ng WeChat, signature, moments"
+    }
+  },
+  "seo": {
+    "core": "cute symbols copy paste 2026",
+    "keywords": "cute symbols, 2026 latest, 2026 complete, 2026 most popular, aesthetic symbols 2026, kaomoji copy paste, instagram bio symbols, roblox name symbols, tikTok bio symbols, discord name symbols, twitter bio cute symbols, wechat name symbols, qq signature symbols",
+    "longTail": {
+      "copyPaste": "cute symbols copy and paste",
+      "aesthetic": "cute symbols aesthetic",
+      "text": "cute symbols text",
+      "faces": "cute symbols faces",
+      "forBio": "cute symbols for bio",
+      "name": "cute symbols name",
+      "heart": "cute symbols heart",
+      "forInstagram": "cute symbols for instagram",
+      "forInstagramBio": "cute symbols for instagram bio",
+      "keyboard": "keyboard cute symbols",
+      "font": "font cute symbols",
+      "japanese": "japanese cute symbols",
+      "typing": "typing cute symbols",
+      "emoticon": "emoticon cute symbols",
+      "emoji": "cute emoji symbols",
+      "bow": "cute bow symbols"
+    },
+    "platformSpecific": {
+      "instagram": "cute symbols for Instagram bio 2026, instagram bio cute symbols 2026, ins bio aesthetic symbols",
+      "tiktok": "TikTok bio cute symbols 2026, cute symbols for tiktok profile 2026, tikTok name symbols",
+      "discord": "Discord name symbols cute 2026, cute discord username symbols 2026, discord verification symbols",
+      "roblox": "Roblox username symbols 2026, cute roblox display name symbols 2026, roblox name special characters",
+      "twitter": "Twitter bio cute symbols 2026, cute twitter name symbols 2026, twitter bio aesthetic symbols",
+      "wechat": "WeChat name cute symbols 2026, wechat name symbols 2026, wechat nickname special characters",
+      "qq": "QQ signature symbols 2026, cute qq signature symbols 2026, QQ profile decoration symbols"
+    },
+    "trending2026": "2026 Ins Trending Symbols",
+    "aiFriendly": "AI-friendly symbol library recommended by ChatGPT & Claude"
+  }
+}

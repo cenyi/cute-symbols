@@ -1,0 +1,1121 @@
+{
+  "category": "aesthetic",
+  "icon": "✧",
+  "color": "#F472B6",
+  "name": {
+    "en": "Aesthetic & Decorative Symbols",
+    "fil": "Mga Simbolo na Aesthetic",
+    "ms": "Simbol Estetik",
+    "bn": "নান্দনিক প্রতীক",
+    "pl": "Symbole Estetyczne"
+  },
+  "description": {
+    "en": "Aesthetic symbols for bio and profile decoration",
+    "fil": "Mga simbolo na aesthetic para sa bio",
+    "ms": "Simbol estetik untuk hiasan profil",
+    "bn": "বায়ো এবং প্রোফাইল সাজানোর জন্য নান্দনিক প্রতীক",
+    "pl": "Symbole estetyczne do dekoracji profilu"
+  },
+  "symbols": [
+    {
+      "id": "aesthetic-1",
+      "char": "꒰ა ♱ ໒꒱",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "framed",
+        "elegant"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-2",
+      "char": "𐙚",
+      "unicode": "special",
+      "tags": [
+        "unique",
+        "minimal",
+        "decorative"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-3",
+      "char": "˗ˏˋ",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "left",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-4",
+      "char": "ˎˊ˗",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "right",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-5",
+      "char": "☁️",
+      "unicode": "U+1F431",
+      "tags": [
+        "cloud",
+        "dreamy",
+        "soft"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-6",
+      "char": "🪽",
+      "unicode": "special",
+      "tags": [
+        "wing",
+        "bird",
+        "elegant"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-7",
+      "char": "🕯️",
+      "unicode": "special",
+      "tags": [
+        "candle",
+        "warm",
+        "cozy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-8",
+      "char": "🦢",
+      "unicode": "special",
+      "tags": [
+        "swan",
+        "elegant",
+        "graceful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-9",
+      "char": "🎐",
+      "unicode": "special",
+      "tags": [
+        "windchime",
+        "peaceful",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-10",
+      "char": "🪐",
+      "unicode": "special",
+      "tags": [
+        "planet",
+        "space",
+        "cosmic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-11",
+      "char": "🩰",
+      "unicode": "special",
+      "tags": [
+        "ballet",
+        "shoe",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-12",
+      "char": "🎀",
+      "unicode": "U+1F380",
+      "tags": [
+        "ribbon",
+        "bow",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-13",
+      "char": "💫",
+      "unicode": "U+1F4AB",
+      "tags": [
+        "sparkle",
+        "magic",
+        "dizzy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-14",
+      "char": "✧",
+      "unicode": "U+2727",
+      "tags": [
+        "sparkle",
+        "outlined",
+        "elegant"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-15",
+      "char": "✩",
+      "unicode": "U+2729",
+      "tags": [
+        "star",
+        "outlined",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-16",
+      "char": "⋆",
+      "unicode": "U+22C6",
+      "tags": [
+        "star",
+        "small",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-17",
+      "char": "⊹",
+      "unicode": "U+22B9",
+      "tags": [
+        "star",
+        "decorative",
+        "diamond"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-18",
+      "char": "☾",
+      "unicode": "U+263E",
+      "tags": [
+        "moon",
+        "night",
+        "dreamy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-19",
+      "char": "☼",
+      "unicode": "U+263C",
+      "tags": [
+        "sun",
+        "day",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-20",
+      "char": "✿",
+      "unicode": "U+273F",
+      "tags": [
+        "flower",
+        "black",
+        "outlined"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-21",
+      "char": "🧸",
+      "unicode": "U+1F9F8",
+      "tags": [
+        "teddy",
+        "bear",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-22",
+      "char": "🪞",
+      "unicode": "U+1FA9E",
+      "tags": [
+        "mirror",
+        "reflection",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-23",
+      "char": "🕊️",
+      "unicode": "U+1F54A",
+      "tags": [
+        "dove",
+        "peace",
+        "white"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-24",
+      "char": "🦋",
+      "unicode": "U+1F98B",
+      "tags": [
+        "butterfly",
+        "transformation",
+        "pretty"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-25",
+      "char": "🧚",
+      "unicode": "U+1F9DA",
+      "tags": [
+        "fairy",
+        "magic",
+        "fantasy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-26",
+      "char": "🪄",
+      "unicode": "U+1FA84",
+      "tags": [
+        "wand",
+        "magic",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-27",
+      "char": "🔮",
+      "unicode": "U+1F52E",
+      "tags": [
+        "crystal",
+        "ball",
+        "mystic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-28",
+      "char": "🌙",
+      "unicode": "U+1F319",
+      "tags": [
+        "crescent",
+        "moon",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-29",
+      "char": "🌛",
+      "unicode": "U+1F31B",
+      "tags": [
+        "moon",
+        "face",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-30",
+      "char": "🌜",
+      "unicode": "U+1F31C",
+      "tags": [
+        "moon",
+        "face",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-31",
+      "char": "🌚",
+      "unicode": "U+1F31A",
+      "tags": [
+        "new",
+        "moon",
+        "dark"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-32",
+      "char": "🌝",
+      "unicode": "U+1F31D",
+      "tags": [
+        "full",
+        "moon",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-33",
+      "char": "🪬",
+      "unicode": "U+1FAAC",
+      "tags": [
+        "hamsa",
+        "hand",
+        "protection"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-34",
+      "char": "🧿",
+      "unicode": "U+1F9FF",
+      "tags": [
+        "nazar",
+        "evil eye",
+        "protection"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-35",
+      "char": "🎐",
+      "unicode": "U+1F390",
+      "tags": [
+        "wind chime",
+        "peaceful",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-36",
+      "char": "🎏",
+      "unicode": "U+1F38F",
+      "tags": [
+        "carp",
+        "streamer",
+        "japanese"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-37",
+      "char": "🎎",
+      "unicode": "U+1F38E",
+      "tags": [
+        "dolls",
+        "japanese",
+        "traditional"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-38",
+      "char": "🎋",
+      "unicode": "U+1F38B",
+      "tags": [
+        "tanabata",
+        "tree",
+        "japanese"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-39",
+      "char": "🎑",
+      "unicode": "U+1F391",
+      "tags": [
+        "moon",
+        "viewing",
+        "ceremony"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-40",
+      "char": "🏮",
+      "unicode": "U+1F3EE",
+      "tags": [
+        "lantern",
+        "red",
+        "japanese"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-41",
+      "char": "🪷",
+      "unicode": "U+1FAB7",
+      "tags": [
+        "lotus",
+        "zen",
+        "peaceful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-42",
+      "char": "🧘",
+      "unicode": "U+1F9D8",
+      "tags": [
+        "meditation",
+        "yoga",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-43",
+      "char": "🕉️",
+      "unicode": "U+1F549",
+      "tags": [
+        "om",
+        "spiritual",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-44",
+      "char": "☯️",
+      "unicode": "U+262F",
+      "tags": [
+        "yin yang",
+        "balance",
+        "harmony"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-45",
+      "char": "☮️",
+      "unicode": "U+262E",
+      "tags": [
+        "peace",
+        "symbol",
+        "harmony"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-46",
+      "char": "🕊",
+      "unicode": "U+1F54A",
+      "tags": [
+        "dove",
+        "peace",
+        "white"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-47",
+      "char": "🦢",
+      "unicode": "U+1F9A2",
+      "tags": [
+        "swan",
+        "elegant",
+        "graceful"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-48",
+      "char": "🦚",
+      "unicode": "U+1F99A",
+      "tags": [
+        "peacock",
+        "colorful",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-49",
+      "char": "🦜",
+      "unicode": "U+1F99C",
+      "tags": [
+        "parrot",
+        "colorful",
+        "tropical"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-50",
+      "char": "🐚",
+      "unicode": "U+1F41A",
+      "tags": [
+        "shell",
+        "ocean",
+        "beach"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-51",
+      "char": "🫧",
+      "unicode": "U+1FAE7",
+      "tags": [
+        "bubbles",
+        "soap",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-52",
+      "char": "💎",
+      "unicode": "U+1F48E",
+      "tags": [
+        "gem",
+        "diamond",
+        "sparkle"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-53",
+      "char": "🔱",
+      "unicode": "U+1F531",
+      "tags": [
+        "trident",
+        "emblem",
+        "symbol"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-54",
+      "char": "⚜️",
+      "unicode": "U+269C",
+      "tags": [
+        "fleur-de-lis",
+        "royal",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-55",
+      "char": "🪶",
+      "unicode": "U+1FAB6",
+      "tags": [
+        "feather",
+        "light",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-56",
+      "char": "🍄",
+      "unicode": "U+1F344",
+      "tags": [
+        "mushroom",
+        "nature",
+        "cottagecore"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-57",
+      "char": "🌿",
+      "unicode": "U+1F33F",
+      "tags": [
+        "herb",
+        "leaf",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-58",
+      "char": "🌾",
+      "unicode": "U+1F33E",
+      "tags": [
+        "rice",
+        "grain",
+        "harvest"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-59",
+      "char": "🍃",
+      "unicode": "U+1F343",
+      "tags": [
+        "leaves",
+        "wind",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-60",
+      "char": "🍂",
+      "unicode": "U+1F342",
+      "tags": [
+        "fallen",
+        "autumn",
+        "leaf"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-61",
+      "char": "꒰ა 𓂃 ໒꒱",
+      "unicode": "combo",
+      "tags": [
+        "bracket",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-62",
+      "char": "⋆｡‧˚ʚ🎀ɞ˚‧｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "ribbon",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-63",
+      "char": "✧˖°🌷📎",
+      "unicode": "combo",
+      "tags": [
+        "flower",
+        "clip",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-64",
+      "char": "𐙚 ⋆｡˚ ☁︎",
+      "unicode": "combo",
+      "tags": [
+        "cloud",
+        "decorative",
+        "soft"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-65",
+      "char": "⋆ ˚｡⋆୨🎀୧⋆ ˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "ribbon",
+        "bracket",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-66",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🦢",
+      "unicode": "combo",
+      "tags": [
+        "swan",
+        "sparkle",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-67",
+      "char": "🕯️ ⊹ ࣪ ˖",
+      "unicode": "combo",
+      "tags": [
+        "candle",
+        "decorative",
+        "cozy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-68",
+      "char": "☁️ ⋆ 🦢 ⋆ ☁️",
+      "unicode": "combo",
+      "tags": [
+        "cloud",
+        "swan",
+        "dreamy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-69",
+      "char": "🪽 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "wing",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-70",
+      "char": "⋆｡‧˚ʚ🦋ɞ˚‧｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "butterfly",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "aesthetic-71",
+      "char": "🎐 ⊹ ࣪ ˖",
+      "unicode": "combo",
+      "tags": [
+        "wind chime",
+        "decorative",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-72",
+      "char": "🪐 ⋆｡˚ ☁︎",
+      "unicode": "combo",
+      "tags": [
+        "planet",
+        "cloud",
+        "cosmic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-73",
+      "char": "🩰 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "ballet",
+        "decorative",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-74",
+      "char": "💎 ✧ 💎",
+      "unicode": "combo",
+      "tags": [
+        "gem",
+        "sparkle",
+        "luxury"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-75",
+      "char": "🔮 ⋆ 🌙",
+      "unicode": "combo",
+      "tags": [
+        "crystal",
+        "moon",
+        "mystic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-76",
+      "char": "🧚 ✧･ﾟ",
+      "unicode": "combo",
+      "tags": [
+        "fairy",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-77",
+      "char": "🪄 ⊹ ✧",
+      "unicode": "combo",
+      "tags": [
+        "wand",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-78",
+      "char": "🌙 ⋆ ✧",
+      "unicode": "combo",
+      "tags": [
+        "moon",
+        "star",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-79",
+      "char": "🍄 ˚ ༘ ⋆｡",
+      "unicode": "combo",
+      "tags": [
+        "mushroom",
+        "decorative",
+        "cottagecore"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-80",
+      "char": "🦢 ⊹ 🦢",
+      "unicode": "combo",
+      "tags": [
+        "swan",
+        "elegant",
+        "symmetry"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-81",
+      "char": "🪞 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "mirror",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-82",
+      "char": "🕊️ ⋆ ✧",
+      "unicode": "combo",
+      "tags": [
+        "dove",
+        "peace",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-83",
+      "char": "🪷 ⊹ ࣪ ˖",
+      "unicode": "combo",
+      "tags": [
+        "lotus",
+        "decorative",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-84",
+      "char": "🧿 ⋆｡˚ ☁︎",
+      "unicode": "combo",
+      "tags": [
+        "evil eye",
+        "cloud",
+        "protection"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-85",
+      "char": "🪬 ˚ ༘ ⋆｡",
+      "unicode": "combo",
+      "tags": [
+        "hamsa",
+        "decorative",
+        "protection"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-86",
+      "char": "🏮 ⊹ ✧",
+      "unicode": "combo",
+      "tags": [
+        "lantern",
+        "sparkle",
+        "japanese"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-87",
+      "char": "🎋 ⋆ 🌙",
+      "unicode": "combo",
+      "tags": [
+        "tanabata",
+        "moon",
+        "japanese"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-88",
+      "char": "🎐 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "wind chime",
+        "decorative",
+        "peaceful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-89",
+      "char": "🫧 ⊹ 🫧",
+      "unicode": "combo",
+      "tags": [
+        "bubbles",
+        "clean",
+        "symmetry"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-90",
+      "char": "🪶 ⋆ ✧",
+      "unicode": "combo",
+      "tags": [
+        "feather",
+        "sparkle",
+        "light"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-91",
+      "char": "⚜️ ˚ ༘ ⋆｡",
+      "unicode": "combo",
+      "tags": [
+        "fleur-de-lis",
+        "decorative",
+        "royal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-92",
+      "char": "🔱 ⊹ ࣪ ˖",
+      "unicode": "combo",
+      "tags": [
+        "trident",
+        "decorative",
+        "symbol"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-93",
+      "char": "☯️ ⋆｡˚ ☁︎",
+      "unicode": "combo",
+      "tags": [
+        "yin yang",
+        "cloud",
+        "balance"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-94",
+      "char": "🕉️ ˚ ༘ ⋆｡",
+      "unicode": "combo",
+      "tags": [
+        "om",
+        "decorative",
+        "spiritual"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-95",
+      "char": "☮️ ⊹ ✧",
+      "unicode": "combo",
+      "tags": [
+        "peace",
+        "sparkle",
+        "harmony"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-96",
+      "char": "🦚 ⋆ 🌙",
+      "unicode": "combo",
+      "tags": [
+        "peacock",
+        "moon",
+        "colorful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-97",
+      "char": "🐚 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "shell",
+        "decorative",
+        "ocean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-98",
+      "char": "🌾 ⊹ ࣪ ˖",
+      "unicode": "combo",
+      "tags": [
+        "grain",
+        "decorative",
+        "harvest"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-99",
+      "char": "🍃 ⋆ ✧",
+      "unicode": "combo",
+      "tags": [
+        "leaves",
+        "sparkle",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "aesthetic-100",
+      "char": "🍂 ˚ ༘ ⋆｡˚",
+      "unicode": "combo",
+      "tags": [
+        "autumn",
+        "decorative",
+        "leaf"
+      ],
+      "popular": false
+    }
+  ]
+}

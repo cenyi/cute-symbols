@@ -1,0 +1,22 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
+*.vbproj merge=union
+*.vspx   merge=union
+
+# Windows-specific files
+*.bat    eol=crlf
+
+# Unix-specific files
+*.sh     eol=lf
+
+# Source code files
+*.ts     text eol=lf
+*.js     text eol=lf
+*.json   text eol=lf
+*.astro  text eol=lf
+*.md     text eol=lf

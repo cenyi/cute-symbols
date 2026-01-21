@@ -1,0 +1,34 @@
+---
+import { locales } from '../src/i18n/config';
+const siteUrl = 'https://cute-symbols.pages.dev';
+---
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage for all locales -->
+  <url>
+    <loc>{siteUrl}/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  {locales.map(locale => (
+    <url>
+      <loc>{siteUrl}/{locale}/</loc>
+      <priority>1.0</priority>
+      <changefreq>weekly</changefreq>
+    </url>
+  ))}
+  <!-- Categories page -->
+  <url>
+    <loc>{siteUrl}/categories</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  {locales.map(locale => (
+    <url>
+      <loc>{siteUrl}/{locale}/categories</loc>
+      <priority>0.8</priority>
+      <changefreq>weekly</changefreq>
+    </url>
+  ))}
+</urlset>

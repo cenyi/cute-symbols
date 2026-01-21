@@ -1,0 +1,38 @@
+翻译进度追踪
+=================
+
+已完成 (6/32):
+✓ instagram-bio-symbols-2026-guide-fil.md
+✓ instagram-bio-symbols-2026-guide-ms.md
+✓ instagram-bio-symbols-2026-guide-bn.md
+✓ instagram-bio-symbols-2026-guide-pl.md
+✓ tiktok-bio-symbols-2026-guide-fil.md
+✓ tiktok-bio-symbols-2026-guide-ms.md
+
+待完成 (26/32):
+- tiktok-bio-symbols-2026-guide-bn.md
+- tiktok-bio-symbols-2026-guide-pl.md
+- roblox-username-symbols-guide-fil.md
+- roblox-username-symbols-guide-ms.md
+- roblox-username-symbols-guide-bn.md
+- roblox-username-symbols-guide-pl.md
+- discord-nickname-symbols-fil.md
+- discord-nickname-symbols-ms.md
+- discord-nickname-symbols-bn.md
+- discord-nickname-symbols-pl.md
+- twitter-x-bio-symbols-fil.md
+- twitter-x-bio-symbols-ms.md
+- twitter-x-bio-symbols-bn.md
+- twitter-x-bio-symbols-pl.md
+- social-media-profile-picture-symbols-fil.md
+- social-media-profile-picture-symbols-ms.md
+- social-media-profile-picture-symbols-bn.md
+- social-media-profile-picture-symbols-pl.md
+- aesthetic-symbol-combos-2026-fil.md
+- aesthetic-symbol-combos-2026-ms.md
+- aesthetic-symbol-combos-2026-bn.md
+- aesthetic-symbol-combos-2026-pl.md
+- xiaohongshu-douyin-bio-symbols-fil.md
+- xiaohongshu-douyin-bio-symbols-ms.md
+- xiaohongshu-douyin-bio-symbols-bn.md
+- xiaohongshu-douyin-bio-symbols-pl.md

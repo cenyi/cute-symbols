@@ -1,0 +1,214 @@
+---
+import { getTranslations } from '../i18n/utils';
+import { type Locale } from '../i18n/config';
+
+interface Props {
+  symbol: {
+    id: string;
+    char: string;
+    tags: string[];
+    category?: string;
+    popular?: boolean;
+  };
+  categoryInfo?: {
+    icon: string;
+    color: string;
+  };
+  locale?: Locale;
+}
+
+const { symbol, categoryInfo, locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// 标签翻译映射
+const tagTranslations: Record<string, Record<string, string>> = {
+  en: {
+    'white': 'white', 'black': 'black', 'red': 'red', 'pink': 'pink',
+    'blue': 'blue', 'purple': 'purple', 'yellow': 'yellow', 'gold': 'gold',
+    'outline': 'outline', 'solid': 'solid', 'minimalist': 'minimalist',
+    'cute': 'cute', 'elegant': 'elegant', 'fancy': 'fancy', 'classic': 'classic',
+    'sparkling': 'sparkling', 'heart': 'heart', 'star': 'star', 'flower': 'flower'
+  },
+  fil: {
+    'white': 'puti', 'black': 'itim', 'red': 'pula', 'pink': 'rosas',
+    'blue': 'asul', 'purple': 'lila', 'yellow': 'dilaw', 'gold': 'ginto',
+    'outline': 'outline', 'solid': 'solid', 'minimalist': 'minimalista',
+    'cute': 'cute', 'elegant': 'elegante', 'fancy': 'punky', 'classic': 'klasiko',
+    'sparkling': 'kumikislap', 'heart': 'puso', 'star': 'bituin', 'flower': 'bulaklak'
+  },
+  ms: {
+    'white': 'putih', 'black': 'hitam', 'red': 'merah', 'pink': 'merah jambu',
+    'blue': 'biru', 'purple': 'ungu', 'yellow': 'kuning', 'gold': 'emas',
+    'outline': 'garis luar', 'solid': 'pejal', 'minimalist': 'minimum',
+    'cute': 'comel', 'elegant': 'elegan', 'fancy': 'fancy', 'classic': 'klasik',
+    'sparkling': 'berkilau', 'heart': 'jantung', 'star': 'bintang', 'flower': 'bunga'
+  },
+  bn: {
+    'white': 'সাদা', 'black': 'কালো', 'red': 'লাল', 'pink': 'গোলাপী',
+    'blue': 'নীল', 'purple': 'বেগুনি', 'yellow': 'হলুদ', 'gold': 'সোনালী',
+    'outline': 'আউটলাইন', 'solid': 'সলিড', 'minimalist': 'মিনিমালিস্ট',
+    'cute': 'কিউট', 'elegant': 'এলিগ্যান্ট', 'fancy': 'ফ্যান্সি', 'classic': 'ক্লাসিক',
+    'sparkling': 'ঝকমকে', 'heart': 'হার্ট', 'star': 'তারা', 'flower': 'ফুল'
+  },
+  pl: {
+    'white': 'biały', 'black': 'czarny', 'red': 'czerwony', 'pink': 'różowy',
+    'blue': 'niebieski', 'purple': 'fioletowy', 'yellow': 'żółty', 'gold': 'złoty',
+    'outline': 'kontur', 'solid': 'solidny', 'minimalist': 'minimalistyczny',
+    'cute': 'słodki', 'elegant': 'elegancki', 'fancy': 'fancy', 'classic': 'klasyczny',
+    'sparkling': 'błyszczący', 'heart': 'serce', 'star': 'gwiazda', 'flower': 'kwiat'
+  }
+};
+
+const tagTranslation = tagTranslations[locale] || tagTranslations.en;
+
+// 翻译标签函数
+function translateTag(tag: string): string {
+  return tagTranslation[tag as keyof typeof tagTranslation] || tag;
+}
+---
+
+<div class="symbol-card" data-symbol-id={symbol.id}>
+  <!-- 符号显示 -->
+  <div class="symbol-display" style={{
+    color: categoryInfo?.color || 'var(--accent-color)'
+  }}>
+    {symbol.char}
+  </div>
+
+  <!-- 标签 -->
+  <div class="symbol-tags">
+    {symbol.tags.slice(0, 3).map(tag => (
+      <span class="tag" style={{
+        backgroundColor: categoryInfo?.color ? `${categoryInfo.color}20` : 'var(--bg-color)'
+      }}>
+        {translateTag(tag)}
+      </span>
+    ))}
+  </div>
+
+  <!-- 复制按钮 -->
+  <button
+    class="copy-btn"
+    data-symbol={symbol.char}
+    aria-label={t('common.copy')}
+    style={{
+      borderColor: categoryInfo?.color || 'var(--accent-color)',
+      color: categoryInfo?.color || 'var(--accent-color)'
+    }}
+  >
+    {symbol.popular ? '⭐ ' : ''}{t('common.copy')}
+  </button>
+
+  <style>
+    .symbol-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: pointer;
+    }
+
+    .symbol-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-color);
+    }
+
+    .symbol-display {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .symbol-card:hover .symbol-display {
+      transform: scale(1.1);
+    }
+
+    .symbol-tags {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+      min-height: 24px;
+    }
+
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      background: var(--bg-color);
+      border-radius: 12px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .copy-btn {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      background: transparent;
+      border: 2px solid;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .copy-btn:hover {
+      background: var(--accent-color);
+      color: #ffffff !important;
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 768px) {
+      .symbol-card {
+        padding: 1.25rem;
+      }
+
+      .symbol-display {
+        font-size: 2.5rem;
+      }
+
+      .tag {
+        font-size: 0.6875rem;
+        padding: 0.125rem 0.5rem;
+      }
+    }
+  </style>
+
+  <script define:vars={{ symbol, t }}>
+    const card = document.querySelector(`[data-symbol-id="${symbol.id}"]`);
+    const copyBtn = card?.querySelector('.copy-btn');
+
+    copyBtn?.addEventListener('click', async () => {
+      const symbolChar = copyBtn.getAttribute('data-symbol');
+      if (!symbolChar) return;
+
+      try {
+        await navigator.clipboard.writeText(symbolChar);
+
+        // 更新按钮文字
+        copyBtn.textContent = '✓ ' + t('common.copied');
+        copyBtn.style.background = 'var(--accent-color)';
+        copyBtn.style.color = '#ffffff';
+
+        // 2秒后恢复
+        setTimeout(() => {
+          copyBtn.textContent = (symbol.popular ? '⭐ ' : '') + t('common.copy');
+          copyBtn.style.background = '';
+          copyBtn.style.color = '';
+        }, 2000);
+      } catch (err) {
+        console.error('Failed to copy:', err);
+        copyBtn.textContent = '✗ ' + t('common.copyFailed');
+        setTimeout(() => {
+          copyBtn.textContent = t('common.copy');
+        }, 2000);
+      }
+    });
+  </script>
+</Component>

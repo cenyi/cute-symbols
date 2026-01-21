@@ -1,0 +1,375 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import { getTranslations } from '../../i18n/utils';
+import { type Locale, locales } from '../../i18n/config';
+
+export async function getStaticPaths() {
+  return locales.filter(locale => locale !== 'en').map((locale) => ({
+    params: { lang: locale },
+  }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const { t } = getTranslations(locale);
+
+// Bengali digit conversion helper
+function toBengaliNum(num: number): string {
+  const bengaliDigits = ['০', '১', '২', '৩', '৪', '৫', '৬', '৭', '৮', '৯'];
+  return num.toString().replace(/\d/g, d => bengaliDigits[parseInt(d)]);
+}
+
+// Bengali month names
+const bengaliMonths = ['জানুয়ারি', 'ফেব্রুয়ারি', 'মার্চ', 'এপ্রিল', 'মে', 'জুন', 'জুলাই', 'আগস্ট', 'সেপ্টেম্বর', 'অক্টোবর', 'নভেম্বর', 'ডিসেম্বর'];
+
+// Bengali date formatter
+function formatBengaliDate(date: Date, includeYear = true): string {
+  const month = bengaliMonths[date.getMonth()];
+  const day = toBengaliNum(date.getDate());
+  const year = toBengaliNum(date.getFullYear());
+  return includeYear ? `${month} ${day}, ${year}` : `${month} ${day}`;
+}
+
+// Get all blog posts for this language
+const allPosts = (await getCollection('blog')).filter(post =>
+  post.data.lang === locale
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+// Group by category
+const postsByCategory = allPosts.reduce((acc, post) => {
+  const category = post.data.category;
+  if (!acc[category]) acc[category] = [];
+  acc[category].push(post);
+  return acc;
+}, {} as Record<string, typeof allPosts>);
+
+// Featured posts
+const featuredPosts = allPosts.filter(post => post.data.featured);
+
+// Translations for page content
+const pageTranslations: Record<string, {
+  title: string;
+  heading: string;
+  description: string;
+  featured: string;
+  allGuides: string;
+  guides: string;
+  readMore: string;
+  minRead: string;
+}> = {
+  en: {
+    title: "Blog - Cute Symbols Guides & Tutorials 2026",
+    heading: "Cute Symbols Blog 📝",
+    description: "Complete guides, tutorials, and tips for using cute symbols on Instagram, TikTok, Roblox, and more!",
+    featured: "⭐ Featured Guides",
+    allGuides: "📚 All Guides",
+    guides: "Guides",
+    readMore: "Read More",
+    minRead: "min read"
+  },
+  fil: {
+    title: "Blog - Mga Cute Symbols na Gabay at Tutorial 2026",
+    heading: "Blog ng Cute Symbols 📝",
+    description: "Kumpleto na mga guide, tutorials, at tips para sa paggamit ng cute symbols sa Instagram, TikTok, Roblox, at iba pa!",
+    featured: "⭐ Featured na mga Guide",
+    allGuides: "📚 Lahat ng mga Guide",
+    guides: "mga Guide",
+    readMore: "Basahin pa",
+    minRead: "min na pagbabasa"
+  },
+  ms: {
+    title: "Blog - Panduan & Tutorial Cute Symbols 2026",
+    heading: "Blog Cute Symbols 📝",
+    description: "Panduan lengkap, tutorial, dan tips untuk menggunakan cute symbols di Instagram, TikTok, Roblox, dan lain-lain!",
+    featured: "⭐ Panduan Pilihan",
+    allGuides: "📚 Semua Panduan",
+    guides: "Panduan",
+    readMore: "Baca Lagi",
+    minRead: "min bacaan"
+  },
+  bn: {
+    title: "ব্লগ - Cute Symbols গাইড ও টিউটোরিয়াল ২০২৬",
+    heading: "Cute Symbols ব্লগ 📝",
+    description: "Instagram, TikTok, Roblox, এবং আরো অনেক কিছুতে cute symbols ব্যবহারের জন্য সম্পূর্ণ গাইড, টিউটোরিয়াল, এবং টিপস!",
+    featured: "⭐ বিশেষ গাইডসমূহ",
+    allGuides: "📚 সব গাইড",
+    guides: "গাইডসমূহ",
+    readMore: "আরো পড়ুন",
+    minRead: "মিনিট পড়া"
+  },
+  pl: {
+    title: "Blog - Przewodniki i Tutoriale Cute Symbols 2026",
+    heading: "Blog Cute Symbols 📝",
+    description: "Kompletne przewodniki, tutoriale i wskazówki dotyczące używania cute symbols na Instagram, TikTok, Roblox i więcej!",
+    featured: "⭐ Polecane Przewodniki",
+    allGuides: "📚 Wszystkie Przewodniki",
+    guides: "Przewodniki",
+    readMore: "Czytaj więcej",
+    minRead: "min czytania"
+  }
+};
+
+const pageText = pageTranslations[locale];
+
+// Category translations
+const categoryTranslations: Record<string, {
+  instagram: string;
+  tiktok: string;
+  roblox: string;
+  discord: string;
+  wechat: string;
+  twitter: string;
+}> = {
+  en: {
+    instagram: "Instagram",
+    tiktok: "TikTok",
+    roblox: "Roblox",
+    discord: "Discord",
+    wechat: "WeChat",
+    twitter: "Twitter/X"
+  },
+  fil: {
+    instagram: "Instagram",
+    tiktok: "TikTok",
+    roblox: "Roblox",
+    discord: "Discord",
+    wechat: "WeChat",
+    twitter: "Twitter/X"
+  },
+  ms: {
+    instagram: "Instagram",
+    tiktok: "TikTok",
+    roblox: "Roblox",
+    discord: "Discord",
+    wechat: "WeChat",
+    twitter: "Twitter/X"
+  },
+  bn: {
+    instagram: "ইনস্টাগ্রাম",
+    tiktok: "টিকটক",
+    roblox: "রবলক্স",
+    discord: "ডিসকর্ড",
+    wechat: "উইচ্যাট",
+    twitter: "টুইটার"
+  },
+  pl: {
+    instagram: "Instagram",
+    tiktok: "TikTok",
+    roblox: "Roblox",
+    discord: "Discord",
+    wechat: "WeChat",
+    twitter: "Twitter/X"
+  }
+};
+
+const categoryText = categoryTranslations[locale];
+---
+
+<Layout title={pageText.title} locale={locale}>
+  <div style={{
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '3rem 1rem'
+  }}>
+    <!-- Page Title -->
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: 700,
+      marginBottom: '1rem',
+      textAlign: 'center',
+      background: 'linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}>
+      {pageText.heading}
+    </h1>
+
+    <p style={{
+      textAlign: 'center',
+      fontSize: '1.125rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '3rem',
+      maxWidth: '600px',
+      marginLeft: 'auto',
+      marginRight: 'auto'
+    }}>
+      {pageText.description}
+    </p>
+
+    <!-- Featured Articles -->
+    {featuredPosts.length > 0 && (
+      <section style={{ marginBottom: '4rem' }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)'
+        }}>
+          {pageText.featured}
+        </h2>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+          gap: '1.5rem'
+        }}>
+          {featuredPosts.map(post => (
+            <a
+              href={`/${locale}/blog/${post.slug}`}
+              style={{
+                display: 'block',
+                background: 'var(--card-bg)',
+                borderRadius: 'var(--radius-lg)',
+                padding: '1.5rem',
+                border: '2px solid var(--accent-color)',
+                textDecoration: 'none',
+                transition: 'all 0.3s ease',
+                boxShadow: 'var(--shadow-md)'
+              }}
+              class="blog-card"
+            >
+              <!-- Category Badge -->
+              <span style={{
+                display: 'inline-block',
+                padding: '0.25rem 0.75rem',
+                background: 'var(--accent-color)',
+                color: '#ffffff',
+                borderRadius: '4px',
+                fontSize: '0.75rem',
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                marginBottom: '1rem'
+              }}>
+                {categoryText[post.data.category as keyof typeof categoryText] || post.data.category}
+              </span>
+
+              <!-- Title -->
+              <h3 style={{
+                fontSize: '1.25rem',
+                fontWeight: 700,
+                marginBottom: '0.75rem',
+                color: 'var(--text-primary)',
+                lineHeight: 1.4
+              }}>
+                {post.data.title}
+              </h3>
+
+              <!-- Description -->
+              <p style={{
+                fontSize: '0.9375rem',
+                color: 'var(--text-secondary)',
+                marginBottom: '1rem',
+                lineHeight: 1.6
+              }}>
+                {post.data.description}
+              </p>
+
+              <!-- Meta Info -->
+              <div style={{
+                display: 'flex',
+                gap: '1rem',
+                fontSize: '0.875rem',
+                color: 'var(--text-secondary)'
+              }}>
+                <span>📅 {locale === 'bn' ? formatBengaliDate(post.data.pubDate, true) : post.data.pubDate.toLocaleDateString(locale === 'fil' ? 'en-PH' : locale === 'ms' ? 'ms-MY' : locale === 'pl' ? 'pl-PL' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                <span>⏱️ {locale === 'bn' ? toBengaliNum(post.data.readingTime || 0) : (post.data.readingTime || 0)} {pageText.minRead}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- All Articles (by category) -->
+    <section>
+      <h2 style={{
+        fontSize: '1.75rem',
+        fontWeight: 700,
+        marginBottom: '1.5rem',
+        color: 'var(--text-primary)'
+      }}>
+        {pageText.allGuides}
+      </h2>
+
+      {Object.entries(postsByCategory).map(([category, posts]) => (
+        <div style={{ marginBottom: '3rem' }}>
+          <h3 style={{
+            fontSize: '1.5rem',
+            fontWeight: 600,
+            marginBottom: '1rem',
+            color: 'var(--text-primary)'
+          }}>
+            {categoryText[category as keyof typeof categoryText] || category} {pageText.guides}
+          </h3>
+
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+            gap: '1.25rem'
+          }}>
+            {posts.map(post => (
+              <a
+                href={`/${locale}/blog/${post.slug}`}
+                style={{
+                  display: 'block',
+                  background: 'var(--card-bg)',
+                  borderRadius: 'var(--radius-lg)',
+                  padding: '1.25rem',
+                  border: '1px solid var(--border-color)',
+                  textDecoration: 'none',
+                  transition: 'all 0.3s ease'
+                }}
+                class="blog-card"
+              >
+                <h4 style={{
+                  fontSize: '1.125rem',
+                  fontWeight: 600,
+                  marginBottom: '0.5rem',
+                  color: 'var(--text-primary)',
+                  lineHeight: 1.4
+                }}>
+                  {post.data.title}
+                </h4>
+
+                <p style={{
+                  fontSize: '0.875rem',
+                  color: 'var(--text-secondary)',
+                  marginBottom: '0.75rem',
+                  lineHeight: 1.5
+                }}>
+                  {post.data.description.slice(0, 120)}...
+                </p>
+
+                <div style={{
+                  display: 'flex',
+                  gap: '0.75rem',
+                  fontSize: '0.8125rem',
+                  color: 'var(--text-secondary)'
+                }}>
+                  <span>📅 {locale === 'bn' ? formatBengaliDate(post.data.pubDate, false) : post.data.pubDate.toLocaleDateString(locale === 'fil' ? 'en-PH' : locale === 'ms' ? 'ms-MY' : locale === 'pl' ? 'pl-PL' : 'en-US', { month: 'short', day: 'numeric' })}</span>
+                  <span>⏱️ {locale === 'bn' ? toBengaliNum(post.data.readingTime || 0) : (post.data.readingTime || 0)} {pageText.minRead}</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </section>
+  </div>
+
+  <style>
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--accent-color);
+    }
+
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</Layout>

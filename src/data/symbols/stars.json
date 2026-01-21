@@ -1,0 +1,1120 @@
+{
+  "category": "stars",
+  "icon": "⭐",
+  "color": "#FFD700",
+  "name": {
+    "en": "Star & Sparkle Symbols",
+    "fil": "Mga Simbolo ng Bituin",
+    "ms": "Simbol Bintang & Kilau",
+    "bn": "তারা এবং ঝকমালা প্রতীক",
+    "pl": "Symbole Gwiazdy i Iskier"
+  },
+  "description": {
+    "en": "Perfect for highlights, achievements, and magical vibes",
+    "fil": "Perpekto para sa highlights at accomplishments",
+    "ms": "Sempurna untuk sorotan dan pencapaian",
+    "bn": "হাইলাইট এবং ম্যাজিক ভাইবের জন্য উপযুক্ত",
+    "pl": "Idealne do wyróżnień i osiągnięć"
+  },
+  "symbols": [
+    {
+      "id": "stars-1",
+      "char": "⭐",
+      "unicode": "U+2B50",
+      "tags": [
+        "star",
+        "yellow",
+        "classic",
+        "popular"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-2",
+      "char": "✨",
+      "unicode": "U+2728",
+      "tags": [
+        "sparkles",
+        "yellow",
+        "magic",
+        "trending"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-3",
+      "char": "🌟",
+      "unicode": "U+1F31F",
+      "tags": [
+        "glowing",
+        "yellow",
+        "bright"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-4",
+      "char": "✩",
+      "unicode": "U+2729",
+      "tags": [
+        "outlined",
+        "fancy",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-5",
+      "char": "⋆",
+      "unicode": "U+22C6",
+      "tags": [
+        "asterisk",
+        "small",
+        "minimalist"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-6",
+      "char": "☾",
+      "unicode": "U+263E",
+      "tags": [
+        "moon",
+        "crescent",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-7",
+      "char": "☄️",
+      "unicode": "U+2604",
+      "tags": [
+        "comet",
+        "shooting",
+        "space"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-8",
+      "char": "*ೃ༄",
+      "unicode": "combo",
+      "tags": [
+        "aesthetic",
+        "fancy",
+        "special"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-9",
+      "char": "✧",
+      "unicode": "U+2727",
+      "tags": [
+        "outlined",
+        "elegant",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-10",
+      "char": "˚✧",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "aesthetic",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-11",
+      "char": "˚₊·",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "minimalist",
+        "clean"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-12",
+      "char": "͟͟͞͞➳",
+      "unicode": "combo",
+      "tags": [
+        "fancy",
+        "decorative",
+        "special"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-13",
+      "char": "*ੈ✩‧₊˚",
+      "unicode": "combo",
+      "tags": [
+        "combo",
+        "aesthetic",
+        "popular"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-14",
+      "char": "✦",
+      "unicode": "U+2726",
+      "tags": [
+        "outlined",
+        "four-point",
+        "black"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-15",
+      "char": "✧",
+      "unicode": "U+2727",
+      "tags": [
+        "outlined",
+        "four-point",
+        "heavy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-16",
+      "char": "✩",
+      "unicode": "U+2729",
+      "tags": [
+        "outlined",
+        "white",
+        "four-point"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-17",
+      "char": "✪",
+      "unicode": "U+272A",
+      "tags": [
+        "outlined",
+        "shaded"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-18",
+      "char": "✫",
+      "unicode": "U+272B",
+      "tags": [
+        "heavy",
+        "black"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-19",
+      "char": "✬",
+      "unicode": "U+272C",
+      "tags": [
+        "outlined",
+        "heavy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-20",
+      "char": "✭",
+      "unicode": "U+272D",
+      "tags": [
+        "outlined",
+        "eight-point"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-21",
+      "char": "✮",
+      "unicode": "U+272E",
+      "tags": [
+        "heavy",
+        "eight-point"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-22",
+      "char": "✯",
+      "unicode": "U+272F",
+      "tags": [
+        "outlined",
+        "eight-point"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-23",
+      "char": "✰",
+      "unicode": "U+2730",
+      "tags": [
+        "shadowed",
+        "white",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-24",
+      "char": "✱",
+      "unicode": "U+2731",
+      "tags": [
+        "heavy",
+        "asterisk",
+        "bold"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-25",
+      "char": "✲",
+      "unicode": "U+2732",
+      "tags": [
+        "teardrop",
+        "spoked",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-26",
+      "char": "✳",
+      "unicode": "U+2733",
+      "tags": [
+        "eight-spoked",
+        "asterisk",
+        "bold"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-27",
+      "char": "✴",
+      "unicode": "U+2734",
+      "tags": [
+        "eight-pointed",
+        "black",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-28",
+      "char": "✵",
+      "unicode": "U+2735",
+      "tags": [
+        "outlined",
+        "eight-pointed",
+        "white"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-29",
+      "char": "✶",
+      "unicode": "U+2736",
+      "tags": [
+        "six-pointed",
+        "black",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-30",
+      "char": "✷",
+      "unicode": "U+2737",
+      "tags": [
+        "outlined",
+        "eight-pointed",
+        "heavy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-31",
+      "char": "✸",
+      "unicode": "U+2738",
+      "tags": [
+        "heavy",
+        "eight-teardrop",
+        "spoked"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-32",
+      "char": "✹",
+      "unicode": "U+2739",
+      "tags": [
+        "twelve-pointed",
+        "black",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-33",
+      "char": "✺",
+      "unicode": "U+273A",
+      "tags": [
+        "sixteen-pointed",
+        "asterisk",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-34",
+      "char": "✻",
+      "unicode": "U+273B",
+      "tags": [
+        "teardrop",
+        "pinwheel",
+        "asterisk"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-35",
+      "char": "✼",
+      "unicode": "U+273C",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "pinwheel"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-36",
+      "char": "✽",
+      "unicode": "U+273D",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "asterisk"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-37",
+      "char": "✾",
+      "unicode": "U+273E",
+      "tags": [
+        "six-petalled",
+        "black",
+        "florette"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-38",
+      "char": "❂",
+      "unicode": "U+2742",
+      "tags": [
+        "circled",
+        "open",
+        "florette"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-39",
+      "char": "❃",
+      "unicode": "U+2743",
+      "tags": [
+        "heavy",
+        "teardrop",
+        "florette"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-40",
+      "char": "❉",
+      "unicode": "U+2749",
+      "tags": [
+        "balloon-spoked",
+        "asterisk",
+        "unique"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-41",
+      "char": "❊",
+      "unicode": "U+274A",
+      "tags": [
+        "eight-teardrop",
+        "spoked",
+        "propeller"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-42",
+      "char": "❋",
+      "unicode": "U+274B",
+      "tags": [
+        "heavy",
+        "eight-teardrop",
+        "propeller"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-43",
+      "char": "🌠",
+      "unicode": "U+1F320",
+      "tags": [
+        "shooting",
+        "star",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-44",
+      "char": "💫",
+      "unicode": "U+1F4AB",
+      "tags": [
+        "dizzy",
+        "sparkle",
+        "magic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-45",
+      "char": "⚝",
+      "unicode": "U+269D",
+      "tags": [
+        "outlined",
+        "white",
+        "star"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-46",
+      "char": "★",
+      "unicode": "U+2605",
+      "tags": [
+        "black",
+        "filled",
+        "classic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-47",
+      "char": "☆",
+      "unicode": "U+2606",
+      "tags": [
+        "white",
+        "outlined",
+        "classic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-48",
+      "char": "✨⭐✨",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "star",
+        "magic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-49",
+      "char": "⋆｡˚ ☁︎ ˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "cloud",
+        "aesthetic",
+        "dreamy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-50",
+      "char": "✧･ﾟ: *✧･ﾟ:*",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "japanese",
+        "fancy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-51",
+      "char": "⋆⁺₊⋆ ☾⋆⁺₊⋆",
+      "unicode": "combo",
+      "tags": [
+        "moon",
+        "star",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-52",
+      "char": "✦ ✧ ✦",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "sparkle",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-53",
+      "char": "★ ☆ ★",
+      "unicode": "combo",
+      "tags": [
+        "classic",
+        "pattern",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-54",
+      "char": "⭐💫⭐",
+      "unicode": "combo",
+      "tags": [
+        "emoji",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-55",
+      "char": "✨🌟✨",
+      "unicode": "combo",
+      "tags": [
+        "glowing",
+        "bright",
+        "magic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-56",
+      "char": "⋆ ˚｡⋆୨୧˚",
+      "unicode": "combo",
+      "tags": [
+        "aesthetic",
+        "bracket",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-57",
+      "char": "✧˖°.✧",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-58",
+      "char": "⋆｡°✩",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "star",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-59",
+      "char": "☆ ⋆ ☆",
+      "unicode": "combo",
+      "tags": [
+        "outlined",
+        "pattern",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-60",
+      "char": "✦ ⊹ ✦",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-61",
+      "char": "⋆⭒˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "star",
+        "soft"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-62",
+      "char": "✧ ˚ · .",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "dots",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-63",
+      "char": "☾⋆⁺₊✧",
+      "unicode": "combo",
+      "tags": [
+        "moon",
+        "sparkle",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-64",
+      "char": "✨💫✨💫",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-65",
+      "char": "⋆ ★ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "mixed",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-66",
+      "char": "✧･ﾟ✧",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "sparkle",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-67",
+      "char": "⭐⋆⭐",
+      "unicode": "combo",
+      "tags": [
+        "emoji",
+        "star",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-68",
+      "char": "✦ ˚ ✦",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "decorative",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-69",
+      "char": "☆｡*ﾟ+.*.｡",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-70",
+      "char": "⋆｡‧˚ʚ♡ɞ˚‧｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "heart",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-71",
+      "char": "✧ ⊹ ✧ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-72",
+      "char": "★ ⋆ ★ ⋆",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-73",
+      "char": "✨🌙✨",
+      "unicode": "combo",
+      "tags": [
+        "moon",
+        "sparkle",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-74",
+      "char": "⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "cloud",
+        "moon",
+        "dreamy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-75",
+      "char": "✦ ✧ ✦ ✧",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "sparkle",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-76",
+      "char": "⭐✨⭐✨",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "emoji",
+        "sparkle"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-77",
+      "char": "☆ ⊹ ☆ ⊹",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "star",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-78",
+      "char": "✧˖°✧",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "sparkle",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-79",
+      "char": "⋆⁺₊⋆ ☀︎ ⋆⁺₊⋆",
+      "unicode": "combo",
+      "tags": [
+        "sun",
+        "star",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-80",
+      "char": "✨⋆✨",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "star",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-81",
+      "char": "★｡･:*:･ﾟ★",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-82",
+      "char": "⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "heart",
+        "bracket",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-83",
+      "char": "✦ ˚ · . ✦",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "dots",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-84",
+      "char": "☆ ˚ ☆",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "star",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-85",
+      "char": "✧･ﾟ: *✧",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-86",
+      "char": "⋆｡‧˚ʚ♡ɞ˚‧｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "heart",
+        "wings",
+        "kawaii"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-87",
+      "char": "✦ ✧ ✦ ✧ ✦",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "sparkle",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-88",
+      "char": "⭐🌟⭐",
+      "unicode": "combo",
+      "tags": [
+        "emoji",
+        "bright",
+        "glowing"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-89",
+      "char": "☆ ⋆ ☆ ⋆ ☆",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "outlined",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-90",
+      "char": "✨💫✨💫✨",
+      "unicode": "combo",
+      "tags": [
+        "alternating",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-91",
+      "char": "⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆｡˚ ☁︎ ˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "cloud",
+        "moon",
+        "dreamy",
+        "long"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-92",
+      "char": "★ ⋆ ★ ⋆ ★",
+      "unicode": "combo",
+      "tags": [
+        "pattern",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-93",
+      "char": "✧˖°.✧˖°.✧",
+      "unicode": "combo",
+      "tags": [
+        "decorative",
+        "sparkle",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-94",
+      "char": "⋆⁺₊⋆ ☾⋆⁺₊⋆ ☀︎ ⋆⁺₊⋆",
+      "unicode": "combo",
+      "tags": [
+        "sun",
+        "moon",
+        "celestial"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-95",
+      "char": "✨⋆✨⋆✨",
+      "unicode": "combo",
+      "tags": [
+        "sparkle",
+        "star",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-96",
+      "char": "★｡･:*:･ﾟ★｡･:*:･ﾟ★",
+      "unicode": "combo",
+      "tags": [
+        "japanese",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-97",
+      "char": "⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆",
+      "unicode": "combo",
+      "tags": [
+        "heart",
+        "bracket",
+        "aesthetic",
+        "long"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-98",
+      "char": "✦ ˚ · . ✦ ˚ · . ✦",
+      "unicode": "combo",
+      "tags": [
+        "minimal",
+        "dots",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "stars-99",
+      "char": "☾⋆⁺₊✧☾⋆⁺₊✧",
+      "unicode": "combo",
+      "tags": [
+        "moon",
+        "sparkle",
+        "night"
+      ],
+      "popular": true
+    },
+    {
+      "id": "stars-100",
+      "char": "✨🌟💫⭐✨",
+      "unicode": "combo",
+      "tags": [
+        "mixed",
+        "emoji",
+        "sparkle",
+        "magic"
+      ],
+      "popular": true
+    }
+  ]
+}

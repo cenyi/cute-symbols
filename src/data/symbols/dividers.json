@@ -1,0 +1,1122 @@
+{
+  "category": "dividers",
+  "icon": "✂",
+  "color": "#A78BFA",
+  "name": {
+    "en": "Divider & Decoration Symbols",
+    "fil": "Mga Simbolo ng Divider",
+    "ms": "Simbol Pembahagi",
+    "bn": "বিভাজক প্রতীক",
+    "pl": "Symbole Podziału"
+  },
+  "description": {
+    "en": "Beautiful dividers and decorations for text layout",
+    "fil": "Mga magagandang divider para sa text layout",
+    "ms": "Pembahagi cantik untuk susun atur teks",
+    "bn": "টেক্সট লেআউটের জন্য সুন্দর বিভাজক",
+    "pl": "Piękne podziały i dekoracje do układu tekstu"
+  },
+  "symbols": [
+    {
+      "id": "dividers-1",
+      "char": "─⋅⋆☾⋆⋅──",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "star",
+        "moon",
+        "elegant"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-2",
+      "char": "♡୨୧♡",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "bracket",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-3",
+      "char": "༊*·˚",
+      "unicode": "special",
+      "tags": [
+        "tibetan",
+        "decorative",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-4",
+      "char": "✧･ﾟ: *✧･ﾟ:*",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "stars",
+        "fancy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-5",
+      "char": "───※๏※────",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "flower",
+        "centered"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-6",
+      "char": "⋆𐙚₊˚⊹♡",
+      "unicode": "special",
+      "tags": [
+        "star",
+        "flower",
+        "heart"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-7",
+      "char": "୭ 🧷 ✧ ˚. ᵎᵎ",
+      "unicode": "special",
+      "tags": [
+        "pin",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-8",
+      "char": "₊ ⊹𝜗𝜚 ⊹ ₊",
+      "unicode": "special",
+      "tags": [
+        "minimal",
+        "clean",
+        "simple"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-9",
+      "char": "°❀⋆.ೃ࿐*:･",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "elegant",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-10",
+      "char": "☁️⋅๋⋆﹒˚⟡˖",
+      "unicode": "special",
+      "tags": [
+        "cloud",
+        "dreamy",
+        "soft"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-11",
+      "char": "ೃ⁀➷",
+      "unicode": "special",
+      "tags": [
+        "arrow",
+        "minimal",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-12",
+      "char": "𓂃 ⊹ ִֶָ𐀔",
+      "unicode": "special",
+      "tags": [
+        "egyptian",
+        "unique",
+        "exotic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-13",
+      "char": "⤜♡⤏",
+      "unicode": "special",
+      "tags": [
+        "arrow",
+        "heart",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-14",
+      "char": "˗ˏˋ 🎀 ˎˊ˗",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "ribbon",
+        "framed"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-15",
+      "char": "☾⋆*･ﾟ:･.",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "star",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-16",
+      "char": "꒰ა ♱ ໒꒱",
+      "unicode": "special",
+      "tags": [
+        "bracket",
+        "decorative",
+        "framed"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-17",
+      "char": "⋆ 🧞‍♀️ ⋆",
+      "unicode": "special",
+      "tags": [
+        "genie",
+        "star",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-18",
+      "char": "✿ ❀ ❁",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "nature",
+        "delicate"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-19",
+      "char": "⊹₊ ⋆ ☁️ ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "cloud",
+        "framed",
+        "dreamy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-20",
+      "char": "▌ ▌ ▌",
+      "unicode": "special",
+      "tags": [
+        "block",
+        "minimal",
+        "simple"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-21",
+      "char": "⋆｡°✩ ⋆｡°✩",
+      "unicode": "special",
+      "tags": [
+        "star",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-22",
+      "char": "✧･ﾟ: *✧･ﾟ:*",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "japanese",
+        "fancy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-23",
+      "char": "⊹ ࣪ ˖ ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "minimal",
+        "decorative",
+        "pattern"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-24",
+      "char": "˚ ༘ ⋆｡˚ ✧",
+      "unicode": "special",
+      "tags": [
+        "decorative",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-25",
+      "char": "⋆⁺₊⋆ ☀︎ ⋆⁺₊⋆",
+      "unicode": "special",
+      "tags": [
+        "sun",
+        "star",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-26",
+      "char": "✿ ❀ ✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "nature",
+        "minimal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-27",
+      "char": "⋆｡‧˚ʚ♡ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-28",
+      "char": "━━━━━━━━━━",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "simple",
+        "clean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-29",
+      "char": "─── ⋆⋅☆⋅⋆ ───",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "star",
+        "centered"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-30",
+      "char": "⋆ ˚｡⋆୨♡୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "bracket",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-31",
+      "char": "✧˖°.✧",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-32",
+      "char": "⊹ ࣪ ˖ 🎀 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "ribbon",
+        "decorative",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-33",
+      "char": "✦•┈๑⋅⋯ ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-34",
+      "char": "⋆｡˚ ☁︎ ˚｡⋆｡˚☽˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "cloud",
+        "moon",
+        "dreamy"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-35",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🦢 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "swan",
+        "sparkle",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-36",
+      "char": "⋆⭒˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "star",
+        "minimal",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-37",
+      "char": "✧༺♥༻✧",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-38",
+      "char": "⋆｡°✩ 🌸 ✩°｡⋆",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-39",
+      "char": "˚ ༘♡ ⋆｡˚",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "decorative",
+        "minimal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-40",
+      "char": "⊹₊ ⋆ 💎 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "gem",
+        "star",
+        "luxury"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-41",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌙 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "sparkle",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-42",
+      "char": "⋆⑅˚₊ ⊹",
+      "unicode": "special",
+      "tags": [
+        "minimal",
+        "decorative",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-43",
+      "char": "✿━━━━━━✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "line",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-44",
+      "char": "⋆｡‧˚ʚ🦋ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "butterfly",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-45",
+      "char": "✧˖°🌷📎✧˖°",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "clip",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-46",
+      "char": "⋆ ˚｡⋆୨🎀୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "ribbon",
+        "bracket",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "dividers-47",
+      "char": "✦•┈๑⋅⋯ ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "line",
+        "decorative",
+        "fancy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-48",
+      "char": "⊹ ࣪ ˖ 🕯️ ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "candle",
+        "decorative",
+        "cozy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-49",
+      "char": "✧･ﾟ: *✧･ﾟ:* 💫 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "magic",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-50",
+      "char": "⋆｡°✩ ⋆｡°✩ ⋆｡°✩",
+      "unicode": "special",
+      "tags": [
+        "star",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-51",
+      "char": "˚ ༘♡ ⋆｡˚ ❀",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "flower",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-52",
+      "char": "⊹₊ ⋆ 🪐 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "planet",
+        "star",
+        "cosmic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-53",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🩰 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "ballet",
+        "sparkle",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-54",
+      "char": "⋆⑅˚₊ ⊹ ⋆⑅˚₊",
+      "unicode": "special",
+      "tags": [
+        "minimal",
+        "pattern",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-55",
+      "char": "✿━━━━━━━━✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "line",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-56",
+      "char": "⋆｡‧˚ʚ🌸ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "cherry",
+        "wings",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-57",
+      "char": "✧˖°🍄✧˖°",
+      "unicode": "special",
+      "tags": [
+        "mushroom",
+        "sparkle",
+        "cottagecore"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-58",
+      "char": "⋆ ˚｡⋆୨💗୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "bracket",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-59",
+      "char": "✦•┈๑⋅⋯ 🌙 ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "line",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-60",
+      "char": "⊹ ࣪ ˖ 🔮 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "crystal",
+        "decorative",
+        "mystic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-61",
+      "char": "✧･ﾟ: *✧･ﾟ:* ✨ *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "magic",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-62",
+      "char": "⋆｡°✩ 💫 ✩°｡⋆",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "star",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-63",
+      "char": "˚ ༘♡ ⋆｡˚ ✧",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-64",
+      "char": "⊹₊ ⋆ 🧚 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "fairy",
+        "star",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-65",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🪄 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "wand",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-66",
+      "char": "⋆⑅˚₊ ⊹ ✧",
+      "unicode": "special",
+      "tags": [
+        "minimal",
+        "sparkle",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-67",
+      "char": "✿━━━━━━━━━✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "line",
+        "long"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-68",
+      "char": "⋆｡‧˚ʚ💕ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "wings",
+        "love"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-69",
+      "char": "✧˖°🌙✧˖°",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "sparkle",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-70",
+      "char": "⋆ ˚｡⋆୨✨୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "bracket",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-71",
+      "char": "✦•┈๑⋅⋯ ✨ ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "sparkle",
+        "line",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-72",
+      "char": "⊹ ࣪ ˖ 🌟 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "star",
+        "decorative",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-73",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌺 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "sparkle",
+        "tropical"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-74",
+      "char": "⋆｡°✩ 🦢 ✩°｡⋆",
+      "unicode": "special",
+      "tags": [
+        "swan",
+        "star",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-75",
+      "char": "˚ ༘♡ ⋆｡˚ 💫",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-76",
+      "char": "⊹₊ ⋆ 🎀 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "ribbon",
+        "star",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-77",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌷 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "tulip",
+        "sparkle",
+        "spring"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-78",
+      "char": "⋆⑅˚₊ ⊹ 💗",
+      "unicode": "special",
+      "tags": [
+        "heart",
+        "star",
+        "pink"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-79",
+      "char": "✿━━━━━━━━━━✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "line",
+        "long"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-80",
+      "char": "⋆｡‧˚ʚ🪷ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "lotus",
+        "wings",
+        "zen"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-81",
+      "char": "✧˖°🍃✧˖°",
+      "unicode": "special",
+      "tags": [
+        "leaf",
+        "sparkle",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-82",
+      "char": "⋆ ˚｡⋆୨🌙୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "bracket",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-83",
+      "char": "✦•┈๑⋅⋯ 🌸 ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "cherry",
+        "line",
+        "decorative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-84",
+      "char": "⊹ ࣪ ˖ 🦋 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "butterfly",
+        "decorative",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-85",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🌻 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "sunflower",
+        "sparkle",
+        "bright"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-86",
+      "char": "⋆｡°✩ 🧸 ✩°｡⋆",
+      "unicode": "special",
+      "tags": [
+        "teddy",
+        "star",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-87",
+      "char": "˚ ༘♡ ⋆｡˚ 🌈",
+      "unicode": "special",
+      "tags": [
+        "rainbow",
+        "heart",
+        "colorful"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-88",
+      "char": "⊹₊ ⋆ 🍄 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "mushroom",
+        "star",
+        "cottagecore"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-89",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🎨 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "art",
+        "sparkle",
+        "creative"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-90",
+      "char": "⋆⑅˚₊ ⊹ 🌺",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "star",
+        "tropical"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-91",
+      "char": "✿━━━━━━━━━━━✿",
+      "unicode": "special",
+      "tags": [
+        "flower",
+        "line",
+        "extra long"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-92",
+      "char": "⋆｡‧˚ʚ🎀ɞ˚‧｡⋆",
+      "unicode": "special",
+      "tags": [
+        "ribbon",
+        "wings",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-93",
+      "char": "✧˖°🌊✧˖°",
+      "unicode": "special",
+      "tags": [
+        "wave",
+        "sparkle",
+        "ocean"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-94",
+      "char": "⋆ ˚｡⋆୨🦢୧⋆ ˚｡⋆",
+      "unicode": "special",
+      "tags": [
+        "swan",
+        "bracket",
+        "elegant"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-95",
+      "char": "✦•┈๑⋅⋯ 🍀 ⋯⋅๑┈•✦",
+      "unicode": "special",
+      "tags": [
+        "clover",
+        "line",
+        "luck"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-96",
+      "char": "⊹ ࣪ ˖ 🌙 ⊹ ࣪ ˖",
+      "unicode": "special",
+      "tags": [
+        "moon",
+        "decorative",
+        "night"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-97",
+      "char": "✧･ﾟ: *✧･ﾟ:* 🦄 *:･ﾟ✧*:･ﾟ✧",
+      "unicode": "special",
+      "tags": [
+        "unicorn",
+        "sparkle",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-98",
+      "char": "⋆｡°✩ 🌿 ✩°｡⋆",
+      "unicode": "special",
+      "tags": [
+        "herb",
+        "star",
+        "nature"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-99",
+      "char": "˚ ༘♡ ⋆｡˚ 🧚‍♀️",
+      "unicode": "special",
+      "tags": [
+        "fairy",
+        "heart",
+        "magic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "dividers-100",
+      "char": "⊹₊ ⋆ 🌸 ⋆ ₊⊹",
+      "unicode": "special",
+      "tags": [
+        "cherry",
+        "star",
+        "spring"
+      ],
+      "popular": false
+    }
+  ]
+}

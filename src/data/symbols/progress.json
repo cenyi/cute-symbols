@@ -1,0 +1,266 @@
+{
+  "category": "progress",
+  "icon": "⏳",
+  "color": "#60A5FA",
+  "name": {
+    "en": "Progress Bars & Loading Symbols",
+    "fil": "Mga Bar ng Progreso",
+    "ms": "Bar Kemajuan",
+    "bn": "অগ্রগতি বার",
+    "pl": "Paski Postępu"
+  },
+  "description": {
+    "en": "Progress bars and loading indicators for downloads and status",
+    "fil": "Mga bar ng progreso at loading indicators",
+    "ms": "Bar kemajuan dan penunjuk memuat",
+    "bn": "ডাউনলোড এবং স্ট্যাটাসের জন্য অগ্রগতি বার",
+    "pl": "Paski postępu i wskaźniki ładowania"
+  },
+  "symbols": [
+    {
+      "id": "progress-1",
+      "char": "███████▒▒▒ 70%",
+      "unicode": "special",
+      "tags": ["progress", "70", "loading", "popular"],
+      "popular": true
+    },
+    {
+      "id": "progress-2",
+      "char": "██████▒▒▒ 80%",
+      "unicode": "special",
+      "tags": ["progress", "80", "loading", "trending"],
+      "popular": true
+    },
+    {
+      "id": "progress-3",
+      "char": "█████░░░░ 50%",
+      "unicode": "special",
+      "tags": ["progress", "50", "halfway"],
+      "popular": true
+    },
+    {
+      "id": "progress-4",
+      "char": "████░░░░░ 40%",
+      "unicode": "special",
+      "tags": ["progress", "40", "loading"],
+      "popular": false
+    },
+    {
+      "id": "progress-5",
+      "char": "█████████ 100%",
+      "unicode": "special",
+      "tags": ["progress", "100", "complete", "done"],
+      "popular": true
+    },
+    {
+      "id": "progress-6",
+      "char": "⬇️📥",
+      "unicode": "emoji",
+      "tags": ["download", "arrow", "down"],
+      "popular": true
+    },
+    {
+      "id": "progress-7",
+      "char": "🔄⏳",
+      "unicode": "emoji",
+      "tags": ["loading", "wait", "time"],
+      "popular": true
+    },
+    {
+      "id": "progress-8",
+      "char": "⏳⏳⏳",
+      "unicode": "emoji",
+      "tags": ["wait", "loading", "time"],
+      "popular": true
+    },
+    {
+      "id": "progress-9",
+      "char": "💾📥",
+      "unicode": "emoji",
+      "tags": ["save", "download", "storage"],
+      "popular": true
+    },
+    {
+      "id": "progress-10",
+      "char": "⬇️💾",
+      "unicode": "emoji",
+      "tags": ["download", "save", "down"],
+      "popular": false
+    },
+    {
+      "id": "progress-11",
+      "char": "𝐍𝐨𝐰 𝐥𝐨𝐚𝐝𝐢𝐧𝐠...",
+      "unicode": "special",
+      "tags": ["text", "loading", "bold"],
+      "popular": true
+    },
+    {
+      "id": "progress-12",
+      "char": "𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠...",
+      "unicode": "special",
+      "tags": ["text", "upload", "bold"],
+      "popular": false
+    },
+    {
+      "id": "progress-13",
+      "char": "▰▰▰▰▰▰▰ 100%",
+      "unicode": "special",
+      "tags": ["progress", "100", "complete", "block"],
+      "popular": true
+    },
+    {
+      "id": "progress-14",
+      "char": "▰▰▰▰▰▰ 85%",
+      "unicode": "special",
+      "tags": ["progress", "85", "block"],
+      "popular": false
+    },
+    {
+      "id": "progress-15",
+      "char": "▰▰▰▰▰ 70%",
+      "unicode": "special",
+      "tags": ["progress", "70", "block"],
+      "popular": false
+    },
+    {
+      "id": "progress-16",
+      "char": "▰▰▰▰ 55%",
+      "unicode": "special",
+      "tags": ["progress", "55", "block"],
+      "popular": false
+    },
+    {
+      "id": "progress-17",
+      "char": "▰▰▰ 40%",
+      "unicode": "special",
+      "tags": ["progress", "40", "block"],
+      "popular": false
+    },
+    {
+      "id": "progress-18",
+      "char": "⏳",
+      "unicode": "U+23F3",
+      "tags": ["hourglass", "time", "wait"],
+      "popular": true
+    },
+    {
+      "id": "progress-19",
+      "char": "🔄",
+      "unicode": "U+1F504",
+      "tags": ["refresh", "loading", "sync"],
+      "popular": true
+    },
+    {
+      "id": "progress-20",
+      "char": "⏸",
+      "unicode": "U+23F8",
+      "tags": ["pause", "stop", "control"],
+      "popular": false
+    },
+    {
+      "id": "progress-21",
+      "char": "▶️",
+      "unicode": "U+25B6",
+      "tags": ["play", "start", "control"],
+      "popular": false
+    },
+    {
+      "id": "progress-22",
+      "char": "⏹",
+      "unicode": "U+23F9",
+      "tags": ["stop", "end", "control"],
+      "popular": false
+    },
+    {
+      "id": "progress-23",
+      "char": "📥",
+      "unicode": "U+1F4E5",
+      "tags": ["download", "down", "inbox"],
+      "popular": false
+    },
+    {
+      "id": "progress-24",
+      "char": "📤",
+      "unicode": "U+1F4E4",
+      "tags": ["upload", "up", "outbox"],
+      "popular": false
+    },
+    {
+      "id": "progress-25",
+      "char": "💾",
+      "unicode": "U+1F4BE",
+      "tags": ["save", "floppy", "storage"],
+      "popular": false
+    },
+    {
+      "id": "progress-26",
+      "char": "💽",
+      "unicode": "U+1F4BD",
+      "tags": ["disk", "cd", "storage"],
+      "popular": false
+    },
+    {
+      "id": "progress-27",
+      "char": "📀",
+      "unicode": "U+1F4C0",
+      "tags": ["dvd", "disk", "storage"],
+      "popular": false
+    },
+    {
+      "id": "progress-28",
+      "char": "⏏️",
+      "unicode": "U+23CF",
+      "tags": ["eject", "remove"],
+      "popular": false
+    },
+    {
+      "id": "progress-29",
+      "char": "📼",
+      "unicode": "U+1F4FC",
+      "tags": ["videocassette", "tape", "retro"],
+      "popular": false
+    },
+    {
+      "id": "progress-30",
+      "char": "⏺",
+      "unicode": "U+23FA",
+      "tags": ["record", "circle"],
+      "popular": false
+    },
+    {
+      "id": "progress-31",
+      "char": "📁",
+      "unicode": "U+1F4C1",
+      "tags": ["folder", "file", "directory"],
+      "popular": false
+    },
+    {
+      "id": "progress-32",
+      "char": "📂",
+      "unicode": "U+1F4C2",
+      "tags": ["open", "folder", "file"],
+      "popular": false
+    },
+    {
+      "id": "progress-33",
+      "char": "📃",
+      "unicode": "U+1F4C3",
+      "tags": ["page", "document", "file"],
+      "popular": false
+    },
+    {
+      "id": "progress-34",
+      "char": "📄",
+      "unicode": "U+1F4C4",
+      "tags": ["document", "file", "page"],
+      "popular": false
+    },
+    {
+      "id": "progress-35",
+      "char": "📋",
+      "unicode": "U+1F4CB",
+      "tags": ["clipboard", "copy", "list"],
+      "popular": false
+    }
+  ]
+}

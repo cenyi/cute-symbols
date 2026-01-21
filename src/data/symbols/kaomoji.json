@@ -1,0 +1,1122 @@
+{
+  "category": "kaomoji",
+  "icon": "(*´•͈ ꪹ•͈`*)",
+  "color": "#FFD1DC",
+  "name": {
+    "en": "Kaomoji & Emoticons",
+    "fil": "Mga Kaomoji at Emoticons",
+    "ms": "Kaomoji & Emotikon",
+    "bn": "কাওোজি এবং ইমোটিকন",
+    "pl": "Kaomoji i Emotikony"
+  },
+  "description": {
+    "en": "Japanese emoticons for cute expressions",
+    "fil": "Hapon na emoticons para sa cute expressions",
+    "ms": "Emotikon Jepun untuk ekspresi comel",
+    "bn": "মায়াত্ম ইমোটিকন সুদ্ধ এক্রসেশনের জন্য",
+    "pl": "Japońskie emotikony do uroczych wyrazów"
+  },
+  "symbols": [
+    {
+      "id": "kaomoji-1",
+      "char": "╰(*´•͈ ꪹ•͈`*)╯",
+      "unicode": "kaomoji",
+      "tags": [
+        "cute",
+        "happy",
+        "popular",
+        "arms"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-2",
+      "char": "૮₍ ˶•⤙•˶ ₎ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "shy",
+        "cute",
+        "blushing"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-3",
+      "char": "꒰ᐡ•͈ ꒳ •͈ᐡ꒱",
+      "unicode": "kaomoji",
+      "tags": [
+        "crying",
+        "sad",
+        "emotional"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-4",
+      "char": "⁺◟( •̀ᗝ •́ )◟⁺",
+      "unicode": "kaomoji",
+      "tags": [
+        "determined",
+        "serious",
+        "strong"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-5",
+      "char": "(˵ •̀ ᴗ -˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "smile",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-6",
+      "char": "(๑•́ ₃ •̀๑)",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-7",
+      "char": "(*´•͈ ꪹ•͈`*)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "excited",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-8",
+      "char": "(´｡• ᵕ •｡`)",
+      "unicode": "kaomoji",
+      "tags": [
+        "shy",
+        "blush",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-9",
+      "char": "༊*·˚",
+      "unicode": "kaomoji",
+      "tags": [
+        "aesthetic",
+        "minimal",
+        "trending"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-10",
+      "char": "(⁎˃ᴗ⁎)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sparkle",
+        "magic",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-11",
+      "char": "⁺°꒰⑅•͈꒳•͈⑅꒱°⁺",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "bouncy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-12",
+      "char": "꒰⑅⤙•⤙⑅꒱",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "wonder",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-13",
+      "char": "( ◡́.◡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "kiss",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-14",
+      "char": "(✿◡‿◡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "flower",
+        "nature",
+        "aesthetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-15",
+      "char": "٭(˶ᵕ̮⑅˵)۶",
+      "unicode": "kaomoji",
+      "tags": [
+        "cute",
+        "happy",
+        "bouncy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-16",
+      "char": "(｡•́︿•̀｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "crying",
+        "emotional"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-17",
+      "char": "(๑˃̵ᴗ˂̵)و",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "happy",
+        "energetic"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-18",
+      "char": "( ˶ˆᗜˆ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "smile",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-19",
+      "char": "(っ˘ω˘ς )",
+      "unicode": "kaomoji",
+      "tags": [
+        "sleepy",
+        "tired",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-20",
+      "char": "( ˶ˆ꒳ˆ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-21",
+      "char": "(｡•̀ᴗ-)✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-22",
+      "char": "( ˶°ㅁ°) !!",
+      "unicode": "kaomoji",
+      "tags": [
+        "shocked",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-23",
+      "char": "(˶ᵔ ᵕ ᵔ˶)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "smile",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-24",
+      "char": "( ˶ˆ ᗜ ˆ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-25",
+      "char": "(っ- ‸ - ς)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "disappointed",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-26",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "wondering",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-27",
+      "char": "(˶˃ ᵕ ˂˶)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-28",
+      "char": "( ˶°ㅁ°) !?",
+      "unicode": "kaomoji",
+      "tags": [
+        "confused",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-29",
+      "char": "(˵ •̀ ᴗ - ˵ ) ✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-30",
+      "char": "૮ ˶ᵔ ᵕ ᵔ˶ ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "cute",
+        "animal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-31",
+      "char": "૮₍ ˃ ⤙ ˂ ₎ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "shy",
+        "blushing",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-32",
+      "char": "૮ ˙Ⱉ˙ ა rawr!",
+      "unicode": "kaomoji",
+      "tags": [
+        "playful",
+        "cute",
+        "animal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-33",
+      "char": "૮꒰ ˶• ༝ •˶꒱ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "cute",
+        "animal",
+        "happy"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-34",
+      "char": "૮₍˶Ó﹏Ò ˶₎ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "crying",
+        "sad",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-35",
+      "char": "૮ ˶ˆ ᵕ ˆ˶ ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-36",
+      "char": "( ˶ˆ꒳ˆ˵ )♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "heart",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-37",
+      "char": "(˶˃ ᵕ ˂˶) .ᐟ.ᐟ",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-38",
+      "char": "( ˶°ㅁ°) !!",
+      "unicode": "kaomoji",
+      "tags": [
+        "shocked",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-39",
+      "char": "(˵ ͡° ͜ʖ ͡°˵)",
+      "unicode": "kaomoji",
+      "tags": [
+        "smirk",
+        "playful",
+        "meme"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-40",
+      "char": "( ˶ˆᗜˆ˵ )✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-41",
+      "char": "(づ ᴗ _ᴗ)づ♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "hug",
+        "love",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-42",
+      "char": "(づ｡◕‿‿◕｡)づ",
+      "unicode": "kaomoji",
+      "tags": [
+        "hug",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-43",
+      "char": "ヾ(•ω•`)o",
+      "unicode": "kaomoji",
+      "tags": [
+        "wave",
+        "greeting",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-44",
+      "char": "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-45",
+      "char": "( ˘ ³˘)♥",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-46",
+      "char": "(｡♥‿♥｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "heart eyes",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-47",
+      "char": "( ˘ω˘ )☞♡☜( ˘ω˘ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "pointing",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-48",
+      "char": "(｡•́‿•̀｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "smile",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-49",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "cute",
+        "wondering"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-50",
+      "char": "(｡•̀ᴗ-)✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-51",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "thinking",
+        "curious",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-52",
+      "char": "(っ˘з(˘⌣˘ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-53",
+      "char": "( ˘ ³˘)♥",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "heart"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-54",
+      "char": "(｡♥‿♥｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-55",
+      "char": "( ˶°ㅁ°) !!",
+      "unicode": "kaomoji",
+      "tags": [
+        "shocked",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-56",
+      "char": "(⸝⸝⸝╸▵╺⸝⸝⸝)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "crying",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-57",
+      "char": "( ˶ˆ꒳ˆ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-58",
+      "char": "(｡•́︿•̀｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "disappointed",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-59",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "wondering",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-60",
+      "char": "(˵ •̀ ᴗ - ˵ ) ✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-61",
+      "char": "( ˶°ㅁ°) !?",
+      "unicode": "kaomoji",
+      "tags": [
+        "confused",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-62",
+      "char": "(˶˃ ᵕ ˂˶) .ᐟ",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-63",
+      "char": "૮ ˶ᵔ ᵕ ᵔ˶ ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "cute",
+        "animal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-64",
+      "char": "૮₍ ˃ ⤙ ˂ ₎ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "shy",
+        "blushing",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-65",
+      "char": "૮꒰ ˶• ༝ •˶꒱ა ♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "cute",
+        "animal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-66",
+      "char": "(˶ᵔ ᵕ ᵔ˶)♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "heart",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-67",
+      "char": "( ˶ˆᗜˆ˵ )♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-68",
+      "char": "(˵ •̀ ᴗ - ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-69",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "thinking",
+        "curious",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-70",
+      "char": "(˶˃ ᵕ ˂˶)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-71",
+      "char": "( ˶°ㅁ°) !!",
+      "unicode": "kaomoji",
+      "tags": [
+        "shocked",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-72",
+      "char": "(˵ ͡° ͜ʖ ͡°˵)",
+      "unicode": "kaomoji",
+      "tags": [
+        "smirk",
+        "playful",
+        "meme"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-73",
+      "char": "( ˶ˆᗜˆ˵ )✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-74",
+      "char": "(づ ᴗ _ᴗ)づ",
+      "unicode": "kaomoji",
+      "tags": [
+        "hug",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-75",
+      "char": "(づ｡◕‿‿◕｡)づ",
+      "unicode": "kaomoji",
+      "tags": [
+        "hug",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-76",
+      "char": "ヾ(•ω•`)o",
+      "unicode": "kaomoji",
+      "tags": [
+        "wave",
+        "greeting",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-77",
+      "char": "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-78",
+      "char": "( ˘ ³˘)♥",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-79",
+      "char": "(｡♥‿♥｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "heart eyes",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-80",
+      "char": "( ˘ω˘ )☞♡☜( ˘ω˘ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "pointing",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-81",
+      "char": "(｡•́‿•̀｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "smile",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-82",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "cute",
+        "wondering"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-83",
+      "char": "(｡•̀ᴗ-)✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-84",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "thinking",
+        "curious",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-85",
+      "char": "(っ˘з(˘⌣˘ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-86",
+      "char": "( ˘ ³˘)♥",
+      "unicode": "kaomoji",
+      "tags": [
+        "kiss",
+        "love",
+        "heart"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-87",
+      "char": "(｡♥‿♥｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-88",
+      "char": "( ˶°ㅁ°) !!",
+      "unicode": "kaomoji",
+      "tags": [
+        "shocked",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-89",
+      "char": "(⸝⸝⸝╸▵╺⸝⸝⸝)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "crying",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-90",
+      "char": "( ˶ˆ꒳ˆ˵ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "content",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-91",
+      "char": "(｡•́︿•̀｡)",
+      "unicode": "kaomoji",
+      "tags": [
+        "sad",
+        "disappointed",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-92",
+      "char": "( ˶ ❛ ꁞ ❛ ˶ )",
+      "unicode": "kaomoji",
+      "tags": [
+        "curious",
+        "wondering",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-93",
+      "char": "(˵ •̀ ᴗ - ˵ ) ✧",
+      "unicode": "kaomoji",
+      "tags": [
+        "wink",
+        "sparkle",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-94",
+      "char": "( ˶°ㅁ°) !?",
+      "unicode": "kaomoji",
+      "tags": [
+        "confused",
+        "surprised",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-95",
+      "char": "(˶˃ ᵕ ˂˶) .ᐟ",
+      "unicode": "kaomoji",
+      "tags": [
+        "excited",
+        "happy",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-96",
+      "char": "૮ ˶ᵔ ᵕ ᵔ˶ ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "cute",
+        "animal"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-97",
+      "char": "૮₍ ˃ ⤙ ˂ ₎ა",
+      "unicode": "kaomoji",
+      "tags": [
+        "shy",
+        "blushing",
+        "cute"
+      ],
+      "popular": false
+    },
+    {
+      "id": "kaomoji-98",
+      "char": "૮꒰ ˶• ༝ •˶꒱ა ♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "cute",
+        "animal"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-99",
+      "char": "(˶ᵔ ᵕ ᵔ˶)♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "love",
+        "heart",
+        "cute"
+      ],
+      "popular": true
+    },
+    {
+      "id": "kaomoji-100",
+      "char": "( ˶ˆᗜˆ˵ )♡",
+      "unicode": "kaomoji",
+      "tags": [
+        "happy",
+        "love",
+        "cute"
+      ],
+      "popular": true
+    }
+  ]
+}

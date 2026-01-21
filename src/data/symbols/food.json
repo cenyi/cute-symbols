@@ -1,0 +1,721 @@
+{
+  "category": "food",
+  "icon": "🍓",
+  "color": "#EF4444",
+  "name": {
+    "en": "Food & Drink Symbols",
+    "fil": "Mga Simbolo ng Pagkain",
+    "ms": "Simbol Makanan & Minuman",
+    "bn": "খাদ্য এবং পানীয় প্রতীক",
+    "pl": "Symbole Jedzenia i Napojów"
+  },
+  "description": {
+    "en": "Perfect for foodies, cafes, and sweet aesthetics",
+    "fil": "Perpekto para sa foodies at sweet aesthetics",
+    "ms": "Sempurna untuk pencinta makanan dan estetika manis",
+    "bn": "খাদ্যপ্রেমী এবং মিষ্টি নান্দনিকতার জন্য উপযুক্ত",
+    "pl": "Idealne dla smakoszy i słodkiej estetyki"
+  },
+  "symbols": [
+    {
+      "id": "food-1",
+      "char": "🍓",
+      "unicode": "U+1F353",
+      "tags": ["strawberry", "fruit", "sweet", "pink"],
+      "popular": true
+    },
+    {
+      "id": "food-2",
+      "char": "🍰",
+      "unicode": "U+1F370",
+      "tags": ["cake", "dessert", "sweet", "birthday"],
+      "popular": true
+    },
+    {
+      "id": "food-3",
+      "char": "🧁",
+      "unicode": "U+1F9C1",
+      "tags": ["cupcake", "dessert", "sweet", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-4",
+      "char": "🍩",
+      "unicode": "U+1F369",
+      "tags": ["donut", "sweet", "dessert", "pink"],
+      "popular": true
+    },
+    {
+      "id": "food-5",
+      "char": "🍪",
+      "unicode": "U+1F36A",
+      "tags": ["cookie", "sweet", "dessert", "snack"],
+      "popular": false
+    },
+    {
+      "id": "food-6",
+      "char": "🍫",
+      "unicode": "U+1F36B",
+      "tags": ["chocolate", "sweet", "dessert", "brown"],
+      "popular": false
+    },
+    {
+      "id": "food-7",
+      "char": "🍬",
+      "unicode": "U+1F36C",
+      "tags": ["candy", "sweet", "wrapped", "colorful"],
+      "popular": true
+    },
+    {
+      "id": "food-8",
+      "char": "🍭",
+      "unicode": "U+1F36D",
+      "tags": ["lollipop", "candy", "sweet", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-9",
+      "char": "🍮",
+      "unicode": "U+1F36E",
+      "tags": ["custard", "pudding", "dessert", "sweet"],
+      "popular": false
+    },
+    {
+      "id": "food-10",
+      "char": "🍯",
+      "unicode": "U+1F36F",
+      "tags": ["honey", "sweet", "pot", "golden"],
+      "popular": false
+    },
+    {
+      "id": "food-11",
+      "char": "🍼",
+      "unicode": "U+1F37C",
+      "tags": ["bottle", "baby", "milk", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-12",
+      "char": "🥛",
+      "unicode": "U+1F95B",
+      "tags": ["milk", "glass", "drink", "white"],
+      "popular": true
+    },
+    {
+      "id": "food-13",
+      "char": "☕",
+      "unicode": "U+2615",
+      "tags": ["coffee", "hot", "drink", "cafe"],
+      "popular": true
+    },
+    {
+      "id": "food-14",
+      "char": "🍵",
+      "unicode": "U+1F375",
+      "tags": ["tea", "hot", "drink", "green"],
+      "popular": false
+    },
+    {
+      "id": "food-15",
+      "char": "🧃",
+      "unicode": "U+1F9C3",
+      "tags": ["juice", "box", "drink", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-16",
+      "char": "🧋",
+      "unicode": "U+1F9CB",
+      "tags": ["boba", "bubble tea", "drink", "trendy"],
+      "popular": true
+    },
+    {
+      "id": "food-17",
+      "char": "🍹",
+      "unicode": "U+1F379",
+      "tags": ["tropical", "drink", "cocktail", "summer"],
+      "popular": false
+    },
+    {
+      "id": "food-18",
+      "char": "🍨",
+      "unicode": "U+1F368",
+      "tags": ["ice cream", "dessert", "sweet", "cold"],
+      "popular": true
+    },
+    {
+      "id": "food-19",
+      "char": "🍦",
+      "unicode": "U+1F366",
+      "tags": ["soft serve", "ice cream", "dessert", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-20",
+      "char": "🍧",
+      "unicode": "U+1F367",
+      "tags": ["shaved ice", "dessert", "cold", "sweet"],
+      "popular": false
+    },
+    {
+      "id": "food-21",
+      "char": "🍡",
+      "unicode": "U+1F361",
+      "tags": ["dango", "japanese", "sweet", "cute"],
+      "popular": true
+    },
+    {
+      "id": "food-22",
+      "char": "🥧",
+      "unicode": "U+1F967",
+      "tags": ["pie", "dessert", "sweet", "baked"],
+      "popular": false
+    },
+    {
+      "id": "food-23",
+      "char": "🎂",
+      "unicode": "U+1F382",
+      "tags": ["birthday", "cake", "celebration", "sweet"],
+      "popular": true
+    },
+    {
+      "id": "food-24",
+      "char": "🍇",
+      "unicode": "U+1F347",
+      "tags": ["grapes", "fruit", "purple", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-25",
+      "char": "🍈",
+      "unicode": "U+1F348",
+      "tags": ["melon", "fruit", "green", "fresh"],
+      "popular": false
+    },
+    {
+      "id": "food-26",
+      "char": "🍉",
+      "unicode": "U+1F349",
+      "tags": ["watermelon", "fruit", "summer", "red"],
+      "popular": false
+    },
+    {
+      "id": "food-27",
+      "char": "🍊",
+      "unicode": "U+1F34A",
+      "tags": ["orange", "fruit", "citrus", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-28",
+      "char": "🍋",
+      "unicode": "U+1F34B",
+      "tags": ["lemon", "fruit", "citrus", "yellow"],
+      "popular": false
+    },
+    {
+      "id": "food-29",
+      "char": "🍌",
+      "unicode": "U+1F34C",
+      "tags": ["banana", "fruit", "yellow", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-30",
+      "char": "🍍",
+      "unicode": "U+1F34D",
+      "tags": ["pineapple", "fruit", "tropical", "yellow"],
+      "popular": false
+    },
+    {
+      "id": "food-31",
+      "char": "🥭",
+      "unicode": "U+1F96D",
+      "tags": ["mango", "fruit", "tropical", "sweet"],
+      "popular": false
+    },
+    {
+      "id": "food-32",
+      "char": "🍎",
+      "unicode": "U+1F34E",
+      "tags": ["apple", "fruit", "red", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-33",
+      "char": "🍏",
+      "unicode": "U+1F34F",
+      "tags": ["apple", "fruit", "green", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-34",
+      "char": "🍐",
+      "unicode": "U+1F350",
+      "tags": ["pear", "fruit", "green", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-35",
+      "char": "🍑",
+      "unicode": "U+1F351",
+      "tags": ["peach", "fruit", "pink", "sweet"],
+      "popular": true
+    },
+    {
+      "id": "food-36",
+      "char": "🍒",
+      "unicode": "U+1F352",
+      "tags": ["cherries", "fruit", "red", "sweet"],
+      "popular": true
+    },
+    {
+      "id": "food-37",
+      "char": "🫐",
+      "unicode": "U+1FAD0",
+      "tags": ["blueberries", "fruit", "blue", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-38",
+      "char": "🥝",
+      "unicode": "U+1F95D",
+      "tags": ["kiwi", "fruit", "green", "tropical"],
+      "popular": false
+    },
+    {
+      "id": "food-39",
+      "char": "🍅",
+      "unicode": "U+1F345",
+      "tags": ["tomato", "vegetable", "red", "fresh"],
+      "popular": false
+    },
+    {
+      "id": "food-40",
+      "char": "🥑",
+      "unicode": "U+1F951",
+      "tags": ["avocado", "fruit", "green", "healthy"],
+      "popular": false
+    },
+    {
+      "id": "food-41",
+      "char": "🍓✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "strawberry"],
+      "popular": true
+    },
+    {
+      "id": "food-42",
+      "char": "🍰💕",
+      "unicode": "combo",
+      "tags": ["combo", "love", "cake"],
+      "popular": true
+    },
+    {
+      "id": "food-43",
+      "char": "🧁🎀",
+      "unicode": "combo",
+      "tags": ["combo", "cute", "cupcake"],
+      "popular": true
+    },
+    {
+      "id": "food-44",
+      "char": "🍩♡",
+      "unicode": "combo",
+      "tags": ["combo", "love", "donut"],
+      "popular": true
+    },
+    {
+      "id": "food-45",
+      "char": "🍭💖",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "lollipop"],
+      "popular": false
+    },
+    {
+      "id": "food-46",
+      "char": "🍼🩷",
+      "unicode": "combo",
+      "tags": ["combo", "pink", "bottle"],
+      "popular": false
+    },
+    {
+      "id": "food-47",
+      "char": "🥛✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "milk"],
+      "popular": false
+    },
+    {
+      "id": "food-48",
+      "char": "☕💗",
+      "unicode": "combo",
+      "tags": ["combo", "love", "coffee"],
+      "popular": false
+    },
+    {
+      "id": "food-49",
+      "char": "🧋💕",
+      "unicode": "combo",
+      "tags": ["combo", "love", "boba"],
+      "popular": true
+    },
+    {
+      "id": "food-50",
+      "char": "🍨🌸",
+      "unicode": "combo",
+      "tags": ["combo", "flower", "ice cream"],
+      "popular": false
+    },
+    {
+      "id": "food-51",
+      "char": "🍦♡",
+      "unicode": "combo",
+      "tags": ["combo", "love", "soft serve"],
+      "popular": false
+    },
+    {
+      "id": "food-52",
+      "char": "🍡🎀",
+      "unicode": "combo",
+      "tags": ["combo", "cute", "dango"],
+      "popular": false
+    },
+    {
+      "id": "food-53",
+      "char": "🎂✨",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "birthday"],
+      "popular": false
+    },
+    {
+      "id": "food-54",
+      "char": "🍓🍰🍓",
+      "unicode": "combo",
+      "tags": ["combo", "strawberry", "cake"],
+      "popular": true
+    },
+    {
+      "id": "food-55",
+      "char": "🧁💗🧁",
+      "unicode": "combo",
+      "tags": ["combo", "love", "cupcake"],
+      "popular": false
+    },
+    {
+      "id": "food-56",
+      "char": "🍩✨🍩",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "donut"],
+      "popular": false
+    },
+    {
+      "id": "food-57",
+      "char": "🍭🍬🍭",
+      "unicode": "combo",
+      "tags": ["combo", "candy", "sweet"],
+      "popular": false
+    },
+    {
+      "id": "food-58",
+      "char": "🍼 ⊹ 🍼",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "bottle"],
+      "popular": false
+    },
+    {
+      "id": "food-59",
+      "char": "🥛 ˚ 🥛",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "milk"],
+      "popular": false
+    },
+    {
+      "id": "food-60",
+      "char": "☕ ⋆ ☕",
+      "unicode": "combo",
+      "tags": ["combo", "star", "coffee"],
+      "popular": false
+    },
+    {
+      "id": "food-61",
+      "char": "🧋 ✧ 🧋",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "boba"],
+      "popular": false
+    },
+    {
+      "id": "food-62",
+      "char": "🍨💕🍨",
+      "unicode": "combo",
+      "tags": ["combo", "love", "ice cream"],
+      "popular": false
+    },
+    {
+      "id": "food-63",
+      "char": "🍦✨🍦",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "soft serve"],
+      "popular": false
+    },
+    {
+      "id": "food-64",
+      "char": "🍡 ˚ ༘ 🍡",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "dango"],
+      "popular": false
+    },
+    {
+      "id": "food-65",
+      "char": "🎂💖🎂",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-66",
+      "char": "🍓 ♡ 🍓",
+      "unicode": "combo",
+      "tags": ["combo", "love", "strawberry"],
+      "popular": true
+    },
+    {
+      "id": "food-67",
+      "char": "🍰 ⊹ 🍰",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-68",
+      "char": "🧁 ˚ 🧁",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "cupcake"],
+      "popular": false
+    },
+    {
+      "id": "food-69",
+      "char": "🍩 ⋆ 🍩",
+      "unicode": "combo",
+      "tags": ["combo", "star", "donut"],
+      "popular": false
+    },
+    {
+      "id": "food-70",
+      "char": "🍭 ✧ 🍭",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "lollipop"],
+      "popular": false
+    },
+    {
+      "id": "food-71",
+      "char": "🍼💗🍼",
+      "unicode": "combo",
+      "tags": ["combo", "love", "bottle"],
+      "popular": false
+    },
+    {
+      "id": "food-72",
+      "char": "🥛 ⋆｡˚ 🥛",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "milk"],
+      "popular": false
+    },
+    {
+      "id": "food-73",
+      "char": "☕ ₊˚ ☕",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "coffee"],
+      "popular": false
+    },
+    {
+      "id": "food-74",
+      "char": "🧋 ༊*·˚ 🧋",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "boba"],
+      "popular": false
+    },
+    {
+      "id": "food-75",
+      "char": "🍨 ˖ 🍨",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "ice cream"],
+      "popular": false
+    },
+    {
+      "id": "food-76",
+      "char": "🍦 ⊹ 🍦 ⊹",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "soft serve"],
+      "popular": false
+    },
+    {
+      "id": "food-77",
+      "char": "🍡💕🍡",
+      "unicode": "combo",
+      "tags": ["combo", "love", "dango"],
+      "popular": false
+    },
+    {
+      "id": "food-78",
+      "char": "🎂 ˚ ༘ 🎂",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-79",
+      "char": "🍓💗🍓",
+      "unicode": "combo",
+      "tags": ["combo", "love", "strawberry"],
+      "popular": false
+    },
+    {
+      "id": "food-80",
+      "char": "🍰 ✧･ﾟ 🍰",
+      "unicode": "combo",
+      "tags": ["combo", "japanese", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-81",
+      "char": "🧁 ⋆ 🧁 ⋆",
+      "unicode": "combo",
+      "tags": ["combo", "pattern", "cupcake"],
+      "popular": false
+    },
+    {
+      "id": "food-82",
+      "char": "🍩💖🍩",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "donut"],
+      "popular": false
+    },
+    {
+      "id": "food-83",
+      "char": "🍭 ˚｡⋆ 🍭",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "lollipop"],
+      "popular": false
+    },
+    {
+      "id": "food-84",
+      "char": "🍼 ✧ 🍼",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "bottle"],
+      "popular": false
+    },
+    {
+      "id": "food-85",
+      "char": "🥛💕🥛",
+      "unicode": "combo",
+      "tags": ["combo", "love", "milk"],
+      "popular": false
+    },
+    {
+      "id": "food-86",
+      "char": "☕ ˚ ༘ ☕",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "coffee"],
+      "popular": false
+    },
+    {
+      "id": "food-87",
+      "char": "🧋 ˖ ࣪ 🧋",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "boba"],
+      "popular": false
+    },
+    {
+      "id": "food-88",
+      "char": "🍨 ⊹ 🍨",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "ice cream"],
+      "popular": false
+    },
+    {
+      "id": "food-89",
+      "char": "🍦💗🍦",
+      "unicode": "combo",
+      "tags": ["combo", "love", "soft serve"],
+      "popular": false
+    },
+    {
+      "id": "food-90",
+      "char": "🍡 ₊˚ 🍡",
+      "unicode": "combo",
+      "tags": ["combo", "minimal", "dango"],
+      "popular": false
+    },
+    {
+      "id": "food-91",
+      "char": "🎂 ⋆ 🎂",
+      "unicode": "combo",
+      "tags": ["combo", "star", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-92",
+      "char": "🍓 ༘ 🍓",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "strawberry"],
+      "popular": false
+    },
+    {
+      "id": "food-93",
+      "char": "🍰💖🍰",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "cake"],
+      "popular": false
+    },
+    {
+      "id": "food-94",
+      "char": "🧁 ˖ 🧁",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "cupcake"],
+      "popular": false
+    },
+    {
+      "id": "food-95",
+      "char": "🍩 ˚ ༘ 🍩",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "donut"],
+      "popular": false
+    },
+    {
+      "id": "food-96",
+      "char": "🍭💗🍭",
+      "unicode": "combo",
+      "tags": ["combo", "love", "lollipop"],
+      "popular": false
+    },
+    {
+      "id": "food-97",
+      "char": "🍼 ⋆｡˚ 🍼",
+      "unicode": "combo",
+      "tags": ["combo", "aesthetic", "bottle"],
+      "popular": false
+    },
+    {
+      "id": "food-98",
+      "char": "🥛 ༊*·˚ 🥛",
+      "unicode": "combo",
+      "tags": ["combo", "decorative", "milk"],
+      "popular": false
+    },
+    {
+      "id": "food-99",
+      "char": "☕💖☕",
+      "unicode": "combo",
+      "tags": ["combo", "sparkle", "coffee"],
+      "popular": false
+    },
+    {
+      "id": "food-100",
+      "char": "🧋♡🧋",
+      "unicode": "combo",
+      "tags": ["combo", "love", "boba"],
+      "popular": true
+    }
+  ]
+}

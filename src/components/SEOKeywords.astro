@@ -1,0 +1,152 @@
+---
+/**
+ * SEO关键词组件
+ * 将长尾关键词自然地融入页面，提升搜索引擎排名
+ * 对用户不可见，但对搜索引擎友好
+ */
+import { getTranslations } from '../i18n/utils';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = 'en' } = Astro.props;
+const { t } = getTranslations(locale);
+
+// 关键词翻译映射
+const keywordTranslations: Record<Locale, string[]> = {
+  en: [
+    'cute symbols copy and paste',
+    'cute symbols aesthetic',
+    'cute symbols text',
+    'cute symbols faces',
+    'cute symbols for bio',
+    'cute symbols name',
+    'cute symbols heart',
+    'cute symbols for instagram',
+    'cute symbols for instagram bio',
+    'keyboard cute symbols',
+    'font cute symbols',
+    'japanese cute symbols',
+    'typing cute symbols',
+    'emoticon cute symbols',
+    'cute emoji symbols',
+    'cute bow symbols'
+  ],
+  fil: [
+    'mga cute na simbolo kopya at idikit',
+    'mga cute na simbolo aesthetic',
+    'mga cute na simbolo teksto',
+    'mga cute na simbolo mukha',
+    'mga cute na simbolo para sa bio',
+    'mga cute na simbolo pangalan',
+    'mga cute na simbolo puso',
+    'mga cute na simbolo para sa instagram',
+    'mga cute na simbolo para sa instagram bio',
+    'keyboard cute na simbolo',
+    'font cute na simbolo',
+    'japanese cute na simbolo',
+    'pag-type ng cute na simbolo',
+    'emoticon cute na simbolo',
+    'cute emoji simbolo',
+    'cute bow simbolo'
+  ],
+  ms: [
+    'simbol comel salin dan tampal',
+    'simbol comel aesthetic',
+    'simbol comel teks',
+    'simbol comel muka',
+    'simbol comel untuk bio',
+    'simbol comel nama',
+    'simbol comel jantung',
+    'simbol comel untuk instagram',
+    'simbol comel untuk instagram bio',
+    'papan kekunci simbol comel',
+    'fon simbol comel',
+    'simbol comel jepun',
+    'menaip simbol comel',
+    'emotikon simbol comel',
+    'simbol emoji comel',
+    'simbol riben comel'
+  ],
+  bn: [
+    'কিউট সিম্বল কপি পেস্ট',
+    'কিউট সিম্বল aesthetic',
+    'কিউট সিম্বল টেক্সট',
+    'কিউট সিম্বল মুখ',
+    'কিউট সিম্বল বায়োর জন্য',
+    'কিউট সিম্বল নাম',
+    'কিউট সিম্বল হৃদয়',
+    'কিউট সিম্বল ইনস্টাগ্রামের জন্য',
+    'কিউট সিম্বল ইনস্টাগ্রাম বায়োর জন্য',
+    'keyboard কিউট সিম্বল',
+    'ফন্ট কিউট সিম্বল',
+    'জাপানি কিউট সিম্বল',
+    'টাইপিং কিউট সিম্বল',
+    'ইমোটিকন কিউট সিম্বল',
+    'কিউট emoji সিম্বল',
+    'কিউট বো সিম্বল'
+  ],
+  pl: [
+    'słodkie symbole kopiuj wklej',
+    'słodkie symbole aesthetic',
+    'słodkie symbole tekst',
+    'słodkie symbole twarze',
+    'słodkie symbole do bio',
+    'słodkie symbole imię',
+    'słodkie symbole serce',
+    'słodkie symbole na instagram',
+    'słodkie symbole do bio na instagram',
+    'klawiatura słodkie symbole',
+    'czcionka słodkie symbole',
+    'japońskie słodkie symbole',
+    'pisanie słodkich symboli',
+    'emotikona słodkie symbole',
+    'słodkie symbole emoji',
+    'słodkie symbole kokardka'
+  ]
+};
+
+const keywords = keywordTranslations[locale] || keywordTranslations.en;
+---
+
+<!-- SEO关键词区域 - 对搜索引擎可见，对用户隐藏 -->
+<div class="seo-keywords" aria-hidden="true">
+  <div class="seo-content">
+    <h2>{t('site.title')}</h2>
+    <p>
+      {keywords.slice(0, 8).join('  -  ')}
+    </p>
+    <ul>
+      {keywords.slice(8).map(keyword => (
+        <li>{keyword}</li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .seo-keywords {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  /* 确保对屏幕阅读器也隐藏 */
+  .seo-keywords[aria-hidden="true"] {
+    speak: none;
+  }
+
+  /* 防止被搜索引擎认为是隐藏文本作弊 */
+  @media print {
+    .seo-keywords {
+      display: none;
+    }
+  }
+</style>

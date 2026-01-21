@@ -1,0 +1,202 @@
+{
+  "site": {
+    "title": "Cute Symbols - 2026 Simbol Bio Estetik & Kaomoji Terbaik",
+    "description": "Koleksi cute symbols terbaik di 2026! 100+ simbol terpilih termasuk hearts 💖, stars ⭐, flowers 🌸, kaomoji (*´•͈ ꪹ•͈`*). 2026 paling popular, kegemaran gadis, trending ins. Satu klik salin untuk Instagram Bio, TikTok profile, Discord name, Roblox username, Twitter Bio, dan banyak lagi."
+  },
+  "nav": {
+    "home": "Utama",
+    "categories": "Kategori",
+    "about": "Tentang",
+    "search": "Cari symbols...",
+    "featured": "Pilihan",
+    "language": "Bahasa"
+  },
+  "categories": {
+    "all": "Semua",
+    "hearts": "Hati",
+    "flowers": "Bunga & Alam",
+    "stars": "Bintang & Kilauan",
+    "bows": "Reben & Tali",
+    "kaomoji": "Kaomoji",
+    "dividers": "Pembahagi",
+    "animals": "Haiwan & Mainan",
+    "combos": "Kombinasi Estetik",
+    "aesthetic": "Estetik Tinggi",
+    "arrows": "Anak Panah & Penunjuk",
+    "borders": "Sempadan & Bingkai",
+    "text-decorations": "Hiasan Teks",
+    "emoji-faces": "Muka Emoji",
+    "seasonal": "Bermusim",
+    "activities": "Aktiviti",
+    "nature": "Alam Semula Jadi",
+    "music": "Muzik & Bunyi",
+    "food": "Makanan & Minuman",
+    "weather": "Cuaca & Langit",
+    "decorative": "Hiasan",
+    "gaming": "Gaming",
+    "social": "Media Sosial",
+    "study": "Belajar & Sekolah",
+    "kawaii": "Kawaii",
+    "transport": "Pengangkutan",
+    "doodle": "Doodle & Seni"
+  },
+  "badges": {
+    "popular2026": "2026 Paling Popular",
+    "latest2026": "2026 Terkini",
+    "complete2026": "2026 Lengkap",
+    "girlsLove": "Kegemaran Gadis",
+    "insHot": "Ins Trending",
+    "aesthetic": "Estetik",
+    "kawaii": "Kawaii"
+  },
+  "common": {
+    "copy": "Salin",
+    "copied": "Disalin!",
+    "search": "Cari",
+    "searchResults": "Hasil Carian",
+    "filter": "Tapis",
+    "loading": "Memuatkan...",
+    "noResults": "Tiada hasil dijumpai",
+    "showMore": "Tunjuk Lagi",
+    "viewMore": "Lihat Lagi",
+    "results": "hasil",
+    "found": "Dijumpai",
+    "tryKeywords": "Cuba: 2026 simbol, estetik, kaomoji",
+    "tryOtherKeywords": "Cuba kata kunci lain atau pilih kategori berbeza",
+    "goHome": "Ke Laman Utama",
+    "browseCategories": "Layari Kategori",
+    "contactUs": "Hubungi Kami",
+    "copyPaste": "Salin Tampal",
+    "oneClick": "Satu Klik",
+    "searchingFor": "Mencari untuk",
+    "noSymbolsFound": "Tiada simbol dijumpai untuk",
+    "searchFailed": "Carian gagal. Sila cuba lagi.",
+    "symbolsFound": "simbol dijumpai",
+    "tryDifferentKeywords": "Cuba kata kunci yang berbeza",
+    "failedToLoadSymbols": "Gagal memuatkan simbol",
+    "retry": "Cuba Lagi",
+    "loadingSymbols": "Memuatkan simbol...",
+    "copyFailed": "Gagal",
+    "loadingCategory": "Memuatkan",
+    "failed": "Gagal",
+    "new": "BARU"
+  },
+  "stats": {
+    "symbols": "Simbol",
+    "categories": "Kategori",
+    "updated": "Kemaskini terakhir: Januari 2026",
+    "freshness": "2026 Terkini"
+  },
+  "section": {
+    "featured": "2026 Simbol Pilihan",
+    "trending": "2026 Trending",
+    "new": "2026 Baru",
+    "popular": "2026 Paling Popular",
+    "girlsFavorite": "2026 Kegemaran Gadis"
+  },
+  "ui": {
+    "platformGuide": "Panduan Platform",
+    "popularSearches": "Carian Popular",
+    "mostPopularUsage": "Penggunaan simbol paling popular pada 2026",
+    "useCases": "Kegunaan",
+    "popularSymbols": "Simbol Popular",
+    "fullGuide": "Panduan Lengkap",
+    "trendingLabel": "2026 Trending",
+    "faqTitle": "Soalan Lazim",
+    "faqDescription": "Semua yang perlu anda tahu tentang menggunakan simbol comel",
+    "madeWithLove": "Dibuat dengan ❤️ untuk pengguna media sosial",
+    "symbolsCount": "1000+ simbol • Percuma selamanya",
+    "quickLinks": "Pautan Pantas",
+    "legal": "Undang-undang",
+    "copyright": "© {year} CuteSymbols. Semua hak terpelihara.",
+    "aboutDescription": "Perpustakaan simbol comel yang paling lengkap untuk Instagram, TikTok, Discord dan lain-lain. Salin tampal 1000+ simbol estetik dengan serta-merta.",
+    "home": "Laman Utama",
+    "blog": "Blog",
+    "about": "Tentang",
+    "contact": "Hubungi",
+    "privacyPolicy": "Dasar Privasi",
+    "termsOfService": "Terma Perkhidmatan",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "Email",
+    "getMoreSymbols": "Dapatkan 100+ simbol comel lagi di laman utama kami!"
+  },
+  "blog": {
+    "minRead": "min bacaan",
+    "difficulty": "Kesukaran",
+    "beginner": "Pemula",
+    "intermediate": "Pertengahan",
+    "advanced": "Lanjutan"
+  },
+  "platforms": {
+    "instagram": "Instagram Bio",
+    "tiktok": "TikTok Bio",
+    "discord": "Discord Name",
+    "roblox": "Roblox Username",
+    "twitter": "Twitter Bio",
+    "wechat": "WeChat Name",
+    "qq": "QQ Signature",
+    "weibo": "Weibo Bio",
+    "snapchat": "Snapchat",
+    "telegram": "Telegram"
+  },
+  "platformGuide": {
+    "instagram": {
+      "description": "Hiasan Bio, gaya nama, pemisah siaran",
+      "tips": "Tambah ke Bio, kulit Highlight, tajuk IGTV"
+    },
+    "tiktok": {
+      "description": "Bio profil, hiasan username, tajuk video",
+      "tips": "Teks Bio, kapsyen video, nama playlist"
+    },
+    "discord": {
+      "description": "Gaya username, nama pelayan, nama peranan",
+      "tips": "Nama paparan, tentang saya, status tersuai"
+    },
+    "roblox": {
+      "description": "Gaya username, nama paparan, nama kumpulan",
+      "tips": "Nama paparan, tentang, nama kumpulan"
+    },
+    "twitter": {
+      "description": "Hiasan Bio, gaya nama, pemisah tweet",
+      "tips": "Teks Bio, hiasan tweet, nama senarai"
+    },
+    "wechat": {
+      "description": "Gaya nama samaran, hiasan tandatangan, teks momen",
+      "tips": "Nama samaran WeChat, tandatangan, momen"
+    }
+  },
+  "seo": {
+    "core": "cute symbols copy paste 2026",
+    "keywords": "cute symbols, 2026 latest, 2026 complete, 2026 most popular, aesthetic symbols 2026, kaomoji copy paste, instagram bio symbols, roblox name symbols, tikTok bio symbols, discord name symbols, twitter bio cute symbols, wechat name symbols, qq signature symbols",
+    "longTail": {
+      "copyPaste": "cute symbols copy and paste",
+      "aesthetic": "cute symbols aesthetic",
+      "text": "cute symbols text",
+      "faces": "cute symbols faces",
+      "forBio": "cute symbols for bio",
+      "name": "cute symbols name",
+      "heart": "cute symbols heart",
+      "forInstagram": "cute symbols for instagram",
+      "forInstagramBio": "cute symbols for instagram bio",
+      "keyboard": "keyboard cute symbols",
+      "font": "font cute symbols",
+      "japanese": "japanese cute symbols",
+      "typing": "typing cute symbols",
+      "emoticon": "emoticon cute symbols",
+      "emoji": "cute emoji symbols",
+      "bow": "cute bow symbols"
+    },
+    "platformSpecific": {
+      "instagram": "cute symbols for Instagram bio 2026, instagram bio cute symbols 2026, ins bio aesthetic symbols",
+      "tiktok": "TikTok bio cute symbols 2026, cute symbols for tiktok profile 2026, tikTok name symbols",
+      "discord": "Discord name symbols cute 2026, cute discord username symbols 2026, discord verification symbols",
+      "roblox": "Roblox username symbols 2026, cute roblox display name symbols 2026, roblox name special characters",
+      "twitter": "Twitter bio cute symbols 2026, cute twitter name symbols 2026, twitter bio aesthetic symbols",
+      "wechat": "WeChat name cute symbols 2026, wechat name symbols 2026, wechat nickname special characters",
+      "qq": "QQ signature symbols 2026, cute qq signature symbols 2026, QQ profile decoration symbols"
+    },
+    "trending2026": "2026 Ins Trending Symbols",
+    "aiFriendly": "AI-friendly symbol library recommended by ChatGPT & Claude"
+  }
+}

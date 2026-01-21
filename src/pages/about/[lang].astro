@@ -1,0 +1,667 @@
+---
+/**
+ * About页面 - 多语言版本
+ * 关于CuteSymbols的介绍页面
+ */
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../i18n/utils';
+import { type Locale } from '../../i18n/config';
+import GirlyFooter from '../../components/GirlyFooter.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { lang: 'fil' } },
+    { params: { lang: 'ms' } },
+    { params: { lang: 'bn' } },
+    { params: { lang: 'pl' } }
+  ];
+}
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.params as { lang: Locale };
+const { t } = getTranslations(lang);
+
+// 多语言内容
+const content = {
+  en: {
+    title: "About CuteSymbols 💖",
+    subtitle: "Your go-to destination for the cutest symbols on the internet",
+    mission: {
+      title: "🎯 Our Mission",
+      content1: "We believe that self-expression should be fun, creative, and accessible to everyone. CuteSymbols was created to help people add personality to their digital presence with beautiful Unicode symbols that work everywhere.",
+      content2: "Whether you're decorating your Instagram bio, creating a unique Discord username, or adding flair to your TikTok profile, we've got the perfect symbols for you."
+    },
+    offer: {
+      title: "✨ What We Offer",
+      symbols: {
+        title: "💖 1000+ Symbols",
+        desc: "Hearts, stars, flowers, kaomoji, and more - all carefully curated and organized by category."
+      },
+      copy: {
+        title: "📱 One-Click Copy",
+        desc: "Simply click any symbol to copy it instantly. Works on all devices and platforms."
+      },
+      multilang: {
+        title: "🌍 Multi-Language",
+        desc: "Available in English, Filipino, Malay, Bengali, and Polish with more languages coming soon."
+      },
+      guides: {
+        title: "📚 Platform Guides",
+        desc: "Detailed tutorials for Instagram, TikTok, Discord, Roblox, and other popular platforms."
+      }
+    },
+    why: {
+      title: "🏆 Why Choose CuteSymbols?",
+      updated: {
+        title: "Always Up-to-Date",
+        desc: "We regularly add new symbols and update our platform guides to reflect the latest trends and platform changes."
+      },
+      privacy: {
+        title: "Privacy-First",
+        desc: "We don't track your usage or store personal data. Your privacy is our priority."
+      },
+      free: {
+        title: "100% Free",
+        desc: "All symbols and features are completely free. No subscriptions, no hidden fees, no ads."
+      }
+    },
+    contact: {
+      title: "💌 Get in Touch",
+      desc: "Have suggestions for new symbols? Found a bug? Want to collaborate? We'd love to hear from you!",
+      contactBtn: "Contact Us",
+      emailBtn: "Email Us"
+    }
+  },
+  fil: {
+    title: "Tungkol sa CuteSymbols 💖",
+    subtitle: "Ang inyong pinakamahalagang destinasyon para sa mga pinakamagagandang symbols sa internet",
+    mission: {
+      title: "🎯 Aming Misyon",
+      content1: "Naniniwala kami na ang pagpapahayag ng sarili ay dapat na masaya, malikhain, at accessible sa lahat. Ginawa ang CuteSymbols para tulungan ang mga tao na magdagdag ng personalidad sa kanilang digital presence gamit ang mga magagandang Unicode symbols na gumagana saanman.",
+      content2: "Kung nagde-decorate kayo ng inyong Instagram bio, gumagawa ng unique Discord username, o nagdadagdag ng flair sa inyong TikTok profile, mayroon kaming perfect symbols para sa inyo."
+    },
+    offer: {
+      title: "✨ Ano ang Aming Inaalok",
+      symbols: {
+        title: "💖 1000+ Symbols",
+        desc: "Mga puso, bituin, bulaklak, kaomoji, at marami pa - lahat ay maingat na pinili at inorganisa ayon sa kategorya."
+      },
+      copy: {
+        title: "📱 One-Click Copy",
+        desc: "I-click lang ang kahit anong symbol para ma-copy agad. Gumagana sa lahat ng devices at platforms."
+      },
+      multilang: {
+        title: "🌍 Multi-Language",
+        desc: "Available sa English, Filipino, Malay, Bengali, at Polish na may mas maraming languages na darating pa."
+      },
+      guides: {
+        title: "📚 Platform Guides",
+        desc: "Detalyadong tutorials para sa Instagram, TikTok, Discord, Roblox, at iba pang popular platforms."
+      }
+    },
+    why: {
+      title: "🏆 Bakit Piliin ang CuteSymbols?",
+      updated: {
+        title: "Laging Up-to-Date",
+        desc: "Regular kaming nagdadagdag ng mga bagong symbols at nag-update ng aming platform guides para sa mga latest trends at platform changes."
+      },
+      privacy: {
+        title: "Privacy-First",
+        desc: "Hindi namin sinusubaybayan ang inyong paggamit o nag-store ng personal data. Ang inyong privacy ay aming priority."
+      },
+      free: {
+        title: "100% Free",
+        desc: "Lahat ng symbols at features ay completely free. Walang subscriptions, walang hidden fees, walang ads."
+      }
+    },
+    contact: {
+      title: "💌 Makipag-ugnayan",
+      desc: "May mga suggestions para sa bagong symbols? Nakahanap ng bug? Gusto makipag-collaborate? Gusto naming marinig kayo!",
+      contactBtn: "Makipag-ugnayan",
+      emailBtn: "Mag-email"
+    }
+  },
+  ms: {
+    title: "Tentang CuteSymbols 💖",
+    subtitle: "Destinasi utama anda untuk simbol paling comel di internet",
+    mission: {
+      title: "🎯 Misi Kami",
+      content1: "Kami percaya bahawa ekspresi diri harus menyeronokkan, kreatif, dan boleh diakses oleh semua orang. CuteSymbols dicipta untuk membantu orang menambah personaliti pada kehadiran digital mereka dengan simbol Unicode yang cantik yang berfungsi di mana-mana.",
+      content2: "Sama ada anda menghias bio Instagram, mencipta nama pengguna Discord yang unik, atau menambah gaya pada profil TikTok anda, kami mempunyai simbol yang sempurna untuk anda."
+    },
+    offer: {
+      title: "✨ Apa Yang Kami Tawarkan",
+      symbols: {
+        title: "💖 1000+ Simbol",
+        desc: "Hati, bintang, bunga, kaomoji, dan banyak lagi - semuanya dipilih dengan teliti dan disusun mengikut kategori."
+      },
+      copy: {
+        title: "📱 Salin Satu Klik",
+        desc: "Hanya klik mana-mana simbol untuk menyalinnya dengan serta-merta. Berfungsi pada semua peranti dan platform."
+      },
+      multilang: {
+        title: "🌍 Pelbagai Bahasa",
+        desc: "Tersedia dalam bahasa Inggeris, Filipino, Melayu, Bengali, dan Poland dengan lebih banyak bahasa akan datang."
+      },
+      guides: {
+        title: "📚 Panduan Platform",
+        desc: "Tutorial terperinci untuk Instagram, TikTok, Discord, Roblox, dan platform popular lain."
+      }
+    },
+    why: {
+      title: "🏆 Mengapa Pilih CuteSymbols?",
+      updated: {
+        title: "Sentiasa Terkini",
+        desc: "Kami kerap menambah simbol baru dan mengemas kini panduan platform kami untuk mencerminkan trend terkini dan perubahan platform."
+      },
+      privacy: {
+        title: "Privasi Utama",
+        desc: "Kami tidak menjejaki penggunaan anda atau menyimpan data peribadi. Privasi anda adalah keutamaan kami."
+      },
+      free: {
+        title: "100% Percuma",
+        desc: "Semua simbol dan ciri adalah percuma sepenuhnya. Tiada langganan, tiada yuran tersembunyi, tiada iklan."
+      }
+    },
+    contact: {
+      title: "💌 Hubungi Kami",
+      desc: "Ada cadangan untuk simbol baru? Jumpa pepijat? Ingin bekerjasama? Kami ingin mendengar daripada anda!",
+      contactBtn: "Hubungi Kami",
+      emailBtn: "E-mel Kami"
+    }
+  },
+  bn: {
+    title: "CuteSymbols সম্পর্কে 💖",
+    subtitle: "ইন্টারনেটে সবচেয়ে সুন্দর সিম্বলের জন্য আপনার গন্তব্য",
+    mission: {
+      title: "🎯 আমাদের মিশন",
+      content1: "আমরা বিশ্বাস করি যে আত্মপ্রকাশ মজাদার, সৃজনশীল এবং সবার জন্য অ্যাক্সেসযোগ্য হওয়া উচিত। CuteSymbols তৈরি করা হয়েছে মানুষদের সুন্দর ইউনিকোড সিম্বল দিয়ে তাদের ডিজিটাল উপস্থিতিতে ব্যক্তিত্ব যোগ করতে সাহায্য করার জন্য যা সর্বত্র কাজ করে।",
+      content2: "আপনি আপনার Instagram বায়ো সাজাচ্ছেন, একটি অনন্য Discord ব্যবহারকারীর নাম তৈরি করছেন, বা আপনার TikTok প্রোফাইলে ফ্লেয়ার যোগ করছেন, আমাদের কাছে আপনার জন্য নিখুঁত সিম্বল রয়েছে।"
+    },
+    offer: {
+      title: "✨ আমরা কী অফার করি",
+      symbols: {
+        title: "💖 ১০০০+ সিম্বল",
+        desc: "হৃদয়, তারা, ফুল, kaomoji, এবং আরও অনেক কিছু - সবকিছু যত্নসহকারে নির্বাচিত এবং বিভাগ অনুযায়ী সংগঠিত।"
+      },
+      copy: {
+        title: "📱 এক-ক্লিক কপি",
+        desc: "যেকোনো সিম্বলে ক্লিক করুন তাৎক্ষণিক কপি করতে। সব ডিভাইস এবং প্ল্যাটফর্মে কাজ করে।"
+      },
+      multilang: {
+        title: "🌍 বহু-ভাষা",
+        desc: "ইংরেজি, ফিলিপিনো, মালয়, বাংলা এবং পোলিশ ভাষায় উপলব্ধ এবং আরও ভাষা শীঘ্রই আসছে।"
+      },
+      guides: {
+        title: "📚 প্ল্যাটফর্ম গাইড",
+        desc: "Instagram, TikTok, Discord, Roblox এবং অন্যান্য জনপ্রিয় প্ল্যাটফর্মের জন্য বিস্তারিত টিউটোরিয়াল।"
+      }
+    },
+    why: {
+      title: "🏆 কেন CuteSymbols বেছে নেবেন?",
+      updated: {
+        title: "সর্বদা আপ-টু-ডেট",
+        desc: "আমরা নিয়মিত নতুন সিম্বল যোগ করি এবং সর্বশেষ ট্রেন্ড এবং প্ল্যাটফর্ম পরিবর্তনগুলি প্রতিফলিত করতে আমাদের প্ল্যাটফর্ম গাইড আপডেট করি।"
+      },
+      privacy: {
+        title: "গোপনীয়তা-প্রথম",
+        desc: "আমরা আপনার ব্যবহার ট্র্যাক করি না বা ব্যক্তিগত ডেটা সংরক্ষণ করি না। আপনার গোপনীয়তা আমাদের অগ্রাধিকার।"
+      },
+      free: {
+        title: "১০০% বিনামূল্যে",
+        desc: "সব সিম্বল এবং বৈশিষ্ট্য সম্পূর্ণ বিনামূল্যে। কোন সাবস্ক্রিপশন নেই, কোন লুকানো ফি নেই, কোন বিজ্ঞাপন নেই।"
+      }
+    },
+    contact: {
+      title: "💌 যোগাযোগ করুন",
+      desc: "নতুন সিম্বলের জন্য পরামর্শ আছে? বাগ খুঁজে পেয়েছেন? সহযোগিতা করতে চান? আমরা আপনার কাছ থেকে শুনতে চাই!",
+      contactBtn: "যোগাযোগ করুন",
+      emailBtn: "ইমেইল করুন"
+    }
+  },
+  pl: {
+    title: "O CuteSymbols 💖",
+    subtitle: "Twoje główne miejsce dla najsłodszych symboli w internecie",
+    mission: {
+      title: "🎯 Nasza Misja",
+      content1: "Wierzymy, że wyrażanie siebie powinno być zabawne, kreatywne i dostępne dla wszystkich. CuteSymbols zostało stworzone, aby pomóc ludziom dodać osobowość do ich cyfrowej obecności za pomocą pięknych symboli Unicode, które działają wszędzie.",
+      content2: "Czy dekorujesz swoje bio na Instagramie, tworzysz unikalną nazwę użytkownika na Discordzie, czy dodajesz styl do swojego profilu TikTok, mamy dla Ciebie idealne symbole."
+    },
+    offer: {
+      title: "✨ Co Oferujemy",
+      symbols: {
+        title: "💖 1000+ Symboli",
+        desc: "Serca, gwiazdy, kwiaty, kaomoji i więcej - wszystko starannie wyselekcjonowane i zorganizowane według kategorii."
+      },
+      copy: {
+        title: "📱 Kopiowanie Jednym Kliknięciem",
+        desc: "Po prostu kliknij dowolny symbol, aby go natychmiast skopiować. Działa na wszystkich urządzeniach i platformach."
+      },
+      multilang: {
+        title: "🌍 Wielojęzyczność",
+        desc: "Dostępne w języku angielskim, filipińskim, malajskim, bengalskim i polskim, a więcej języków wkrótce."
+      },
+      guides: {
+        title: "📚 Przewodniki Platform",
+        desc: "Szczegółowe samouczki dla Instagrama, TikToka, Discorda, Robloxa i innych popularnych platform."
+      }
+    },
+    why: {
+      title: "🏆 Dlaczego Wybrać CuteSymbols?",
+      updated: {
+        title: "Zawsze Aktualne",
+        desc: "Regularnie dodajemy nowe symbole i aktualizujemy nasze przewodniki platform, aby odzwierciedlić najnowsze trendy i zmiany platform."
+      },
+      privacy: {
+        title: "Prywatność Przede Wszystkim",
+        desc: "Nie śledzimy Twojego użytkowania ani nie przechowujemy danych osobowych. Twoja prywatność to nasz priorytet."
+      },
+      free: {
+        title: "100% Darmowe",
+        desc: "Wszystkie symbole i funkcje są całkowicie darmowe. Bez subskrypcji, bez ukrytych opłat, bez reklam."
+      }
+    },
+    contact: {
+      title: "💌 Skontaktuj Się",
+      desc: "Masz sugestie dotyczące nowych symboli? Znalazłeś błąd? Chcesz współpracować? Chcemy Cię usłyszeć!",
+      contactBtn: "Skontaktuj Się",
+      emailBtn: "Wyślij E-mail"
+    }
+  }
+};
+
+const currentContent = content[lang] || content.en;
+---
+
+<Layout title={`${currentContent.title} - Cute Symbols`} locale={lang}>
+  <div style={{
+    maxWidth: '800px',
+    margin: '0 auto',
+    padding: '3rem 1rem'
+  }}>
+    <!-- 页面标题 -->
+    <h1 style={{
+      fontSize: 'clamp(2rem, 5vw, 3rem)',
+      fontWeight: 700,
+      marginBottom: '1rem',
+      textAlign: 'center',
+      background: 'linear-gradient(135deg, #ff6b9d 0%, #c06c84 100%)',
+      WebkitBackgroundClip: 'text',
+      WebkitTextFillColor: 'transparent',
+      backgroundClip: 'text'
+    }}>
+      {currentContent.title}
+    </h1>
+
+    <p style={{
+      textAlign: 'center',
+      fontSize: '1.125rem',
+      color: 'var(--text-secondary)',
+      marginBottom: '3rem',
+      maxWidth: '600px',
+      margin: '0 auto 3rem'
+    }}>
+      {currentContent.subtitle}
+    </p>
+
+    <!-- 主要内容 -->
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '3rem'
+    }}>
+      <!-- 我们的使命 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          {currentContent.mission.title}
+        </h2>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)',
+          marginBottom: '1rem'
+        }}>
+          {currentContent.mission.content1}
+        </p>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)'
+        }}>
+          {currentContent.mission.content2}
+        </p>
+      </section>
+
+      <!-- 我们提供什么 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          {currentContent.offer.title}
+        </h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
+          gap: '1.5rem'
+        }}>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              {currentContent.offer.symbols.title}
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              {currentContent.offer.symbols.desc}
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              {currentContent.offer.copy.title}
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              {currentContent.offer.copy.desc}
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              {currentContent.offer.multilang.title}
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              {currentContent.offer.multilang.desc}
+            </p>
+          </div>
+          <div style={{
+            padding: '1.5rem',
+            background: 'var(--bg-color)',
+            borderRadius: 'var(--radius-md)',
+            border: '1px solid var(--border-color)'
+          }}>
+            <h3 style={{
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              marginBottom: '0.75rem',
+              color: 'var(--text-primary)'
+            }}>
+              {currentContent.offer.guides.title}
+            </h3>
+            <p style={{
+              fontSize: '0.9375rem',
+              lineHeight: 1.6,
+              color: 'var(--text-secondary)'
+            }}>
+              {currentContent.offer.guides.desc}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 为什么选择我们 -->
+      <section style={{
+        background: 'linear-gradient(135deg, #ff6b9d15 0%, #c06c8415 100%)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '2px solid var(--accent-color)'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          {currentContent.why.title}
+        </h2>
+        <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>🚀</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                {currentContent.why.updated.title}
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                {currentContent.why.updated.desc}
+              </p>
+            </div>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>🔒</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                {currentContent.why.privacy.title}
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                {currentContent.why.privacy.desc}
+              </p>
+            </div>
+          </div>
+          <div style={{
+            display: 'flex',
+            alignItems: 'flex-start',
+            gap: '1rem'
+          }}>
+            <span style={{
+              fontSize: '1.5rem',
+              flexShrink: 0
+            }}>💯</span>
+            <div>
+              <h3 style={{
+                fontSize: '1.125rem',
+                fontWeight: 600,
+                marginBottom: '0.25rem',
+                color: 'var(--text-primary)'
+              }}>
+                {currentContent.why.free.title}
+              </h3>
+              <p style={{
+                fontSize: '0.9375rem',
+                lineHeight: 1.6,
+                color: 'var(--text-secondary)'
+              }}>
+                {currentContent.why.free.desc}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 联系我们 -->
+      <section style={{
+        background: 'var(--card-bg)',
+        padding: '2rem',
+        borderRadius: 'var(--radius-lg)',
+        border: '1px solid var(--border-color)',
+        textAlign: 'center'
+      }}>
+        <h2 style={{
+          fontSize: '1.75rem',
+          fontWeight: 700,
+          marginBottom: '1rem',
+          color: 'var(--text-primary)'
+        }}>
+          {currentContent.contact.title}
+        </h2>
+        <p style={{
+          fontSize: '1.0625rem',
+          lineHeight: 1.7,
+          color: 'var(--text-secondary)',
+          marginBottom: '1.5rem'
+        }}>
+          {currentContent.contact.desc}
+        </p>
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          gap: '1rem',
+          flexWrap: 'wrap'
+        }}>
+          <a
+            href={lang === 'en' ? '/contact' : `/${lang}/contact`}
+            style={{
+              display: 'inline-block',
+              padding: '0.875rem 2rem',
+              background: 'var(--accent-color)',
+              color: '#ffffff',
+              borderRadius: 'var(--radius-md)',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '1rem',
+              transition: 'all 0.3s ease'
+            }}
+            class="cta-button"
+          >
+            {currentContent.contact.contactBtn}
+          </a>
+          <a
+            href="mailto:hi@cutesymbols.com"
+            style={{
+              display: 'inline-block',
+              padding: '0.875rem 2rem',
+              background: 'transparent',
+              color: 'var(--accent-color)',
+              border: '2px solid var(--accent-color)',
+              borderRadius: 'var(--radius-md)',
+              textDecoration: 'none',
+              fontWeight: 600,
+              fontSize: '1rem',
+              transition: 'all 0.3s ease'
+            }}
+            class="cta-button-outline"
+          >
+            {currentContent.contact.emailBtn}
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <GirlyFooter locale={lang} />
+
+  <style>
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .cta-button-outline:hover {
+      background: var(--accent-color);
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+
+      div[style*="flex-direction: column"] {
+        gap: 2rem !important;
+      }
+    }
+  </style>
+</Layout>
