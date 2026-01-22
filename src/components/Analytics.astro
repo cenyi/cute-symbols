@@ -4,8 +4,8 @@
  * 支持 Google Analytics 4 和 Cloudflare Analytics
  */
 
-// 从环境变量获取 Analytics ID
-const GA_ID = import.meta.env.GOOGLE_ANALYTICS_ID;
+// 从环境变量获取 Analytics ID，如果没有则使用默认值
+const GA_ID = import.meta.env.GOOGLE_ANALYTICS_ID || 'G-XSTWT0ML6N';
 const CF_ANALYTICS_ID = import.meta.env.CLOUDFLARE_ANALYTICS_ID;
 ---
 
