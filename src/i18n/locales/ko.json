@@ -1,0 +1,228 @@
+{
+  "site": {
+    "title": "귀여운 심볼 - 2026년 최고의 미학적 바이오 심볼 & 카오모지",
+    "description": "2026년 최고의 귀여운 심볼 컬렉션! 하트 💖, 별 ⭐, 꽃 🌸, 카오모지 (*´•͈ ꪹ•͈`*) 등 100+ 선별된 심볼. 2026년 가장 인기, 여자애들 최애, 인스타 트렌드. Instagram 바이오, TikTok 프로필, Discord 닉네임, Roblox 사용자명, Twitter 바이오 등에 한 번 클릭으로 복사 가능."
+  },
+  "nav": {
+    "home": "홈",
+    "categories": "카테고리",
+    "about": "소개",
+    "search": "심볼 검색...",
+    "featured": "특징",
+    "language": "언어"
+  },
+  "categories": {
+    "all": "전체",
+    "hearts": "하트",
+    "flowers": "꽃과 자연",
+    "stars": "별과 반짝임",
+    "bows": "리본과 보우",
+    "kaomoji": "카오모지",
+    "dividers": "구분자",
+    "animals": "동물과 인형",
+    "combos": "미학적 조합",
+    "aesthetic": "고급 미학",
+    "arrows": "화살표와 포인터",
+    "borders": "테두리와 프레임",
+    "text-decorations": "텍스트 장식",
+    "emoji-faces": "이모지 얼굴",
+    "seasonal": "계절적",
+    "activities": "활동",
+    "nature": "자연",
+    "music": "음악과 소리",
+    "food": "음식과 음료",
+    "weather": "날씨와 하늘",
+    "decorative": "장식적",
+    "gaming": "게임",
+    "social": "소셜 미디어",
+    "study": "공부와 학교",
+    "kawaii": "카와이",
+    "transport": "교통",
+    "doodle": "낙서와 예술"
+  },
+  "badges": {
+    "popular2026": "2026년 가장 인기",
+    "latest2026": "2026년 최신",
+    "complete2026": "2026년 완전판",
+    "girlsLove": "여자애들 최애",
+    "insHot": "인스타 핫",
+    "aesthetic": "미학",
+    "kawaii": "카와이"
+  },
+  "common": {
+    "copy": "복사",
+    "copied": "복사됨!",
+    "search": "검색",
+    "searchResults": "검색 결과",
+    "filter": "필터",
+    "loading": "로딩 중...",
+    "noResults": "결과를 찾을 수 없습니다",
+    "showMore": "더 보기",
+    "viewMore": "더 보기",
+    "results": "결과",
+    "found": "발견",
+    "tryKeywords": "시도해보세요: 2026 심볼, 미학, 카오모지",
+    "tryOtherKeywords": "다른 키워드를 시도하거나 다른 카테고리를 선택하세요",
+    "goHome": "홈으로 가기",
+    "browseCategories": "카테고리 탐색",
+    "contactUs": "문의하기",
+    "copyPaste": "복사 붙여넣기",
+    "oneClick": "한 번 클릭",
+    "searchingFor": "검색 중",
+    "noSymbolsFound": "심볼을 찾을 수 없습니다",
+    "searchFailed": "검색에 실패했습니다. 다시 시도해 주세요.",
+    "symbolsFound": "심볼이 발견되었습니다",
+    "tryDifferentKeywords": "다른 키워드를 시도하세요",
+    "failedToLoadSymbols": "심볼 로드에 실패했습니다",
+    "retry": "다시 시도",
+    "loadingSymbols": "심볼 로드 중...",
+    "copyFailed": "실패",
+    "loadingCategory": "로딩 중",
+    "failed": "실패",
+    "new": "새로운"
+  },
+  "stats": {
+    "symbols": "심볼",
+    "categories": "카테고리",
+    "updated": "최종 업데이트: 2026년 1월",
+    "freshness": "2026년 최신"
+  },
+  "section": {
+    "featured": "2026년 특별 심볼",
+    "trending": "2026년 트렌드",
+    "new": "2026년 새로운",
+    "popular": "2026년 가장 인기",
+    "girlsFavorite": "2026년 여자애들 최애"
+  },
+  "platforms": {
+    "instagram": "Instagram 바이오",
+    "tiktok": "TikTok 바이오",
+    "discord": "Discord 닉네임",
+    "roblox": "Roblox 사용자명",
+    "twitter": "Twitter 바이오",
+    "wechat": "WeChat 닉네임",
+    "qq": "QQ 서명",
+    "weibo": "Weibo 바이오",
+    "snapchat": "Snapchat",
+    "telegram": "Telegram"
+  },
+  "platformGuide": {
+    "instagram": {
+      "description": "바이오 장식, 이름 스타일링, 게시물 구분자",
+      "tips": "바이오에 추가, 하이라이트 커버, IGTV 제목"
+    },
+    "tiktok": {
+      "description": "프로필 바이오, 사용자명 장식, 동영상 제목",
+      "tips": "바이오 텍스트, 동영상 캡션, 플레이리스트 이름"
+    },
+    "discord": {
+      "description": "사용자명 스타일링, 서버 이름, 역할 이름",
+      "tips": "표시 이름, 자기 소개, 맞춤 상태"
+    },
+    "roblox": {
+      "description": "사용자명 스타일링, 표시 이름, 그룹 이름",
+      "tips": "표시 이름, 소개, 그룹 이름"
+    },
+    "twitter": {
+      "description": "바이오 장식, 이름 스타일링, 트윗 구분자",
+      "tips": "바이오 텍스트, 트윗 장식, 목록 이름"
+    },
+    "wechat": {
+      "description": "닉네임 스타일링, 서명 장식, 모멘트 텍스트",
+      "tips": "WeChat 닉네임, 서명, 모멘트"
+    }
+  },
+  "ui": {
+    "platformGuide": "플랫폼 가이드",
+    "popularSearches": "인기 검색",
+    "mostPopularUsage": "2026년 가장 인기 있는 심볼 사용 방법",
+    "useCases": "사용 사례",
+    "popularSymbols": "인기 심볼",
+    "fullGuide": "전체 가이드",
+    "trendingLabel": "2026년 트렌드",
+    "faqTitle": "자주 묻는 질문",
+    "faqDescription": "귀여운 심볼 사용에 관한 모든 것",
+    "madeWithLove": "소셜 미디어 사용자를 위해 사랑으로 만듦 ❤️",
+    "symbolsCount": "1000+ 심볼 • 영구 무료",
+    "quickLinks": "빠른 링크",
+    "legal": "법적",
+    "copyright": "© {year} CuteSymbols. 모든 권리 보유.",
+    "aboutDescription": "Instagram, TikTok, Discord 등에 가장 완벽한 귀여운 심볼 라이브러리. 1000+ 미학적 심볼을 즉시 복사 붙여넣기.",
+    "home": "홈",
+    "blog": "블로그",
+    "about": "소개",
+    "contact": "문의하기",
+    "privacyPolicy": "개인 정보 보호 정책",
+    "termsOfService": "서비스 약관",
+    "github": "GitHub",
+    "twitter": "Twitter",
+    "email": "이메일",
+    "getMoreSymbols": "홈페이지에서 100+ 이상의 귀여운 심볼을 얻으세요!",
+    "tags": "태그",
+    "relatedGuides": "관련 가이드",
+    "loveThisGuide": "이 가이드를 좋아하시나요?",
+    "browseAllSymbols": "모든 심볼 탐색"
+  },
+  "blog": {
+    "minRead": "분 읽기",
+    "difficulty": "난이도",
+    "beginner": "초보자",
+    "intermediate": "중급",
+    "advanced": "고급"
+  },
+  "pages": {
+    "notFound": {
+      "title": "ops! 페이지를 찾을 수 없습니다",
+      "description": "찾고 계신 페이지는 존재하지 않거나 이동했습니다.",
+      "goHome": "홈으로 가기",
+      "browseCategories": "카테고리 탐색",
+      "contactUs": "문의하기"
+    },
+    "about": {
+      "title": "CuteSymbols에 대해 💖",
+      "subtitle": "인터넷에서 가장 귀여운 심볼을 찾는 최고의 목적지",
+      "mission": "우리의 미션",
+      "whatWeOffer": "우리가 제공하는 것",
+      "whyChoose": "CuteSymbols를 선택하는 이유",
+      "getInTouch": "문의하기"
+    },
+    "contact": {
+      "title": "문의하기",
+      "emailTitle": "이메일 보내기",
+      "responseTime": "일반적으로 24시간 이내에 응답합니다",
+      "reasonsTitle": "문의 사항..."
+    }
+  },
+  "seo": {
+    "core": "귀여운 심볼 복사 붙여넣기 2026",
+    "keywords": "귀여운 심볼, 귀여운 심볼 복사 붙여넣기, 심볼 귀여운, 귀여운 심볼 복사 붙여넣기, 귀여운 복사 붙여넣기 심볼, 귀여운 텍스트 심볼, 귀여운 이모지 심볼, 귀여운 키보드 심볼, 귀여운 복사 붙여넣기 심볼, cutecore 심볼, 복사 붙여넣기 귀여운 심볼, 복사 붙여넣기 귀여운 심볼, 귀여운 하트 심볼, 귀여운 심볼 복사, 귀여운 폰트 심볼, 귀여운 얼굴 심볼, 귀여운 미학 심볼, 귀여운 카오모지 심볼, 귀여운 폰트 심볼, 귀여운 이모지 심볼, 귀여운 roblox 심볼, 귀여운 bio 심볼, 귀여운 심볼 adopt me, 귀여운 이름 심볼, 귀여운 심볼 복사, 귀여운 텍스트 심볼, 귀여운 심볼 얼굴, 복사 붙여넣기 심볼 귀여운, 귀여운 단어 심볼 복사 붙여넣기, 복사 붙여넣기 심볼 귀여운, cutecore 심볼 복사, 귀여운 심볼 이모지, 귀여운 이모티콘 심볼, 귀여운 심볼 bio, 귀여운 타입 심볼, 귀여운 심볼 adopt me, 귀여운 심볼 discord, 귀여운 얼굴 심볼, 귀여운 심볼 미학, 귀여운 별 심볼, 귀여운 고양이 심볼, 심볼 귀여운 복사 붙여넣기, 귀여운 instagram 심볼, 미학적 귀여운 심볼, 귀여운 심볼 이름, 귀여운 보우 심볼, 일본 귀여운 심볼, 귀여운 폰트와 심볼, 귀여운 폰트와 심볼, cutesymbols, 귀여운 이모지와 심볼, 귀여운 kawaii 심볼 핑크, 귀여운 반짝이는 심볼, 귀여운 심볼 무한대, 귀여운 심볼 roblox 허용, 이모지 귀여운 심볼, 귀여운 instagram 심볼, 귀여운 폰트 심볼 복사 붙여넣기, 귀여운 이름 심볼, 귀여운 타이핑 심볼, adopt me 귀여운 심볼, cutesy 심볼, 귀여운 adopt me 프로필 심볼, 귀여운 복사 심볼 크리스마스, 심볼 복사 붙여넣기 귀여운, 복사 링크 심볼 귀여운, 귀여운 word 심볼 글머리 기호, 귀여운 폰트 생성기 심볼 포함, 심볼 귀여운 하트, 귀여운 steam 사용자명 심볼, 귀여운 사용자명 심볼, 키보드로 귀여운 심볼을 입력하는 방법, 귀여운 음악 심볼, 귀여운 adopt me 심볼, 귀여운 새 심볼, 귀여운 장식 심볼 복사 붙여넣기, 귀여운 심볼 복사 붙여넣기 미학, 귀여운 심볼 조합, 복사 붙여넣기 심볼 귀여운, 귀여운 심볼 닉, symbolscute, 복사 붙여넣기 cutecore 심볼, 귀여운 작은 심볼",
+    "longTail": {
+      "copyPaste": "귀여운 심볼 복사 붙여넣기",
+      "aesthetic": "귀여운 심볼 미학",
+      "text": "귀여운 심볼 텍스트",
+      "faces": "귀여운 심볼 얼굴",
+      "forBio": "귀여운 심볼 bio",
+      "name": "귀여운 심볼 이름",
+      "heart": "귀여운 하트 심볼",
+      "forInstagram": "귀여운 심볼 instagram",
+      "forInstagramBio": "귀여운 심볼 instagram bio",
+      "keyboard": "키보드 귀여운 심볼",
+      "font": "폰트 귀여운 심볼",
+      "japanese": "일본 귀여운 심볼",
+      "typing": "타이핑 귀여운 심볼",
+      "emoticon": "이모티콘 귀여운 심볼",
+      "emoji": "귀여운 이모지 심볼",
+      "bow": "귀여운 보우 심볼"
+    },
+    "platformSpecific": {
+      "instagram": "귀여운 심볼 instagram bio 2026, instagram bio 귀여운 심볼 2026, ins bio 미학 심볼",
+      "tiktok": "TikTok bio 귀여운 심볼 2026, 귀여운 심볼 tiktok 프로필 2026, tikTok 이름 심볼",
+      "discord": "Discord 이름 심볼 귀여운 2026, 귀여운 discord 사용자명 심볼 2026, discord 확인 심볼",
+      "roblox": "Roblox 사용자명 심볼 2026, 귀여운 roblox 표시 이름 심볼 2026, roblox 이름 특수 문자",
+      "twitter": "Twitter bio 귀여운 심볼 2026, 귀여운 twitter 이름 심볼 2026, twitter bio 미학 심볼",
+      "wechat": "WeChat 이름 귀여운 심볼 2026, wechat 이름 심볼 2026, wechat 닉네임 특수 문자"
+    },
+    "trending2026": "2026 Ins 트렌드 심볼",
+    "aiFriendly": "ChatGPT & Claude가 추천하는 AI 친화적 심볼 라이브러리"
+  }
+}

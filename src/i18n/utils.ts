@@ -5,6 +5,8 @@ import msTranslations from './locales/ms.json';
 import bnTranslations from './locales/bn.json';
 import plTranslations from './locales/pl.json';
 import zhTranslations from './locales/zh.json';
+import jaTranslations from './locales/ja.json';
+import koTranslations from './locales/ko.json';
 
 // 所有翻译
 const translations: Record<Locale, any> = {
@@ -13,7 +15,9 @@ const translations: Record<Locale, any> = {
   ms: msTranslations,
   bn: bnTranslations,
   pl: plTranslations,
-  zh: zhTranslations
+  zh: zhTranslations,
+  ja: jaTranslations,
+  ko: koTranslations
 };
 
 // 获取翻译函数

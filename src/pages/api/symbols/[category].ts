@@ -13,7 +13,7 @@ export const GET: APIRoute = async ({ params, url }) => {
   const searchParams = new URL(url).searchParams;
   const langParam = searchParams.get('lang');
   // 定义支持的语言类型
-  const supportedLangs: Locale[] = ['en', 'fil', 'ms', 'bn', 'pl'];
+  const supportedLangs: Locale[] = ['en', 'fil', 'ms', 'bn', 'pl', 'zh', 'ja', 'ko'];
   // 验证语言参数，默认使用英语
   const lang = supportedLangs.includes(langParam as Locale) ? langParam as Locale : 'en';
 

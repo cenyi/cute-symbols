@@ -849,6 +849,411 @@ export const heartsSymbols: Symbol2026[] = [
     category: 'hearts',
     unicode: 'U+1F9E1',
     tags: {
+      en: ['heart', 'orange', 'emoji', 'warmth', 'joy'],
+      fil: ['puso', 'kahel', 'emoji', 'init', 'kaligayahan'],
+      ms: ['hati', 'jingga', 'emoji', 'kehangatan', 'kegembiraan'],
+      bn: ['হৃদয়', 'কমলা', 'ইমোজি', 'উষ্ণতা', 'আনন্দ'],
+      pl: ['serce', 'pomarańczowe', 'emoji', 'ciepło', 'radość']
+    },
+    seo: {
+      en: 'orange heart emoji warmth joy friendship',
+      fil: 'kahel na puso emoji init kaligayahan pagkakaibigan',
+      ms: 'hati jingga emoji kehangatan kegembiraan persahabatan',
+      bn: 'কমলা হৃদয় ইমোজি উষ্ণতা আনন্দ বন্ধুত্ব',
+      pl: 'pomarańczowe serce emoji ciepło radość przyjaźń'
+    },
+    usage: {
+      en: 'Warmth, joy, friendship, positive energy',
+      fil: 'Init, kaligayahan, pagkakaibigan, positibong enerhiya',
+      ms: 'Kehangatan, kegembiraan, persahabatan, tenaga positif',
+      bn: 'উষ্ণতা, আনন্দ, বন্ধুত্ব, ইতিবাচক শক্তি',
+      pl: 'Ciepło, radość, przyjaźń, pozytywna energia'
+    }
+  },
+  {
+    id: 'heart-25',
+    symbol: '🖤',
+    category: 'hearts',
+    unicode: 'U+1F5A4',
+    tags: {
+      en: ['heart', 'black', 'emoji', 'mysterious', 'edgy'],
+      fil: ['puso', 'itim', 'emoji', 'misteryoso', 'edgy'],
+      ms: ['hati', 'hitam', 'emoji', 'misteri', 'edgy'],
+      bn: ['হৃদয়', 'কালো', 'ইমোজি', 'রহস্যময়', 'এজি'],
+      pl: ['serce', 'czarne', 'emoji', ' tajemniczy', 'edgy']
+    },
+    seo: {
+      en: 'black heart emoji mysterious edgy alternative',
+      fil: 'itim na puso emoji misteryoso edgy alternatibo',
+      ms: 'hati hitam emoji misteri edgy alternatif',
+      bn: 'কালো হৃদয় ইমোজি রহস্যময় এজি বিকল্প',
+      pl: 'czarne serce emoji tajemniczy edgy alternatywny'
+    },
+    usage: {
+      en: 'Mysterious love, alternative style, edgy aesthetic',
+      fil: 'Misteryosong pag-ibig, alternatibong istilo, edgy na aesthetic',
+      ms: 'Cinta misteri, gaya alternatif, aesthetic edgy',
+      bn: 'রহস্যময় ভালোবাসা, বিকল্প শৈলী, এজি aesthetic',
+      pl: 'Tajemnicza miłość, styl alternatywny, edgy aesthetic'
+    }
+  },
+  {
+    id: 'heart-26',
+    symbol: '💛',
+    category: 'hearts',
+    unicode: 'U+1F49B',
+    tags: {
+      en: ['heart', 'yellow', 'emoji', 'happiness', 'friendship'],
+      fil: ['puso', 'dilaw', 'emoji', 'kaligayahan', 'pagkakaibigan'],
+      ms: ['hati', 'kuning', 'emoji', 'kegembiraan', 'persahabatan'],
+      bn: ['হৃদয়', 'হলুদ', 'ইমোজি', 'আনন্দ', 'বন্ধুত্ব'],
+      pl: ['serce', 'żółte', 'emoji', 'radość', 'przyjaźń']
+    },
+    seo: {
+      en: 'yellow heart emoji happiness friendship positivity',
+      fil: 'dilaw na puso emoji kaligayahan pagkakaibigan positibo',
+      ms: 'hati kuning emoji kegembiraan persahabatan positif',
+      bn: 'হলুদ হৃদয় ইমোজি আনন্দ বন্ধুত্ব ইতিবাচকতা',
+      pl: 'żółte serce emoji radość przyjaźń pozytywizm'
+    },
+    usage: {
+      en: 'Happiness, friendship, positivity, sunshine vibes',
+      fil: 'Kaligayahan, pagkakaibigan, positibo, mga tono ng sikat ng araw',
+      ms: 'Kegembiraan, persahabatan, positif, getaran matahari',
+      bn: 'আনন্দ, বন্ধুত্ব, ইতিবাচকতা, সূর্যের আলো',
+      pl: 'Radość, przyjaźń, pozytywizm, wibracje słońca'
+    }
+  },
+  {
+    id: 'heart-27',
+    symbol: '💚',
+    category: 'hearts',
+    unicode: 'U+1F49A',
+    tags: {
+      en: ['heart', 'green', 'emoji', 'nature', 'growth'],
+      fil: ['puso', 'berde', 'emoji', 'kalikasan', 'paglaki'],
+      ms: ['hati', 'hijau', 'emoji', 'alam', 'pertumbuhan'],
+      bn: ['হৃদয়', 'সবুজ', 'ইমোজি', 'প্রকৃতি', 'প্রবৃদ্ধি'],
+      pl: ['serce', 'zielone', 'emoji', 'natura', 'wzrost']
+    },
+    seo: {
+      en: 'green heart emoji nature growth environmental',
+      fil: 'berde na puso emoji kalikasan paglaki pangkapaligiran',
+      ms: 'hati hijau emoji alam pertumbuhan alam sekitar',
+      bn: 'সবুজ হৃদয় ইমোজি প্রকৃতি প্রবৃদ্ধি পরিবেশ',
+      pl: 'zielone serce emoji natura wzrost ekologiczny'
+    },
+    usage: {
+      en: 'Nature love, growth, environmental awareness',
+      fil: 'Pagmamahal sa kalikasan, paglaki, kamalayan sa kapaligiran',
+      ms: 'Cinta alam, pertumbuhan, kesedaran alam sekitar',
+      bn: 'প্রকৃতির ভালোবাসা, প্রবৃদ্ধি, পরিবেশ সম্পর্কিত সচেতনতা',
+      pl: 'Miłość do natury, wzrost, świadomość ekologiczna'
+    }
+  },
+  {
+    id: 'heart-28',
+    symbol: '💙',
+    category: 'hearts',
+    unicode: 'U+1F499',
+    tags: {
+      en: ['heart', 'blue', 'emoji', 'trust', 'calm'],
+      fil: ['puso', 'asul', 'emoji', 'tiwala', 'kalma'],
+      ms: ['hati', 'biru', 'emoji', 'kepercayaan', 'tenang'],
+      bn: ['হৃদয়', 'নীল', 'ইমোজি', 'বিশ্বাস', 'শান্তি'],
+      pl: ['serce', 'niebieskie', 'emoji', 'zaufanie', 'spokój']
+    },
+    seo: {
+      en: 'blue heart emoji trust calm loyalty',
+      fil: 'asul na puso emoji tiwala kalma katapatan',
+      ms: 'hati biru emoji kepercayaan tenang kesetiaan',
+      bn: 'নীল হৃদয় ইমোজি বিশ্বাস শান্তি বিশ্বস্ততা',
+      pl: 'niebieskie serce emoji zaufanie spokój lojalność'
+    },
+    usage: {
+      en: 'Trust, calmness, loyalty, deep love',
+      fil: 'Tiwala, kalma, katapatan, malalim na pag-ibig',
+      ms: 'Kepercayaan, ketenangan, kesetiaan, cinta dalam',
+      bn: 'বিশ্বাস, শান্তি, বিশ্বস্ততা, গভীর ভালোবাসা',
+      pl: 'Zaufanie, spokój, lojalność, głęboka miłość'
+    }
+  },
+  {
+    id: 'heart-29',
+    symbol: '💜',
+    category: 'hearts',
+    unicode: 'U+1F49C',
+    tags: {
+      en: ['heart', 'purple', 'emoji', 'luxury', 'spirituality'],
+      fil: ['puso', 'lila', 'emoji', 'luho', 'espiritwalidad'],
+      ms: ['hati', 'ungu', 'emoji', 'kemewahan', 'kerohanian'],
+      bn: ['হৃদয়', 'বেগুনি', 'ইমোজি', 'বিলাসবহুল', 'আধ্যাত্মিকতা'],
+      pl: ['serce', 'fioletowe', 'emoji', 'luksus', 'duchowość']
+    },
+    seo: {
+      en: 'purple heart emoji luxury spirituality creativity',
+      fil: 'lila na puso emoji luho espiritwalidad pagkamalikhain',
+      ms: 'hati ungu emoji kemewahan kerohanian kreativiti',
+      bn: 'বেগুনি হৃদয় ইমোজি বিলাসবহুল আধ্যাত্মিকতা সৃজনশীলতা',
+      pl: 'fioletowe serce emoji luksus duchowość kreatywność'
+    },
+    usage: {
+      en: 'Spiritual love, luxury, creativity, mystery',
+      fil: 'Espiritwal na pag-ibig, luho, pagkamalikhain, misteryo',
+      ms: 'Cinta rohani, kemewahan, kreativiti, misteri',
+      bn: 'আধ্যাত্মিক ভালোবাসা, বিলাসবহুল, সৃজনশীলতা, রহস্য',
+      pl: 'Duchowa miłość, luksus, kreatywność, tajemnica'
+    }
+  },
+  {
+    id: 'heart-30',
+    symbol: '💝',
+    category: 'hearts',
+    unicode: 'U+1F49D',
+    tags: {
+      en: ['heart', 'gift', 'emoji', 'present', 'love'],
+      fil: ['puso', 'regalo', 'emoji', 'presente', 'pag-ibig'],
+      ms: ['hati', 'hadiah', 'emoji', 'hadiah', 'cinta'],
+      bn: ['হৃদয়', 'ঘর', 'ইমোজি', ' উপহার', 'ভালোবাসা'],
+      pl: ['serce', 'prezent', 'emoji', 'dar', 'miłość']
+    },
+    seo: {
+      en: 'heart gift emoji present love celebration',
+      fil: 'puso regalo emoji presente pag-ibig pagdiriwang',
+      ms: 'hati hadiah emoji hadiah cinta perayaan',
+      bn: 'হৃদয় উপহার ইমোজি উপহার ভালোবাসা উদযাপন',
+      pl: 'serce prezent emoji dar miłość celebracja'
+    },
+    usage: {
+      en: 'Love gifts, romantic surprises, celebrations',
+      fil: 'Mga regalo ng pag-ibig, romantikong sorpresa, mga pagdiriwang',
+      ms: 'Hadiah cinta, kejutan romantik, perayaan',
+      bn: 'ভালোবাসার উপহার, রোমান্টিক আশ্চর্য, উদযাপন',
+      pl: 'Prezenty miłosne, romantyczne zaskoczenia, celebracje'
+    }
+  },
+  {
+    id: 'heart-31',
+    symbol: '💞',
+    category: 'hearts',
+    unicode: 'U+1F49E',
+    tags: {
+      en: ['heart', 'beating', 'emoji', 'love', 'passion'],
+      fil: ['puso', 'tumitibok', 'emoji', 'pag-ibig', 'pag-iibigan'],
+      ms: ['hati', 'berdegup', 'emoji', 'cinta', 'nafsu'],
+      bn: ['হৃদয়', 'ধড়কন', 'ইমোজি', 'ভালোবাসা', 'আগ্রহ'],
+      pl: ['serce', 'bijące', 'emoji', 'miłość', 'pasja']
+    },
+    seo: {
+      en: 'beating heart emoji love passion romance',
+      fil: 'tumitibok puso emoji pag-ibig pag-iibigan romansa',
+      ms: 'hati berdegup emoji cinta nafsu romantis',
+      bn: 'ধড়কন হৃদয় ইমোজি ভালোবাসা আগ্রহ রোমান্স',
+      pl: 'bijące serce emoji miłość pasja romans'
+    },
+    usage: {
+      en: 'Beating love, passionate romance, deep affection',
+      fil: 'Tumitibok na pag-ibig, masidhing romansa, malalim na pagmamahal',
+      ms: 'Cinta berdegup, romantis yang penuh nafsu, kasih sayang yang dalam',
+      bn: 'ধড়কন ভালোবাসা, আগ্রহী রোমান্স, গভীর স্নেহ',
+      pl: 'Bijąca miłość, gorący romans, głębokie uczucie'
+    }
+  },
+  {
+    id: 'heart-32',
+    symbol: '💓',
+    category: 'hearts',
+    unicode: 'U+1F493',
+    tags: {
+      en: ['heart', 'pulsing', 'emoji', 'love', 'excitement'],
+      fil: ['puso', 'pulsing', 'emoji', 'pag-ibig', 'pagkasabik'],
+      ms: ['hati', 'berdenyut', 'emoji', 'cinta', 'kejutan'],
+      bn: ['হৃদয়', 'পালসিং', 'ইমোজি', 'ভালোবাসা', 'উত্তেজনা'],
+      pl: ['serce', 'pulsujące', 'emoji', 'miłość', 'podniecenie']
+    },
+    seo: {
+      en: 'pulsing heart emoji love excitement anticipation',
+      fil: 'pulsing puso emoji pag-ibig pagkasabik paghihintay',
+      ms: 'hati berdenyut emoji cinta kejutan jangkaan',
+      bn: 'পালসিং হৃদয় ইমোজি ভালোবাসা উত্তেজনা প্রত্যাশা',
+      pl: 'pulsujące serce emoji miłość podniecenie oczekiwanie'
+    },
+    usage: {
+      en: 'Exciting love, anticipation, heartbeat',
+      fil: 'Kapana-panabik na pag-ibig, paghihintay, tibok ng puso',
+      ms: 'Cinta yang menarik, jangkaan, degupan jantung',
+      bn: 'উত্তেজনাপূর্ণ ভালোবাসা, প্রত্যাশা, হৃদয়ের ধড়কন',
+      pl: 'Ekscytująca miłość, oczekiwanie, bicie serca'
+    }
+  },
+  {
+    id: 'heart-33',
+    symbol: '💗',
+    category: 'hearts',
+    unicode: 'U+1F497',
+    tags: {
+      en: ['heart', 'growing', 'emoji', 'love', 'expansion'],
+      fil: ['puso', 'lumalaki', 'emoji', 'pag-ibig', 'pagpapalawak'],
+      ms: ['hati', 'berkembang', 'emoji', 'cinta', 'pengembangan'],
+      bn: ['হৃদয়', 'বর্ধমান', 'ইমোজি', 'ভালোবাসা', 'প্রসারণ'],
+      pl: ['serce', 'rośnie', 'emoji', 'miłość', 'rozszerzenie']
+    },
+    seo: {
+      en: 'growing heart emoji love expansion affection',
+      fil: 'lumalaki puso emoji pag-ibig pagpapalawak pagmamahal',
+      ms: 'hati berkembang emoji cinta pengembangan kasih sayang',
+      bn: 'বর্ধমান হৃদয় ইমোজি ভালোবাসা প্রসারণ স্নেহ',
+      pl: 'rośnie serce emoji miłość rozszerzenie uczucie'
+    },
+    usage: {
+      en: 'Growing love, expanding affection, increasing passion',
+      fil: 'Lumalaking pag-ibig, lumalawak na pagmamahal, tumataas na pag-iibigan',
+      ms: 'Cinta yang berkembang, kasih sayang yang membesar, nafsu yang meningkat',
+      bn: 'বর্ধমান ভালোবাসা, প্রসারিত স্নেহ, ক্রমবর্ধমান আগ্রহ',
+      pl: 'Rośniejąca miłość, rozszerzające się uczucie, rosnąca pasja'
+    }
+  },
+  {
+    id: 'heart-34',
+    symbol: '💖',
+    category: 'hearts',
+    unicode: 'U+1F496',
+    tags: {
+      en: ['heart', 'sparkling', 'emoji', 'love', 'magic'],
+      fil: ['puso', 'kumikislap', 'emoji', 'pag-ibig', 'mahika'],
+      ms: ['hati', 'berkilau', 'emoji', 'cinta', 'ajaib'],
+      bn: ['হৃদয়', 'ঝকমকে', 'ইমোজি', 'ভালোবাসা', 'জাদু'],
+      pl: ['serce', 'błyszczące', 'emoji', 'miłość', 'magia']
+    },
+    seo: {
+      en: 'sparkling heart emoji love magic romance',
+      fil: 'kumikislap puso emoji pag-ibig mahika romansa',
+      ms: 'hati berkilau emoji cinta ajaib romantis',
+      bn: 'ঝকমকে হৃদয় ইমোজি ভালোবাসা জাদু রোমান্স',
+      pl: 'błyszczące serce emoji miłość magia romans'
+    },
+    usage: {
+      en: 'Magical love, sparkling romance, enchanting affection',
+      fil: 'Mahikang pag-ibig, kumikislap na romansa, kaakit-akit na pagmamahal',
+      ms: 'Cinta ajaib, romantis yang berkilau, kasih sayang yang memukau',
+      bn: 'জাদুকর ভালোবাসা, ঝকমকে রোমান্স, মনোমুগ্ধকারী স্নেহ',
+      pl: 'Magiczna miłość, błyszczący romans, urzekające uczucie'
+    }
+  },
+  {
+    id: 'heart-35',
+    symbol: '💕',
+    category: 'hearts',
+    unicode: 'U+1F495',
+    tags: {
+      en: ['hearts', 'two', 'emoji', 'love', 'couple'],
+      fil: ['mga puso', 'dalawa', 'emoji', 'pag-ibig', 'mag-asawa'],
+      ms: ['hati', 'dua', 'emoji', 'cinta', 'pasangan'],
+      bn: ['হৃদয়', 'দুই', 'ইমোজি', 'ভালোবাসা', 'যোজন'],
+      pl: ['serca', 'dwa', 'emoji', 'miłość', 'para']
+    },
+    seo: {
+      en: 'two hearts emoji love couple romance',
+      fil: 'dalawang puso emoji pag-ibig mag-asawa romansa',
+      ms: 'dua hati emoji cinta pasangan romantis',
+      bn: 'দুই হৃদয় ইমোজি ভালোবাসা যোজন রোমান্স',
+      pl: 'dwa serca emoji miłość para romans'
+    },
+    usage: {
+      en: 'Couple love, romantic partnership, two hearts beating as one',
+      fil: 'Pag-ibig ng mag-asawa, romantikong pakikipagtulungan, dalawang puso na tumitibok bilang isa',
+      ms: 'Cinta pasangan, perkongsian romantik, dua hati berdegup sebagai satu',
+      bn: 'যোজনের ভালোবাসা, রোমান্টিক অংশীদারিত্ব, দুই হৃদয় এক হয়ে ধড়কছে',
+      pl: 'Miłość pary, romantyczne partnerstwo, dwa serca bijące jako jedno'
+    }
+  },
+  {
+    id: 'heart-36',
+    symbol: '💟',
+    category: 'hearts',
+    unicode: 'U+1F49F',
+    tags: {
+      en: ['heart', 'dotted', 'emoji', 'love', 'retro'],
+      fil: ['puso', 'may tuldok', 'emoji', 'pag-ibig', 'retro'],
+      ms: ['hati', 'bertitik', 'emoji', 'cinta', 'retro'],
+      bn: ['হৃদয়', 'বিন্দুযুক্ত', 'ইমোজি', 'ভালোবাসা', 'প্রতি'],
+      pl: ['serce', 'kropkowane', 'emoji', 'miłość', 'retro']
+    },
+    seo: {
+      en: 'dotted heart emoji love retro vintage',
+      fil: 'may tuldok na puso emoji pag-ibig retro vintage',
+      ms: 'hati bertitik emoji cinta retro vintage',
+      bn: 'বিন্দুযুক্ত হৃদয় ইমোজি ভালোবাসা প্রতি ভিন্টেজ',
+      pl: 'kropkowane serce emoji miłość retro wintage'
+    },
+    usage: {
+      en: 'Retro love, vintage aesthetic, dotted heart decoration',
+      fil: 'Retro na pag-ibig, vintage na aesthetic, may tuldok na puso na dekorasyon',
+      ms: 'Cinta retro, aesthetic vintage, hiasan hati bertitik',
+      bn: 'প্রতি ভালোবাসা, ভিন্টেজ aesthetic, বিন্দুযুক্ত হৃদয় সজ্জা',
+      pl: 'Retro miłość, wintage aesthetic, dekoracja kropkowanego serca'
+    }
+  },
+  {
+    id: 'heart-37',
+    symbol: '❣️',
+    category: 'hearts',
+    unicode: 'U+2763',
+    tags: {
+      en: ['heart', 'exclamation', 'emoji', 'love', 'emphasis'],
+      fil: ['puso', 'pananawagan', 'emoji', 'pag-ibig', 'diin'],
+      ms: ['hati', 'seruan', 'emoji', 'cinta', 'penekanan'],
+      bn: ['হৃদয়', 'ঘোষণা', 'ইমোজি', 'ভালোবাসা', 'জোর'],
+      pl: ['serce', 'wykrzyknik', 'emoji', 'miłość', 'podkreślenie']
+    },
+    seo: {
+      en: 'exclamation heart emoji love emphasis passion',
+      fil: 'pananawagan puso emoji pag-ibig diin pag-iibigan',
+      ms: 'seruan hati emoji cinta penekanan nafsu',
+      bn: 'ঘোষণা হৃদয় ইমোজি ভালোবাসা জোর আগ্রহ',
+      pl: 'wykrzyknik serce emoji miłość podkreślenie pasja'
+    },
+    usage: {
+      en: 'Emphatic love, passionate exclamation, strong affection',
+      fil: 'Malinaw na pag-ibig, masidhing pananawagan, malakas na pagmamahal',
+      ms: 'Cinta yang tegas, seruan yang penuh nafsu, kasih sayang yang kuat',
+      bn: 'স্পষ্ট ভালোবাসা, আগ্রহী ঘোষণা, শক্তিশালী স্নেহ',
+      pl: 'Wyrazista miłość, gorący krzyk, silne uczucie'
+    }
+  },
+  {
+    id: 'heart-38',
+    symbol: '💝',
+    category: 'hearts',
+    unicode: 'U+1F49D',
+    tags: {
+      en: ['heart', 'gift', 'emoji', 'present', 'affection'],
+      fil: ['puso', 'regalo', 'emoji', 'presente', 'pagmamahal'],
+      ms: ['hati', 'hadiah', 'emoji', 'hadiah', 'kasih sayang'],
+      bn: ['হৃদয়', 'ঘর', 'ইমোজি', 'উপহার', 'স্নেহ'],
+      pl: ['serce', 'prezent', 'emoji', 'dar', 'uczucie']
+    },
+    seo: {
+      en: 'heart gift emoji present affection appreciation',
+      fil: 'puso regalo emoji presente pagmamahal pagpapahalaga',
+      ms: 'hati hadiah emoji hadiah kasih sayang penghargaan',
+      bn: 'হৃদয় উপহার ইমোজি উপহার স্নেহ প্রশংসা',
+      pl: 'serce prezent emoji dar uczucie wdzięczność'
+    },
+    usage: {
+      en: 'Gift of love, affectionate present, appreciation',
+      fil: 'Regalo ng pag-ibig, mapagmahal na presente, pagpapahalaga',
+      ms: 'Hadiah cinta, hadiah yang penuh kasih, penghargaan',
+      bn: 'ভালোবাসার উপহার, স্নেহপূর্ণ উপহার, প্রশংসা',
+      pl: 'Dar miłości, uczuciowy prezent, wdzięczność'
+    }
+  },
+  {
+    id: 'heart-39',
+    symbol: '💖',
+    category: 'hearts',
+    unicode: 'U+1F9E1',
+    tags: {
       en: ['heart', 'orange', 'emoji', 'energy', 'vitality'],
       fil: ['puso', 'kahel', 'emoji', 'energy', 'vitality'],
       ms: ['hati', 'oren', 'emoji', 'tenaga', 'vitaliti'],
@@ -1545,6 +1950,8 @@ export function searchSymbols2026(query: string, locale: 'en' | 'fil' | 'ms' | '
   return allSymbols2026.filter(symbol =>
     symbol.symbol.includes(query) ||
     (symbol.tags[locale] && symbol.tags[locale]!.some((tag: string) => tag.toLowerCase().includes(lowerQuery))) ||
-    (symbol.seo[locale] && symbol.seo[locale]!.toLowerCase().includes(lowerQuery))
+    (symbol.seo[locale] && symbol.seo[locale]!.toLowerCase().includes(lowerQuery)) ||
+    (symbol.tags.en && symbol.tags.en.some((tag: string) => tag.toLowerCase().includes(lowerQuery))) ||
+    (symbol.seo.en && symbol.seo.en.toLowerCase().includes(lowerQuery))
   );
 }

@@ -171,37 +171,39 @@ Top 3 symbol styles on Discord in 2026:
 
 ## 🎯 Discord Name Rules & Limitations {#rules}
 
-### ✅ What Discord Allows
+### ✅ What Discord Allows for Cute Symbols
 
 **In Usernames:**
 - Most standard Unicode letters
 - Numbers 0-9
 - Basic symbols: _ (underscore)
-- **Note:** Discord is restrictive with custom symbols in usernames
+- **Note:** Discord is restrictive with cute symbols in usernames - stick to display names
 
 **In Display Names (Nicknames):**
-- All Unicode symbols
-- Emojis
-- Special characters
-- Kaomoji
-- Maximum 32 characters
+- All Unicode cute symbols
+- Cute emojis
+- Cute special characters
+- Cute kaomoji
+- Maximum 32 characters including cute symbols
 
 **In Server Names:**
-- Up to 100 characters
-- Most symbols supported
-- Spaces allowed
+- Up to 100 characters including cute symbols
+- Most cute symbols supported
+- Spaces allowed with cute symbols
 
-### ⚠️ Discord Limitations
+### ⚠️ Discord Limitations for Cute Symbols
 
 **Username Restrictions:**
-- No special symbols in actual username (after #)
+- No cute symbols allowed in actual username (after #)
 - Discriminator system removed in 2024 update
 - Can only change username once every 30 minutes
+- **Note:** Cute symbols work best in display names, not usernames
 
-**Display Name Freedom:**
-- This is where you can use symbols!
-- Change anytime in server settings
-- No limit on changes
+**Display Name Freedom for Cute Symbols:**
+- This is where you can use cute symbols freely!
+- Change your display name with cute symbols anytime in server settings
+- No limit on changes for cute symbols in display names
+- Maximum 32 characters for display names with cute symbols
 
 ---
 
