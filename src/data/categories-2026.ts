@@ -655,6 +655,161 @@ export const CATEGORIES_2026: Category2026[] = [
       en: ['Eco Posts', 'Nature Photography', 'Environmental Content', 'Zen Vibes'],
       fil: ['Eco Post', 'Potograpiya ng Kalikasan', 'Content na Pangkalikasan', 'Zen Vibes']
     }
+  },
+  {
+    id: 'math',
+    icon: '∞',
+    color: '#8B5CF6',
+    names: {
+      en: 'Math & Science',
+      fil: 'Matematika at Siyensya',
+      ms: 'Matematik & Sains',
+      bn: 'গণিত ও বিজ্ঞান',
+      pl: 'Matematyka i Nauka'
+    },
+    descriptions: {
+      en: 'Mathematical symbols for infinity, equations, and scientific notation',
+      fil: 'Mga simbolo ng matematika para sa infinity, equation, at siyentipikong notasyon',
+      ms: 'Simbol matematik untuk ketakterhinggaan, persamaan, dan notasi saintifik',
+      bn: 'অসীম, সমীকরণ এবং বৈজ্ঞানিক স্বরলিপির জন্য গাণিতিক প্রতীক',
+      pl: 'Symbole matematyczne dla nieskończoności, równań i notacji naukowych'
+    },
+    badges: {
+      en: ['Infinite', 'Scientific', 'Smart'],
+      fil: ['Infinity', 'Siyentipiko', 'Matalino']
+    },
+    seoKeywords: {
+      en: ['math symbols', 'infinity symbol', 'pi symbol', 'scientific notation', 'mathematical symbols', 'equation symbols'],
+      fil: ['mga simbolo ng matematika', 'simbolo ng infinity', 'simbolo ng pi', 'siyentipikong notasyon']
+    },
+    useCases: {
+      en: ['Math Homework', 'Science Posts', 'Smart Bios', 'Educational Content'],
+      fil: ['Math Homework', 'Post sa Siyensya', 'Matalinong Bio', 'Edukasyonal na Content']
+    }
+  },
+  {
+    id: 'hands',
+    icon: '👋',
+    color: '#FBBF24',
+    names: {
+      en: 'Hand Gestures',
+      fil: 'Mga Kilos ng Kamay',
+      ms: 'Isyarat Tangan',
+      bn: 'হাত ইশারা',
+      pl: 'Gesty Ręczne'
+    },
+    descriptions: {
+      en: 'Hand gesture emojis for waving, clapping, thumbs up, and more',
+      fil: 'Mga emoji ng kilos ng kamay para sa pagwawave, pagpalakpaka, thumbs up, at marami pa',
+      ms: 'Emoji isyarat tangan untuk melambai, bertepuk, ibu jari ke atas, dan banyak lagi',
+      bn: 'হাতের ইশারা ইমোজি দেওয়া, তালি বাজানো, থাম্ব আপ এবং আরও অনেক কিছুর জন্য',
+      pl: 'Emoji gestów ręki do machania, klaszczania, kciuka w górę i więcej'
+    },
+    badges: {
+      en: ['Expressive', 'Gestures', 'Social'],
+      fil: ['Expressive', 'Mga Kilos', 'Sosyal']
+    },
+    seoKeywords: {
+      en: ['hand gestures', 'hand emoji', 'thumbs up', 'waving hand', 'clapping hands'],
+      fil: ['mga kilos ng kamay', 'emoji ng kamay', 'thumbs up', 'pagwawave ng kamay']
+    },
+    useCases: {
+      en: ['Greetings', 'Reactions', 'Social Media', 'Comments'],
+      fil: ['Pagbati', 'Mga Reaksyon', 'Social Media', 'Mga Komento']
+    }
+  },
+  {
+    id: 'gaming',
+    icon: '🎮',
+    color: '#EF4444',
+    names: {
+      en: 'Gaming',
+      fil: 'Paglalaro',
+      ms: 'Permainan',
+      bn: 'গেমিং',
+      pl: 'Gry'
+    },
+    descriptions: {
+      en: 'Gaming symbols including controllers, dice, cards, and trophies',
+      fil: 'Mga simbolo ng gaming kabilang ang controller, dice, card, at trophy',
+      ms: 'Simbol permainan termasuk pengawal, dadu, kad, dan trofi',
+      bn: 'গেমিং প্রতীক যার মধ্যে কন্ট্রোলার, ডাইস, কার্ড এবং ট্রফি অন্তর্ভুক্ত',
+      pl: 'Symbole gier w tym kontrolery, kości, karty i trofea'
+    },
+    badges: {
+      en: ['Gamers', 'Esports', 'Achievement'],
+      fil: ['Mga Gamer', 'Esports', 'Achievement']
+    },
+    seoKeywords: {
+      en: ['gaming symbols', 'video game emoji', 'esports icons', 'gamer tags', 'game controller'],
+      fil: ['mga simbolo ng gaming', 'emoji ng video game', 'icon ng esports', 'mga tag ng gamer']
+    },
+    useCases: {
+      en: ['Gamer Bios', 'Esports Teams', 'Achievement Posts', 'Game Reviews'],
+      fil: ['Mga Bio ng Gamer', 'Mga Koponan ng Esports', 'Post ng Achievement', 'Review ng Laro']
+    }
+  },
+  {
+    id: 'emotions',
+    icon: '😊',
+    color: '#F59E0B',
+    names: {
+      en: 'Emotions & Faces',
+      fil: 'Mga Emosyon at Mukha',
+      ms: 'Emosi & Muka',
+      bn: 'আবেগ ও মুখ',
+      pl: 'Emocje i Twarze'
+    },
+    descriptions: {
+      en: 'Expressive face emojis showing emotions, feelings, and reactions',
+      fil: 'Mga expressive na face emoji na nagpapakita ng emoosyon, damdamin, at reaksyon',
+      ms: 'Emoji muka ekspresif yang menunjukkan emosi, perasaan, dan tindak balas',
+      bn: 'আবেগ, অনুভূতি এবং প্রতিক্রিয়া দেখানো রঙিন মুখের ইমোজি',
+      pl: 'Ekspresyjne emoji twarzy pokazujące emocje, uczucia i reakcje'
+    },
+    badges: {
+      en: ['Expressive', 'Emotional', 'Reactions'],
+      fil: ['Expressive', 'Emosyonal', 'Mga Reaksyon']
+    },
+    seoKeywords: {
+      en: ['emotion emoji', 'face emoji', 'smiley faces', 'emotional symbols', 'reaction faces'],
+      fil: ['emoji ng emosyon', 'emoji ng mukha', 'mga ngiting mukha', 'mga simbol na emosyonal']
+    },
+    useCases: {
+      en: ['Status Updates', 'Chat Reactions', 'Social Posts', 'Expressing Feelings'],
+      fil: ['Status Update', 'Mga Reaksyon sa Chat', 'Post sa Social', 'Pagpapahayag ng Damdamin']
+    }
+  },
+  {
+    id: 'text-decor',
+    icon: '̣̣',
+    color: '#EC4899',
+    names: {
+      en: 'Text Decorations',
+      fil: 'Dekorasyon sa Teksto',
+      ms: 'Hiasan Teks',
+      bn: 'টেক্সস ডেকোর',
+      pl: 'Dekoracje Tekstu'
+    },
+    descriptions: {
+      en: 'Tiny decorative marks and accents for text embellishment',
+      fil: 'Mga maliit na markang dekoratibo at accent para sa pagpapahaba ng teksto',
+      ms: 'Tanda hiasan kecil dan aksen untuk hiasan teks',
+      bn: 'টেক্সস সাজসজ্জার জন্য ক্ষুদ্র আলংকারিক চিহ্ন এবং অ্যাকসেন্ট',
+      pl: 'Małe znaki dekoracyjne i akcenty do upiększania tekstu'
+    },
+    badges: {
+      en: ['Subtle', 'Minimal', 'Aesthetic'],
+      fil: ['Subtle', 'Minimal', 'Aesthetic']
+    },
+    seoKeywords: {
+      en: ['text decorations', 'text accents', 'aesthetic text', 'text embellishments', 'typing symbols'],
+      fil: ['mga dekorasyon sa teksto', 'mga accent sa teksto', 'aesthetic na teksto']
+    },
+    useCases: {
+      en: ['Username Styling', 'Bio Accents', 'Name Decoration', 'Text Effects'],
+      fil: ['Styling ng Username', 'Mga Accent sa Bio', 'Dekorasyon ng Pangalan', 'Mga Epekto sa Teksto']
+    }
   }
 ];
 

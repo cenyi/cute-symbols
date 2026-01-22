@@ -1399,7 +1399,7 @@ export const aestheticSymbols: Symbol2026[] = [
   { id: 'aesthetic-4', symbol: '*ೃ༄', category: 'aesthetic', unicode: 'Complex', tags: { en: ['aesthetic', 'decorative', 'elegant'] }, seo: { en: 'aesthetic decorative elegant symbol' }, usage: { en: 'Elegant decoration' } }
 ];
 
-// 10. 箭头指示系列 - 精选10个核心
+// 10. 箭头指示系列 - 扩展到25个
 export const arrowsSymbols: Symbol2026[] = [
   { id: 'arrow-1', symbol: '➜', category: 'arrows', unicode: 'U+279C', tags: { en: ['arrow', 'right', 'pointer'] }, seo: { en: 'right arrow pointer symbol' }, usage: { en: 'Link indicator' } },
   { id: 'arrow-2', symbol: '➤', category: 'arrows', unicode: 'U+27A4', tags: { en: ['arrow', 'bold', 'pointer'] }, seo: { en: 'bold arrow pointer symbol' }, usage: { en: 'Strong indicator' } },
@@ -1407,7 +1407,112 @@ export const arrowsSymbols: Symbol2026[] = [
   { id: 'arrow-4', symbol: '➶', category: 'arrows', unicode: 'U+27B6', tags: { en: ['arrow', 'three', 'pointer'] }, seo: { en: 'three arrow pointer symbol' }, usage: { en: 'Triple pointer' } },
   { id: 'arrow-5', symbol: '↬', category: 'arrows', unicode: 'U+21AC', tags: { en: ['arrow', 'wave', 'pointer'] }, seo: { en: 'wave arrow pointer symbol' }, usage: { en: 'Wave pointer' } },
   { id: 'arrow-6', symbol: '⤷', category: 'arrows', unicode: 'U+2937', tags: { en: ['arrow', 'down right', 'pointer'] }, seo: { en: 'down right arrow pointer' }, usage: { en: 'Down right pointer' } },
-  { id: 'arrow-7', symbol: '⟿', category: 'arrows', unicode: 'U+27FF', tags: { en: ['arrow', 'long', 'pointer'] }, seo: { en: 'long arrow pointer symbol' }, usage: { en: 'Long pointer' } }
+  { id: 'arrow-7', symbol: '⟿', category: 'arrows', unicode: 'U+27FF', tags: { en: ['arrow', 'long', 'pointer'] }, seo: { en: 'long arrow pointer symbol' }, usage: { en: 'Long pointer' } },
+  { id: 'arrow-8', symbol: '→', category: 'arrows', unicode: 'U+2192', tags: { en: ['arrow', 'simple', 'right'] }, seo: { en: 'simple right arrow' }, usage: { en: 'Simple direction' } },
+  { id: 'arrow-9', symbol: '⇒', category: 'arrows', unicode: 'U+21D2', tags: { en: ['arrow', 'bold', 'double'] }, seo: { en: 'bold double arrow' }, usage: { en: 'Strong direction' } },
+  { id: 'arrow-10', symbol: '⟶', category: 'arrows', unicode: 'U+27F6', tags: { en: ['arrow', 'long', 'double'] }, seo: { en: 'long double arrow' }, usage: { en: 'Extended direction' } },
+  { id: 'arrow-11', symbol: '⤳', category: 'arrows', unicode: 'U+2933', tags: { en: ['arrow', 'down', 'zigzag'] }, seo: { en: 'zigzag down arrow' }, usage: { en: 'Downwards indicator' } },
+  { id: 'arrow-12', symbol: '⤴', category: 'arrows', unicode: 'U+2934', tags: { en: ['arrow', 'up', 'right'] }, seo: { en: 'up right arrow' }, usage: { en: 'Upwards direction' } },
+  { id: 'arrow-13', symbol: '⤵', category: 'arrows', unicode: 'U+2935', tags: { en: ['arrow', 'down', 'right'] }, seo: { en: 'down right arrow' }, usage: { en: 'Downwards direction' } },
+  { id: 'arrow-14', symbol: '↳', category: 'arrows', unicode: 'U+21B3', tags: { en: ['arrow', 'down', 'bar'] }, seo: { en: 'down arrow with bar' }, usage: { en: 'Return indicator' } },
+  { id: 'arrow-15', symbol: '↴', category: 'arrows', unicode: 'U+21B4', tags: { en: ['arrow', 'right', 'bar'] }, seo: { en: 'right arrow with bar' }, usage: { en: 'Enter indicator' } },
+  { id: 'arrow-16', symbol: '↵', category: 'arrows', unicode: 'U+21B5', tags: { en: ['arrow', 'down', 'corner'] }, seo: { en: 'down arrow corner' }, usage: { en: 'Line break indicator' } },
+  { id: 'arrow-17', symbol: '➔', category: 'arrows', unicode: 'U+2794', tags: { en: ['arrow', 'heavy', 'wide'] }, seo: { en: 'heavy wide arrow' }, usage: { en: 'Strong emphasis' } },
+  { id: 'arrow-18', symbol: '➙', category: 'arrows', unicode: 'U+2799', tags: { en: ['arrow', 'heavy', 'round'] }, seo: { en: 'heavy round arrow' }, usage: { en: 'Bold direction' } },
+  { id: 'arrow-19', symbol: '➛', category: 'arrows', unicode: 'U+279B', tags: { en: ['arrow', 'drafting', 'point'] }, seo: { en: 'drafting point arrow' }, usage: { en: 'Technical indicator' } },
+  { id: 'arrow-20', symbol: '➜', category: 'arrows', unicode: 'U+279C', tags: { en: ['arrow', 'open', 'outline'] }, seo: { en: 'open outline arrow' }, usage: { en: 'Light direction' } },
+  { id: 'arrow-21', symbol: '➝', category: 'arrows', unicode: 'U+279D', tags: { en: ['arrow', 'heavy', 'open'] }, seo: { en: 'heavy open arrow' }, usage: { en: 'Bold emphasis' } },
+  { id: 'arrow-22', symbol: '➞', category: 'arrows', unicode: 'U+279E', tags: { en: ['arrow', 'peaked', 'open'] }, seo: { en: 'peaked arrow' }, usage: { en: 'Sharp direction' } },
+  { id: 'arrow-23', symbol: '➟', category: 'arrows', unicode: 'U+279F', tags: { en: ['arrow', 'heavy', 'peaked'] }, seo: { en: 'heavy peaked arrow' }, usage: { en: 'Strong direction' } },
+  { id: 'arrow-24', symbol: '➠', category: 'arrows', unicode: 'U+27A0', tags: { en: ['arrow', 'triangle', 'head'] }, seo: { en: 'triangle head arrow' }, usage: { en: 'Playful direction' } },
+  { id: 'arrow-25', symbol: '➡', category: 'arrows', unicode: 'U+27A1', tags: { en: ['arrow', 'black', 'right'] }, seo: { en: 'black right arrow' }, usage: { en: 'Clear direction' } }
+];
+
+// 11. 数学符号系列 (新增分类)
+export const mathSymbols: Symbol2026[] = [
+  { id: 'math-1', symbol: '∞', category: 'math', unicode: 'U+221E', tags: { en: ['infinity', 'math', 'forever'] }, seo: { en: 'infinity symbol math forever' }, usage: { en: 'Infinite love, forever' } },
+  { id: 'math-2', symbol: '∑', category: 'math', unicode: 'U+2211', tags: { en: ['sum', 'mathematics', 'total'] }, seo: { en: 'sum symbol math total' }, usage: { en: 'Total collection' } },
+  { id: 'math-3', symbol: 'π', category: 'math', unicode: 'U+03C0', tags: { en: ['pi', 'math', 'geometry'] }, seo: { en: 'pi symbol math geometry' }, usage: { en: 'Math aesthetic' } },
+  { id: 'math-4', symbol: '√', category: 'math', unicode: 'U+221A', tags: { en: ['square root', 'math', 'radical'] }, seo: { en: 'square root math symbol' }, usage: { en: 'Math decoration' } },
+  { id: 'math-5', symbol: '∫', category: 'math', unicode: 'U+222B', tags: { en: ['integral', 'calculus', 'math'] }, seo: { en: 'integral calculus math' }, usage: { en: 'Advanced math' } },
+  { id: 'math-6', symbol: '≠', category: 'math', unicode: 'U+2260', tags: { en: ['not equal', 'math', 'different'] }, seo: { en: 'not equal math symbol' }, usage: { en: 'Unique status' } },
+  { id: 'math-7', symbol: '≤', category: 'math', unicode: 'U+2264', tags: { en: ['less equal', 'math', 'inequality'] }, seo: { en: 'less than equal math' }, usage: { en: 'Comparison' } },
+  { id: 'math-8', symbol: '≥', category: 'math', unicode: 'U+2265', tags: { en: ['greater equal', 'math', 'inequality'] }, seo: { en: 'greater than equal math' }, usage: { en: 'Comparison' } },
+  { id: 'math-9', symbol: '±', category: 'math', unicode: 'U+00B1', tags: { en: ['plus minus', 'math', 'sign'] }, seo: { en: 'plus minus math sign' }, usage: { en: 'Variation indicator' } },
+  { id: 'math-10', symbol: '÷', category: 'math', unicode: 'U+00F7', tags: { en: ['division', 'math', 'divide'] }, seo: { en: 'division math symbol' }, usage: { en: 'Math operation' } },
+  { id: 'math-11', symbol: '×', category: 'math', unicode: 'U+00D7', tags: { en: ['multiplication', 'math', 'multiply'] }, seo: { en: 'multiplication math symbol' }, usage: { en: 'Math operation' } },
+  { id: 'math-12', symbol: '∆', category: 'math', unicode: 'U+2206', tags: { en: ['delta', 'change', 'math'] }, seo: { en: 'delta change math' }, usage: { en: 'Change indicator' } },
+  { id: 'math-13', symbol: '∇', category: 'math', unicode: 'U+2207', tags: { en: ['nabla', 'gradient', 'math'] }, seo: { en: 'nabla gradient math' }, usage: { en: 'Advanced decoration' } },
+  { id: 'math-14', symbol: '∈', category: 'math', unicode: 'U+2208', tags: { en: ['element', 'set', 'math'] }, seo: { en: 'element of set math' }, usage: { en: 'Belonging' } },
+  { id: 'math-15', symbol: '⊂', category: 'math', unicode: 'U+2282', tags: { en: ['subset', 'set', 'math'] }, seo: { en: 'subset math symbol' }, usage: { en: 'Set notation' } }
+];
+
+// 12. 手势符号系列 (新增分类)
+export const handsSymbols: Symbol2026[] = [
+  { id: 'hand-1', symbol: '👋', category: 'hands', unicode: 'U+1F44B', tags: { en: ['wave', 'hello', 'goodbye'] }, seo: { en: 'waving hand hello goodbye' }, usage: { en: 'Greeting emoji' } },
+  { id: 'hand-2', symbol: '🤚', category: 'hands', unicode: 'U+1F91A', tags: { en: ['raised', 'stop', 'palm'] }, seo: { en: 'raised hand stop' }, usage: { en: 'Stop signal' } },
+  { id: 'hand-3', symbol: '✋', category: 'hands', unicode: 'U+270B', tags: { en: ['raised', 'hand', 'stop'] }, seo: { en: 'raised hand emoji' }, usage: { en: 'Attention' } },
+  { id: 'hand-4', symbol: '🖐️', category: 'hands', unicode: 'U+1F590', tags: { en: ['hand', 'fingers', 'five'] }, seo: { en: 'hand with fingers splayed' }, usage: { en: 'Counting' } },
+  { id: 'hand-5', symbol: '✌️', category: 'hands', unicode: 'U+270C', tags: { en: ['victory', 'peace', 'two'] }, seo: { en: 'victory hand peace' }, usage: { en: 'Peace sign' } },
+  { id: 'hand-6', symbol: '🤞', category: 'hands', unicode: 'U+1F91E', tags: { en: ['crossed', 'fingers', 'luck'] }, seo: { en: 'crossed fingers luck' }, usage: { en: 'Good luck' } },
+  { id: 'hand-7', symbol: '🤟', category: 'hands', unicode: 'U+1F91F', tags: { en: ['love', 'gesture', 'cute'] }, seo: { en: 'love you gesture' }, usage: { en: 'Love sign' } },
+  { id: 'hand-8', symbol: '👌', category: 'hands', unicode: 'U+1F44C', tags: { en: ['ok', 'perfect', 'good'] }, seo: { en: 'ok hand perfect' }, usage: { en: 'Approval' } },
+  { id: 'hand-9', symbol: '🤏', category: 'hands', unicode: 'U+1F90F', tags: { en: ['pinch', 'small', 'little'] }, seo: { en: 'pinching hand small' }, usage: { en: 'Small amount' } },
+  { id: 'hand-10', symbol: '✊', category: 'hands', unicode: 'U+270A', tags: { en: ['fist', 'strong', 'power'] }, seo: { en: 'raised fist strong' }, usage: { en: 'Strength' } },
+  { id: 'hand-11', symbol: '👍', category: 'hands', unicode: 'U+1F44D', tags: { en: ['thumbs', 'up', 'like'] }, seo: { en: 'thumbs up like' }, usage: { en: 'Like, approval' } },
+  { id: 'hand-12', symbol: '👎', category: 'hands', unicode: 'U+1F44E', tags: { en: ['thumbs', 'down', 'dislike'] }, seo: { en: 'thumbs down dislike' }, usage: { en: 'Dislike' } },
+  { id: 'hand-13', symbol: '👏', category: 'hands', unicode: 'U+1F44F', tags: { en: ['clap', 'applause', 'praise'] }, seo: { en: 'clapping hands applause' }, usage: { en: 'Celebration' } },
+  { id: 'hand-14', symbol: '🙌', category: 'hands', unicode: 'U+1F64C', tags: { en: ['raised', 'celebration', 'praise'] }, seo: { en: 'raised hands celebration' }, usage: { en: 'Praise' } },
+  { id: 'hand-15', symbol: '👐', category: 'hands', unicode: 'U+1F910', tags: { en: ['open', 'hands', 'offering'] }, seo: { en: 'open hands offering' }, usage: { en: 'Offering' } }
+];
+
+// 13. 游戏符号系列 (新增分类)
+export const gamingSymbols: Symbol2026[] = [
+  { id: 'game-1', symbol: '🎮', category: 'gaming', unicode: 'U+1F3AE', tags: { en: ['game', 'controller', 'video'] }, seo: { en: 'video game controller' }, usage: { en: 'Gaming content' } },
+  { id: 'game-2', symbol: '🕹️', category: 'gaming', unicode: 'U+1F579', tags: { en: ['joystick', 'arcade', 'retro'] }, seo: { en: 'joystick arcade retro' }, usage: { en: 'Retro gaming' } },
+  { id: 'game-3', symbol: '👾', category: 'gaming', unicode: 'U+1F47E', tags: { en: ['monster', 'alien', 'game'] }, seo: { en: 'alien monster game' }, usage: { en: 'Gaming monster' } },
+  { id: 'game-4', symbol: '🎯', category: 'gaming', unicode: 'U+1F3AF', tags: { en: ['target', 'bullseye', 'goal'] }, seo: { en: 'bullseye target goal' }, usage: { en: 'Goal setting' } },
+  { id: 'game-5', symbol: '🏆', category: 'gaming', unicode: 'U+1F3C6', tags: { en: ['trophy', 'winner', 'champion'] }, seo: { en: 'trophy winner champion' }, usage: { en: 'Achievement' } },
+  { id: 'game-6', symbol: '🎲', category: 'gaming', unicode: 'U+1F3B2', tags: { en: ['dice', 'game', 'random'] }, seo: { en: 'dice game random' }, usage: { en: 'Gaming random' } },
+  { id: 'game-7', symbol: '♠️', category: 'gaming', unicode: 'U+2660', tags: { en: ['spade', 'card', 'suit'] }, seo: { en: 'spade suit card' }, usage: { en: 'Card games' } },
+  { id: 'game-8', symbol: '♣️', category: 'gaming', unicode: 'U+2663', tags: { en: ['club', 'card', 'suit'] }, seo: { en: 'club suit card' }, usage: { en: 'Card games' } },
+  { id: 'game-9', symbol: '♦️', category: 'gaming', unicode: 'U+2666', tags: { en: ['diamond', 'card', 'suit'] }, seo: { en: 'diamond suit card' }, usage: { en: 'Card games' } },
+  { id: 'game-10', symbol: '🃏', category: 'gaming', unicode: 'U+1F0CF', tags: { en: ['joker', 'card', 'wild'] }, seo: { en: 'joker card wild' }, usage: { en: 'Wild card' } },
+  { id: 'game-11', symbol: '🎰', category: 'gaming', unicode: 'U+1F3B0', tags: { en: ['slot', 'machine', 'casino'] }, seo: { en: 'slot machine casino' }, usage: { en: 'Casino' } },
+  { id: 'game-12', symbol: '🕸️', category: 'gaming', unicode: 'U+1F578', tags: { en: ['spider', 'web', 'network'] }, seo: { en: 'spider web network' }, usage: { en: 'Network' } }
+];
+
+// 14. 表情符号系列 (新增分类)
+export const emotionsSymbols: Symbol2026[] = [
+  { id: 'emotion-1', symbol: '😊', category: 'emotions', unicode: 'U+1F60A', tags: { en: ['smile', 'happy', 'face'] }, seo: { en: 'smiley face happy' }, usage: { en: 'Happiness' } },
+  { id: 'emotion-2', symbol: '😍', category: 'emotions', unicode: 'U+1F60D', tags: { en: ['love', 'heart', 'eyes'] }, seo: { en: 'heart eyes love' }, usage: { en: 'Love expression' } },
+  { id: 'emotion-3', symbol: '🥺', category: 'emotions', unicode: 'U+1F97A', tags: { en: ['pleading', 'cute', 'puppy'] }, seo: { en: 'pleading face cute' }, usage: { en: 'Cute begging' } },
+  { id: 'emotion-4', symbol: '😎', category: 'emotions', unicode: 'U+1F60E', tags: { en: ['cool', 'sunglasses', 'swag'] }, seo: { en: 'cool sunglasses face' }, usage: { en: 'Cool attitude' } },
+  { id: 'emotion-5', symbol: '🤩', category: 'emotions', unicode: 'U+1F929', tags: { en: ['star', 'wow', 'amazed'] }, seo: { en: 'star wow amazed' }, usage: { en: 'Amazement' } },
+  { id: 'emotion-6', symbol: '😘', category: 'emotions', unicode: 'U+1F618', tags: { en: ['kiss', 'love', 'blow'] }, seo: { en: 'blowing kiss love' }, usage: { en: 'Sending kisses' } },
+  { id: 'emotion-7', symbol: '🥰', category: 'emotions', unicode: 'U+1F970', tags: { en: ['love', 'hearts', 'face'] }, seo: { en: 'hearts face love' }, usage: { en: 'Loving' } },
+  { id: 'emotion-8', symbol: '😇', category: 'emotions', unicode: 'U+1F607', tags: { en: ['angel', 'halo', 'innocent'] }, seo: { en: 'angel halo innocent' }, usage: { en: 'Innocence' } },
+  { id: 'emotion-9', symbol: '🤗', category: 'emotions', unicode: 'U+1F917', tags: { en: ['hug', 'cuddle', 'warm'] }, seo: { en: 'hugging face warm' }, usage: { en: 'Warm hug' } },
+  { id: 'emotion-10', symbol: '😏', category: 'emotions', unicode: 'U+1F60F', tags: { en: ['smirk', 'sly', 'confident'] }, seo: { en: 'smirk sly confident' }, usage: { en: 'Sly expression' } },
+  { id: 'emotion-11', symbol: '🫠', category: 'emotions', unicode: 'U+1FAE0', tags: { en: ['melting', 'cute', 'love'] }, seo: { en: 'melting cute love' }, usage: { en: 'Melting heart' } },
+  { id: 'emotion-12', symbol: '🤭', category: 'emotions', unicode: 'U+1F92D', tags: { en: ['giggle', 'laugh', 'hide'] }, seo: { en: 'face with hand over mouth' }, usage: { en: 'Giggling' } },
+  { id: 'emotion-13', symbol: '🫡', category: 'emotions', unicode: 'U+1FAE1', tags: { en: ['salute', 'respect', 'honor'] }, seo: { en: 'salute respect honor' }, usage: { en: 'Showing respect' } },
+  { id: 'emotion-14', symbol: '🫢', category: 'emotions', unicode: 'U+1FAE2', tags: { en: ['shock', 'surprise', 'open'] }, seo: { en: 'shock surprise open mouth' }, usage: { en: 'Surprised' } },
+  { id: 'emotion-15', symbol: '🤫', category: 'emotions', unicode: 'U+1F92B', tags: { en: ['shh', 'quiet', 'secret'] }, seo: { en: 'shushing quiet secret' }, usage: { en: 'Keep secret' } }
+];
+
+// 15. 文本装饰符号系列 (新增分类)
+export const textDecorSymbols: Symbol2026[] = [
+  { id: 'text-decor-1', symbol: '̣̣', category: 'text-decor', unicode: 'U+0323', tags: { en: ['dot', 'under', 'decoration'] }, seo: { en: 'dot below decoration' }, usage: { en: 'Text decoration' } },
+  { id: 'text-decor-2', symbol: '̤', category: 'text-decor', unicode: 'U+0324', tags: { en: ['umlaut', 'double', 'dot'] }, seo: { en: 'double dot decoration' }, usage: { en: 'Text accent' } },
+  { id: 'text-decor-3', symbol: '҉', category: 'text-decor', unicode: 'U+0489', tags: { en: ['cyrillic', 'decorative', 'unique'] }, seo: { en: 'cyrillic decorative unique' }, usage: { en: 'Unique decoration' } },
+  { id: 'text-decor-4', symbol: '̅', category: 'text-decor', unicode: 'U+0305', tags: { en: ['overline', 'bar', 'top'] }, seo: { en: 'overline bar top' }, usage: { en: 'Top bar' } },
+  { id: 'text-decor-5', symbol: '҈', category: 'text-decor', unicode: 'U+0488', tags: { en: ['cyrillic', 'special', 'mark'] }, seo: { en: 'cyrillic special mark' }, usage: { en: 'Special mark' } },
+  { id: 'text-decor-6', symbol: '̲', category: 'text-decor', unicode: 'U+0332', tags: { en: ['underline', 'bar', 'bottom'] }, seo: { en: 'underline bar bottom' }, usage: { en: 'Underline' } },
+  { id: 'text-decor-7', symbol: '̗', category: 'text-decor', unicode: 'U+0317', tags: { en: ['accent', 'left', 'below'] }, seo: { en: 'left accent below' }, usage: { en: 'Left accent' } },
+  { id: 'text-decor-8', symbol: '̘', category: 'text-decor', unicode: 'U+0318', tags: { en: ['accent', 'right', 'below'] }, seo: { en: 'right accent below' }, usage: { en: 'Right accent' } },
+  { id: 'text-decor-9', symbol: '҈', category: 'text-decor', unicode: 'U+0488', tags: { en: ['special', 'decorative', 'mark'] }, seo: { en: 'special decorative mark' }, usage: { en: 'Decorative mark' } },
+  { id: 'text-decor-10', symbol: '̡', category: 'text-decor', unicode: 'U+0321', tags: { en: ['palatal', 'hook', 'below'] }, seo: { en: 'palatal hook below' }, usage: { en: 'Hook decoration' } }
 ];
 
 // 导出所有符号
@@ -1421,7 +1526,12 @@ export const allSymbols2026: Symbol2026[] = [
   ...animalsSymbols,
   ...combosSymbols,
   ...aestheticSymbols,
-  ...arrowsSymbols
+  ...arrowsSymbols,
+  ...mathSymbols,
+  ...handsSymbols,
+  ...gamingSymbols,
+  ...emotionsSymbols,
+  ...textDecorSymbols
 ];
 
 // 按分类获取符号

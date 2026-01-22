@@ -10,7 +10,7 @@ export default defineConfig({
   // 多语言配置
   i18n: {
     defaultLocale: defaultLocale,
-    locales: ['en', 'fil', 'ms', 'bn', 'pl'],
+    locales: ['en', 'fil', 'ms', 'bn', 'pl', 'zh'],
     routing: {
       prefixDefaultLocale: false
     }
