@@ -273,7 +273,7 @@ const content = {
   }
 };
 
-const currentContent = content[lang] || content.en;
+const currentContent = (content as any)[lang] || content.en;
 ---
 
 <Layout title={`${currentContent.title} - Cute Symbols`} locale={lang}>

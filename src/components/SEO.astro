@@ -52,7 +52,7 @@ const structuredCategories = CATEGORIES_2026.map(cat => ({
   '@type': 'Thing',
   name: cat.names[locale] || cat.names.en,
   description: cat.descriptions[locale] || cat.descriptions.en,
-  keywords: cat.seoKeywords.en.join(', ')
+  keywords: ((cat.seoKeywords as any)[locale] || cat.seoKeywords.en).join(', ')
 }));
 
 // JSON-LD 结构化数据 - 增强版
@@ -170,13 +170,11 @@ const structuredData = {
 
 <!-- 内容新鲜度 -->
 <meta name="revised" content={stats.lastUpdated} />
-<meta name="topic" content="2026 Latest Cute Symbols" />
 
 <!-- 2026 SEO 增强 -->
 <meta name="rating" content="General" />
 <meta name="distribution" content="Global" />
 <meta name="language" content={locale} />
-<meta name="geo.region" content="CN" />
 <meta name="classification" content="Entertainment, Social Media, Symbols" />
 <meta name="coverage" content="Worldwide" />
 <meta name="target" content="all" />
@@ -219,7 +217,10 @@ const structuredData = {
   locale === 'fil' ? 'fil_PH' :
   locale === 'ms' ? 'ms_MY' :
   locale === 'bn' ? 'bn_BD' :
-  locale === 'pl' ? 'pl_PL' : 'en_US'} />
+  locale === 'pl' ? 'pl_PL' :
+  locale === 'zh' ? 'zh_CN' :
+  locale === 'ja' ? 'ja_JP' :
+  locale === 'ko' ? 'ko_KR' : 'en_US'} />
 {/* 添加其他语言版本 */}
 {locale === 'en' && (
   <>
@@ -227,6 +228,9 @@ const structuredData = {
     <meta property="og:locale:alternate" content="ms_MY" />
     <meta property="og:locale:alternate" content="bn_BD" />
     <meta property="og:locale:alternate" content="pl_PL" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="ko_KR" />
   </>
 )}
 <meta property="og:site_name" content="Cute Symbols" />
@@ -253,7 +257,7 @@ const structuredData = {
   let basePath = currentPath;
   
   // 如果是多语言页面，去除语言前缀
-  const langMatch = currentPath.match(/^\/(fil|ms|bn|pl)(\/.*)?$/);
+  const langMatch = currentPath.match(/^\/(fil|ms|bn|pl|zh|ja|ko)(\/.*)?$/);
   if (langMatch) {
     basePath = langMatch[2] || '/';
   }
@@ -270,6 +274,9 @@ const structuredData = {
       <link rel="alternate" hreflang="ms" href={`${siteUrl}/ms${basePath === '/' ? '' : basePath}`} />
       <link rel="alternate" hreflang="bn" href={`${siteUrl}/bn${basePath === '/' ? '' : basePath}`} />
       <link rel="alternate" hreflang="pl" href={`${siteUrl}/pl${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="zh" href={`${siteUrl}/zh${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="ja" href={`${siteUrl}/ja${basePath === '/' ? '' : basePath}`} />
+      <link rel="alternate" hreflang="ko" href={`${siteUrl}/ko${basePath === '/' ? '' : basePath}`} />
       <link rel="alternate" hreflang="x-default" href={`${siteUrl}${basePath === '/' ? '' : basePath}`} />
     </>
   );

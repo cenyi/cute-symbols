@@ -13,6 +13,9 @@ export interface Category2026 {
     ms: string;
     bn: string;
     pl: string;
+    zh?: string;
+    ja?: string;
+    ko?: string;
   };
   descriptions: {
     en: string;
@@ -20,18 +23,30 @@ export interface Category2026 {
     ms: string;
     bn: string;
     pl: string;
+    zh?: string;
+    ja?: string;
+    ko?: string;
   };
   badges: {
     en: string[];
     fil: string[];
+    zh?: string[];
+    ja?: string[];
+    ko?: string[];
   };
   seoKeywords: {
     en: string[];
     fil: string[];
+    zh?: string[];
+    ja?: string[];
+    ko?: string[];
   };
   useCases: {
     en: string[];
     fil: string[];
+    zh?: string[];
+    ja?: string[];
+    ko?: string[];
   };
 }
 

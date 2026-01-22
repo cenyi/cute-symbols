@@ -39,7 +39,7 @@ const geoContent = {
   }
 };
 
-const content = geoContent[locale] || geoContent.en;
+const content = (geoContent as any)[locale] || geoContent.en;
 ---
 
 <!-- GEO优化：AI可读性增强 -->

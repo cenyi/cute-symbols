@@ -79,7 +79,7 @@ const translations = {
   }
 };
 
-const text = translations[locale];
+const text = (translations as any)[locale];
 ---
 
 <Layout title={`404 - ${t('site.title')}`} {locale}>

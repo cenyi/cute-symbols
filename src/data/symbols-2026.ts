@@ -14,6 +14,9 @@ export interface Symbol2026 {
     ms?: string[];
     bn?: string[];
     pl?: string[];
+    zh?: string[];
+    ja?: string[];
+    ko?: string[];
   };
   seo: {
     en: string;
@@ -21,6 +24,9 @@ export interface Symbol2026 {
     ms?: string;
     bn?: string;
     pl?: string;
+    zh?: string;
+    ja?: string;
+    ko?: string;
   };
   usage: {
     en: string;
@@ -28,6 +34,9 @@ export interface Symbol2026 {
     ms?: string;
     bn?: string;
     pl?: string;
+    zh?: string;
+    ja?: string;
+    ko?: string;
   };
 }
 
@@ -1945,7 +1954,7 @@ export function getSymbolsByCategory2026(category: string): Symbol2026[] {
 }
 
 // 搜索符号（支持多语言）
-export function searchSymbols2026(query: string, locale: 'en' | 'fil' | 'ms' | 'bn' | 'pl' = 'en'): Symbol2026[] {
+export function searchSymbols2026(query: string, locale: 'en' | 'fil' | 'ms' | 'bn' | 'pl' | 'zh' | 'ja' | 'ko' = 'en'): Symbol2026[] {
   const lowerQuery = query.toLowerCase();
   return allSymbols2026.filter(symbol =>
     symbol.symbol.includes(query) ||

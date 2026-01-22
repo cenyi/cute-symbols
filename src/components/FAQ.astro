@@ -188,7 +188,7 @@ const faqs = [
           }}
         >
           <span style={{ flex: 1, paddingRight: '1rem' }}>
-            {faq.question[locale]}
+            {(faq.question as any)[locale] || faq.question.en}
           </span>
           <span class="faq-icon" style={{
             fontSize: '1.25rem',
@@ -215,7 +215,7 @@ const faqs = [
             lineHeight: 1.7,
             color: 'var(--text-secondary)'
           }}>
-            {faq.answer[locale]}
+            {(faq.answer as any)[locale] || faq.answer.en}
           </div>
         </div>
       </div>
